@@ -1,0 +1,113 @@
+.Recent-Works {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+// 1025
+.Recent-Works__content {
+  margin: 3px;
+  width: 24%;
+  height: 246px;
+}
+.Recent-Works__content-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: 100%;
+}
+
+.ClientShop-slide {
+  position: relative;
+  height: 500px;
+  width: 33.3%;
+  &__wrap-img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+  }
+  &__wrap {
+    border: 1px solid #f2f2f2;
+  }
+  &__wrap-description {
+    padding: 24px;
+    width: 100%;
+    height: 60%;
+  }
+  &__wrap-date {
+    color: #c2c2c2;
+    position: relative;
+    top: -4px;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  &__wrap-comments {
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    line-height: 23px;
+    margin-bottom: 16px;
+    color: #444;
+    font-weight: 600;
+  }
+  &__wrap-lorem {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.7;
+    letter-spacing: 0;
+    color: #777;
+    font-family: poppins, sans-serif;
+  }
+  &__wrap-chevron {
+    color: #484848;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase !important;
+  }
+  &__wrap-link {
+      background-color: #2250fc;
+      color: #fff;
+      font-size: 13px;
+      padding: 2px 16px;
+      border-radius: 50px;
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      z-index: 3;
+      margin-right: 0;
+      a {
+          color: white;
+      }
+  }
+}
+.moreInfo {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+.moreInfo__navigation-mainList {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.moreInfo__logo {
+  display: flex;
+  align-items: center;
+}
+.moreInfo__navigation-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.moreInfo__navigation-list {
+  display: flex;
+}
+.HeaderUpper-logo {
+  width: 100%;
+  height: 100%;
+}
+.moreInfo__logo-dawnText {
+}
+@import "./media"
