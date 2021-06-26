@@ -19,7 +19,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a>
+                  <a href='home'>
                     <i className="fa fa-plug"></i>
                   </a>
                 </div>
@@ -37,7 +37,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a href="#">
+                  <a href="home">
                     <i className="fa fa-desktop"></i>
                   </a>
                 </div>
@@ -55,7 +55,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a href="#">
+                  <a href="home">
                     <i className="fa fa-cloud"></i>
                   </a>
                 </div>
@@ -73,7 +73,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a href="#">
+                  <a href="home">
                     <i className="far fa-lightbulb"></i>
                   </a>
                 </div>
@@ -91,7 +91,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a href="#">
+                  <a href="home">
                     <i className="fa fa-trophy"></i>
                   </a>
                 </div>
@@ -109,7 +109,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a href="#">
+                  <a href="home">
                     <i className="fa fa-thumbs-up"></i>
                   </a>
                 </div>
@@ -127,7 +127,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a href="#">
+                  <a href="home">
                     <i className="fa fa-rocket"></i>
                   </a>
                 </div>
@@ -145,7 +145,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a href="#">
+                  <a href="home">
                     <i className="fa fa-flask"></i>
                   </a>
                 </div>
@@ -163,7 +163,7 @@ class Services extends React.Component {
             >
               <div className="icon-box effect medium border small">
                 <div className="icon">
-                  <a href="#">
+                  <a href="home">
                     <i className="fa fa-umbrella"></i>
                   </a>
                 </div>

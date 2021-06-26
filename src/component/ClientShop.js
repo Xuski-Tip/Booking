@@ -30,7 +30,7 @@ class ClientShop extends React.Component {
           <Slider {...settings}>
             <div className="ClientShop-slide ">
               <div className="ClientShop-slide__wrap">
-                <img
+                <img alt='#'
                   className="ClientShop-slide__wrap-img"
                   src="../images/five.jpg"
                 ></img>
@@ -40,26 +40,26 @@ class ClientShop extends React.Component {
                   </span>
                   <span className="ClientShop-slide__wrap-date">Comments</span>
                   <h2 className="ClientShop-slide__wrap-comments">
-                    <a href="#"> Standard post with a single image</a>
+                    <a href="http://localhost:3000/"> Standard post with a single image</a>
                   </h2>
                   <p className="ClientShop-slide__wrap-lorem">
                     Curabitur pulvinar euismod ante, ac sagittis ante posuere
                     ac. Vivamus luctus commodo dolor porta feugiat. Fusce at
                     velit id ligula pharetra laoreet.
                   </p>
-                  <a className="ClientShop-slide__wrap-chevron" href="#">
+                  <a className="ClientShop-slide__wrap-chevron" href="http://localhost:3000/">
                     Read More
                     <i className="icon-chevron-right"></i>
                   </a>
                 </div>
                 <span className="ClientShop-slide__wrap-link">
-                  <a href="#">Lifestyle</a>
+                  <a href="http://localhost:3000/">Lifestyle</a>
                 </span>
               </div>
             </div>
             <div className="ClientShop-slide">
               <div className="ClientShop-slide__wrap">
-                <img
+                <img alt='#'
                   className="ClientShop-slide__wrap-img"
                   src="../images/five.jpg"
                 ></img>
@@ -69,26 +69,26 @@ class ClientShop extends React.Component {
                   </span>
                   <span className="ClientShop-slide__wrap-date">Comments</span>
                   <h2 className="ClientShop-slide__wrap-comments">
-                    <a href="#"> Standard post with a single image</a>
+                    <a href="http://localhost:3000/"> Standard post with a single image</a>
                   </h2>
                   <p className="ClientShop-slide__wrap-lorem">
                     Curabitur pulvinar euismod ante, ac sagittis ante posuere
                     ac. Vivamus luctus commodo dolor porta feugiat. Fusce at
                     velit id ligula pharetra laoreet.
                   </p>
-                  <a className="ClientShop-slide__wrap-chevron" href="#">
+                  <a className="ClientShop-slide__wrap-chevron" href="http://localhost:3000/">
                     Read More
                     <i className="icon-chevron-right"></i>
                   </a>
                 </div>
                 <span className="ClientShop-slide__wrap-link">
-                  <a href="#">Lifestyle</a>
+                  <a href="http://localhost:3000/">Lifestyle</a>
                 </span>
               </div>
             </div>
             <div className="ClientShop-slide">
               <div className="ClientShop-slide__wrap">
-                <img
+                <img alt='#'
                   className="ClientShop-slide__wrap-img"
                   src="../images/five.jpg"
                 ></img>
@@ -98,26 +98,26 @@ class ClientShop extends React.Component {
                   </span>
                   <span className="ClientShop-slide__wrap-date">Comments</span>
                   <h2 className="ClientShop-slide__wrap-comments">
-                    <a href="#"> Standard post with a single image</a>
+                    <a href="http://localhost:3000/"> Standard post with a single image</a>
                   </h2>
                   <p className="ClientShop-slide__wrap-lorem">
                     Curabitur pulvinar euismod ante, ac sagittis ante posuere
                     ac. Vivamus luctus commodo dolor porta feugiat. Fusce at
                     velit id ligula pharetra laoreet.
                   </p>
-                  <a className="ClientShop-slide__wrap-chevron" href="#">
+                  <a className="ClientShop-slide__wrap-chevron" href="http://localhost:3000/">
                     Read More
                     <i className="icon-chevron-right"></i>
                   </a>
                 </div>
                 <span className="ClientShop-slide__wrap-link">
-                  <a href="#">Lifestyle</a>
+                  <a href="http://localhost:3000/">Lifestyle</a>
                 </span>
               </div>
             </div>
             <div className="ClientShop-slide">
               <div className="ClientShop-slide__wrap">
-                <img
+                <img alt='#'
                   className="ClientShop-slide__wrap-img"
                   src="../images/five.jpg"
                 ></img>
@@ -127,26 +127,26 @@ class ClientShop extends React.Component {
                   </span>
                   <span className="ClientShop-slide__wrap-date">Comments</span>
                   <h2 className="ClientShop-slide__wrap-comments">
-                    <a href="#"> Standard post with a single image</a>
+                    <a href="http://localhost:3000/"> Standard post with a single image</a>
                   </h2>
                   <p className="ClientShop-slide__wrap-lorem">
                     Curabitur pulvinar euismod ante, ac sagittis ante posuere
                     ac. Vivamus luctus commodo dolor porta feugiat. Fusce at
                     velit id ligula pharetra laoreet.
                   </p>
-                  <a className="ClientShop-slide__wrap-chevron" href="#">
+                  <a className="ClientShop-slide__wrap-chevron" href="http://localhost:3000/">
                     Read More
                     <i className="icon-chevron-right"></i>
                   </a>
                 </div>
                 <span className="ClientShop-slide__wrap-link">
-                  <a href="#">Lifestyle</a>
+                  <a href="http://localhost:3000/">Lifestyle</a>
                 </span>
               </div>
             </div>
             <div className="ClientShop-slide">
               <div className="ClientShop-slide__wrap">
-                <img
+                <img alt='#'
                   className="ClientShop-slide__wrap-img"
                   src="../images/five.jpg"
                 ></img>
@@ -156,26 +156,26 @@ class ClientShop extends React.Component {
                   </span>
                   <span className="ClientShop-slide__wrap-date">Comments</span>
                   <h2 className="ClientShop-slide__wrap-comments">
-                    <a href="#"> Standard post with a single image</a>
+                    <a href="http://localhost:3000/"> Standard post with a single image</a>
                   </h2>
                   <p className="ClientShop-slide__wrap-lorem">
                     Curabitur pulvinar euismod ante, ac sagittis ante posuere
                     ac. Vivamus luctus commodo dolor porta feugiat. Fusce at
                     velit id ligula pharetra laoreet.
                   </p>
-                  <a className="ClientShop-slide__wrap-chevron" href="#">
+                  <a className="ClientShop-slide__wrap-chevron" href="http://localhost:3000/">
                     Read More
                     <i className="icon-chevron-right"></i>
                   </a>
                 </div>
                 <span className="ClientShop-slide__wrap-link">
-                  <a href="#">Lifestyle</a>
+                  <a href="http://localhost:3000/">Lifestyle</a>
                 </span>
               </div>
             </div>
             <div className="ClientShop-slide">
               <div className="ClientShop-slide__wrap">
-                <img
+                <img alt='#'
                   className="ClientShop-slide__wrap-img"
                   src="../images/five.jpg"
                 ></img>
@@ -185,20 +185,20 @@ class ClientShop extends React.Component {
                   </span>
                   <span className="ClientShop-slide__wrap-date">Comments</span>
                   <h2 className="ClientShop-slide__wrap-comments">
-                    <a href="#"> Standard post with a single image</a>
+                    <a href="http://localhost:3000/"> Standard post with a single image</a>
                   </h2>
                   <p className="ClientShop-slide__wrap-lorem">
                     Curabitur pulvinar euismod ante, ac sagittis ante posuere
                     ac. Vivamus luctus commodo dolor porta feugiat. Fusce at
                     velit id ligula pharetra laoreet.
                   </p>
-                  <a className="ClientShop-slide__wrap-chevron" href="#">
+                  <a className="ClientShop-slide__wrap-chevron" href="http://localhost:3000/">
                     Read More
                     <i className="icon-chevron-right"></i>
                   </a>
                 </div>
                 <span className="ClientShop-slide__wrap-link">
-                  <a href="#">Lifestyle</a>
+                  <a href="http://localhost:3000/">Lifestyle</a>
                 </span>
               </div>
             </div>

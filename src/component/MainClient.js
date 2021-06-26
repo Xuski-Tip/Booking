@@ -25,13 +25,13 @@ class MainClient extends React.Component {
                     hendrerit laoreet.{" "}
                   </p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" >
+                    <a href='home' className="btn btn-xs btn-slide btn-light" >
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="home"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -39,7 +39,7 @@ class MainClient extends React.Component {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="home"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -47,7 +47,7 @@ class MainClient extends React.Component {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="mailto:#"
+                      href="home"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -70,13 +70,13 @@ class MainClient extends React.Component {
                     hendrerit laoreet.{" "}
                   </p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="home">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="home"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -84,7 +84,7 @@ class MainClient extends React.Component {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="home"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -92,7 +92,7 @@ class MainClient extends React.Component {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="mailto:#"
+                      href="home"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -115,13 +115,13 @@ class MainClient extends React.Component {
                     hendrerit laoreet.{" "}
                   </p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="home">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="home"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -129,7 +129,7 @@ class MainClient extends React.Component {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="home"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -137,7 +137,7 @@ class MainClient extends React.Component {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="mailto:#"
+                      href="home"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -160,13 +160,13 @@ class MainClient extends React.Component {
                     hendrerit laoreet.{" "}
                   </p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="home">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="home"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -174,7 +174,7 @@ class MainClient extends React.Component {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="home"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -182,7 +182,7 @@ class MainClient extends React.Component {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="mailto:#"
+                      href="home"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
