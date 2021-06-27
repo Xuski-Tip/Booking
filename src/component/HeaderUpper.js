@@ -13,7 +13,9 @@ class HeaderUpper extends React.Component {
           <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
             <ReactBootStrap.Nav className="mr-auto">
               <ReactBootStrap.Nav.Link href="/">Home</ReactBootStrap.Nav.Link>
-              <ReactBootStrap.NavDropdown title="Shop" id="basic-nav-dropdown">
+              <ReactBootStrap.Nav.Link href="/Shop">Shop</ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link href="/Registr">Log in</ReactBootStrap.Nav.Link>
+              {/* <ReactBootStrap.NavDropdown title="Shop" id="basic-nav-dropdown">
                 <ReactBootStrap.NavDropdown.Item href="/shop">
                   Shoping
                 </ReactBootStrap.NavDropdown.Item>
@@ -23,7 +25,7 @@ class HeaderUpper extends React.Component {
                 <ReactBootStrap.NavDropdown.Item href="/Registr">
                   Registr
                 </ReactBootStrap.NavDropdown.Item>
-              </ReactBootStrap.NavDropdown>
+              </ReactBootStrap.NavDropdown> */}
             </ReactBootStrap.Nav>
             <ReactBootStrap.Form inline>
               <ReactBootStrap.FormControl
