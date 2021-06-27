@@ -32,7 +32,7 @@ class ClientShop extends React.Component {
               <div className="ClientShop-slide__wrap">
                 <img alt='#'
                   className="ClientShop-slide__wrap-img"
-                  src="../images/five.jpg"
+                  src="../images/Two.jpg"  
                 ></img>
                 <div className="ClientShop-slide__wrap-description">
                   <span className="ClientShop-slide__wrap-date">
@@ -61,7 +61,7 @@ class ClientShop extends React.Component {
               <div className="ClientShop-slide__wrap">
                 <img alt='#'
                   className="ClientShop-slide__wrap-img"
-                  src="../images/five.jpg"
+                  src="../images/Two.jpg"
                 ></img>
                 <div className="ClientShop-slide__wrap-description">
                   <span className="ClientShop-slide__wrap-date">
@@ -90,7 +90,7 @@ class ClientShop extends React.Component {
               <div className="ClientShop-slide__wrap">
                 <img alt='#'
                   className="ClientShop-slide__wrap-img"
-                  src="../images/five.jpg"
+                  src="../images/Two.jpg"
                 ></img>
                 <div className="ClientShop-slide__wrap-description">
                   <span className="ClientShop-slide__wrap-date">
@@ -119,7 +119,7 @@ class ClientShop extends React.Component {
               <div className="ClientShop-slide__wrap">
                 <img alt='#'
                   className="ClientShop-slide__wrap-img"
-                  src="../images/five.jpg"
+                  src="../images/Two.jpg"
                 ></img>
                 <div className="ClientShop-slide__wrap-description">
                   <span className="ClientShop-slide__wrap-date">
@@ -148,7 +148,7 @@ class ClientShop extends React.Component {
               <div className="ClientShop-slide__wrap">
                 <img alt='#'
                   className="ClientShop-slide__wrap-img"
-                  src="../images/five.jpg"
+                  src="../images/Two.jpg"
                 ></img>
                 <div className="ClientShop-slide__wrap-description">
                   <span className="ClientShop-slide__wrap-date">
@@ -177,7 +177,7 @@ class ClientShop extends React.Component {
               <div className="ClientShop-slide__wrap">
                 <img alt='#'
                   className="ClientShop-slide__wrap-img"
-                  src="../images/five.jpg"
+                  src="../images/Two.jpg"
                 ></img>
                 <div className="ClientShop-slide__wrap-description">
                   <span className="ClientShop-slide__wrap-date">
