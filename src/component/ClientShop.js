@@ -8,6 +8,7 @@ class ClientShop extends React.Component {
       slidesToShow: 3,
       infinite: true,
       slidesToScroll: 3,
+      arrows : false,
       responsive: [
         {
           breakpoint: 554,

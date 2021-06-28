@@ -1,7 +1,7 @@
 import React from "react";
 import App from "./App";
 import Shop from "./Shop/Shop"
-import Registr from "./Registr/Regist"
+import Authorization from "./Registr/Authorization"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const Router = () => {
@@ -10,7 +10,7 @@ const Router = () => {
       <Switch>
       <Route exact path="/" component={App}/>
       <Route exact path="/Shop" component={Shop}/>
-      <Route exact path="/Registr" component={Registr}/>
+      <Route exact path="/Authorization" component={Authorization}/>
       </Switch>
     </BrowserRouter>
   );

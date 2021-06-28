@@ -14,7 +14,7 @@ class HeaderUpper extends React.Component {
             <ReactBootStrap.Nav className="mr-auto">
               <ReactBootStrap.Nav.Link href="/">Home</ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link href="/Shop">Shop</ReactBootStrap.Nav.Link>
-              <ReactBootStrap.Nav.Link href="/Registr">Log in</ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link href="/Authorization">Log in</ReactBootStrap.Nav.Link>
               {/* <ReactBootStrap.NavDropdown title="Shop" id="basic-nav-dropdown">
                 <ReactBootStrap.NavDropdown.Item href="/shop">
                   Shoping
