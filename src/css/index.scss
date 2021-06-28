@@ -1,4 +1,3 @@
-
 .Recent-Works {
   width: 100%;
   display: flex;
@@ -68,19 +67,19 @@
     text-transform: uppercase !important;
   }
   &__wrap-link {
-      background-color: #2250fc;
-      color: #fff;
-      font-size: 13px;
-      padding: 2px 16px;
-      border-radius: 50px;
-      position: absolute;
-      right: 10px;
-      top: 11px;
-      z-index: 3;
-      margin-right: 0;
-      a {
-          color: white;
-      }
+    background-color: #2250fc;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px 16px;
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    z-index: 3;
+    margin-right: 0;
+    a {
+      color: white;
+    }
   }
 }
 .moreInfo {
@@ -109,4 +108,24 @@
   width: 100%;
   height: 100%;
 }
-@import "./media"
+.Page-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item {
+  padding: 0px 10px 20px 10px;
+}
+.PageInfo {
+  margin: 50px;
+}
+.slick-prev {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  background-image: url(../image/arrows-right.svg);
+}
+@import "./media";

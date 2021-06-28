@@ -2,7 +2,7 @@ import React from "react";
 class Client extends React.Component {
   render() {
     return (
-      <div className="row m-b-20">
+      <div className="PageInfo row m-b-20">
         <div className="col-lg-6 p-t-10 m-b-20">
           <h3 className="m-b-20">A Monochromatic Spring ’15</h3>
           <p>
@@ -15,16 +15,16 @@ class Client extends React.Component {
           <div className="order-select">
             <h6>Sort by</h6>
             <p>Showing 1&ndash;12 of 25 results</p>
-            <form  method="get">
-              <select  className="form-control">
-                <option >
+            <form method="get">
+              <select className="form-control">
+                <option value="order" >
                   Default sorting
                 </option>
-                <option >Sort by popularity</option>
-                <option >Sort by average rating</option>
-                <option>Sort by newness</option>
-                <option >Sort by price: low to high</option>
-                <option >Sort by price: high to low</option>
+                <option value="popularity">Sort by popularity</option>
+                <option value="rating">Sort by average rating</option>
+                <option value="date">Sort by newness</option>
+                <option value="price">Sort by price: low to high</option>
+                <option value="price-desc">Sort by price: high to low</option>
               </select>
             </form>
           </div>
@@ -35,7 +35,7 @@ class Client extends React.Component {
             <p>From 0 - 190$</p>
             <form method="get">
               <select className="form-control">
-                <option>
+                <option value="">
                   0$ - 50$
                 </option>
                 <option value="">51$ - 90$</option>
