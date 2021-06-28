@@ -119,13 +119,46 @@
 .PageInfo {
   margin: 50px;
 }
-.slick-prev {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  z-index: 1;
-  background-image: url(../image/arrows-right.svg);
+.fullscreen {
+  background-image: url(/images/pages/1.jpg);
+  height: 100vh;
+}
+.fullscreen__background {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.fullscreen__container {
+  border-radius: 6px;
+  padding: 40px;
+  background-color: white;
+}
+.btn__profit {
+  font-family: poppins, sans-serif;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  outline: none;
+  padding: 12px 18px;
+  position: relative;
+  text-transform: uppercase;
+  background-color: #2250fc;
+  border-color: #2250fc;
+  border-width: 1px;
+  border-style: solid;
+  color: #fff;
+  transition: all 0.3s;
+  margin-bottom: 6px;
+  outline: none;
+  line-height: 14px;
+  cursor: pointer;
+}
+.btn__close {
+  background-color: #ce041c;
+  border-color: #ce041c;
+  margin-left: 10px;
 }
 @import "./media";
