@@ -1,4 +1,47 @@
 
+@media (max-width: 1400px) {
+    .MainBg__right-img {
+        padding: 0;
+    }
+
+}
+@media (max-width: 1189px) {
+    .moreInfo {
+        flex-direction: column;
+    }
+    .TextDemocratic {
+        margin: 10px;
+    }
+}
+@media (max-width: 1024px){
+    .MainSlider__subtitle {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 14px;
+    }
+    .MainSlider__lorem {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+}
+@media (max-width: 992px) {
+    .MainSlider {
+        width: 100%;
+        height: 100%;
+    }
+    .MainSlider__bg-img {
+        width: 100%;
+        height: 100%;
+    }
+    .MainBg__right {
+        display: none;
+    }
+    .MainHeader {
+        flex-direction: column;
+    }
+}
 @media (max-width: 768px) {
     .Recent-Works__content {
         width: 40%;

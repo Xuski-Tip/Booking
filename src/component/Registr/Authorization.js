@@ -5,13 +5,8 @@ class Authorization extends React.Component {
       <section className="fullscreen" data-bg-parallax="images/pages/1.jpg">
             <div className="container">
                 <div>
-                    <div className="text-center m-b-30">
-                        <a href="index.html" className="logo">
-                            <img src="images/logo-dark.png" alt="Polo Logo"/>
-                        </a>
-                    </div>
                     <div className="row">
-                        <div className="col-lg-5 center p-50 background-white b-r-6">
+                        <div className="fullscreen__container col-lg-5 center p-50 background-white b-r-6">
                             <h3>Login to your Account</h3>
                             <form>
                                 <div className="form-group">
@@ -33,7 +28,7 @@ class Authorization extends React.Component {
                                     <button type="button" className="btn">Login</button>
                                 </div>
                             </form>
-                            <p className="small">Don't have an account yet? <a href="http://localhost:3000/">Register New Account</a>
+                            <p className="small">Don't have an account yet? <a href="http://localhost:3000/Authorization/Registration">Register New Account</a>
                             </p>
                         </div>
                     </div>

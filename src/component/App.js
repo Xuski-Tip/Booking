@@ -4,12 +4,14 @@ import BackgroundGrey from "../component/BackgroundGrey"
 import RecentWork from "./RecentWork"
 import Services from "./Services"
 import Blog from "./Blog"
-import Client from "./Client"
 import MainClient from "./MainClient";
 import FooterInfo from "./FooterInfo";
 import LinkerUp from "./LinkerUp";
 import HeaderUpper from "./HeaderUpper"
 import Header from './Header'
+
+
+
 class App extends React.Component {
   render() {
     return (
@@ -21,7 +23,6 @@ class App extends React.Component {
             <RecentWork/>
             <Services/>
             <Blog/>
-            <Client/>
             <MainClient/>
             <FooterInfo/>
             <LinkerUp/>

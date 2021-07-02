@@ -7,7 +7,7 @@ class PageShop extends React.Component {
             <div className="grid-item">
               <div className="product">
                 <div className="product-image">
-                  <a href="http://localhost:3000/">
+                  <a href="/Card">
                     <img
                       alt="#"
                       src="images/shop/products/1.jpg"
