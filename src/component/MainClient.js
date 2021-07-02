@@ -11,189 +11,198 @@ class MainClient extends React.Component {
               condimentum porttitor cursumus.
             </p>
           </div>
-          <div className="row team-members">
-            <div className="col-lg-3">
-              <div className="team-member">
-                <div className="team-image">
-                  <img  alt="#" src="images/team/6.jpg"></img>
-                </div>
-                <div className="team-desc">
-                  <h3>Alea Smith</h3>
-                  <span>Software Developer</span>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing tristique
-                    hendrerit laoreet.{" "}
-                  </p>
-                  <div className="align-center">
-                    <a href='home' className="btn btn-xs btn-slide btn-light" >
-                      <i className="fab fa-facebook-f"></i>
-                      <span>Facebook</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="100"
-                    >
-                      <i className="fab fa-twitter"></i>
-                      <span>Twitter</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="118"
-                    >
-                      <i className="fab fa-instagram"></i>
-                      <span>Instagram</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="80"
-                    >
-                      <i className="icon-mail"></i>
-                      <span>Mail</span>
-                    </a>
-                  </div>
+          <div className="Team__card">
+            <div className="team__members">
+              <div className="team__member">
+                <img
+                  alt="#"
+                  src="/images/1Client.jpg"
+                  className="team__member-vesual"
+                ></img>
+              </div>
+              <div className="team__info">
+                <h3 className="team__info-subtitle">Alea Smith</h3>
+                <span className="team__info-developer">Software Developer</span>
+                <p className="team__info-lorem">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing tristique
+                  hendrerit laoreet.{" "}
+                </p>
+                <div className="align-center">
+                  <a className="btn btn-xs btn-slide btn-light" href="home">
+                    <i className="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="100"
+                  >
+                    <i className="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="118"
+                  >
+                    <i className="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="80"
+                  >
+                    <i className="icon-mail"></i>
+                    <span>Mail</span>
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
-              <div className="team-member">
-                <div className="team-image">
-                  <img  alt="#"src="images/team/7.jpg"></img>
-                </div>
-                <div className="team-desc">
-                  <h3>Ariol Doe</h3>
-                  <span>Software Developer</span>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing tristique
-                    hendrerit laoreet.{" "}
-                  </p>
-                  <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="home">
-                      <i className="fab fa-facebook-f"></i>
-                      <span>Facebook</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="100"
-                    >
-                      <i className="fab fa-twitter"></i>
-                      <span>Twitter</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="118"
-                    >
-                      <i className="fab fa-instagram"></i>
-                      <span>Instagram</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="80"
-                    >
-                      <i className="icon-mail"></i>
-                      <span>Mail</span>
-                    </a>
-                  </div>
+            <div className="team__members">
+              <div className="team__member">
+                <img
+                  alt="#"
+                  src="/images/2Client.jpg"
+                  className="team__member-vesual"
+                ></img>
+              </div>
+              <div className="team__info">
+                <h3 className="team__info-subtitle">Alea Smith</h3>
+                <span className="team__info-developer">Software Developer</span>
+                <p className="team__info-lorem">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing tristique
+                  hendrerit laoreet.{" "}
+                </p>
+                <div className="align-center">
+                  <a className="btn btn-xs btn-slide btn-light" href="home">
+                    <i className="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="100"
+                  >
+                    <i className="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="118"
+                  >
+                    <i className="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="80"
+                  >
+                    <i className="icon-mail"></i>
+                    <span>Mail</span>
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
-              <div className="team-member">
-                <div className="team-image">
-                  <img  alt="#"src="images/team/8.jpg"></img>
-                </div>
-                <div className="team-desc">
-                  <h3>Emma Ross</h3>
-                  <span>Software Developer</span>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing tristique
-                    hendrerit laoreet.{" "}
-                  </p>
-                  <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="home">
-                      <i className="fab fa-facebook-f"></i>
-                      <span>Facebook</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="100"
-                    >
-                      <i className="fab fa-twitter"></i>
-                      <span>Twitter</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="118"
-                    >
-                      <i className="fab fa-instagram"></i>
-                      <span>Instagram</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="80"
-                    >
-                      <i className="icon-mail"></i>
-                      <span>Mail</span>
-                    </a>
-                  </div>
+            <div className="team__members">
+              <div className="team__member">
+                <img
+                  alt="#"
+                  src="/images/3Client.jpg"
+                  className="team__member-vesual"
+                ></img>
+              </div>
+              <div className="team__info">
+                <h3 className="team__info-subtitle">Alea Smith</h3>
+                <span className="team__info-developer">Software Developer</span>
+                <p className="team__info-lorem">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing tristique
+                  hendrerit laoreet.{" "}
+                </p>
+                <div className="align-center">
+                  <a className="btn btn-xs btn-slide btn-light" href="home">
+                    <i className="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="100"
+                  >
+                    <i className="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="118"
+                  >
+                    <i className="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="80"
+                  >
+                    <i className="icon-mail"></i>
+                    <span>Mail</span>
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
-              <div className="team-member">
-                <div className="team-image">
-                  <img  alt="#"src="images/team/9.jpg"></img>
-                </div>
-                <div className="team-desc">
-                  <h3>Victor Loda</h3>
-                  <span>Software Developer</span>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing tristique
-                    hendrerit laoreet.{" "}
-                  </p>
-                  <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="home">
-                      <i className="fab fa-facebook-f"></i>
-                      <span>Facebook</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="100"
-                    >
-                      <i className="fab fa-twitter"></i>
-                      <span>Twitter</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="118"
-                    >
-                      <i className="fab fa-instagram"></i>
-                      <span>Instagram</span>
-                    </a>
-                    <a
-                      className="btn btn-xs btn-slide btn-light"
-                      href="home"
-                      data-width="80"
-                    >
-                      <i className="icon-mail"></i>
-                      <span>Mail</span>
-                    </a>
-                  </div>
+            <div className="team__members">
+              <div className="team__member">
+                <img
+                  alt="#"
+                  src="/images/4Client.png"
+                  className="team__member-vesual"
+                ></img>
+              </div>
+              <div className="team__info">
+                <h3 className="team__info-subtitle">Alea Smith</h3>
+                <span className="team__info-developer">Software Developer</span>
+                <p className="team__info-lorem">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing tristique
+                  hendrerit laoreet.{" "}
+                </p>
+                <div className="align-center">
+                  <a className="btn btn-xs btn-slide btn-light" href="home">
+                    <i className="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="100"
+                  >
+                    <i className="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="118"
+                  >
+                    <i className="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    className="btn btn-xs btn-slide btn-light"
+                    href="home"
+                    data-width="80"
+                  >
+                    <i className="icon-mail"></i>
+                    <span>Mail</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </section>
     );
   }

@@ -1,10 +1,10 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 class HeaderUpper extends React.Component {
   render() {
     function ofclick(event) {
-      event.preventDefault()
+      event.preventDefault();
     }
     return (
       <>
@@ -15,9 +15,9 @@ class HeaderUpper extends React.Component {
           <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
             <ReactBootStrap.Nav className="mr-auto">
-              <ReactBootStrap.NavLink as={Link} to='/'>
+              <ReactBootStrap.NavLink as={Link} to="/">
                 Home
-              </ReactBootStrap.NavLink >
+              </ReactBootStrap.NavLink>
               <ReactBootStrap.NavLink as={Link} to="/Shop">
                 Shop
               </ReactBootStrap.NavLink>
@@ -39,24 +39,30 @@ class HeaderUpper extends React.Component {
                 </ReactBootStrap.NavDropdown.Item>
               </ReactBootStrap.NavDropdown> */}
             </ReactBootStrap.Nav>
-            <div className="p-dropdown">
-              <a onClick={ofclick} href="http://localhost:3000/">
-                <i className="icon-globe"></i>
-                <span>EN</span>
-              </a>
-              <ul className="p-dropdown-content">
-                <li>
-                  <a onClick={ofclick} href="http://localhost:3000/">French</a>
-                </li>
-                <li>
-                  <a onClick={ofclick} href="http://localhost:3000/">Spanish</a>
-                </li>
-                <li>
-                  <a onClick={ofclick} href="http://localhost:3000/">English</a>
-                </li>
-              </ul>
-            </div>
             <ReactBootStrap.Form inline>
+              <div className="p-dropdown">
+                <a onClick={ofclick} href="http://localhost:3000/">
+                  <i className="icon-globe"></i>
+                  <span>EN</span>
+                </a>
+                <ul className="p-dropdown-content">
+                  <li>
+                    <a onClick={ofclick} href="http://localhost:3000/">
+                      French
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={ofclick} href="http://localhost:3000/">
+                      Spanish
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={ofclick} href="http://localhost:3000/">
+                      English
+                    </a>
+                  </li>
+                </ul>
+              </div>
               <ReactBootStrap.FormControl
                 type="text"
                 placeholder="Search"

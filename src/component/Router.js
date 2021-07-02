@@ -20,7 +20,8 @@ const Router = () => {
           component={Registration}
         />
         <Route exact path="/ContactUs" component={ContactUs} />
-        <Route exact path="/Shop/Сard" component={Card} />
+        <Route exact path="/Сard" component={Card} />
+        <Route component={App}></Route>
       </Switch>
     </BrowserRouter>
   );
