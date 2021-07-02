@@ -26,21 +26,21 @@ class InfoCard extends React.Component {
                        <img
                         alt='#'
                         className="product_images"
-                        src="images/Two.jpg"
+                        src="/images/Two.jpg"
                       ></img>
                     </div>
                     <div className="product-cart">
                        <img
                        alt='#'
                         className="product_images"
-                        src="images/Two.jpg"
+                        src="/images/Two.jpg"
                       ></img>
                     </div>
                     <div className="product-cart">
                        <img
                        alt='#'
                         className="product_images"
-                        src="images/Two.jpg"
+                        src="/images/Two.jpg"
                       ></img>
                     </div>
                   </Slider>
@@ -188,7 +188,7 @@ class InfoCard extends React.Component {
                           <div className="image">
                             <img
                               alt="#"
-                              src="images/blog/author.jpg"
+                              src="/images/blog/author.jpg"
                               className="avatar"
                             />
                           </div>
@@ -222,7 +222,7 @@ class InfoCard extends React.Component {
                           <div className="image">
                             <img
                               alt="#"
-                              src="images/blog/author2.jpg"
+                              src="/images/blog/author2.jpg"
                               className="avatar"
                             />
                           </div>
@@ -254,7 +254,7 @@ class InfoCard extends React.Component {
                           <div className="image">
                             <img
                               alt="#"
-                              src="images/blog/author3.jpg"
+                              src="/images/blog/author3.jpg"
                               className="avatar"
                             />
                           </div>

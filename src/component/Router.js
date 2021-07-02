@@ -14,13 +14,9 @@ const Router = () => {
         <Route exact path="/" component={App} />
         <Route exact path="/Shop" component={Shop} />
         <Route exact path="/Authorization" component={Authorization} />
-        <Route
-          exact
-          path="/Authorization/Registration"
-          component={Registration}
-        />
-        <Route exact path="/ContactUs" component={ContactUs} />
-        <Route exact path="/Сard" component={Card} />
+        <Route path="/Authorization/Registration" component={Registration} />
+        <Route path="/ContactUs" component={ContactUs} />
+        <Route path="/Shop/Card" component={Card} />
         <Route component={App}></Route>
       </Switch>
     </BrowserRouter>
