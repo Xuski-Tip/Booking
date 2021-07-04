@@ -80,7 +80,6 @@ export default function MainClient() {
                                     <div className="align-center">
                                         <a
                                             className="btn btn-xs btn-slide btn-light"
-                                            target="_blank"
                                             href={element.facebook}
                                         >
                                             <i className="fab fa-facebook-f"></i>
@@ -88,7 +87,6 @@ export default function MainClient() {
                                         </a>
                                         <a
                                             className="btn btn-xs btn-slide btn-light"
-                                            target="_blank"
                                             href={element.twitter}
                                             data-width="100"
                                         >
@@ -97,7 +95,6 @@ export default function MainClient() {
                                         </a>
                                         <a
                                             className="btn btn-xs btn-slide btn-light"
-                                            target="_blank"
                                             href={element.instagram}
                                             data-width="118"
                                         >
@@ -106,7 +103,6 @@ export default function MainClient() {
                                         </a>
                                         <a
                                             className="btn btn-xs btn-slide btn-light"
-                                            target="_blank"
                                             href={element.emal}
                                             data-width="80"
                                         >
