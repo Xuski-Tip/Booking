@@ -4,6 +4,7 @@
   "private": false,
   "dependencies": {
     "autoprefixer-stylus": "^1.0.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "dotenv": "^10.0.0",
     "firebase": "8.2.6",
