@@ -16,7 +16,7 @@ class ContactUs extends React.Component {
               <div className="col-lg-6">
                 <h3 className="text-uppercase">Get In Touch</h3>
                 <p>
-                  The most happiest time of the day!. Suspendisse condimentum
+                  The most happiest time of the day!. Suspendisse condimentum hus
                   porttitor cursus. Duis nec nulla turpis. Nulla lacinia laoreet
                   odio, non lacinia nisl malesuada vel. Aenean malesuada
                   fermentum bibendum.
