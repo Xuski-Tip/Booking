@@ -1,10 +1,12 @@
 import React from "react";
 import MapContainer from './MapContainer.js'
+import HeaderUpper from "../HeaderUpper.js";
 class ContactUs extends React.Component {
 
   render() {
     return (
       <div className="body-inner">
+        <HeaderUpper/>
         <section className="no-padding">
             <div className='map'>
             <MapContainer/>
