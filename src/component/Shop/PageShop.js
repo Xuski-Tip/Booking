@@ -48,6 +48,18 @@ const dataFrom = [
         reviews: 10,
         id: 4,
     },
+    {
+        img: 'https://static.tildacdn.com/tild3439-3135-4337-b832-613264373833/-Nature-768x1009.jpg',
+        hoverImg:
+            'https://static.tildacdn.com/tild3439-3135-4337-b832-613264373833/-Nature-768x1009.jpg',
+        term: 'NEW',
+        category: 'XZ',
+        title: 'Bolt Sweatshirt TTTTT',
+        price: '$222.00',
+        rate: 3,
+        reviews: 10,
+        id: 5,
+    },
 ];
 // ! Wate to backend
 class PageShop extends React.Component {
@@ -113,12 +125,6 @@ class PageShop extends React.Component {
                                                         className="fa fa-star"
                                                     ></i>
                                                 ))}
-                                            {/* <i className="fa fa-star"></i>
-                                            <i className="fa fa-star"></i>
-                                            <i className="fa fa-star"></i>
-                                            <i className="fa fa-star"></i>
-                                            <i className="fa fa-star-half-o"></i> */}
-                                            {/* {element.rate} */}
                                         </div>
                                         <div className="product-reviews">
                                             <a href="http://localhost:3000/">
