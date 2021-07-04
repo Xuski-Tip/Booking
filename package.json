@@ -1,7 +1,7 @@
 {
   "name": "bookingmg",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "autoprefixer-stylus": "^1.0.0",
     "bootstrap": "^4.6.0",
@@ -20,6 +20,7 @@
     "react-scripts": "3.2.0",
     "react-slick": "^0.28.1",
     "react-transition-group": "^4.3.0",
+    "react-yandex-maps": "^4.6.0",
     "slick-carousel": "^1.8.1",
     "stylus": "^0.54.7"
   },
