@@ -6,8 +6,8 @@ const dataFrom = [
         hoverImg:
             'https://regnum.ru/uploads/pictures/news/2016/04/22/regnum_picture_1461285953_normal.jpg',
         term: 'NEW',
-        category: 'Woman',
-        title: 'Bolt Sweatshirt',
+        category: 'Business',
+        title: 'The way of Donald Trump',
         price: '$15.00',
         rate: 4,
         reviews: 3,
@@ -17,9 +17,9 @@ const dataFrom = [
         img: 'https://theblueprint.ru/upload/14094m/aaad24c47ab65761ea62a2dd3cfc0f72.jpg',
         hoverImg:
             'https://theblueprint.ru/upload/14094m/aaad24c47ab65761ea62a2dd3cfc0f72.jpg',
-        term: 'NEW',
-        category: 'Man',
-        title: 'Cooton Tshirt',
+        term: 'Popular',
+        category: 'Fashion',
+        title: 'Vogue',
         price: '$25.00',
         rate: 5,
         reviews: 10,
