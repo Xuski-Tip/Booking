@@ -93,13 +93,13 @@ class PageShop extends React.Component {
                                             </a>
                                         </span>
                                         <div className="product-overlay">
-                                            <Link
+                                            <a
                                                 // to={`/Shop/Card/${element.id}`}
                                                 href="shop-product-ajax-page.html"
                                                 data-lightbox="ajax"
                                             >
                                                 Quick View
-                                            </Link>
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="product-description">
