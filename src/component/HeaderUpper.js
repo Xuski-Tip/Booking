@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as ReactBootStrap from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export default function HeaderUpper() {
-    const [state, setState] = useState('UZ');
+    const [state, setState] = useState('EN');
     function handleChange(event) {
         event.preventDefault();
         setState(event.target.value);
@@ -48,8 +48,8 @@ export default function HeaderUpper() {
                                 onChange={(e) => handleChange(e)}
                             >
                                 <option value="UZ">UZ</option>
-                                <option value="RUS">RUS</option>
-                                <option value="ENG">ENG</option>
+                                <option value="RU">RU</option>
+                                <option value="EN">EN</option>
                             </select>
                             {/* <a onClick={ofclick} href="http://localhost:3000/">
                   <i className="icon-globe"></i>

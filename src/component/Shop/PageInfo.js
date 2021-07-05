@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 export default function Client() {
-    const [sort, setSort] = useState('Default');
+    const [sort, setSort] = useState('How to submit an article to the journal');
     const [category, setCategory] = useState([]); // данные берутся из select и готовы к отправке на Backend
     useEffect(() => {
         axios
@@ -42,11 +42,6 @@ export default function Client() {
                                 </option>
                             );
                         })}
-                        {/* <option value="order">Default sorting</option>
-                        <option value="popularity">Sort by popularity</option>
-                        <option value="rating">Sort by average rating</option>
-                        <option value="date">Sort by date</option>
-                        <option value="price">Sort by price</option> */}
                     </select>
                 </div>
             </div>
