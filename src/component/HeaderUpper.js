@@ -15,7 +15,7 @@ class HeaderUpper extends React.Component {
           <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
             <ReactBootStrap.Nav className="mr-auto">
-              <ReactBootStrap.NavLink as={Link} to="/">
+              <ReactBootStrap.NavLink href='/'>
                 Home
               </ReactBootStrap.NavLink>
               <ReactBootStrap.NavLink as={Link} to="/Shop">
@@ -26,6 +26,9 @@ class HeaderUpper extends React.Component {
               </ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link as={Link} to="/ContactUs">
                 Contact Us
+              </ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link as={Link} to="/News">
+                News
               </ReactBootStrap.Nav.Link>
               {/* <ReactBootStrap.NavDropdown title="Shop" id="basic-nav-dropdown">
                 <ReactBootStrap.NavDropdown.Item href="/shop">

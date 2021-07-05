@@ -5,6 +5,7 @@ import Authorization from './Registr/Authorization';
 import Registration from './Registr/Registration';
 import ContactUs from './Contact Us/ContactUs';
 import Card from './Shop/InfoCard/Card';
+import News from "./News/News"
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Router = () => {
@@ -21,6 +22,7 @@ const Router = () => {
                 />
                 <Route exact path="/ContactUs" component={ContactUs} />
                 <Route path="/Shop/Card/:id" component={Card} />
+                <Route path= "/News" component={News}/>
                 <Route component={App}></Route>
             </Switch>
         </BrowserRouter>
