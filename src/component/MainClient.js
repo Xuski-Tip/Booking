@@ -10,6 +10,7 @@ const clientData = [
         twitter: 'https://twitter.com/',
         instagram: 'https://instagram.com/',
         emal: 'https://mail.google.com/mail/',
+        id: 1,
     },
     {
         img: '/images/1Client.jpg',
@@ -21,6 +22,7 @@ const clientData = [
         twitter: 'https://twitter.com/',
         instagram: 'https://instagram.com/',
         emal: 'https://mail.google.com/mail/',
+        id: 2,
     },
     {
         img: '/images/1Client.jpg',
@@ -32,6 +34,7 @@ const clientData = [
         twitter: 'https://twitter.com/',
         instagram: 'https://instagram.com/',
         emal: 'https://mail.google.com/mail/',
+        id: 3,
     },
     {
         img: '/images/1Client.jpg',
@@ -43,6 +46,7 @@ const clientData = [
         twitter: 'https://twitter.com/',
         instagram: 'https://instagram.com/',
         emal: 'https://mail.google.com/mail/',
+        id: 4,
     },
 ];
 export default function MainClient() {
