@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MapContainer from './MapContainer.js';
 import HeaderUpper from '../HeaderUpper.js';
 import axios from 'axios';
+import { useForm } from 'react-hook-form';
 export default function ContactUs() {
     const lang = 'ru';
     const [state, setState] = useState([]);
@@ -11,6 +12,10 @@ export default function ContactUs() {
         );
         setState(res.data.setting);
     }, []);
+    const { register, handleSubmit, errors } = useForm();
+    const onSubmit = (data) => {
+        console.log(data);
+    };
     return (
         <div className="body-inner">
             <HeaderUpper />
@@ -21,6 +26,7 @@ export default function ContactUs() {
                 {state.map((element) => {
                     return (
                         <div
+                            key={element.id}
                             className=""
                             style={{
                                 position: 'absolute',
@@ -125,19 +131,16 @@ export default function ContactUs() {
                     >
                         <div className="col-lg-7">
                             <form
+                                onSubmit={handleSubmit(onSubmit)}
                                 className="widget-contact-form"
-                                noValidate
-                                action="https://inspirothemes.com/polo/include/contact-form.php"
-                                method="post"
                             >
                                 <div className="row">
                                     <div className="form-group col-md-6">
                                         <label>Name</label>
                                         <input
+                                            {...register('name')}
                                             type="text"
-                                            aria-required="true"
-                                            required
-                                            name="widget-contact-form-name"
+                                            name="name"
                                             className="form-control required name"
                                             placeholder="Enter your Name"
                                         />
@@ -145,10 +148,9 @@ export default function ContactUs() {
                                     <div className="form-group col-md-6">
                                         <label>Email</label>
                                         <input
+                                            {...register('email')}
                                             type="email"
-                                            aria-required="true"
-                                            required
-                                            name="widget-contact-form-email"
+                                            name="email"
                                             className="form-control required email"
                                             placeholder="Enter your Email"
                                         />
@@ -156,22 +158,22 @@ export default function ContactUs() {
                                 </div>
                                 <div className="row">
                                     <div className="form-group col-md-12">
-                                        <label>Your Subject</label>
+                                        <label>Your Number</label>
                                         <input
-                                            type="text"
-                                            name="widget-contact-form-subject"
-                                            required
+                                            {...register('phone')}
+                                            type="tel"
+                                            name="phone"
                                             className="form-control required"
-                                            placeholder="Subject..."
+                                            placeholder="Phone number"
                                         />
                                     </div>
                                 </div>
                                 <div className="form-group">
                                     <label>Message</label>
                                     <textarea
+                                        {...register('message')}
                                         type="text"
-                                        name="widget-contact-form-message"
-                                        required
+                                        name="message"
                                         rows="5"
                                         className="form-control required"
                                         placeholder="Enter your Message"
