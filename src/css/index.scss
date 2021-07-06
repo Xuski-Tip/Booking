@@ -339,5 +339,18 @@
 // .post-image {
 //     height: 50%;
 // }
+.order-select {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+.adressdflex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.wrapcontact {
+    padding: 10px;
+}
 
 @import './media';

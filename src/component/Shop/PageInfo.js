@@ -25,7 +25,7 @@ export default function Client({ sort, setSort }) {
                 </div>
             </div>
             <div className="col-lg-3" style={{ alignSelf: 'center' }}>
-                <div className="order-select" style={{ display: 'flex' }}>
+                <div className="order-select">
                     <ReactBootStrap.FormControl
                         type="text"
                         placeholder="Search"

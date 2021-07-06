@@ -82,9 +82,7 @@ const PageContainer = () => {
     //! one logic for all
     if (sort == 'plus') {
         dataFrom.sort((a, b) => +a.price - +b.price);
-        console.log('plus');
-    } else if (sort == 'minus') {
-        console.log('minus');
+    } else {
         dataFrom.sort((a, b) => +b.price - +a.price);
     }
     return (
