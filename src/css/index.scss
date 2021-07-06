@@ -327,17 +327,29 @@
 .form-inline {
     justify-content: center;
 }
-// .News-Flexing {
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     justify-self: center;
-// }
-.post-item {
-    padding: 10px
+.News-Flexing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-// .post-image {
-//     height: 50%;
-// }
+.grid-layout {
+    z-index: 100;
+}
+.post-item {
+    padding: 10px;
+}
+.page-item {
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.pagination {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post-images {
+    width: 100%;
+    height: 100%    ;
+}
+
 
 @import './media';
