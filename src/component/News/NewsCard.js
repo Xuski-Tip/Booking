@@ -11,13 +11,16 @@ const NewsCard = ({ news, loading }) => {
         data-item="post-item"
       >
         {news.map((news, i) => {
-          console.log(news);
           return (
             <div key={i} className="post-item border shadow">
               <div className="post-item-wrap">
                 <div className="post-image">
-                  <a href="!#">
-                    <img className='post-images' alt="" src={news.image} />
+                  <a className="post-link" href="!#">
+                    <img
+                      className="post-images"
+                      alt="#"
+                      src={`https://paycom-test.napaautomotive.uz/storage/${news.image}`}
+                    />
                   </a>
                 </div>
                 <div className="post-item-description">
@@ -27,17 +30,9 @@ const NewsCard = ({ news, loading }) => {
                   <h2>
                     <a href="!#">Standard post with a single image</a>
                   </h2>
-                  <p>
-                   {
-                     news.meta_description_en
-                   }
-                  </p>
+                  <p>{news.meta_description_en}</p>
                   <div className="post-author">
-                    {" "}
-                    <img alt='#' src="images/blog/author.jpg" />
-                    <p>
-                      by <a  href="!#">Ardian Musliu</a> 2 days ago{" "}
-                    </p>
+                    <p>2 days ago </p>
                   </div>
                 </div>
               </div>
