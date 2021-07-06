@@ -331,7 +331,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-.post-item{
+.post-item {
     padding: 10px;
     display: flex;
 }
@@ -351,5 +351,30 @@
 }
 .pagination {
     flex-wrap: wrap;
+}
+// .News-Flexing {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-self: center;
+// }
+.post-item {
+    padding: 10px;
+}
+// .post-image {
+//     height: 50%;
+// }
+.order-select {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+.adressdflex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.wrapcontact {
+    padding: 10px;
 }
 @import './media';
