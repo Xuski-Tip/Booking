@@ -327,30 +327,29 @@
 .form-inline {
     justify-content: center;
 }
-// .News-Flexing {
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     justify-self: center;
-// }
-.post-item {
-    padding: 10px;
-}
-// .post-image {
-//     height: 50%;
-// }
-.order-select {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 10px;
-}
-.adressdflex {
+.News-Flexing {
     display: flex;
-    width: 100%;
-    align-items: center;
+    flex-wrap: wrap;
 }
-.wrapcontact {
+.post-item{
     padding: 10px;
+    display: flex;
 }
-
+.post-image {
+    height: 50%;
+    width: 100%;
+}
+.post-images {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover;
+    object-fit: cover;
+}
+.page-item {
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.pagination {
+    flex-wrap: wrap;
+}
 @import './media';
