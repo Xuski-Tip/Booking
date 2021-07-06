@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 const dataFrom = [
@@ -125,4 +126,4 @@ class PageShop extends React.Component {
     );
   }
 }
-export default PageShop;
+export default PageShop
