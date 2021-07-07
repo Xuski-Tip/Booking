@@ -9,7 +9,6 @@ import FooterInfo from "./FooterInfo";
 import LinkerUp from "./LinkerUp";
 import HeaderUpper from "./HeaderUpper"
 import Header from './Header'
-
 class App extends React.Component {
   render() {
     return (
