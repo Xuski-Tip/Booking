@@ -1,5 +1,27 @@
 {
-    "Thanks": {
-        "1": "biz bilam muloqa"
+    "Countact Us": {
+        "navbar": "biz bilam muloqa"
+    },
+    "Home": {
+        "navbar": "Asosiy"
+    },
+    "Shop": {
+        "navbar": "do'kon"
+    },
+    "avtorizatsiya": {
+        "navbar": "avtorizatsiya"
+    },
+    "Offical Site": {
+        "navbar": "Rasmiy Sait",
+        "of the National Center": "Inson huquqlari bo'yicha",
+        "for Human Rights": "O'zbekiston Respublikasi",
+        "of the Republic of Uzbekistan": "Milliy markazi",
+        "scientific and educational journal": "ilmiy-ta'limiy jurnal",
+        "democration": "«DEMOKRATLASHTIRISH VA INSON HUQUQLARI»",
+        "Contact Phone": "Maslahat telefoni",
+        "Our address": "Bizning manzil"
+    },
+    "News": {
+        "navbar": "Yangiliklar"
     }
 }

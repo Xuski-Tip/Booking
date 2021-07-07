@@ -1,5 +1,28 @@
 {
-    "Thanks": {
-        "1": "связаться с нами"
+    "Countact Us": {
+        "navbar": "связаться с нами"
+    },
+    "Home": {
+        "navbar": "Главная"
+    },
+    "Shop": {
+        "navbar": "Магазин"
+    },
+    "avtorizatsiya": {
+        "navbar": "Авторизация"
+    },
+    "Offical Site": {
+        "navbar": "Официальный сайт",
+        "of the National Center": "Национального центра",
+        "for Human Rights": "Республики Узбекистан",
+        "of the Republic of Uzbekistan": "по правам человека",
+        "scientific and educational journal": "научно - образовательный журнал",
+        "democration": "«ДЕМОКРАТИЗАЦИЯ И ПРАВА ЧЕЛОВЕКА»",
+        "Contact Phone": "Консультативный телефон",
+        "Our address": "Наш адрес"
+    },
+
+    "News": {
+        "navbar": "Новости"
     }
 }

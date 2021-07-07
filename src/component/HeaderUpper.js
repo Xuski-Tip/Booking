@@ -25,9 +25,9 @@ export default function HeaderUpper() {
   function handleClick() {
     i18n.changeLanguage(state);
   }
-  useEffect(()=> {
-    handleClick()
-  },[state]) 
+  useEffect(() => {
+    handleClick();
+  }, [state]);
 
   console.log(state);
   return (
@@ -35,7 +35,7 @@ export default function HeaderUpper() {
       <ReactBootStrap.Navbar sticky="top" bg="light" expand="lg">
         <ReactBootStrap.Navbar.Brand href="#home">
           <Link to="/home">
-            <strong>Offical Site</strong>
+            <strong>{t('Offical Site.navbar')}</strong>
           </Link>
         </ReactBootStrap.Navbar.Brand>
         <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -53,18 +53,20 @@ export default function HeaderUpper() {
                 </ReactBootStrap.NavLink>
               );
             })}
-            <ReactBootStrap.NavLink href="/">Home</ReactBootStrap.NavLink>
+            <ReactBootStrap.NavLink href="/">
+              {t("Home.navbar")}
+            </ReactBootStrap.NavLink>
             <ReactBootStrap.NavLink as={Link} to="/Shop">
-              Shop
+              {t("Shop.navbar")}
             </ReactBootStrap.NavLink>
             <ReactBootStrap.Nav.Link as={Link} to="/Authorization">
-              Log in
+              {t("avtorizatsiya.navbar")}
             </ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link as={Link} to="/ContactUs">
-              <p>{t("Thanks.1")}</p>
+              {t("Countact Us.navbar")}
             </ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link as={Link} to="/News">
-              News
+              {t('News.navbar')}
             </ReactBootStrap.Nav.Link>
             {/* <ReactBootStrap.NavDropdown title="Shop" id="basic-nav-dropdown">
         <>
