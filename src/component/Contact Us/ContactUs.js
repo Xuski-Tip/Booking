@@ -6,15 +6,34 @@ import { useForm } from 'react-hook-form';
 export default function ContactUs() {
     const lang = 'ru';
     const [state, setState] = useState([]);
+    const [answerstate, setAnswer] = useState('');
     useEffect(async () => {
         const res = await axios.get(
             'https://paycom-test.napaautomotive.uz/api/setting'
         );
         setState(res.data.setting);
     }, []);
-    const { register, handleSubmit, errors } = useForm();
-    const onSubmit = (data) => {
-        console.log(data);
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+    const onSubmit = async (data) => {
+        try {
+            const answer = await axios.post(
+                'https://paycom-test.napaautomotive.uz/api/contact/store',
+                {
+                    name: data.name,
+                    email: data.email,
+                    phone: data.phone,
+                    message: data.message,
+                }
+            );
+            setAnswer('success');
+        } catch (error) {
+            setAnswer('danger');
+        }
     };
     return (
         <div className="body-inner">
@@ -138,40 +157,66 @@ export default function ContactUs() {
                                     <div className="form-group col-md-6">
                                         <label>Name</label>
                                         <input
-                                            {...register('name')}
+                                            {...register('name', {
+                                                required: true,
+                                                pattern: {
+                                                    value: /^[a-zA-Z\s]/,
+                                                },
+                                                maxlength: 15,
+                                            })}
                                             type="text"
                                             name="name"
                                             className="form-control required name"
                                             placeholder="Enter your Name"
                                         />
+                                        {errors.name && <p>invalid name</p>}
                                     </div>
                                     <div className="form-group col-md-6">
                                         <label>Email</label>
                                         <input
-                                            {...register('email')}
+                                            {...register('email', {
+                                                required: true,
+                                                pattern: {
+                                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                                },
+                                            })}
                                             type="email"
                                             name="email"
                                             className="form-control required email"
                                             placeholder="Enter your Email"
                                         />
+                                        {errors.email && (
+                                            <p>invalid email address</p>
+                                        )}
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="form-group col-md-12">
                                         <label>Your Number</label>
                                         <input
-                                            {...register('phone')}
+                                            {...register('phone', {
+                                                required: true,
+                                                minLength: 6,
+                                                maxLength: 14,
+                                            })}
+                                            pattern="\d*"
                                             type="tel"
                                             name="phone"
                                             className="form-control required"
                                             placeholder="Phone number"
                                         />
+                                        {errors.phone && (
+                                            <p>invalid phone number</p>
+                                        )}
                                     </div>
                                 </div>
                                 <div className="form-group">
                                     <label>Message</label>
                                     <textarea
-                                        {...register('message')}
+                                        {...register('message', {
+                                            required: true,
+                                            maxLength: 100,
+                                        })}
                                         type="text"
                                         name="message"
                                         rows="5"
@@ -189,6 +234,14 @@ export default function ContactUs() {
                                     &nbsp;Send message
                                 </button>
                             </form>
+                            {answerstate && (
+                                <div
+                                    className={`alert alert-${answerstate}`}
+                                    role="alert"
+                                >
+                                    {answerstate.toUpperCase()}
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
