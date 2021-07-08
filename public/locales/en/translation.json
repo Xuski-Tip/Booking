@@ -23,5 +23,10 @@
     },
     "News": {
         "navbar": "News"
+    },
+    "Welcom": {
+        "welcom to the": "WELCOME TO THE WORLD OF UZBEKISTAN",
+        "The magazine has been 1999": "The magazine has been published regularly since 1999",
+        "Explore more": "Explore more"
     }
 }

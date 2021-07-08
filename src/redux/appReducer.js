@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import PageInfo from './PageInfo';
-import PageShop from './PageShop';
-const PageContainer = () => {
-    //!PageInfo
-    const [sort, setSort] = useState('plus');
-    //!PageShop
-    const dataFrom = [
+import {
+    GET_MAGAZINE_CARDS,
+    SORT_FREE,
+    SORT_MINUS,
+    SORT_PAID,
+    SORT_PLUS,
+} from './types';
+
+const initialState = {
+    shopMagazine: [
         {
             img: 'https://cdn.fishki.net/upload/post/2017/02/22/2225118/vse-lyudi-goda-s-oblozhki-time-1.jpg',
             hoverImg:
@@ -78,28 +80,42 @@ const PageContainer = () => {
             reviews: 10,
             id: 6,
         },
-    ];
-    //! one logic for all
-
-    if (sort == 'plus') {
-        dataFrom.sort((a, b) => +a.price - +b.price);
-    }
-    if (sort == 'minus') {
-        dataFrom.sort((a, b) => +b.price - +a.price);
-    }
-    if (sort == 'free') {
-        dataFrom.sort((a) => a.term !== 'Free');
-    }
-    if (sort == 'paid') {
-        dataFrom.sort((a) => a.term !== 'Paid');
-    }
-
-    return (
-        <div>
-            <PageInfo sort={sort} setSort={setSort} />
-            <PageShop dataFrom={dataFrom} />
-        </div>
-    );
+    ],
+    loading: false,
 };
+export const appReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case GET_MAGAZINE_CARDS:
+            return {
+                ...state,
+                shopMagazine: state.shopMagazine.concat(action.payload),
+            };
+        case SORT_PLUS:
+            return {
+                ...state,
+                shopMagazine: state.shopMagazine.sort(
+                    (a, b) => +a.price - +b.price
+                ),
+            };
+        case SORT_MINUS:
+            return {
+                ...state,
+                shopMagazine: state.shopMagazine.sort(
+                    (a, b) => +b.price - +a.price
+                ),
+            };
+        case SORT_FREE:
+            return {
+                ...state,
+                shopMagazine: state.shopMagazine.sort((a) => a.term !== 'Free'),
+            };
+        case SORT_PAID:
+            return {
+                ...state,
+                shopMagazine: state.shopMagazine.sort((a) => a.term !== 'Paid'),
+            };
 
-export default PageContainer;
+        default:
+            return state;
+    }
+};

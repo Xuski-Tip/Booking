@@ -24,5 +24,10 @@
 
     "News": {
         "navbar": "Новости"
+    },
+    "Welcom": {
+        "welcom to the": "O'ZBEKISTON DUNYOSIGA XUSH KELIBSIZ",
+        "The magazine has been 1999": "Журнал регулярно выходит с 1999 года",
+        "Explore more": "Исследуйте больше"
     }
 }

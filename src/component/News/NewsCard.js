@@ -28,7 +28,7 @@ const NewsCard = ({ news, loading }) => {
                     <i className="fa fa-calendar-o"></i>Jan 21, 2017
                   </span>
                   <h2>
-                    <a href="!#">Standard post with a single image</a>
+                    <a href="!#">{news.description_en}</a>
                   </h2>
                   <p>{news.meta_description_en}</p>
                   <div className="post-author">

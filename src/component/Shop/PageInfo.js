@@ -21,6 +21,8 @@ export default function Client({ sort, setSort }) {
                     >
                         <option value={'minus'}>{'Цена по убыванию'}</option>
                         <option value={'plus'}>{'Цена по возрастанию'}</option>
+                        <option value={'free'}>{'Начиня с бесплатных'}</option>
+                        <option value={'paid'}>{'Начиня с платных'}</option>
                     </select>
                 </div>
             </div>

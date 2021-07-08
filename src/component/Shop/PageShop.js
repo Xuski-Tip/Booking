@@ -45,7 +45,11 @@ export default function PageShop({ dataFrom }) {
                                         </h3>
                                     </div>
                                     <div className="product-price">
-                                        <ins>{element.price}</ins>
+                                        <ins>
+                                            {typeof element.price === 'number'
+                                                ? `${element.price}$`
+                                                : 'Free'}
+                                        </ins>
                                     </div>
                                     <div className="product-rate">
                                         {new Array(element.rate)
