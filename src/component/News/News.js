@@ -20,7 +20,6 @@ function News() {
       );
       setCountirs(res.data.post);
       setLoading(false);
-      console.log(res.data);
     };
     getCountries();
   }, []);

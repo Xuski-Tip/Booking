@@ -6,10 +6,10 @@
         "navbar": "Asosiy"
     },
     "Shop": {
-        "navbar": "do'kon"
+        "navbar": "Do'kon"
     },
     "avtorizatsiya": {
-        "navbar": "avtorizatsiya"
+        "navbar": "Avtorizatsiya"
     },
     "Offical Site": {
         "navbar": "Rasmiy Sait",
@@ -25,8 +25,31 @@
         "navbar": "Yangiliklar"
     },
     "Welcom": {
-        "welcom to the": "WELCOME TO THE WORLD OF UZBEKISTAN",
+        "welcom to the": "O'ZBEKISTON DUNYOSIGA XUSH KELIBSIZ",
         "The magazine has been 1999": "Jurnal 1999-yildan buyon muntazam nashr etib kelinmoqda",
         "Explore more": "Ko'proq o'rganing"
+    },
+    "our work": {
+        "WHAT WE DO": "NIMA QILAMIZ"
+    },
+    "Recent Work": {
+        "work": "So'nggi ishlar"
+    },
+    "SERVICES": {
+        "service": "XIZMATLAR"
+    },
+    "Our blog": {
+        "blog": "BIZNING BLOG"
+    },
+    "Our staff": {
+        "staff": "Bizning jamoamiz",
+        "Editor": "Jurnal tahririyati va jamoasi",
+        "lives": " Tahrir hay'atlari va hay'at a'zolari"
+    },
+    "submitting an article to the journal": {
+        "submiting": "jurnalga maqola taqdim etish"
+    },
+    "About Us": {
+        "aboutUs": "Biz haqimizda"
     }
 }

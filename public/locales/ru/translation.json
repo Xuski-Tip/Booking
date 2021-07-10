@@ -1,6 +1,6 @@
 {
     "Countact Us": {
-        "navbar": "связаться с нами"
+        "navbar": "Cвязаться с нами"
     },
     "Home": {
         "navbar": "Главная"
@@ -26,8 +26,32 @@
         "navbar": "Новости"
     },
     "Welcom": {
-        "welcom to the": "O'ZBEKISTON DUNYOSIGA XUSH KELIBSIZ",
+        "welcom to the": "ДОБРО ПОЖАЛОВАТЬ В МИР УЗБЕКИСТАНА",
         "The magazine has been 1999": "Журнал регулярно выходит с 1999 года",
         "Explore more": "Исследуйте больше"
+    },
+    "our work": {
+        "WHAT WE DO": "ЧТО МЫ ДЕЛАЕМ"
+    },
+    "Recent Work": {
+        "work": "Наши работы"
+    },
+    "SERVICES": {
+        "service": "СЕРВИСЫ"
+    },
+    "Our blog": {
+        "blog": "НАШ БЛОГ"
+    },
+    "Our staff": {
+        "staff": "Наша команда",
+        "Editor": "Редакция и команда журнала",
+        "lives": "Редакционные коллегии и члены жюри"
+    },
+    "submitting an article to the journal": {
+        "submiting": "отправка статьи в журнал"
+    },
+    "About Us": {
+        "aboutUs": "О нас"
     }
+    
 }

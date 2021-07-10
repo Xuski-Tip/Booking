@@ -6,7 +6,10 @@ import Registration from "./Registr/Registration";
 import ContactUs from "./Contact Us/ContactUs";
 import Card from "./Shop/InfoCard/Card";
 import News from "./News/News";
+import Editor from "./Staff/Editor"
+import Members from "./Staff/Members"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import SubmitingJurnal from "./SubmitingJurnal";
 
 const Router = () => {
   return (
@@ -23,6 +26,9 @@ const Router = () => {
         <Route exact path="/ContactUs" component={ContactUs} />
         <Route path="/Shop/Card/:id" component={Card} />
         <Route path="/News" component={News} />
+        <Route path='/staff/Editor' component={Editor}/>
+        <Route path='/staff/Members' component={Members}/>
+        <Route path="/SubmitingJurnal" component={SubmitingJurnal}/>
         <Route component={App}></Route>
       </Switch>
     </BrowserRouter>

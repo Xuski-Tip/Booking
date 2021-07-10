@@ -1,15 +1,15 @@
 import React from 'react';
 const recentData = [
     {
-        img: '../images/Four.jpg',
+        img: '../images/One.jpg',
         id: 1,
     },
     {
-        img: '../images/Four.jpg',
+        img: '../images/Two.jpg',
         id: 2,
     },
     {
-        img: '../images/Four.jpg',
+        img: '../images/Three.jpg',
         id: 3,
     },
     {
@@ -17,20 +17,20 @@ const recentData = [
         id: 4,
     },
     {
-        img: '../images/Four.jpg',
+        img: '../images/Five.jpg',
         id: 5,
     },
     {
-        img: '../images/Four.jpg',
+        img: '../images/Three.jpg',
         id: 6,
     },
 
     {
-        img: '../images/Four.jpg',
+        img: '../images/Two.jpg',
         id: 7,
     },
     {
-        img: '../images/Four.jpg',
+        img: '../images/Five.jpg',
         id: 8,
     },
 ];

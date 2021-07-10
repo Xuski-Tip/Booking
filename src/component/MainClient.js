@@ -13,7 +13,7 @@ const clientData = [
         id: 1,
     },
     {
-        img: '/images/1Client.jpg',
+        img: '/images/2Client.jpg',
         subtitle: 'Alea Smith',
         title: 'Software Developer',
         description:
@@ -25,7 +25,7 @@ const clientData = [
         id: 2,
     },
     {
-        img: '/images/1Client.jpg',
+        img: '/images/3Client.jpg',
         subtitle: 'Alea Smith',
         title: 'Software Developer',
         description:
@@ -37,7 +37,7 @@ const clientData = [
         id: 3,
     },
     {
-        img: '/images/1Client.jpg',
+        img: '/images/4Client.png',
         subtitle: 'Alea Smith',
         title: 'Software Developer',
         description:
@@ -67,7 +67,7 @@ export default function MainClient() {
                                 <div className="team__member">
                                     <img
                                         alt="#"
-                                        src="/images/1Client.jpg"
+                                        src={element.img}
                                         className="team__member-vesual"
                                     ></img>
                                 </div>

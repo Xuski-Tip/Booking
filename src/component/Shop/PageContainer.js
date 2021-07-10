@@ -81,16 +81,16 @@ const PageContainer = () => {
     ];
     //! one logic for all
 
-    if (sort == 'plus') {
+    if (sort === 'plus') {
         dataFrom.sort((a, b) => +a.price - +b.price);
     }
-    if (sort == 'minus') {
+    if (sort === 'minus') {
         dataFrom.sort((a, b) => +b.price - +a.price);
     }
-    if (sort == 'free') {
+    if (sort === 'free') {
         dataFrom.sort((a) => a.term !== 'Free');
     }
-    if (sort == 'paid') {
+    if (sort === 'paid') {
         dataFrom.sort((a) => a.term !== 'Paid');
     }
 
