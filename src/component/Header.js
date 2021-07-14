@@ -60,7 +60,7 @@ function Header() {
                 <a href="http://localhost:3000/">{t("Offical Site.Our address")}</a>
               </span>
               <span className="moreInfo__navigation-lorem--dawn">
-                <a href="http://localhost:3000/">st. Islam Karimov 15</a>
+                <a href="!#">jurnal@HNRC.UZ</a>
               </span>
             </div>
           </li>

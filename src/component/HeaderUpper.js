@@ -1,29 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, {useState, useEffect} from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import "i18next";
-export default function HeaderUpper() {
+export default function HeaderUpper(stateAction) {
   const [state, setState] = useState("en");
-  const { t, i18n } = useTranslation();
+  const {t, i18n}   = useTranslation();  
   function handleChange(event) {
-    event.preventDefault();
-    setState(event.target.value);
+    event.preventDefault()
+    setState(event.target.value)
   }
-  function handleClick() {
+  function handleClick(event) {
     i18n.changeLanguage(state);
   }
-  useEffect(() => {
-    handleClick();
-  }, [state]);
-
-  console.log(state);
+  useEffect(()=> {
+    handleClick()
+  }, [state])
+  stateAction = state
   return (
     <>
       <ReactBootStrap.Navbar sticky="top" bg="light" expand="lg">
-        <ReactBootStrap.Navbar.Brand as={Link} to="/">
+        {/* <ReactBootStrap.Navbar.Brand as={Link} to="/">
           <strong>{t("Offical Site.navbar")}</strong>
-        </ReactBootStrap.Navbar.Brand>
+        </ReactBootStrap.Navbar.Brand> */}
         <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
           <ReactBootStrap.Nav className="mr-auto">
@@ -33,44 +31,42 @@ export default function HeaderUpper() {
             <ReactBootStrap.NavLink as={Link} to="/Shop">
               {t("Shop.navbar")}
             </ReactBootStrap.NavLink>
-            <ReactBootStrap.Nav.Link as={Link} to="/Authorization">
-              {t("avtorizatsiya.navbar")}
-            </ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link as={Link} to="/ContactUs">
-              {t("Countact Us.navbar")}
-            </ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link as={Link} to="/News">
               {t("News.navbar")}
             </ReactBootStrap.Nav.Link>
             <ReactBootStrap.NavDropdown
-              title={t('Our staff.staff')}
+              title={t("Our staff.staff")}
               id="basic-nav-dropdown"
             >
               <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
-                {t('Our staff.Editor')}
+                {t("Our staff.Editor")}
               </ReactBootStrap.NavDropdown.Item>
               <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/members">
-                {t('Our staff.lives')}
+                {t("Our staff.lives")}
               </ReactBootStrap.NavDropdown.Item>
             </ReactBootStrap.NavDropdown>
             <ReactBootStrap.NavLink as={Link} to="/SubmitingJurnal">
               {t("submitting an article to the journal.submiting")}
             </ReactBootStrap.NavLink>
             <ReactBootStrap.NavDropdown
-              title={t('About Us.aboutUs')}
+              title={t("About Us.aboutUs")}
               id="basic-nav-dropdown"
             ></ReactBootStrap.NavDropdown>
           </ReactBootStrap.Nav>
           <ReactBootStrap.Form inline>
+            <Link className='Link-autho' to={"/Authorization"}>{t("avtorizatsiya.navbar")}</Link> / 
+            <Link className='Link-registr' to={"/Authorization/Registration"}>
+              {t("avtorizatsiya.navbar2")}
+            </Link>
             <div className="p-dropdown">
               <select
                 style={{ paddingRight: 25, cursor: "pointer" }}
-                value={state}
-                onChange={(e) => handleChange(e)}
+                onChange={handleChange}
+                defaultValue='EN' 
               >
-                <option value="uz">UZ</option>
-                <option value="ru">RU</option>
-                <option value="en">EN</option>
+                <option value='en'>ENG</option>
+                <option value='ru'>RUS</option>
+                <option value='uz'>UZB</option>
               </select>
             </div>
           </ReactBootStrap.Form>

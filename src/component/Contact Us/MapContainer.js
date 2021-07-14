@@ -12,7 +12,7 @@ const MapContainer = () => (
     <YMaps>
         <Map
             style={styleMainMap}
-            defaultState={{ center: [41.308374, 69.270771], zoom: 9 }}
+            defaultState={{ center: [41.308374, 69.270771], zoom: 17 }}
         >
             <Placemark geometry={[41.308374, 69.270771]} />
         </Map>

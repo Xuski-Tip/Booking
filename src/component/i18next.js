@@ -11,10 +11,6 @@ i18n
         falbacking: "en",
         whitelist: Languages,
         debug: false,
-        detection: {
-            order: ['localStorage', 'cookie'],
-            caches: ['localStorage', 'cookie']
-        },
         interpolation: {
             escapeValue: false,
         }

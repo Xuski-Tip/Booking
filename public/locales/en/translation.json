@@ -1,55 +1,56 @@
 {
-    "Countact Us": {
-        "navbar": "Contact Us"
-    },
-    "Home": {
-        "navbar": "Home"
-    },
-    "Shop": {
-        "navbar": "Shop"
-    },
-    "avtorizatsiya": {
-        "navbar": "Log in"
-    },
-    "Offical Site": {
-        "navbar": "Offical Site",
-        "of the National Center": "of the National Center",
-        "for Human Rights": "for Human Rights",
-        "of the Republic of Uzbekistan": "of the Republic of Uzbekistan",
-        "scientific and educational journal": "scientific and educational journal",
-        "democration": "«DEMOCRATIZATION AND HUMAN RIGHTS»",
-        "Contact Phone": "Contact Phone",
-        "Our address": "Our address"
-    },
-    "News": {
-        "navbar": "News"
-    },
-    "Welcom": {
-        "welcom to the": "WELCOME TO THE WORLD OF UZBEKISTAN",
-        "The magazine has been 1999": "The magazine has been published regularly since 1999",
-        "Explore more": "Explore more"
-    },
-    "our work": {
-        "WHAT WE DO": "WHAT WE DO"
-    },
-    "Recent Work": {
-        "work": "Recent Work"
-    },
-    "SERVICES": {
-        "service": "SERVICES"
-    },
-    "Our blog": {
-        "blog": "OUR BLOG"
-    },
-    "Our staff": {
-        "staff": "Our staff",
-        "Editor": "Journal editorial and team",
-        "lives": "Editorial boards and jury members"
-    },
-    "submitting an article to the journal": {
-        "submiting": "submitting an article to the journal"
-    },
-    "About Us": {
-        "aboutUs": "About Us"
-    }
+  "Countact Us": {
+    "navbar": "Contact Us"
+  },
+  "Home": {
+    "navbar": "Home"
+  },
+  "Shop": {
+    "navbar": "Shop"
+  },
+  "avtorizatsiya": {
+    "navbar": "Log in",
+    "navbar2": "Registration"
+  },
+  "Offical Site": {
+    "navbar": "Offical Site",
+    "of the National Center": "of the National Center",
+    "for Human Rights": "for Human Rights",
+    "of the Republic of Uzbekistan": "of the Republic of Uzbekistan",
+    "scientific and educational journal": "scientific and educational journal",
+    "democration": "«DEMOCRATIZATION AND HUMAN RIGHTS»",
+    "Contact Phone": "Contact Phone",
+    "Our address": "Electron address"
+  },
+  "News": {
+    "navbar": "News"
+  },
+  "Welcom": {
+    "welcom to the": "WELCOME TO THE WORLD OF UZBEKISTAN",
+    "The magazine has been 1999": "The magazine has been published regularly since 1999",
+    "Explore more": "Explore more"
+  },
+  "our work": {
+    "WHAT WE DO": "WHAT WE DO"
+  },
+  "Recent Work": {
+    "work": "Recent Work"
+  },
+  "SERVICES": {
+    "service": "SERVICES"
+  },
+  "Our blog": {
+    "blog": "OUR BLOG"
+  },
+  "Our staff": {
+    "staff": "Our staff",
+    "Editor": "Journal editorial and team",
+    "lives": "Editorial boards and jury members"
+  },
+  "submitting an article to the journal": {
+    "submiting": "submitting an article to the journal"
+  },
+  "About Us": {
+    "aboutUs": "About Us"
+  }
 }

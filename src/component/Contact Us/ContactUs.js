@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import MapContainer from "./MapContainer.js";
-import HeaderUpper from "../HeaderUpper.js";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 export default function ContactUs() {
-  const lang = "ru";
   const [state, setState] = useState([]);
   const [answerstate, setAnswer] = useState("");
   useEffect(() => {
@@ -40,7 +38,15 @@ export default function ContactUs() {
   };
   return (
     <div className="body-inner">
-      <HeaderUpper />
+      <div className="container">
+        <div className="heading-text heading-section text-center">
+          <h2>Contact Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse
+            condimentum porttitor cursumus.
+          </p>
+        </div>
+      </div>
       <section className="no-padding">
         <div className="map">
           <MapContainer />
@@ -68,9 +74,9 @@ export default function ContactUs() {
                   <i className="fa fa-map-marker" aria-hidden="true"></i>
                   &nbsp;
                   <span>
-                    {lang === "en" ? element.address_uz : element.address_ru}
+                    
                   </span>
-                  {/* <span>{element.address_ru}</span> */}
+                  <span>{element.address_ru}</span>
                 </div>
                 <br />
                 <div className="adressdflex" title="Phone">

@@ -1,5 +1,9 @@
 import React from "react";
 const NewsCard = ({ news, loading }) => {
+  const serverDate = news.updated_at;
+  console.log(serverDate);
+  const date = new Date();
+  const day = date.getDate();
   if (loading) {
     return <h2>Loading...</h2>;
   }
@@ -32,7 +36,7 @@ const NewsCard = ({ news, loading }) => {
                   </h2>
                   <p>{news.meta_description_en}</p>
                   <div className="post-author">
-                    <p>2 days ago </p>
+                    <p></p>
                   </div>
                 </div>
               </div>

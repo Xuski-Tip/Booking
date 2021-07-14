@@ -1,55 +1,56 @@
 {
-    "Countact Us": {
-        "navbar": "biz bilam muloqa"
-    },
-    "Home": {
-        "navbar": "Asosiy"
-    },
-    "Shop": {
-        "navbar": "Do'kon"
-    },
-    "avtorizatsiya": {
-        "navbar": "Avtorizatsiya"
-    },
-    "Offical Site": {
-        "navbar": "Rasmiy Sait",
-        "of the National Center": "Inson huquqlari bo'yicha",
-        "for Human Rights": "O'zbekiston Respublikasi",
-        "of the Republic of Uzbekistan": "Milliy markazi",
-        "scientific and educational journal": "ilmiy-ta'limiy jurnal",
-        "democration": "«DEMOKRATLASHTIRISH VA INSON HUQUQLARI»",
-        "Contact Phone": "Maslahat telefoni",
-        "Our address": "Bizning manzil"
-    },
-    "News": {
-        "navbar": "Yangiliklar"
-    },
-    "Welcom": {
-        "welcom to the": "O'ZBEKISTON DUNYOSIGA XUSH KELIBSIZ",
-        "The magazine has been 1999": "Jurnal 1999-yildan buyon muntazam nashr etib kelinmoqda",
-        "Explore more": "Ko'proq o'rganing"
-    },
-    "our work": {
-        "WHAT WE DO": "NIMA QILAMIZ"
-    },
-    "Recent Work": {
-        "work": "So'nggi ishlar"
-    },
-    "SERVICES": {
-        "service": "XIZMATLAR"
-    },
-    "Our blog": {
-        "blog": "BIZNING BLOG"
-    },
-    "Our staff": {
-        "staff": "Bizning jamoamiz",
-        "Editor": "Jurnal tahririyati va jamoasi",
-        "lives": " Tahrir hay'atlari va hay'at a'zolari"
-    },
-    "submitting an article to the journal": {
-        "submiting": "jurnalga maqola taqdim etish"
-    },
-    "About Us": {
-        "aboutUs": "Biz haqimizda"
-    }
+  "Countact Us": {
+    "navbar": "biz bilam muloqa"
+  },
+  "Home": {
+    "navbar": "Asosiy"
+  },
+  "Shop": {
+    "navbar": "Do'kon"
+  },
+  "avtorizatsiya": {
+    "navbar": "Avtorizatsiya",
+    "navbar2": "Ro'yxatdan o'tish"
+  },
+  "Offical Site": {
+    "navbar": "Rasmiy Sait",
+    "of the National Center": "Inson huquqlari bo'yicha",
+    "for Human Rights": "O'zbekiston Respublikasi",
+    "of the Republic of Uzbekistan": "Milliy markazi",
+    "scientific and educational journal": "ilmiy-ta'limiy jurnal",
+    "democration": "«DEMOKRATLASHTIRISH VA INSON HUQUQLARI»",
+    "Contact Phone": "Maslahat telefoni",
+    "Our address": "Bizning pochtamiz"
+  },
+  "News": {
+    "navbar": "Yangiliklar"
+  },
+  "Welcom": {
+    "welcom to the": "O'ZBEKISTON DUNYOSIGA XUSH KELIBSIZ",
+    "The magazine has been 1999": "Jurnal 1999-yildan buyon muntazam nashr etib kelinmoqda",
+    "Explore more": "Ko'proq o'rganing"
+  },
+  "our work": {
+    "WHAT WE DO": "NIMA QILAMIZ"
+  },
+  "Recent Work": {
+    "work": "So'nggi ishlar"
+  },
+  "SERVICES": {
+    "service": "XIZMATLAR"
+  },
+  "Our blog": {
+    "blog": "BIZNING BLOG"
+  },
+  "Our staff": {
+    "staff": "Bizning jamoamiz",
+    "Editor": "Jurnal tahririyati va jamoasi",
+    "lives": " Tahrir hay'atlari va hay'at a'zolari"
+  },
+  "submitting an article to the journal": {
+    "submiting": "Jurnalga maqola taqdim etish"
+  },
+  "About Us": {
+    "aboutUs": "Biz haqimizda"
+  }
 }
