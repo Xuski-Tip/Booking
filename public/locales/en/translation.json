@@ -1,12 +1,11 @@
 {
-  "Countact Us": {
-    "navbar": "Contact Us"
-  },
   "Home": {
-    "navbar": "Home"
+    "navbar": "Main"
   },
   "Shop": {
-    "navbar": "Shop"
+    "navbar": "Jurnal haqida",
+    "litsenziya": "License",
+    "leadership": "Leadership"
   },
   "avtorizatsiya": {
     "navbar": "Log in",
@@ -43,14 +42,22 @@
     "blog": "OUR BLOG"
   },
   "Our staff": {
-    "staff": "Our staff",
-    "Editor": "Journal editorial and team",
-    "lives": "Editorial boards and jury members"
+    "staff": "Editorial Board",
+    "Editor": "Members of the International Editorial Board",
+    "lives": "Members of the Editorial Board"
   },
   "submitting an article to the journal": {
-    "submiting": "submitting an article to the journal"
+    "submiting": "To the authors of the article",
+    "article": "Requirements for articles",
+    "mode": "The order of publication of articles in the journal"
   },
   "About Us": {
     "aboutUs": "About Us"
+  },
+  "Arxiv": {
+    "arxiv": "Archive"
+  },
+  "Subscription": {
+    "obuna": "Subscribe"
   }
 }

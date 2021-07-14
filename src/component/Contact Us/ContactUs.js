@@ -11,10 +11,10 @@ export default function ContactUs() {
         "https://paycom-test.napaautomotive.uz/api/setting"
       );
       setState(res.data.setting);
+      console.log(res)
     }
     fetchMyApi();
   }, []);
-
   const {
     register,
     handleSubmit,

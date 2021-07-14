@@ -440,4 +440,16 @@
 .heading-text {
   padding: 50px;
 }
+
+.slick-prev, .slick-next{
+  top: 40%;
+}
+.slick-next{
+    right: -50px;
+
+}
+.slick-prev{
+   left: -50px;
+}
+
 @import "./media";

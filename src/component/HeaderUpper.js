@@ -2,20 +2,24 @@ import React, {useState, useEffect} from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import {LANGUAGE} from "../redux/languageType";
+import {getLang} from "./lang";
 export default function HeaderUpper(stateAction) {
-  const [state, setState] = useState("en");
   const {t, i18n}   = useTranslation();  
   function handleChange(event) {
-    event.preventDefault()
-    setState(event.target.value)
+    event.preventDefault();
+    localStorage.setItem(LANGUAGE, event.target.value);
+    document.location.reload(true)
   }
-  function handleClick(event) {
-    i18n.changeLanguage(state);
+
+  let changeLang = localStorage.getItem(LANGUAGE);
+
+  function handleClick() {
+    i18n.changeLanguage(changeLang);
   }
   useEffect(()=> {
     handleClick()
-  }, [state])
-  stateAction = state
+  },[]);
   return (
     <>
       <ReactBootStrap.Navbar sticky="top" bg="light" expand="lg">
@@ -28,12 +32,16 @@ export default function HeaderUpper(stateAction) {
             <ReactBootStrap.NavLink href="/">
               {t("Home.navbar")}
             </ReactBootStrap.NavLink>
-            <ReactBootStrap.NavLink as={Link} to="/Shop">
-              {t("Shop.navbar")}
-            </ReactBootStrap.NavLink>
-            <ReactBootStrap.Nav.Link as={Link} to="/News">
-              {t("News.navbar")}
-            </ReactBootStrap.Nav.Link>
+
+            <ReactBootStrap.NavDropdown title={t("Shop.navbar")}>
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
+                {t("Shop.litsenziya")}
+              </ReactBootStrap.NavDropdown.Item>
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
+                {t("Shop.leadership")}
+              </ReactBootStrap.NavDropdown.Item>
+            </ReactBootStrap.NavDropdown>
+
             <ReactBootStrap.NavDropdown
               title={t("Our staff.staff")}
               id="basic-nav-dropdown"
@@ -45,13 +53,24 @@ export default function HeaderUpper(stateAction) {
                 {t("Our staff.lives")}
               </ReactBootStrap.NavDropdown.Item>
             </ReactBootStrap.NavDropdown>
-            <ReactBootStrap.NavLink as={Link} to="/SubmitingJurnal">
-              {t("submitting an article to the journal.submiting")}
-            </ReactBootStrap.NavLink>
-            <ReactBootStrap.NavDropdown
-              title={t("About Us.aboutUs")}
-              id="basic-nav-dropdown"
-            ></ReactBootStrap.NavDropdown>
+
+            <ReactBootStrap.NavDropdown title={t("submitting an article to the journal.submiting")} id="basic-nav-dropdown">
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
+                {t("submitting an article to the journal.article")}
+              </ReactBootStrap.NavDropdown.Item>
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/members">
+                {t("submitting an article to the journal.mode")}
+              </ReactBootStrap.NavDropdown.Item>
+            </ReactBootStrap.NavDropdown>
+
+            <ReactBootStrap.Nav.Link as={Link} to="/arcive">
+              {t("Arxiv.arxiv")}
+            </ReactBootStrap.Nav.Link>
+
+            <ReactBootStrap.Nav.Link as={Link} to="/subscribe">
+              {t("Subscription.obuna")}
+            </ReactBootStrap.Nav.Link>
+
           </ReactBootStrap.Nav>
           <ReactBootStrap.Form inline>
             <Link className='Link-autho' to={"/Authorization"}>{t("avtorizatsiya.navbar")}</Link> / 
@@ -62,11 +81,10 @@ export default function HeaderUpper(stateAction) {
               <select
                 style={{ paddingRight: 25, cursor: "pointer" }}
                 onChange={handleChange}
-                defaultValue='EN' 
               >
-                <option value='en'>ENG</option>
-                <option value='ru'>RUS</option>
-                <option value='uz'>UZB</option>
+                <option value='en' selected={changeLang == "en"}>ENG</option>
+                <option value='ru' selected={changeLang == "ru"}>RUS</option>
+                <option value='uz' selected={changeLang == "uz"}>UZB</option>
               </select>
             </div>
           </ReactBootStrap.Form>
