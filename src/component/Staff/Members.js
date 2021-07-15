@@ -159,7 +159,6 @@ export default function Members() {
                     src="/images/1Client.jpg"
                     className="team__member-vesual"
                   ></img>
-                  Umidjon, [15.07.21 15:07]
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">Omon Oqyulov</h3>
@@ -346,7 +345,6 @@ export default function Members() {
                     src="/images/1Client.jpg"
                     className="team__member-vesual"
                   ></img>
-                  Umidjon, [15.07.21 15:07]
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">
