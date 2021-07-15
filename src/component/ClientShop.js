@@ -1,49 +1,64 @@
 import React from "react";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
-const BlogData = [
-  {
-    id: 1,
-    img: "/images/One.jpg",
-    date: "Jan 21, 2017",
-    title: "Standard post with a single image",
-    description:
-      "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
-  },
-  {
-    id: 2,
-    img: "/images/Two.jpg",
-    date: "Jan 21, 2017",
-    title: "Standard post with a single image",
-    description:
-      "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
-  },
-  {
-    id: 3,
-    img: "/images/three.jpg",
-    date: "Jan 21, 2017",
-    title: "Standard post with a single image",
-    description:
-      "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
-  },
-  {
-    id: 4,
-    img: "/images/Four.jpg",
-    date: "Jan 21, 2017",
-    title: "Standard post with a single image",
-    description:
-      "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
-  },
-];
 function ClientShop() {
+  const BlogData = [
+    {
+      id: 1,
+      img: "/images/One.jpg",
+      date: "Jan 21, 2017",
+      title: "Standard post with a single image",
+      description:
+        "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
+    },
+    {
+      id: 2,
+      img: "/images/Two.jpg",
+      date: "Jan 21, 2017",
+      title: "Standard post with a single image",
+      description:
+        "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
+    },
+    {
+      id: 3,
+      img: "/images/three.jpg",
+      date: "Jan 21, 2017",
+      title: "Standard post with a single image",
+      description:
+        "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
+    },
+    {
+      id: 4,
+      img: "/images/three.jpg",
+      date: "Jan 21, 2017",
+      title: "Standard post with a single image",
+      description:
+        "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
+    },
+    {
+      id: 5,
+      img: "/images/three.jpg",
+      date: "Jan 21, 2017",
+      title: "Standard post with a single image",
+      description:
+        "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
+    },
+    {
+      id: 6,
+      img: "/images/three.jpg",
+      date: "Jan 21, 2017",
+      title: "Standard post with a single image",
+      description:
+        "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
+    },
+  ];
   const { t } = useTranslation();
   const settings = {
     dots: true,
-    speed: 500,
     slidesToShow: 3,
-    infinite: true,
-    slidesToScroll: 3,
-    arrows: false,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 554,
@@ -62,6 +77,38 @@ function ClientShop() {
     ],
   };
 
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "#888888",
+          borderRadius: "50%",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "#888888",
+          borderRadius: "50%",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
   return (
     <div className="container">
       <div id="blog" className="post-3-columns m-b-30">
