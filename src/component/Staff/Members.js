@@ -58,8 +58,8 @@ export default function Members() {
           </div>
           <div className="Team__cards">
             <Slider {...settings}>
-              <div className="team__members team__anathermembers bg-danger">
-                <div className="team__member">
+              <div className="team__members team__anathermembers ">
+                <div className="team__member ">
                   <img
                     alt="Error"
                     src="/images/1Client.jpg"
@@ -106,8 +106,8 @@ export default function Members() {
                   </div>
                 </div>
               </div>
-              <div className="team__members bg-danger h-100">
-                <div className="team__member">
+              <div className="team__members  h-100">
+                <div className="team__member ">
                   <img
                     alt="Error"
                     src="/images/1Client.jpg"
@@ -152,8 +152,8 @@ export default function Members() {
                   </div>
                 </div>
               </div>
-              <div className="team__members bg-danger">
-                <div className="team__member">
+              <div className="team__members ">
+                <div className="team__member ">
                   <img
                     alt="Error"
                     src="/images/1Client.jpg"
@@ -198,8 +198,8 @@ export default function Members() {
                   </div>
                 </div>
               </div>
-              <div className="team__members bg-danger">
-                <div className="team__member">
+              <div className="team__members ">
+                <div className="team__member ">
                   <img
                     alt="Error"
                     src="/images/1Client.jpg"
@@ -244,8 +244,8 @@ export default function Members() {
                   </div>
                 </div>
               </div>
-              <div className="team__members bg-danger">
-                <div className="team__member">
+              <div className="team__members ">
+                <div className="team__member ">
                   <img
                     alt="Error"
                     src="/images/1Client.jpg"
@@ -292,8 +292,8 @@ export default function Members() {
                   </div>
                 </div>
               </div>
-              <div className="team__members bg-danger">
-                <div className="team__member">
+              <div className="team__members ">
+                <div className="team__member ">
                   <img
                     alt="Error"
                     src="/images/1Client.jpg"
@@ -338,8 +338,8 @@ export default function Members() {
                   </div>
                 </div>
               </div>
-              <div className="team__members bg-danger">
-                <div className="team__member">
+              <div className="team__members ">
+                <div className="team__member ">
                   <img
                     alt="Error"
                     src="/images/1Client.jpg"
@@ -386,8 +386,8 @@ export default function Members() {
                   </div>
                 </div>
               </div>
-              <div className="team__members bg-danger">
-                <div className="team__member">
+              <div className="team__members ">
+                <div className="team__member ">
                   <img
                     alt="Error"
                     src="/images/1Client.jpg"
