@@ -193,8 +193,6 @@ export default function ContactUs() {
                     <input
                       {...register("phone", {
                         required: true,
-                        minLength: 6,
-                        maxLength: 14,
                       })}
                       pattern="\d*"
                       type="tel"

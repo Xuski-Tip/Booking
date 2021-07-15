@@ -54,7 +54,7 @@ export default function Members() {
       <section className="background-grey MainClient">
         <div className="container">
           <div className="heading-text heading-section text-center">
-            <h2>MEET OUR TEAM</h2>
+            <h2>{t("Our staff.lives")}</h2>
           </div>
           <div className="Team__cards">
             <Slider {...settings}>

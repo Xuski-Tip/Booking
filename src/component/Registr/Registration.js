@@ -3,7 +3,6 @@ import HeaderUpper from "../HeaderUpper";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 import { login } from "../../redux/Action/loginAction";
 import{connect} from "react-redux"
-import { values } from "lodash";
 
 const Registration = (props) => {
     return (
@@ -17,7 +16,7 @@ const Registration = (props) => {
             <div className="text-middle">
               <div className="row">
                 <div className="col-lg-6 center p-40 background-white b-r-6">
-                  <AvForm onSubmit={(event, error, values) => props.login(event, error, values, props.history)} className="form-transparent-grey">
+                  <AvForm onSubmit={(event, error, value) => props.login(event, error, value, props.history)} className="form-transparent-grey">
                     <div className="row">
                       <div className="col-lg-12">
                         <h3>Register New Account</h3>
