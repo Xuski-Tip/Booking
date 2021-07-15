@@ -3,147 +3,6 @@ import Slider from "react-slick";
 import HeaderUpper from "../HeaderUpper";
 import FooterInfo from "../FooterInfo";
 import {useTranslation} from "react-i18next";
-//  const Editor = () => {
-//
-//
-//   return (
-//     <>
-//       <HeaderUpper />
-//       <section id="page-content">
-//         <div class="container">
-{/*<div class="heading-text heading-section text-center">*/
-}
-{/*  <h2>Magazine Editors</h2>*/
-}
-{/*  <span>*/
-}
-{/*    Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel*/
-}
-{/*    dolor. The most happiest time of the day!. Morbi sagittis, sem*/
-}
-{/*    quis lacinia faucibus.{" "}*/
-}
-{/*  </span>*/
-}
-{/*</div>*/
-}
-{/*<div className="Team__card">*/
-}
-//             {clientData.map(() => {
-//               return (
-{/*<div className="team__members" key={.id}>*/
-}
-{/*  <div className="team__member">*/
-}
-{/*    <img*/
-}
-{/*      alt="#"*/
-}
-{/*      src={.img}*/
-}
-{/*      className="team__member-vesual"*/
-}
-{/*    ></img>*/
-}
-{/*  </div>*/
-}
-{/*  <div className="team__info">*/
-}
-{/*    <h3 className="team__info-subtitle">{.subtitle}</h3>*/
-}
-{/*    <span className="team__info-developer">*/
-}
-{/*      {.title}*/
-}
-{/*    </span>*/
-}
-{/*    <p className="team__info-lorem">{.description}</p>*/
-}
-{/*    <div className="align-center">*/
-}
-{/*      <a*/
-}
-{/*        className="btn btn-xs btn-slide btn-light"*/
-}
-{/*        href={.facebook}*/
-}
-{/*      >*/
-}
-{/*        <i className="fab fa-facebook-f"></i>*/
-}
-{/*        <span>Facebook</span>*/
-}
-{/*      </a>*/
-}
-{/*      <a*/
-}
-{/*        className="btn btn-xs btn-slide btn-light"*/
-}
-{/*        href={.twitter}*/
-}
-{/*        data-width="100"*/
-}
-{/*      >*/
-}
-{/*        <i className="fab fa-twitter"></i>*/
-}
-{/*        <span>Twitter</span>*/
-}
-{/*      </a>*/
-}
-{/*      <a*/
-}
-{/*        className="btn btn-xs btn-slide btn-light"*/
-}
-{/*        href={.instagram}*/
-}
-{/*        data-width="118"*/
-}
-{/*      >*/
-}
-{/*        <i className="fab fa-instagram"></i>*/
-}
-{/*        <span>Instagram</span>*/
-}
-{/*      </a>*/
-}
-{/*      <a*/
-}
-{/*        className="btn btn-xs btn-slide btn-light"*/
-}
-{/*        href={.emal}*/
-}
-{/*        data-width="80"*/
-}
-{/*      >*/
-}
-{/*        <i className="icon-mail"></i>*/
-}
-{/*        <span>Mail</span>*/
-}
-{/*      </a>*/
-}
-{/*    </div>*/
-}
-{/*  </div>*/
-}
-{/*</div>*/
-}
-//               );
-//             })}
-//           </div>
-//         </div>
-//         <hr class="space" />
-//
-//
-//       </section>
-//       <FooterInfo/>
-//     </>
-//   );
-// };
-
-// export default Editor;
-
 
 export default function Editor() {
 
@@ -202,7 +61,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Tanzila Narbayeva</h3>
                             <span className="team__info-developer">
-                    (O'zbekiston)
+                    ({t("state.state1")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -251,7 +110,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Qudratilla Rafiqov</h3>
                             <span className="team__info-developer">
-                    (O'zbekiston)
+                    ({t("state.state1")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -300,7 +159,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Aslan Abashidze</h3>
                             <span className="team__info-developer">
-                    (Rossiya Federatsiyasi)
+                    ({t("state.state2")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -349,7 +208,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Akira Fujimoto</h3>
                             <span className="team__info-developer">
-                    (Yaponiya)
+                    ({t("state.state3")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -398,7 +257,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Uilyam Batler</h3>
                             <span className="team__info-developer">
-                    (AQSH)
+                    ({t("state.state4")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -447,7 +306,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Tadeush Bodio</h3>
                             <span className="team__info-developer">
-                    (Polsha)
+                    ({t("state.state5")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -496,7 +355,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Marg'ub But</h3>
                             <span className="team__info-developer">
-                    (Islom hamkorlik tashkiloti)
+                    ({t("state.state6")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -545,7 +404,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Reyn Mullerson</h3>
                             <span className="team__info-developer">
-                    (Estoniya)
+                    ({t("state.state7")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -594,7 +453,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Tatyana Maskalkova</h3>
                             <span className="team__info-developer">
-                    (Rossiya Federatsiyasi)
+                    ({t("state.state2")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">
@@ -643,7 +502,7 @@ export default function Editor() {
                         <div className="team__info">
                             <h3 className="team__info-subtitle mt-3">Sergey Udarsev</h3>
                             <span className="team__info-developer">
-                    (Qozog'iston)
+                    ({t("state.state8")})
                     </span>
                             <p className="team__info-lorem"></p>
                             <div className="align-center">

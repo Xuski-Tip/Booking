@@ -59,5 +59,22 @@
   },
   "Subscription": {
     "obuna": "Subscribe"
+  },
+  "members": {
+    "member1": "Doctor of Law, Associate Professor",
+    "member5": "candidate of jurisprudence, doctor",
+    "member2": "Doctor of Law, Professor, Scientist of the Republic of Uzbekistan",
+    "member3": "Doctor of Law, Professor, Honored Lawyer of Uzbekistan",
+    "member4": "doctor of jurisprudence, professor"
+  },
+  "state": {
+    "state1": "Uzbekistan",
+    "state2": "Russian Federation",
+    "state3": "Japan",
+    "state4": "USA",
+    "state5": "Poland",
+    "state6": "Organization of Islamic Cooperation",
+    "state7": "Estonia",
+    "state8": "Kazakhstan"
   }
 }
