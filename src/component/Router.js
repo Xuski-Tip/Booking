@@ -11,6 +11,7 @@ import Members from "./Staff/Members"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Subscribe from "./Subscribe";
 import Arcive from "./Arcive"
+import { ToastContainer } from "react-toastify";
 
 const Router = () => {
   return (
@@ -33,6 +34,7 @@ const Router = () => {
         <Route path='/arcive' component={Arcive}/>
         <Route component={App}></Route>
       </Switch>
+      <ToastContainer/>
     </BrowserRouter>
   );
 };

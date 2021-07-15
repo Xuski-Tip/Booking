@@ -1,11 +1,14 @@
 import React from "react";
 import HeaderUpper from "../HeaderUpper";
+import { AvForm, AvField } from "availity-reactstrap-validation";
+import { login } from "../../redux/Action/loginAction";
+import{connect} from "react-redux"
+import { values } from "lodash";
 
-class Registration extends React.Component {
-  render() {
+const Registration = (props) => {
     return (
       <>
-        <HeaderUpper/>
+        <HeaderUpper />
         <section
           className="fullscreen"
           style={{ backgroundimage: `url("/images/pages/1.jpg")` }}
@@ -14,7 +17,7 @@ class Registration extends React.Component {
             <div className="text-middle">
               <div className="row">
                 <div className="col-lg-6 center p-40 background-white b-r-6">
-                  <form className="form-transparent-grey">
+                  <AvForm onSubmit={(event, error, values) => props.login(event, error, values, props.history)} className="form-transparent-grey">
                     <div className="row">
                       <div className="col-lg-12">
                         <h3>Register New Account</h3>
@@ -25,111 +28,38 @@ class Registration extends React.Component {
                         </p>
                       </div>
                       <div className="col-lg-6 form-group">
-                        <label className="sr-only">First Name</label>
-                        <input
+                        <AvField
+                          label='Name'
                           type="text"
-                          defaultValue=""
-                          placeholder="First Name"
+                          placeholder="Name"
                           className="form-control"
+                          name="name"
                           required
                         />
                       </div>
                       <div className="col-lg-6 form-group">
-                        <label className="sr-only">Last Name</label>
-                        <input
-                          type="text"
-                          defaultValue=""
-                          placeholder="Last Name"
-                          className="form-control"
-                        />
-                      </div>
-                      <div className="col-lg-6 form-group">
-                        <label className="sr-only">Username</label>
-                        <input
-                          type="text"
-                          defaultValue=""
-                          placeholder="Username"
-                          className="form-control"
-                          required
-                        />
-                      </div>
-                      <div className="col-lg-6 form-group">
-                        <label className="sr-only">Password</label>
-                        <input
+                        <AvField
+                          label="password"
                           type="password"
-                          defaultValue=""
                           placeholder="Password"
                           className="form-control"
+                          name="password"
                           required
                         />
                       </div>
                       <div className="col-lg-12 form-group">
-                        <label className="sr-only">Address</label>
-                        <input
+                        <AvField
+                          label='Email'
                           type="text"
-                          defaultValue=""
-                          placeholder="Address"
-                          className="form-control"
-                        />
-                      </div>
-                      <div className="col-lg-6 form-group">
-                        <label className="sr-only">
-                          Apartment, suite, unit etc.
-                        </label>
-                        <input
-                          type="text"
-                          defaultValue=""
-                          placeholder="Apartment, suite, unit etc./"
-                          className="form-control"
-                        />
-                      </div>
-                      <div className="col-lg-6 form-group">
-                        <label className="sr-only">Town / City</label>
-                        <input
-                          type="text"
-                          defaultValue=""
-                          placeholder="Town / City"
-                          className="form-control"
-                        />
-                      </div>
-                      <div className="col-lg-6 form-group">
-                        <label className="sr-only">State / County</label>
-                        <input
-                          type="text"
-                          defaultValue=""
-                          placeholder="State / County"
-                          className="form-control"
-                        />
-                      </div>
-                      <div className="col-lg-6 form-group">
-                        <label className="sr-only">Postcode / Zip</label>
-                        <input
-                          type="text"
-                          defaultValue=""
-                          placeholder="Postcode / Zip"
-                          className="form-control"
-                        />
-                      </div>
-                      <div className="col-lg-6 form-group">
-                        <label className="sr-only">Email</label>
-                        <input
-                          type="text"
-                          defaultValue=""
                           placeholder="Email"
+                          name="email"
                           className="form-control"
+                          required
                         />
                       </div>
-                      <div className="col-lg-6 form-group">
-                        <label className="sr-only">Phone</label>
-                        <input
-                          type="text"
-                          defaultValue=""
-                          placeholder="Phone"
-                          className="form-control"
-                        />
-                      </div>
+
                       <div className="col-lg-12 form-group">
-                        <button className="btn" type="button">
+                        <button className="btn" type="submit">
                           Register New Account{" "}
                         </button>
                         <button type="button" className="btn btn-danger m-l-10">
@@ -137,7 +67,7 @@ class Registration extends React.Component {
                         </button>
                       </div>
                     </div>
-                  </form>
+                  </AvForm>
                 </div>
               </div>
             </div>
@@ -145,6 +75,5 @@ class Registration extends React.Component {
         </section>
       </>
     );
-  }
 }
-export default Registration;
+export default connect(null, {login})(Registration);
