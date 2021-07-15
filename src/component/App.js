@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="body-inner">
       <Header />
-      <HeaderUpper stateAction={state} />
+      <HeaderUpper />
       <Slider />
       <BackgroundGrey />
       <RecentWork />
