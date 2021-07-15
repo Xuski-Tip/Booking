@@ -60,5 +60,22 @@
     },
   "Subscription": {
     "obuna": "Obuna"
+  },
+  "members": {
+    "member1": "yuridik fanlar doktori, dotsent",
+    "member5": "yuridik fanlar nomzodi, doktor",
+    "member2": "yuridik fanlar doktori, professor, O'zbekiston Respublikasi fan arbobi",
+    "member3": "yuridik fanlar doktori, professor, O'zbekistonda xizmat ko'rsatgan yurist",
+    "member4": "yuridik fanlar nomzodi, professor"
+  },
+  "state": {
+    "state1": "O'zbekiston",
+    "state2": "Rossiya Federatsiyasi",
+    "state3": "Yaponiya",
+    "state4": "AQSH",
+    "state5": "Polsha",
+    "state6": "Islom hamkorlik tashkiloti",
+    "state7": "Estoniya",
+    "state8": "Qozog'iston"
   }
 }

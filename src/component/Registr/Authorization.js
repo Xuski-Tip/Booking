@@ -20,6 +20,7 @@ class Authorization extends React.Component {
                         className="form-control"
                         autoComplete="off"
                         placeholder="Username or Email"
+                        required
                       />
                     </div>
                     <div className="form-group m-b-5">
@@ -29,6 +30,7 @@ class Authorization extends React.Component {
                         className="form-control"
                         autoComplete="off"
                         placeholder="Password"
+                        required
                       />
                     </div>
                     <div className="form-group form-inline text-left">

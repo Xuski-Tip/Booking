@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderUpper from "../HeaderUpper";
+
 class Registration extends React.Component {
   render() {
     return (
@@ -30,6 +31,7 @@ class Registration extends React.Component {
                           defaultValue=""
                           placeholder="First Name"
                           className="form-control"
+                          required
                         />
                       </div>
                       <div className="col-lg-6 form-group">
@@ -48,6 +50,7 @@ class Registration extends React.Component {
                           defaultValue=""
                           placeholder="Username"
                           className="form-control"
+                          required
                         />
                       </div>
                       <div className="col-lg-6 form-group">
@@ -57,6 +60,7 @@ class Registration extends React.Component {
                           defaultValue=""
                           placeholder="Password"
                           className="form-control"
+                          required
                         />
                       </div>
                       <div className="col-lg-12 form-group">
