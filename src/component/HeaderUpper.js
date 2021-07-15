@@ -81,10 +81,11 @@ export default function HeaderUpper(stateAction) {
               <select
                 style={{ paddingRight: 25, cursor: "pointer" }}
                 onChange={handleChange}
+                defaultValue={changeLang}
               >
-                <option value='en' selected={changeLang == "en"}>ENG</option>
-                <option value='ru' selected={changeLang == "ru"}>RUS</option>
-                <option value='uz' selected={changeLang == "uz"}>UZB</option>
+                <option value='en'>ENG</option>
+                <option value='ru'>RUS</option>
+                <option value='uz'>UZB</option>
               </select>
             </div>
           </ReactBootStrap.Form>
