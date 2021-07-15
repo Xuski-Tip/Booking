@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MapContainer from "./MapContainer.js";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-import {LANGUAGE} from '../../simpleJs/Tipelang';
+import { LANGUAGE } from "../../simpleJs/Tipelang";
 export default function ContactUs() {
   const [state, setState] = useState([]);
   const langRename = localStorage.getItem(LANGUAGE);
@@ -38,6 +38,7 @@ export default function ContactUs() {
       setAnswer("danger");
     }
   };
+
   return (
     <div className="body-inner">
       <div className="container">
@@ -75,8 +76,14 @@ export default function ContactUs() {
                 <div className="adressdflex">
                   <i className="fa fa-map-marker" aria-hidden="true"></i>
                   &nbsp;
-                  <span></span>
-                  <span></span>
+                  <span>
+                    {langRename === "en"
+                      ? element.address_en
+                      : langRename === "ru"
+                      ? element.address_ru
+                      : langRename === "uz" 
+                      ? element.address_uz : "error"}
+                  </span>
                 </div>
                 <br />
                 <div className="adressdflex" title="Phone">

@@ -301,7 +301,8 @@
   height: 100%;
 }
 .team__info {
-  height: 50%;
+  min-height: 200px;
+  max-height: 100%;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
