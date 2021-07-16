@@ -1,7 +1,6 @@
 import React from 'react';
 import HeaderUpper from '../HeaderUpper';
-import PageInfo from './PageInfo';
-import PageShop from './PageShop';
+
 import FooterInfo from '../FooterInfo';
 import Tapbar from './Tapbar';
 import PageContainer from './PageContainer';

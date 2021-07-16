@@ -18,7 +18,7 @@ const Router = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/Shop" component={Shop} />
+        <Route exact path="/arcive" component={Shop} />
         <Route exact path="/Authorization" component={Authorization} />
         <Route
           exact
@@ -31,7 +31,6 @@ const Router = () => {
         <Route path='/staff/Editor' component={Editor}/>
         <Route path='/staff/Members' component={Members}/>
         <Route path='/subscribe' component={Subscribe}/>
-        <Route path='/arcive' component={Arcive}/>
         <Route component={App}></Route>
       </Switch>
       <ToastContainer/>
