@@ -110,7 +110,11 @@ export default function Members() {
                 <div className="team__member ">
                   <img
                     alt="Error"
+<<<<<<< HEAD
                     src="/images/azolar/boboyev.jpg"
+=======
+                    src="/images/1Client.jpg"
+>>>>>>> 948958d80c603c464580be2aaf880e3eb4a4b57a
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -156,7 +160,11 @@ export default function Members() {
                 <div className="team__member ">
                   <img
                     alt="Error"
+<<<<<<< HEAD
                     src="/images/azolar/oyqulov.jpg"
+=======
+                    src="/images/1Client.jpg"
+>>>>>>> 948958d80c603c464580be2aaf880e3eb4a4b57a
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -202,7 +210,11 @@ export default function Members() {
                 <div className="team__member ">
                   <img
                     alt="Error"
+<<<<<<< HEAD
                     src="/images/azolar/gafurov.jpg"
+=======
+                    src="/images/1Client.jpg"
+>>>>>>> 948958d80c603c464580be2aaf880e3eb4a4b57a
                     className="team__member-vesual"
                   ></img>
                 </div>

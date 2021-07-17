@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState, useEffect} from 'react';
 import {Modal, ModalBody, ModalFooter} from "reactstrap"
 import {AvForm, AvField} from "availity-reactstrap-validation"
@@ -91,6 +92,14 @@ const buy = (event,error,values) =>{
 
 
 
+=======
+import React from 'react';
+
+const Subscribe = () => {
+    return (
+        <div>
+            Hello
+>>>>>>> 948958d80c603c464580be2aaf880e3eb4a4b57a
         </div>
     );
 };

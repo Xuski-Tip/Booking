@@ -103,8 +103,13 @@ export default function Editor() {
                         <div className="team__member">
                             <img
                                 alt="Error"
+<<<<<<< HEAD
                                 src="/images/azolar/rafiqov.jpg"
                                 className="team__member-vesual h-100"
+=======
+                                src="/images/1Client.jpg"
+                                className="team__member-vesual"
+>>>>>>> 948958d80c603c464580be2aaf880e3eb4a4b57a
                             ></img>
                         </div>
                         <div className="team__info">
