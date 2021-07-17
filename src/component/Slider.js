@@ -28,13 +28,18 @@ function Slider() {
           </div>
         </div>
         <div className="MainBg__right">
+          <h6 className="text-success pb-2 text-center">Demokratlashtirish va inson huquqlari jurnali</h6>
           <Link to="/Shop">
             <img
-              alt="#"
+              alt="error"
               className="MainBg__right-img"
-              src="/images/Main-bg-right.jpg"
+              src="/images/azolar/jurnal2.jpg"
             ></img>
           </Link>
+          <div className="p-3">
+            <button type="button" className="btn btn-outline-danger btn-block">Sotib olish</button>
+          </div>
+
         </div>
       </div>
     </>

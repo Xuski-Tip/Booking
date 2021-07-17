@@ -1,17 +1,17 @@
 {
-  "Countact Us": {
-    "navbar": "biz bilam muloqa"
-  },
   "Home": {
     "navbar": "Asosiy"
   },
   "Shop": {
-    "navbar": "Do'kon"
+    "navbar": "Jurnal haqida",
+    "litsenziya": "Litsenziya",
+    "leadership": "Rahbariyat"
   },
   "avtorizatsiya": {
     "navbar": "Avtorizatsiya",
     "navbar2": "Ro'yxatdan o'tish"
   },
+
   "Offical Site": {
     "navbar": "Rasmiy Sait",
     "of the National Center": "Inson huquqlari bo'yicha",
@@ -43,14 +43,39 @@
     "blog": "BIZNING BLOG"
   },
   "Our staff": {
-    "staff": "Bizning jamoamiz",
-    "Editor": "Jurnal tahririyati va jamoasi",
-    "lives": " Tahrir hay'atlari va hay'at a'zolari"
+    "staff": "Tahrir kengashi",
+    "Editor": "Xalqaro tahrir kengashi a'zolari",
+    "lives": "Tahrir hay'ati a'zolari"
   },
   "submitting an article to the journal": {
-    "submiting": "Jurnalga maqola taqdim etish"
+    "submiting": "Maqola mualliflariga",
+    "article": "Maqolalarga qo'yilgan talablar",
+    "mode": "Jurnalda maqola chiqarish tartibi"
   },
   "About Us": {
     "aboutUs": "Biz haqimizda"
+  },
+    "Arxiv": {
+      "arxiv": "Arxiv"
+    },
+  "Subscription": {
+    "obuna": "Obuna"
+  },
+  "members": {
+    "member1": "yuridik fanlar doktori, dotsent",
+    "member5": "yuridik fanlar nomzodi, doktor",
+    "member2": "yuridik fanlar doktori, professor, O'zbekiston Respublikasi fan arbobi",
+    "member3": "yuridik fanlar doktori, professor, O'zbekistonda xizmat ko'rsatgan yurist",
+    "member4": "yuridik fanlar nomzodi, professor"
+  },
+  "state": {
+    "state1": "O'zbekiston",
+    "state2": "Rossiya Federatsiyasi",
+    "state3": "Yaponiya",
+    "state4": "AQSH",
+    "state5": "Polsha",
+    "state6": "Islom hamkorlik tashkiloti",
+    "state7": "Estoniya",
+    "state8": "Qozog'iston"
   }
 }

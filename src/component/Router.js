@@ -9,7 +9,9 @@ import News from "./News/News";
 import Editor from "./Staff/Editor"
 import Members from "./Staff/Members"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import SubmitingJurnal from "./SubmitingJurnal";
+import Subscribe from "./Subscribe";
+import Arcive from "./Arcive"
+import {ToastContainer} from "react-toastify";
 
 const Router = () => {
   return (
@@ -28,9 +30,11 @@ const Router = () => {
         <Route path="/News" component={News} />
         <Route path='/staff/Editor' component={Editor}/>
         <Route path='/staff/Members' component={Members}/>
-        <Route path="/SubmitingJurnal" component={SubmitingJurnal}/>
+        <Route path='/subscribe' component={Subscribe}/>
+        <Route path='/arcive' component={Arcive}/>
         <Route component={App}></Route>
       </Switch>
+      {/*<ToastContainer/>*/}
     </BrowserRouter>
   );
 };

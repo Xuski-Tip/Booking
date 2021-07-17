@@ -10,6 +10,7 @@ import LinkerUp from "./LinkerUp";
 import HeaderUpper from "./HeaderUpper";
 import ContactUs from "./Contact Us/ContactUs";
 import Header from "./Header";
+import {ToastContainer} from "react-toastify";
 function App() {
   const [state] = useState('en')
   console.log(state);
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className="body-inner">
       <Header />
-      <HeaderUpper stateAction={state} />
+      <HeaderUpper />
       <Slider />
       <BackgroundGrey />
       <RecentWork />
@@ -27,6 +28,7 @@ function App() {
       <ContactUs />
       <FooterInfo />
       <LinkerUp />
+      <ToastContainer/>
     </div>
   );
 }

@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import MapContainer from "./MapContainer.js";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import { LANGUAGE } from "../../simpleJs/Tipelang";
 export default function ContactUs() {
   const [state, setState] = useState([]);
+  const langRename = localStorage.getItem(LANGUAGE);
   const [answerstate, setAnswer] = useState("");
   useEffect(() => {
     async function fetchMyApi() {
@@ -11,10 +13,10 @@ export default function ContactUs() {
         "https://paycom-test.napaautomotive.uz/api/setting"
       );
       setState(res.data.setting);
+      console.log(res.data.setting);
     }
     fetchMyApi();
   }, []);
-
   const {
     register,
     handleSubmit,
@@ -36,6 +38,7 @@ export default function ContactUs() {
       setAnswer("danger");
     }
   };
+
   return (
     <div className="body-inner">
       <div className="container">
@@ -74,9 +77,13 @@ export default function ContactUs() {
                   <i className="fa fa-map-marker" aria-hidden="true"></i>
                   &nbsp;
                   <span>
-                    
+                    {langRename === "en"
+                      ? element.address_en
+                      : langRename === "ru"
+                      ? element.address_ru
+                      : langRename === "uz" 
+                      ? element.address_uz : "error"}
                   </span>
-                  <span>{element.address_ru}</span>
                 </div>
                 <br />
                 <div className="adressdflex" title="Phone">
@@ -186,8 +193,6 @@ export default function ContactUs() {
                     <input
                       {...register("phone", {
                         required: true,
-                        minLength: 6,
-                        maxLength: 14,
                       })}
                       pattern="\d*"
                       type="tel"
