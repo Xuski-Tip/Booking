@@ -1,20 +1,12 @@
 import React, { useState, useEffect } from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 import { useTranslation } from "react-i18next"
 import {LANGUAGE} from '../simpleJs/Tipelang';
 
-export default function HeaderUpper(stateAction) {
 
-  const { t, i18n } = useTranslation();
-
-=======
-import { useTranslation } from "react-i18next";
-import {LANGUAGE} from '../simpleJs/Tipelang'
 export default function HeaderUpper(stateAction) {
   const { t, i18n } = useTranslation();
->>>>>>> 948958d80c603c464580be2aaf880e3eb4a4b57a
   function handleChange(event) {
     event.preventDefault();
     localStorage.setItem(LANGUAGE, event.target.value);

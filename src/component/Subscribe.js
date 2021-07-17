@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {useState, useEffect} from 'react';
 import {Modal, ModalBody, ModalFooter} from "reactstrap"
 import {AvForm, AvField} from "availity-reactstrap-validation"
@@ -7,7 +6,7 @@ const Subscribe = () => {
 
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
-    const [array , setArray] = useState([]);
+    const [array, setArray] = useState([]);
     const showModal1 = () => {
         setOpen1(!open1);
     };
@@ -15,26 +14,26 @@ const Subscribe = () => {
     const showModal2 = () => {
         setOpen2(!open2);
     };
-const buy = (event,error,values) =>{
-   console.log(values);
-   array.push(values.jurnal1);
-   array.push(values.jurnal2)
-   array.push(values.jurnal3)
-   array.push(values.jurnal4)
-   let k = 0;
-   let soni = values.nusxa;
+    const buy = (event, error, values) => {
+        console.log(values);
+        array.push(values.jurnal1);
+        array.push(values.jurnal2);
+        array.push(values.jurnal3);
+        array.push(values.jurnal4);
+        let k = 0;
+        let soni = values.nusxa;
 
-   for(let number of array){
-       if (number === true) k++;
-   }
-   let summ = k*soni*25000;
-  console.log(summ)
-}
+        for (let number of array) {
+            if (number === true) k++;
+        }
+        let summ = k * soni * 25000;
+        console.log(summ)
+    };
     return (
         <div className="container mt-5 jurnal">
             <div className="d-flex justify-content-around">
                 <button type="button" className="btn btn-outline-danger" onClick={showModal1}>
-                        An'anaviy usulda obuna
+                    An'anaviy usulda obuna
                 </button>
                 <button type="button" className="btn btn-outline-primary" onClick={showModal2}>
                     Online usulda obuna
@@ -89,19 +88,8 @@ const buy = (event,error,values) =>{
                     </ModalFooter>
                 </AvForm>
             </Modal>
-
-
-
-=======
-import React from 'react';
-
-const Subscribe = () => {
-    return (
-        <div>
-            Hello
->>>>>>> 948958d80c603c464580be2aaf880e3eb4a4b57a
         </div>
-    );
-};
+    )
 
+}
 export default Subscribe;
