@@ -169,13 +169,12 @@
   height: 100%;
 }
 .product-image {
+  width: 100%;
+  height: 500px !important;
+  img {
     width: 100%;
-    height: 500px !important;
-    img {
-      width: 100%;
-      height: 100%;
-      
-    }
+    height: 100%;
+  }
 }
 
 .product-cart {
@@ -277,21 +276,18 @@
   background-color: #fff;
   text-align: center;
   overflow: hidden;
-  margin-bottom: 30px;
-  margin-right: 15px;
-  margin-left: 15px;
+  padding: 10px;
   border-radius: 4px;
 }
 .team__member {
   height: 50%;
   width: 100%;
-
 }
 .team__member-vesual {
   width: 100%;
-  height: 100%;
+  height: 250px;
 }
-.team__info { 
+.team__info {
   min-height: 200px;
   max-height: 100%;
   padding-bottom: 20px;
@@ -413,7 +409,7 @@
   line-height: 80px;
   margin-bottom: 30px;
   color: #fff;
-  text-align: center
+  text-align: center;
 }
 .moreInfo__logo-footer {
   display: flex;
@@ -425,26 +421,50 @@
   background-color: white !important;
 }
 .Link-registr {
-  padding: 5px
+  padding: 5px;
 }
 .Link-autho {
-  padding: 5px
+  padding: 5px;
 }
 .heading-text {
   padding: 50px;
 }
 
-.slick-prev, .slick-next{
+.slick-prev,
+.slick-next {
   top: 40%;
 }
-.slick-next{
-    right: -50px;
-
+.slick-next {
+  right: -50px;
 }
-.slick-prev{
-   left: -50px;
+.slick-prev {
+  left: -50px;
 }
 .text-align-center {
   text-align: center;
+}
+.heading-text {
+  padding: 0;
+  padding-bottom: 10px;
+}
+.index-img {
+  width: 100% !important;
+  height: 220px;
+}
+.index__main-img {
+  padding: 10px;
+}
+.portfolio-item, .grid-item {
+  padding: 0;
+}
+.portfolio-img {
+  height: 500px !important;
+}
+.recent-subtitle {
+  text-align: center;
+  font-size: 24px
+}
+.portfolio-item {
+  padding: 10px
 }
 @import "./media";

@@ -105,7 +105,6 @@ export default function Editor() {
                                 alt="Error"
                                 src="/images/azolar/rafiqov.jpg"
                                 className="team__member-vesual h-100"
-                                src="/images/1Client.jpg"
                                 className="team__member-vesual"
                             ></img>
                         </div>
