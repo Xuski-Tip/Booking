@@ -1,0 +1,44 @@
+
+.jurnal{
+  background-image: linear-gradient(aqua, white, green);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 10% 10%;
+
+  button{
+    animation-name: button_scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes button_scale {
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@media (max-width: 600px) {
+  padding: 10% 0;
+}
+  @media (max-width: 480px) {
+    padding: 10% 0;
+
+    button{
+      width: 38%;
+      font-size: 6px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    padding: 10% 0;
+
+    button{
+      width: 30%;
+      font-size: 6px!important;
+    }
+  }
+}
+
