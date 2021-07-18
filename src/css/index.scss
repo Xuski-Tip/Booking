@@ -454,7 +454,8 @@
 .index__main-img {
   padding: 10px;
 }
-.portfolio-item, .grid-item {
+.portfolio-item,
+.grid-item {
   padding: 0;
 }
 .portfolio-img {
@@ -462,9 +463,14 @@
 }
 .recent-subtitle {
   text-align: center;
-  font-size: 24px
+  font-size: 24px;
 }
 .portfolio-item {
-  padding: 10px
+  padding: 10px;
+}
+.Map {
+  width: 100%;
+  min-height: 460px;
+  height: auto;
 }
 @import "./media";
