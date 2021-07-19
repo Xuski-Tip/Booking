@@ -12,7 +12,6 @@ import thunk from "redux-thunk";
 import 'react-toastify/dist/ReactToastify.css';
 
 const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
-
 ReactDOM.render(
 
     <Provider store={store}>

@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderUpper from "../HeaderUpper";
 import { AvForm, AvField } from "availity-reactstrap-validation";
-import { login } from "../../redux/Action/loginAction";
+import { login } from "../../redux/Action/registerAction";
 import{connect} from "react-redux"
 
 const Registration = (props) => {
@@ -49,7 +49,7 @@ const Registration = (props) => {
                       <div className="col-lg-12 form-group">
                         <AvField
                           label='Email'
-                          type="text"
+                          type="email"
                           placeholder="Email"
                           name="email"
                           className="form-control"
