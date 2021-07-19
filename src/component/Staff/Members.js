@@ -404,7 +404,6 @@ export default function Members() {
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
                     <a className="btn btn-xs btn-slide btn-light" href="#">
-                      <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
