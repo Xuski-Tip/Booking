@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeaderUpper from "../HeaderUpper";
-class Authorization extends React.Component {
-  render() {
+import {AvForm, AvField} from "availity-reactstrap-validation";
+import {connect} from "react-redux";
+import {avtorizatsiya} from "../../redux/Action/loginAction";
+
+const Authorization = (props) => {
+
     return (
       <>
         <HeaderUpper/>
@@ -12,41 +16,45 @@ class Authorization extends React.Component {
               <div className="row">
                 <div className="fullscreen__container col-lg-5 center p-50 background-white b-r-6">
                   <h3>Login to your Account</h3>
-                  <form>
+                  <AvForm onSubmit={ (event, error, value) => props.avtorizatsiya(event, error, value, props.history)}>
                     <div className="form-group">
-                      <label className="sr-only">Username or Email</label>
-                      <input
-                        type="text"
+                      {/*<label className="sr-only">Username or Email</label>*/}
+                      <AvField
+                        type="email"
+                        name="email"
+                        label="Email"
                         className="form-control"
-                        autoComplete="off"
+                        // autoComplete="off"
                         placeholder="Username or Email"
                         required
                       />
                     </div>
                     <div className="form-group m-b-5">
-                      <label className="sr-only">Password</label>
-                      <input
+                      {/*<label className="sr-only">Password</label>*/}
+                      <AvField
                         type="password"
+                        name="parol"
+                        label="password"
                         className="form-control"
-                        autoComplete="off"
+                        // autoComplete="off"
                         placeholder="Password"
                         required
                       />
                     </div>
-                    <div className="form-group form-inline text-left">
-                      <div className="form-check">
-                        <label>
-                          <input type="checkbox" />
-                          <small className="m-l-10"> Remember me</small>
-                        </label>
-                      </div>
-                    </div>
+                    {/*<div className="form-group form-inline text-left">*/}
+                    {/*  <div className="form-check">*/}
+                    {/*    <label>*/}
+                    {/*      <input type="checkbox" />*/}
+                    {/*      <small className="m-l-10"> Remember me</small>*/}
+                    {/*    </label>*/}
+                    {/*  </div>*/}
+                    {/*</div>*/}
                     <div className="text-left form-group">
-                      <button type="button" className="btn">
+                      <button type="submit" className="btn">
                         Login
                       </button>
                     </div>
-                  </form>
+                  </AvForm>
                   <p className="small">
                     Don't have an account yet?{" "}
                     <Link to="Authorization/Registration">
@@ -60,6 +68,6 @@ class Authorization extends React.Component {
         </section>
       </>
     );
-  }
+
 }
-export default Authorization;
+export default connect(null, {avtorizatsiya})(Authorization) ;
