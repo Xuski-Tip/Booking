@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/index.scss";
 import ReactDOM from "react-dom"
-import Router, { render } from "./component/Router";
+import Router from "./component/Router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { rootReducer } from "./redux/rootReducer";
 import "./component/i18next";
