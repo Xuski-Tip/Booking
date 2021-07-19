@@ -51,7 +51,7 @@ export default function ContactUs() {
         </div>
       </div>
       <section className="no-padding">
-        <div className="map">
+        <div className="Map">
           <MapContainer />
         </div>
         {state.map((element) => {

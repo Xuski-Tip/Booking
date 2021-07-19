@@ -10,9 +10,34 @@ export default function Members() {
     dots: true,
     infinite: true,
     slidesToShow: 4,
+    autoplay: true,
     slidesToScroll: 1,
+    autoplaySpeed: 2000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 801,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 554,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 460,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   function SamplePrevArrow(props) {
@@ -75,13 +100,13 @@ export default function Members() {
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="!#">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -89,7 +114,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -97,7 +122,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -111,7 +136,6 @@ export default function Members() {
                   <img
                     alt="Error"
                     src="/images/azolar/boboyev.jpg"
-                    src="/images/1Client.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -122,13 +146,13 @@ export default function Members() {
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="!#">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -136,7 +160,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -144,7 +168,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -158,7 +182,6 @@ export default function Members() {
                   <img
                     alt="Error"
                     src="/images/azolar/oyqulov.jpg"
-                    src="/images/1Client.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -169,13 +192,13 @@ export default function Members() {
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="!#">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -183,7 +206,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -191,7 +214,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -205,7 +228,6 @@ export default function Members() {
                   <img
                     alt="Error"
                     src="/images/azolar/gafurov.jpg"
-                    src="/images/1Client.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -216,13 +238,13 @@ export default function Members() {
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="!#">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -230,7 +252,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -238,7 +260,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -251,7 +273,7 @@ export default function Members() {
                 <div className="team__member ">
                   <img
                     alt="Error"
-                    src="/images/1Client.jpg"
+                    src="/images/azolar/mamasiddiqov.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -264,13 +286,13 @@ export default function Members() {
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="!#">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -278,7 +300,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -286,7 +308,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -310,13 +332,13 @@ export default function Members() {
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="!#">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -324,7 +346,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -332,7 +354,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -358,13 +380,13 @@ export default function Members() {
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="!#">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -372,7 +394,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -380,7 +402,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>
@@ -393,7 +415,7 @@ export default function Members() {
                 <div className="team__member ">
                   <img
                     alt="Error"
-                    src="/images/1Client.jpg"
+                    src="/images/azolar/muxamedov.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -406,13 +428,13 @@ export default function Members() {
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
-                    <a className="btn btn-xs btn-slide btn-light" href="#">
+                    <a className="btn btn-xs btn-slide btn-light" href="!#">
                       <i className="fab fa-facebook-f"></i>
                       <span>Facebook</span>
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="100"
                     >
                       <i className="fab fa-twitter"></i>
@@ -420,7 +442,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="118"
                     >
                       <i className="fab fa-instagram"></i>
@@ -428,7 +450,7 @@ export default function Members() {
                     </a>
                     <a
                       className="btn btn-xs btn-slide btn-light"
-                      href="#"
+                      href="!#"
                       data-width="80"
                     >
                       <i className="icon-mail"></i>

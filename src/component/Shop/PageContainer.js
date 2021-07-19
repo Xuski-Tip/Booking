@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PageInfo from './PageInfo';
 import PageShop from './PageShop';
 const PageContainer = () => {
-    //!PageInfo
-    const [sort, setSort] = useState('plus');
-    //!PageShop
+
     const dataFrom = [
         {
             img: '/images/arxive1.jpg',
@@ -82,7 +80,7 @@ const PageContainer = () => {
 
     return (
         <div>
-            <PageInfo sort={sort} setSort={setSort} />
+            <PageInfo />
             <PageShop dataFrom={dataFrom} />
         </div>
     );

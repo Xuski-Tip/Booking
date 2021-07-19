@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
 import "./css/index.scss";
 import ReactDOM from "react-dom"
 import Router from "./component/Router";
@@ -9,18 +8,9 @@ import "./component/i18next";
 import { Suspense } from "react";
 import { createStore, applyMiddleware, compose } from "redux";
 import { Provider } from "react-redux";
-import App from "./component/App";
 import thunk from "redux-thunk";
 const store = createStore(rootReducer, compose(applyMiddleware(thunk)))
 
-
-// ReactDOM.render(
-
-//     <Provider store={store}>
-//             <App/>
-//     </Provider>
-//     ,document.getElementById('root')
-// )
 ReactDOM.render(
     <Provider store={store}>
         <Suspense fallback={(<div>Loading...</div>)}><Router /></Suspense>

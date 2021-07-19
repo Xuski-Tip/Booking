@@ -1,6 +1,5 @@
 import React from "react";
-import * as ReactBootStrap from "react-bootstrap";
-export default function Client({ sort, setSort }) {
+export default function Client() {
   return (
     <div className="container">
       <div className="PageInfo row m-b-20">

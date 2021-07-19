@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect } from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"
@@ -18,9 +18,7 @@ export default function HeaderUpper(stateAction) {
   function handleClick() {
     i18n.changeLanguage(changeLang);
   }
-  useEffect(() => {
-    handleClick();
-  }, []);
+  useEffect(handleClick, []);
   return (
     <>
       <ReactBootStrap.Navbar sticky="top" bg="light" expand="lg">
