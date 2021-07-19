@@ -10,7 +10,6 @@ import Editor from "./Staff/Editor"
 import Members from "./Staff/Members"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Subscribe from "./Subscribe";
-import Arcive from "./Arcive"
 import {ToastContainer} from "react-toastify";
 
 const Router = () => {
@@ -31,7 +30,6 @@ const Router = () => {
         <Route path='/staff/Editor' component={Editor}/>
         <Route path='/staff/Members' component={Members}/>
         <Route path='/subscribe' component={Subscribe}/>
-        <Route path='/arcive' component={Arcive}/>
         <Route component={App}></Route>
       </Switch>
       <ToastContainer/>
