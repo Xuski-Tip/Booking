@@ -1,0 +1,80 @@
+{
+  "Home": {
+    "navbar": "Main"
+  },
+  "Shop": {
+    "navbar": "Jurnal haqida",
+    "litsenziya": "License",
+    "leadership": "Leadership"
+  },
+  "avtorizatsiya": {
+    "navbar": "Log in",
+    "navbar2": "Registration"
+  },
+  "Offical Site": {
+    "navbar": "Offical Site",
+    "of the National Center": "of the National Center",
+    "for Human Rights": "for Human Rights",
+    "of the Republic of Uzbekistan": "of the Republic of Uzbekistan",
+    "scientific and educational journal": "scientific and educational journal",
+    "democration": "«DEMOCRATIZATION AND HUMAN RIGHTS»",
+    "Contact Phone": "Contact Phone",
+    "Our address": "Electron address"
+  },
+  "News": {
+    "navbar": "News"
+  },
+  "Welcom": {
+    "welcom to the": "WELCOME TO THE WORLD OF UZBEKISTAN",
+    "The magazine has been 1999": "The magazine has been published regularly since 1999",
+    "Explore more": "Explore more"
+  },
+  "our work": {
+    "WHAT WE DO": "Our partners"
+  },
+  "Recent Work": {
+    "work": "Recent Work"
+  },
+  "SERVICES": {
+    "service": "SERVICES"
+  },
+  "Our blog": {
+    "blog": "OUR BLOG"
+  },
+  "Our staff": {
+    "staff": "Editorial Board",
+    "Editor": "Members of the International Editorial Board",
+    "lives": "Members of the Editorial Board"
+  },
+  "submitting an article to the journal": {
+    "submiting": "To the authors of the article",
+    "article": "Requirements for articles",
+    "mode": "The order of publication of articles in the journal"
+  },
+  "About Us": {
+    "aboutUs": "About Us"
+  },
+  "Arxiv": {
+    "arxiv": "Archive"
+  },
+  "Subscription": {
+    "obuna": "Subscribe"
+  },
+  "members": {
+    "member1": "Doctor of Law, Associate Professor",
+    "member5": "candidate of jurisprudence, doctor",
+    "member2": "Doctor of Law, Professor, Scientist of the Republic of Uzbekistan",
+    "member3": "Doctor of Law, Professor, Honored Lawyer of Uzbekistan",
+    "member4": "doctor of jurisprudence, professor"
+  },
+  "state": {
+    "state1": "Uzbekistan",
+    "state2": "Russian Federation",
+    "state3": "Japan",
+    "state4": "USA",
+    "state5": "Poland",
+    "state6": "Organization of Islamic Cooperation",
+    "state7": "Estonia",
+    "state8": "Kazakhstan"
+  }
+}
