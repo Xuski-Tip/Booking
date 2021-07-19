@@ -1,42 +1,50 @@
 import React from "react";
 const recentData = [
   {
+    pdf: "/pdf/jurnal1.pdf",
     img: "/images/arxive1.jpg",
     id: 1,
     subtitle: "журнали 2021 йил 1-сони мундарижаси",
   },
   {
+    pdf: "/pdf/jurnal1.pdf",
     img: "/images/arxive2.jpg",
     id: 2,
     subtitle: "журнали 2020 йил 4-сони мундарижаси",
   },
   {
+    pdf: "/pdf/jurnal1.pdf",
     img: "/images/arxive3.jpg",
     id: 3,
     subtitle: "журнали 2020 йил 3-сони мундарижаси",
   },
   {
+    pdf: "/image/pdf/jurnal1.pdf",
     img: "/images/arxive4.jpg",
     id: 4,
     subtitle: "журнали 2020 йил 2-сони мундарижаси",
   },
   {
+    pdf: "/image/pdf/jurnal1.pdf",
     img: "/images/arxive5.jpg",
     id: 5,
     subtitle: "журнали 2020 йил 2-сони мундарижаси",
   },
   {
+    pdf: "/image/pdf/jurnal.pdf",
     img: "/images/arxive6.jpg",
     id: 6,
     subtitle: "журнали 2020 йил 1-сони мундарижаси",
   },
 
   {
+    pdf: "/image/pdf/jurnal.pdf",
     img: "/images/arxive7.jpg",
     id: 7,
     subtitle: "журнали 2019 йил 3-сони мундарижаси",
   },
   {
+    pdf: "/image/pdf/jurnal.pdf",
     img: "/images/arxive8.jpg",
     id: 8,
     subtitle: "журнали 2019 йил 2-сони мундарижаси",
@@ -71,9 +79,9 @@ class RecentWorkSlide extends React.Component {
                         data-lightbox="image"
                         href={element.img}
                       >
-                        <i className="icon-maximize"></i>
+                        {/*<i className="icon-maximize"></i>*/}
                       </a>
-                      <a href="portfolio-page-grid-gallery.html">
+                      <a href={element.pdf}>
                         <i className="icon-link"></i>
                       </a>
                     </div>

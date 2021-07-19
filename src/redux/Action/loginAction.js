@@ -1,5 +1,5 @@
 import axios from "axios";
-import { REGISTR_API} from "../../simpleJs/loginApi";
+import {REGISTR_API, TOKEN_LOCAL} from "../../simpleJs/loginApi";
 import {toast} from "react-toastify";
 
 export function login(events, error, value, history) {
@@ -9,11 +9,13 @@ export function login(events, error, value, history) {
                 console.log("salom");
                 console.log(res);
                 dispatch({type: ""});
-                history.push("/")
-                toast.success('Ты запустил ура')
+                localStorage.setItem(TOKEN_LOCAL, res.data.token);
+                history.push("/");
+                toast.success("Muvaffaqiyatli !!!")
             })
-            .catch((error) => {
-                toast.error('Error')
+            .catch((res) => {
+                toast.error("Error ")
             })
+
     }
 }

@@ -2,7 +2,7 @@ import React, { useState} from "react";
 import Slider from "../component/Slider";
 import BackgroundGrey from "../component/BackgroundGrey";
 import RecentWork from "./RecentWork";
-import Services from "./Services";
+// import Services from "./Services";
 import Blog from "./Blog";
 import MainClient from "./MainClient";
 import FooterInfo from "./FooterInfo";
@@ -22,7 +22,7 @@ function App() {
       <Slider />
       <BackgroundGrey />
       <RecentWork />
-      <Services />
+      {/*<Services />*/}
       <Blog />
       <MainClient />
       <ContactUs />
