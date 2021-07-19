@@ -7,8 +7,8 @@ export function login(events, error, value, history) {
         axios.post(REGISTR_API, value)
             .then((res) => {
                 console.log("salom");
-                console.log(res)
-                dispatch({type: ""})
+                console.log(res);
+                dispatch({type: ""});
                 history.push("/")
                 toast.success('Ты запустил ура')
             })
