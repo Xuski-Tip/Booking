@@ -105,7 +105,7 @@ export default function Editor() {
                                 alt="Error"
                                 src="/images/azolar/rafiqov.jpg"
                                 className="team__member-vesual h-100"
-                                src="/images/1Client.jpg"
+                                src="/images/azolar/rafiqov.jpg"
                                 className="team__member-vesual"
                             ></img>
                         </div>
@@ -202,8 +202,9 @@ export default function Editor() {
                     <div className="team__members p-2">
                         <div className="team__member">
                             <img
+                                width="300px"
                                 alt="Error"
-                                src="/images/1Client.jpg"
+                                src="/images/azolar/fujimoto.jpg"
                                 className="team__member-vesual"
                             ></img>
                         </div>
@@ -350,7 +351,7 @@ export default function Editor() {
                         <div className="team__member">
                             <img
                                 alt="Error"
-                                src="/images/1Client.jpg"
+                                src="/images/azolar/salim.png"
                                 className="team__member-vesual"
                             ></img>
                         </div>
@@ -399,7 +400,7 @@ export default function Editor() {
                         <div className="team__member">
                             <img
                                 alt="Error"
-                                src="/images/1Client.jpg"
+                                src="/images/azolar/myullerson.jpg"
                                 className="team__member-vesual"
                             ></img>
                         </div>
@@ -448,7 +449,7 @@ export default function Editor() {
                         <div className="team__member">
                             <img
                                 alt="Error"
-                                src="/images/1Client.jpg"
+                                src="/images/azolar/maskalkova.jpg"
                                 className="team__member-vesual"
                             ></img>
                         </div>
@@ -497,7 +498,7 @@ export default function Editor() {
                         <div className="team__member">
                             <img
                                 alt="Error"
-                                src="/images/1Client.jpg"
+                                src="/images/azolar/udarwev.jpg"
                                 className="team__member-vesual"
                             ></img>
                         </div>
