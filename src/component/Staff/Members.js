@@ -111,7 +111,6 @@ export default function Members() {
                   <img
                     alt="Error"
                     src="/images/azolar/boboyev.jpg"
-                    src="/images/1Client.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -158,7 +157,6 @@ export default function Members() {
                   <img
                     alt="Error"
                     src="/images/azolar/oyqulov.jpg"
-                    src="/images/1Client.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -205,7 +203,6 @@ export default function Members() {
                   <img
                     alt="Error"
                     src="/images/azolar/gafurov.jpg"
-                    src="/images/1Client.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -251,7 +248,7 @@ export default function Members() {
                 <div className="team__member ">
                   <img
                     alt="Error"
-                    src="/images/1Client.jpg"
+                    src="/images/azolar/mamasiddiqov.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
