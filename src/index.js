@@ -9,6 +9,7 @@ import { Suspense } from "react";
 import { createStore, applyMiddleware, compose } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
+import 'react-toastify/dist/ReactToastify.css';
 const store = createStore(rootReducer, compose(applyMiddleware(thunk)))
 
 ReactDOM.render(
