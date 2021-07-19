@@ -12,7 +12,7 @@ export default function Members() {
     slidesToShow: 4,
     autoplay: true,
     slidesToScroll: 1,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [

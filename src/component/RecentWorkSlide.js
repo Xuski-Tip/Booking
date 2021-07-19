@@ -46,7 +46,7 @@ class RecentWorkSlide extends React.Component {
   render() {
     return (
       <div className="portfolio">
-        <div id="portfolio" className="portfolio-4-columns" data-margin="0">
+        <div id="portfolio" className="portfolio-6-columns" data-margin="0">
           {recentData.map((element) => {
             return (
               <div key={element.id}>
