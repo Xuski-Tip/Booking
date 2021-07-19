@@ -1,9 +1,5 @@
 import React from "react";
 const NewsCard = ({ news, loading }) => {
-  const serverDate = news.updated_at;
-  console.log(serverDate);
-  const date = new Date();
-  const day = date.getDate();
   if (loading) {
     return <h2>Loading...</h2>;
   }

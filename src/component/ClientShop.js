@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import { useTranslation } from "react-i18next";
 function ClientShop() {
   const BlogData = [
     {
@@ -52,7 +51,6 @@ function ClientShop() {
         "Curabitur pulvinar euismod ante, ac sagittis ante posuereac. Vivamus luctus commodo dolor porta feugiat. Fusce atelit id ligula pharetra laoreet",
     },
   ];
-  const { t } = useTranslation();
   const settings = {
     dots: true,
     slidesToShow: 3,

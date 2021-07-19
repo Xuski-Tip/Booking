@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Modal, ModalBody, ModalFooter} from "reactstrap"
 import {AvForm, AvField} from "availity-reactstrap-validation"
 import FooterInfo from "./FooterInfo";
@@ -9,7 +9,7 @@ const Subscribe = () => {
 
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
-    const [array, setArray] = useState([]);
+    const [array] = useState([]);
     const showModal1 = () => {
         setOpen1(!open1);
     };
@@ -18,11 +18,12 @@ const Subscribe = () => {
         setOpen2(!open2);
     };
     const buy = (event, error, values) => {
-        console.log(values);
         array.push(values.jurnal1);
         array.push(values.jurnal2);
         array.push(values.jurnal3);
         array.push(values.jurnal4);
+        console.log("array")
+        console.log(array)
         let k = 0;
         let soni = values.nusxa;
 
@@ -30,7 +31,7 @@ const Subscribe = () => {
             if (number === true) k++;
         }
         let summ = k * soni * 25000;
-        console.log(summ)
+        console.log(summ);
     };
     return (
         <>

@@ -85,13 +85,13 @@ export default function MainClient() {
               </span>
               <p className="team__info-lorem"></p>
               <div className="align-center">
-                <a className="btn btn-xs btn-slide btn-light" href="#">
+                <a className="btn btn-xs btn-slide btn-light" href="!#">
                   <i className="fab fa-facebook-f"></i>
                   <span>Facebook</span>
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="100"
                 >
                   <i className="fab fa-twitter"></i>
@@ -99,7 +99,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="118"
                 >
                   <i className="fab fa-instagram"></i>
@@ -107,7 +107,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="80"
                 >
                   <i className="icon-mail"></i>
@@ -131,13 +131,13 @@ export default function MainClient() {
               </span>
               <p className="team__info-lorem"></p>
               <div className="align-center">
-                <a className="btn btn-xs btn-slide btn-light" href="#">
+                <a className="btn btn-xs btn-slide btn-light" href="!#">
                   <i className="fab fa-facebook-f"></i>
                   <span>Facebook</span>
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="100"
                 >
                   <i className="fab fa-twitter"></i>
@@ -145,7 +145,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="118"
                 >
                   <i className="fab fa-instagram"></i>
@@ -153,7 +153,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="80"
                 >
                   <i className="icon-mail"></i>
@@ -177,13 +177,13 @@ export default function MainClient() {
               </span>
               <p className="team__info-lorem"></p>
               <div className="align-center">
-                <a className="btn btn-xs btn-slide btn-light" href="#">
+                <a className="btn btn-xs btn-slide btn-light" href="!#">
                   <i className="fab fa-facebook-f"></i>
                   <span>Facebook</span>
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="100"
                 >
                   <i className="fab fa-twitter"></i>
@@ -191,7 +191,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="118"
                 >
                   <i className="fab fa-instagram"></i>
@@ -199,7 +199,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="80"
                 >
                   <i className="icon-mail"></i>
@@ -223,13 +223,13 @@ export default function MainClient() {
               </span>
               <p className="team__info-lorem"></p>
               <div className="align-center">
-                <a className="btn btn-xs btn-slide btn-light" href="#">
+                <a className="btn btn-xs btn-slide btn-light" href="!#">
                   <i className="fab fa-facebook-f"></i>
                   <span>Facebook</span>
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="100"
                 >
                   <i className="fab fa-twitter"></i>
@@ -237,7 +237,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="118"
                 >
                   <i className="fab fa-instagram"></i>
@@ -245,7 +245,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="80"
                 >
                   <i className="icon-mail"></i>
@@ -269,13 +269,13 @@ export default function MainClient() {
               </span>
               <p className="team__info-lorem"></p>
               <div className="align-center">
-                <a className="btn btn-xs btn-slide btn-light" href="#">
+                <a className="btn btn-xs btn-slide btn-light" href="!#">
                   <i className="fab fa-facebook-f"></i>
                   <span>Facebook</span>
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="100"
                 >
                   <i className="fab fa-twitter"></i>
@@ -283,7 +283,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="118"
                 >
                   <i className="fab fa-instagram"></i>
@@ -291,7 +291,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="80"
                 >
                   <i className="icon-mail"></i>
@@ -315,13 +315,13 @@ export default function MainClient() {
               </span>
               <p className="team__info-lorem"></p>
               <div className="align-center">
-                <a className="btn btn-xs btn-slide btn-light" href="#">
+                <a className="btn btn-xs btn-slide btn-light" href="!#">
                   <i className="fab fa-facebook-f"></i>
                   <span>Facebook</span>
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="100"
                 >
                   <i className="fab fa-twitter"></i>
@@ -329,7 +329,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="118"
                 >
                   <i className="fab fa-instagram"></i>
@@ -337,7 +337,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="80"
                 >
                   <i className="icon-mail"></i>
@@ -361,13 +361,13 @@ export default function MainClient() {
               </span>
               <p className="team__info-lorem"></p>
               <div className="align-center">
-                <a className="btn btn-xs btn-slide btn-light" href="#">
+                <a className="btn btn-xs btn-slide btn-light" href="!#">
                   <i className="fab fa-facebook-f"></i>
                   <span>Facebook</span>
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="100"
                 >
                   <i className="fab fa-twitter"></i>
@@ -375,7 +375,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="118"
                 >
                   <i className="fab fa-instagram"></i>
@@ -383,7 +383,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="80"
                 >
                   <i className="icon-mail"></i>
@@ -407,13 +407,13 @@ export default function MainClient() {
               </span>
               <p className="team__info-lorem"></p>
               <div className="align-center">
-                <a className="btn btn-xs btn-slide btn-light" href="#">
+                <a className="btn btn-xs btn-slide btn-light" href="!#">
                   <i className="fab fa-facebook-f"></i>
                   <span>Facebook</span>
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="100"
                 >
                   <i className="fab fa-twitter"></i>
@@ -421,7 +421,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="118"
                 >
                   <i className="fab fa-instagram"></i>
@@ -429,7 +429,7 @@ export default function MainClient() {
                 </a>
                 <a
                   className="btn btn-xs btn-slide btn-light"
-                  href="#"
+                  href="!#"
                   data-width="80"
                 >
                   <i className="icon-mail"></i>

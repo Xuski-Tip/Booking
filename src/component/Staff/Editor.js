@@ -67,14 +67,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -82,7 +82,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -90,7 +90,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -105,8 +105,6 @@ export default function Editor() {
                                 alt="Error"
                                 src="/images/azolar/rafiqov.jpg"
                                 className="team__member-vesual h-100"
-                                src="/images/azolar/rafiqov.jpg"
-                                className="team__member-vesual"
                             ></img>
                         </div>
                         <div className="team__info">
@@ -118,14 +116,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -133,7 +131,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -141,7 +139,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -167,14 +165,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -182,7 +180,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -190,7 +188,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -217,14 +215,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -232,7 +230,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -240,7 +238,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -266,14 +264,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -281,7 +279,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -289,7 +287,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -315,14 +313,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -330,7 +328,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -338,7 +336,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -364,14 +362,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -379,7 +377,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -387,7 +385,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -413,14 +411,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -428,7 +426,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -436,7 +434,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -462,14 +460,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -477,7 +475,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -485,7 +483,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>
@@ -511,14 +509,14 @@ export default function Editor() {
                             <div className="align-center">
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                     <span>Facebook</span>
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="100"
                                 >
                                     <i className="fab fa-twitter"></i>
@@ -526,7 +524,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href='#'
+                                    href='!#'
                                     data-width="118"
                                 >
                                     <i className="fab fa-instagram"></i>
@@ -534,7 +532,7 @@ export default function Editor() {
                                 </a>
                                 <a
                                     className="btn btn-xs btn-slide btn-light"
-                                    href="#"
+                                    href="!#"
                                     data-width="80"
                                 >
                                     <i className="icon-mail"></i>

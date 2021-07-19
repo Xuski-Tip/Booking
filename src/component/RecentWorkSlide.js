@@ -57,7 +57,7 @@ class RecentWorkSlide extends React.Component {
                   <h6 className="recent-subtitle">{element.subtitle}</h6>
                   <div className="portfolio-item-wrap">
                     <div className="portfolio-image">
-                      <a href="#">
+                      <a href="!#">
                         <img
                           className="portfolio-img"
                           src={element.img}
