@@ -474,5 +474,12 @@
   min-height: 460px;
   height: auto;
 }
+.application{
+  .card{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+}
 @import "./media";
 @import "./jurnal";
