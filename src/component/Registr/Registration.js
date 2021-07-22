@@ -1,9 +1,6 @@
 import React from "react";
 import HeaderUpper from "../HeaderUpper";
 import { AvForm, AvField } from "availity-reactstrap-validation";
-import { login } from "../../redux/Action/loginAction";
-import{connect} from "react-redux"
-
 const Registration = (props) => {
     return (
       <>
@@ -75,4 +72,4 @@ const Registration = (props) => {
       </>
     );
 }
-export default connect(null, {login})(Registration);
+export default Registration;
