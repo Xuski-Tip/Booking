@@ -5,7 +5,7 @@ import Authorization from "./Registr/Authorization";
 import Registration from "./Registr/Registration";
 import ContactUs from "./Contact Us/ContactUs";
 import Card from "./Shop/InfoCard/Card";
-import News from "./News/News";
+// import News from "./News/News";
 import Editor from "./Staff/Editor"
 import Members from "./Staff/Members"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -26,7 +26,7 @@ const Router = () => {
         />
         <Route exact path="/ContactUs" component={ContactUs} />
         <Route path="/Shop/Card/:id" component={Card} />
-        <Route path="/News" component={News} />
+        {/*<Route path="/News" component={News} />*/}
         <Route path='/staff/Editor' component={Editor}/>
         <Route path='/staff/Members' component={Members}/>
         <Route path='/subscribe' component={Subscribe}/>
