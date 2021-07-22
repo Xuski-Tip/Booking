@@ -16,8 +16,8 @@ const Authorization = (props) => {
               <div className="row">
                 <div className="fullscreen__container col-lg-5 center p-50 background-white b-r-6">
                   <h3>Login to your Account</h3>
-                  <AvForm onSubmit={ (event, error, value) => props.avtorizatsiya(event, error, value, props.history)}>
-                    <div className="form-group">
+                  <AvForm onSubmit={ (event, errors, values) => props.avtorizatsiya(event, errors, values, props.history)}>
+                    {/*<div className="form-group">*/}
                       {/*<label className="sr-only">Username or Email</label>*/}
                       <AvField
                         type="email"
@@ -28,8 +28,8 @@ const Authorization = (props) => {
                         placeholder="Username or Email"
                         required
                       />
-                    </div>
-                    <div className="form-group m-b-5">
+                    {/*</div>*/}
+                    {/*<div className="form-group m-b-5">*/}
                       {/*<label className="sr-only">Password</label>*/}
                       <AvField
                         type="password"
@@ -40,7 +40,7 @@ const Authorization = (props) => {
                         placeholder="Password"
                         required
                       />
-                    </div>
+                    {/*</div>*/}
                     {/*<div className="form-group form-inline text-left">*/}
                     {/*  <div className="form-check">*/}
                     {/*    <label>*/}
@@ -49,11 +49,11 @@ const Authorization = (props) => {
                     {/*    </label>*/}
                     {/*  </div>*/}
                     {/*</div>*/}
-                    <div className="text-left form-group">
+                    {/*<div className="text-left form-group">*/}
                       <button type="submit" className="btn">
                         Login
                       </button>
-                    </div>
+                    {/*</div>*/}
                   </AvForm>
                   <p className="small">
                     Don't have an account yet?{" "}
