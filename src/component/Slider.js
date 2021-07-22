@@ -28,7 +28,7 @@ function Slider() {
           </div>
         </div>
         <div className="MainBg__right">
-          <h6 className="text-success pb-2 text-center">Demokratlashtirish va inson huquqlari jurnali</h6>
+          <h6 className="text-primary pb-2 text-center">Jurnalning yangi soni</h6>
           <Link to="/Shop">
             <img
               alt="error"
