@@ -111,7 +111,23 @@
   width: 100%;
   height: 100%;
 }
-
+.text_button {
+  border-radius: 5px;
+  border: 0;
+  width: 280px;
+  background-color: rgb(85, 85, 218);
+  color: white;
+  padding: 10px;
+}
+.text_button-target {
+  color: white !important;
+  &:hover {
+    color: white !important;
+  }
+}
+.bglight {
+  display: flex;
+}
 .grid-item {
   padding: 0px 10px 20px 10px;
   width: auto;
@@ -278,7 +294,6 @@
 }
 .team__member {
   width: 100%;
-  
 }
 .team__member-vesual {
   width: 100%;
@@ -442,7 +457,6 @@
   text-align: center;
 }
 
-
 .heading-text {
   padding: 0;
   padding-bottom: 10px;
@@ -469,8 +483,8 @@
   min-height: 460px;
   height: auto;
 }
-.application{
-  .card{
+.application {
+  .card {
     background-color: transparent;
     border: none;
     box-shadow: none;
