@@ -1,6 +1,7 @@
 import axios from "axios";
-import {LOGIN_API} from "../../simpleJs/loginApi";
+import {LOGIN, LOGIN_API} from "../../simpleJs/loginApi";
 import {toast} from "react-toastify";
+
 
 export function avtorizatsiya(event, errors, values, history) {
     return function (dispatch) {
@@ -9,12 +10,14 @@ export function avtorizatsiya(event, errors, values, history) {
                 // console.log("salom");
                 console.log(res);
                 dispatch({type: ""});
-                // localStorage.setItem(TOKEN_LOCAL, res.data.token);
+                localStorage.setItem(LOGIN, res.data.token);
                 history.push("/");
                 toast.success("Muvaffaqiyatli !!!")
             })
             .catch((res) => {
-                toast.error("Xatoku brat")
-            })
+                    toast.error("salom")
+                }
+            );
     }
 }
+

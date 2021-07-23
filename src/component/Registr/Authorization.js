@@ -33,7 +33,7 @@ const Authorization = (props) => {
                       {/*<label className="sr-only">Password</label>*/}
                       <AvField
                         type="password"
-                        name="parol"
+                        name="password"
                         label="password"
                         className="form-control"
                         // autoComplete="off"

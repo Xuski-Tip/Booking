@@ -35,10 +35,12 @@ export default function ContactUs() {
           message: data.message,
         }
       );
+      // document.getElementById("name").value = "";
+      // document.getElementById("email").value = "";
+      // document.getElementById("phone").value = "";
+      // document.getElementById("message").value = "";
+    } catch (error) {
       toast.success("Xabaringiz jo'natildi")
-    }
-    catch (error) {
-      toast.error("Xato");
     }
   };
 
