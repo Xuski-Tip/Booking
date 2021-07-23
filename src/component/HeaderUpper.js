@@ -1,4 +1,6 @@
-import React, {useEffect } from "react";
+import React, {useEffect,useState } from "react";
+import {Modal, ModalBody, ModalFooter} from "reactstrap";
+import {AvForm, AvFiled, AvField} from "availity-reactstrap-validation"
 import * as ReactBootStrap from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"
@@ -19,6 +21,34 @@ export default function HeaderUpper(stateAction) {
     i18n.changeLanguage(changeLang);
   }
   useEffect(handleClick, []);
+
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [array] = useState([]);
+  const showModal1 = () => {
+    setOpen1(!open1);
+  };
+
+  const showModal2 = () => {
+    setOpen2(!open2);
+  };
+  const buy = (event, error, values) => {
+    array.push(values.jurnal1);
+    array.push(values.jurnal2);
+    array.push(values.jurnal3);
+    array.push(values.jurnal4);
+    console.log("array")
+    console.log(array)
+    let k = 0;
+    let soni = values.nusxa;
+
+    for (let number of array) {
+      if (number === true) k++;
+    }
+    let summ = k * soni * 25000;
+    console.log(summ);
+  };
+
   return (
     <>
       <ReactBootStrap.Navbar sticky="top" bg="light" expand="lg">
@@ -69,9 +99,19 @@ export default function HeaderUpper(stateAction) {
               {t("Arxiv.arxiv")}
             </ReactBootStrap.Nav.Link>
 
-            <ReactBootStrap.Nav.Link as={Link} to="/subscribe">
-              {t("Subscription.obuna")}
-            </ReactBootStrap.Nav.Link>
+
+            <ReactBootStrap.NavDropdown
+                title={t("Subscription.obuna")}
+                id="basic-nav-dropdown"
+            >
+              <ReactBootStrap.NavDropdown.Item onClick={showModal1}>
+                {t("Subscription.ofline")}
+              </ReactBootStrap.NavDropdown.Item>
+              <ReactBootStrap.NavDropdown.Item onClick={showModal2}>
+                {t("Subscription.online")}
+              </ReactBootStrap.NavDropdown.Item>
+            </ReactBootStrap.NavDropdown>
+
           </ReactBootStrap.Nav>
           <ReactBootStrap.Form inline>
             <Link className="Link-autho" to={"/Authorization"}>
@@ -95,6 +135,70 @@ export default function HeaderUpper(stateAction) {
           </ReactBootStrap.Form>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
+
+      <Modal isOpen={open1} toggle={showModal1}>
+        <AvForm>
+          <ModalBody>
+            <AvField name="name" required label='F.I.SH' type="text"/>
+            <AvField name="adres" required label="Adres" type="text"/>
+            <AvField name="email" required label="Email" type="text"/>
+            <AvField name="number" required label="Telefon nomer" type="number"/>
+            <div className="d-flex justify-content-between">
+              <AvField type="select" className="w-75" required name="jurnal"
+                       label="Jurnalni tanlang">
+                <option value="1">2021-yil 1-son</option>
+                <option value="2">2021-yil 2-son</option>
+                <option value="3">2021-yil 3-son</option>
+                <option value="4">2021-yil 4-son</option>
+              </AvField>
+              <AvField name="nusxa" required type="number" label="Necha nusxada"/>
+            </div>
+
+          </ModalBody>
+          <ModalFooter className="d-flex justify-content-between">
+            <button type="button" className="btn btn-success">To'lov</button>
+            <button type="button" className="btn btn-success" onClick={showModal1}>Cansel</button>
+          </ModalFooter>
+        </AvForm>
+      </Modal>
+
+
+      <Modal isOpen={open2} toggle={showModal2}>
+        <AvForm onSubmit={buy}>
+          <ModalBody>
+            <AvField name="name" required label='F.I.SH' type="text"/>
+            {/*<AvField name="adres" required label="Adres" type="text"/>*/}
+            <AvField name="email" required label="Email" type="text"/>
+            <AvField name="number" label="Telefon nomer" type="number"/>
+            <div className="">
+              <div className="row">
+                <div className="col-6">
+                  <AvField type="checkbox" label="Jurnal1" className="w-75"
+                           name="jurnal1"></AvField>
+                </div>
+                <div className="col-6">
+                  <AvField type="checkbox" label="Jurnal2" className="w-75"
+                           name="jurnal2"></AvField>
+                </div>
+                <div className="col-6">
+                  <AvField type="checkbox" label="Jurnal3" className="w-75"
+                           name="jurnal3"></AvField>
+                </div>
+                <div className="col-6">
+                  <AvField type="checkbox" label="Jurnal4" className="w-75"
+                           name="jurnal4"></AvField>
+                </div>
+              </div>
+              <AvField name="nusxa" required type="number" label="Necha nusxada"/>
+            </div>
+
+          </ModalBody>
+          <ModalFooter className="d-flex justify-content-between">
+            <button type="submit" className="btn btn-success">To'lov</button>
+            <button type="button" className="btn btn-success" onClick={showModal2}>Cansel</button>
+          </ModalFooter>
+        </AvForm>
+      </Modal>
     </>
   );
 }

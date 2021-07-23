@@ -46,7 +46,7 @@
   background-image: linear-gradient(to right, white 50%, #D3D1E9 50%);
 }
 .wrapper {
-  height: 100vh;
+  //height: 100vh;
   /*This part is important for centering*/
   //display: flex;
   //align-items: center;
@@ -54,22 +54,27 @@
 }
 
 .typing-demo {
-  width: 22ch;
-  animation: typing 2s steps(222), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-}
-
-@keyframes typing {
-  from {
-    width: 0
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
   }
-}
 
-@keyframes blink {
-  100% {
-    border-color: transparent
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
   }
-}
