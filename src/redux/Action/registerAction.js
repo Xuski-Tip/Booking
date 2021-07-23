@@ -10,14 +10,12 @@ export function login(events, error, value, history) {
                 console.log(res);
                 dispatch({type: ""});
                 localStorage.setItem(TOKEN_LOCAL, res.data.token);
-                localStorage.setItem("email", value.email)
-                localStorage.setItem("password", value.password)
                 history.push("/");
-                toast.success("Muvaffaqiyatli !!!")
+                toast.success("fine")
             })
             .catch((res) => {
                 toast.error("Error")
             })
-
+        console.log(value)
     }
 }

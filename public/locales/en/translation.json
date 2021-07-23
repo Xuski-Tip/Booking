@@ -25,7 +25,7 @@
     "navbar": "News"
   },
   "Welcom": {
-    "welcom to the": "WELCOME TO THE WORLD OF UZBEKISTAN",
+    "welcom to the": "JOURNAL OF DEMOCRATICIZATION AND HUMAN RIGHTS",
     "The magazine has been 1999": "The magazine has been published regularly since 1999",
     "Explore more": "Explore more"
   },
@@ -58,7 +58,9 @@
     "arxiv": "Archive"
   },
   "Subscription": {
-    "obuna": "Subscribe"
+    "obuna": "Subscribe",
+    "ofline": "Subscribe to the traditional (paper) magazine format",
+    "online": "Subscribe to the electronic form of the magazine"
   },
   "members": {
     "member1": "Doctor of Law, Associate Professor",

@@ -1,89 +1,191 @@
-import React from 'react';
-import PageInfo from './PageInfo';
-import PageShop from './PageShop';
+import React, { useState, useEffect } from "react";
+import Pagination from "../Pagination";
+import PageInfo from "./PageInfo";
+import PageShop from "./PageShop";
 const PageContainer = () => {
+  const [dataFrom, setCountirs] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [coutriesPerPage] = useState(8);
+  const nextPage = () => setCurrentPage((prev) => prev + 1);
+  const prevPage = () => setCurrentPage((prev) => prev - 1);
+  const lastCountryIndex = currentPage * coutriesPerPage;
+  const firstCountryIndex = lastCountryIndex - coutriesPerPage;
+  const currentCountry = dataFrom.slice(firstCountryIndex, lastCountryIndex);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  useEffect(() => {
+    setCountirs([
+      {
+        pdf: "",
+        img: "/images/arxive1.jpg",
+        id: 1,
+        subtitle: "журнали 2021 йил 1-сони мундарижаси",
+      },
+      {
+        pdf: "",
+        img: "/images/arxive2.jpg",
+        id: 2,
+        subtitle: "журнали 2020 йил 4-сони мундарижаси",
+      },
+      {
+        pdf: "",
+        img: "/images/arxive3.jpg",
+        id: 3,
+        subtitle: "журнали 2020 йил 3-сони мундарижаси",
+      },
+      {
+        pdf: "",
+        img: "/images/arxive4.jpg",
+        id: 4,
+        subtitle: "журнали 2020 йил 2-сони мундарижаси",
+      },
+      {
+        pdf: "/pdf/jurnal1.pdf",
+        img: "/images/arxive5.jpg",
+        id: 5,
+        subtitle: "журнали 2020 йил 2-сони мундарижаси",
+      },
+      {
+        pdf: "/pdf/jurnal.pdf",
+        img: "/images/arxive6.jpg",
+        id: 6,
+        subtitle: "журнали 2020 йил 1-сони мундарижаси",
+      },
 
-    const dataFrom = [
-        {
-            img: '/images/arxive1.jpg',
-            hoverImg:
-                "",
-            term: 'Free',
-            category: 'Business',
-            subtitle: 'The way of Donald Trump',
-            price: null,
-            rate: 4,
-            reviews: 3,
-            id: 1,
-        },
-        {
-            img: '/images/arxive2.jpg',
-            hoverImg:
-                'https://theblueprint.ru/upload/14094m/aaad24c47ab65761ea62a2dd3cfc0f72.jpg',
-            term: 'Paid',
-            category: 'Fashion',
-            subtitle: 'Vogue',
-            price: 45.0,
-            rate: 5,
-            reviews: 10,
-            id: 2,
-        },
-        {
-            img: '/images/arxive3.jpg',
-            hoverImg:
-                'https://media.lpgenerator.ru/uploads/2016/03/30/1____.jpg',
-            term: 'Free',
-            category: 'Woman',
-            subtitle: 'Bolt Sweatshirt',
-            price: null,
-            rate: 4,
-            reviews: 3,
-            id: 3,
-        },
-        {
-            img: '/images/arxive4.jpg',
-            hoverImg:
-                'https://static.tildacdn.com/tild3439-3135-4337-b832-613264373833/-Nature-768x1009.jpg',
-            term: 'Paid',
-            category: 'Man',
-            subtitle: 'Bolt Sweatshirt ssss',
-            price: 35.0,
-            rate: 2,
-            reviews: 10,
-            id: 4,
-        },
-        {
-            img: '/images/arxive5.jpg',
-            hoverImg:
-                'https://static.tildacdn.com/tild3439-3135-4337-b832-613264373833/-Nature-768x1009.jpg',
-            term: 'Free',
-            category: 'XZ',
-            subtitle: 'Bolt Sweatshirt TTTTT',
-            price: null,
-            rate: 3,
-            reviews: 10,
-            id: 5,
-        },
-        {
-            img: '/images/arxive6.jpg',
-            hoverImg:
-                'https://static.tildacdn.com/tild3439-3135-4337-b832-613264373833/-Nature-768x1009.jpg',
-            term: 'Paid',
-            category: 'XZ',
-            subtitle: 'Bolt Sweatshirt RRRR',
-            price: 305.0,
-            rate: 3,
-            reviews: 10,
-            id: 6,
-        },
-    ];
+      {
+        pdf: "/pdf/jurnal.pdf",
+        img: "/images/arxive7.jpg",
+        id: 7,
+        subtitle: "журнали 2019 йил 3-сони мундарижаси",
+      },
+      {
+        pdf: "/pdf/jurnal.pdf",
+        img: "/images/arxive8.jpg",
+        id: 8,
+        subtitle: "журнали 2019 йил 2-сони мундарижаси",
+      },
+      {
+        pdf: "/pdf/jurnal.pdf",
+        img: "/images/background/jurnal2019_1.jpg",
+        id: 9,
+        subtitle: "журнали 2019 йил 1-сони мундарижаси",
+      },
+      {
+        pdf: "/pdf/jurnal2.pdf",
+        img: "/images/background/jurnal2018_4.jpg",
+        id: 10,
+        subtitle: "журнали 2018 йил 4-сони мундарижаси",
+      },
+      {
+        pdf: "/pdf/jurnal1.pdf",
+        img: "/images/background/jurnal2018_3.jpg",
+        id: 11,
+        subtitle: "журнали 2018 йил 3-сони мундарижаси",
+      },
+      {
+        pdf: "/pdf/jurnal3.pdf",
+        img: "/images/background/jurnal2018_2.jpg",
+        id: 12,
+        subtitle: "журнали 2018 йил 2-сони мундарижаси",
+      },
+      {
+        pdf: "/pdf/jurnal3.pdf",
+        img: "/images/background/jurnal2018_2.jpg",
+        id: 13,
+        subtitle: "журнали 2018 йил 2-сони мундарижаси",
+      },
 
-    return (
-        <div>
-            <PageInfo />
-            <PageShop dataFrom={dataFrom} />
-        </div>
-    );
+    ]);
+  }, []);
+  //   const dataFrom = [
+  //     {
+  //       pdf: "",
+  //       img: "/images/arxive1.jpg",
+  //       id: 1,
+  //       subtitle: "журнали 2021 йил 1-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "",
+  //       img: "/images/arxive2.jpg",
+  //       id: 2,
+  //       subtitle: "журнали 2020 йил 4-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "",
+  //       img: "/images/arxive3.jpg",
+  //       id: 3,
+  //       subtitle: "журнали 2020 йил 3-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "",
+  //       img: "/images/arxive4.jpg",
+  //       id: 4,
+  //       subtitle: "журнали 2020 йил 2-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "/pdf/jurnal1.pdf",
+  //       img: "/images/arxive5.jpg",
+  //       id: 5,
+  //       subtitle: "журнали 2020 йил 2-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "/pdf/jurnal.pdf",
+  //       img: "/images/arxive6.jpg",
+  //       id: 6,
+  //       subtitle: "журнали 2020 йил 1-сони мундарижаси",
+  //     },
+
+  //     {
+  //       pdf: "/pdf/jurnal.pdf",
+  //       img: "/images/arxive7.jpg",
+  //       id: 7,
+  //       subtitle: "журнали 2019 йил 3-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "/pdf/jurnal.pdf",
+  //       img: "/images/arxive8.jpg",
+  //       id: 8,
+  //       subtitle: "журнали 2019 йил 2-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "/pdf/jurnal.pdf",
+  //       img: "/images/background/jurnal2019_1.jpg",
+  //       id: 9,
+  //       subtitle: "журнали 2019 йил 1-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "/pdf/jurnal2.pdf",
+  //       img: "/images/background/jurnal2018_4.jpg",
+  //       id: 10,
+  //       subtitle: "журнали 2018 йил 4-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "/pdf/jurnal1.pdf",
+  //       img: "/images/background/jurnal2018_3.jpg",
+  //       id: 11,
+  //       subtitle: "журнали 2018 йил 3-сони мундарижаси",
+  //     },
+  //     {
+  //       pdf: "/pdf/jurnal3.pdf",
+  //       img: "/images/background/jurnal2018_2.jpg",
+  //       id: 12,
+  //       subtitle: "журнали 2018 йил 2-сони мундарижаси",
+  //     },
+  //   ];
+
+  return (
+    <div>
+      <PageInfo />
+      <PageShop dataFrom={currentCountry} loading={loading} />
+      <Pagination
+        countriesPerPage={coutriesPerPage}
+        totalCountries={dataFrom.length}
+        paginate={paginate}
+        nextPage={nextPage}
+        prevPage={prevPage}
+      />
+    </div>
+  );
 };
 
 export default PageContainer;

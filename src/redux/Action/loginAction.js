@@ -11,11 +11,12 @@ export function avtorizatsiya(event, errors, values, history) {
                 console.log(res);
                 dispatch({type: ""});
                 localStorage.setItem(LOGIN, res.data.token);
+                console.log(LOGIN);
                 history.push("/");
-                toast.success("Muvaffaqiyatli !!!")
+                toast.success("fine")
             })
             .catch((res) => {
-                    toast.error("salom")
+                    toast.error("Error")
                 }
             );
     }

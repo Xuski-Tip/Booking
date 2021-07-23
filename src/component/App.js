@@ -23,8 +23,8 @@ function App() {
       <BackgroundGrey />
       <RecentWork />
       {/*<Services />*/}
-      <Blog />
-      <MainClient />
+      {/*<Blog />*/}
+      {/*<MainClient />*/}
       <ContactUs />
       <FooterInfo />
       <LinkerUp />

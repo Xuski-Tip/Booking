@@ -111,17 +111,14 @@
   width: 100%;
   height: 100%;
 }
-.Page-shop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .grid-item {
   padding: 0px 10px 20px 10px;
+  width: auto;
 }
-.PageInfo {
-  margin: 50px;
-}
+// .grid-4-columns .grid-item, .post-4-columns .post-item, .portfolio-4-columns .portfolio-item {
+//   width: 25%;
+// }
 .fullscreen {
   background-image: url(/images/pages/1.jpg);
   height: 100vh;
@@ -285,7 +282,8 @@
 }
 .team__member-vesual {
   width: 100%;
-  height: 250px !important;
+  height: 300px !important;
+  object-fit: cover;
 }
 .team__info {
   height: 200px;
@@ -338,6 +336,7 @@
 }
 .pagination {
   flex-wrap: wrap;
+  justify-content: center;
 }
 // .News-Flexing {
 //     display: flex;

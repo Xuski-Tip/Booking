@@ -59,7 +59,9 @@
       "arxiv": "Arxiv"
     },
   "Subscription": {
-    "obuna": "Obuna"
+    "obuna": "Obuna",
+    "ofline": "Jurnalning an'anaviy(qog'oz) shakliga obuna",
+    "online": "Jurnalning elektron shakliga obuna"
   },
   "members": {
     "member1": "yuridik fanlar doktori, dotsent",

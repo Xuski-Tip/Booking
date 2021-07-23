@@ -9,7 +9,6 @@ import Card from "./Shop/InfoCard/Card";
 import Editor from "./Staff/Editor"
 import Members from "./Staff/Members"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Subscribe from "./Subscribe";
 import {ToastContainer} from "react-toastify";
 import NotFound from "./NotFound";
 import Leadership from "./Jurnal/Leadership";
@@ -32,7 +31,6 @@ const Router = () => {
         <Route exact path='/staff/editor' component={Editor}/>
         <Route exact path='/leadership' component={Leadership}/>
         <Route exact path='/staff/members' component={Members}/>
-        <Route exact path='/subscribe' component={Subscribe}/>
         <Route exact path='/requirimend' component={Requirimend}/>
         <Route exact path='/layout' component={ArticleLayout}/>
         <Route component={NotFound}></Route>

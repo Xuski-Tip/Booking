@@ -321,7 +321,7 @@ export default function Members() {
                 <div className="team__member ">
                   <img
                     alt="Error"
-                    src="/images/1Client.jpg"
+                    src="/images/MixailGasanov.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
@@ -367,7 +367,7 @@ export default function Members() {
                 <div className="team__member ">
                   <img
                     alt="Error"
-                    src="/images/1Client.jpg"
+                    src="/images/Client.jpg"
                     className="team__member-vesual"
                   ></img>
                 </div>
