@@ -7,16 +7,18 @@ function Slider() {
     <>
       <div className="MainHeader">
         <div className="MainSlider slide kenburns">
-          <div className="MainSlider__bg slide-captions text-center text-light">
+          <div className="MainSlider__bg wrapper slide-captions text-center text-light">
             <img
               alt="#"
-              src="/images/MainBackground.jpg"
+              src="/images/background/main.jpg"
               className="MainSlider__bg-img"
             ></img>
             <div className="MainSlider__bg-black"></div>
-            <h1 className="MainSlider__subtitle">
-              {t("Welcom.welcom to the")}
-            </h1>
+            {/*<div className="wrapper">*/}
+              <h1 className="MainSlider__subtitle typing-demo">
+                {t("Welcom.welcom to the")}
+              </h1>
+            {/*</div>*/}
             <p className="MainSlider__lorem">
               {t("Welcom.The magazine has been 1999")}
             </p>
