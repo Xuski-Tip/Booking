@@ -19,6 +19,14 @@ function BackgroundGrey() {
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0s"
             >
+              <img className="index-img bg-white" src="/images/doi.png" alt="" />
+            </div>
+          </div>
+          <div className="col-lg-2 index__main-img">
+            <div
+              className="wow animate__animated animate__fadeInUp "
+              data-wow-delay="0s"
+            >
               <img className="index-img" src="/images/DoiCrossref.png" alt="" />
             </div>
           </div>

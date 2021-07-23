@@ -11,6 +11,9 @@
     animation-iteration-count: infinite;
   }
 
+
+
+
 @media (max-width: 600px) {
   padding: 10% 0;
 }
@@ -33,3 +36,40 @@
   }
 }
 
+.rahbar{
+  h5{
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.bglight{
+  background-image: linear-gradient(to right, white 50%, #D3D1E9 50%);
+}
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(222), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  100% {
+    border-color: transparent
+  }
+}

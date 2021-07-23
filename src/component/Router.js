@@ -11,6 +11,10 @@ import Members from "./Staff/Members"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Subscribe from "./Subscribe";
 import {ToastContainer} from "react-toastify";
+import NotFound from "./NotFound";
+import Leadership from "./Jurnal/Leadership";
+import Requirimend from "./article/requirimend";
+import ArticleLayout from "./article/articleLayout";
 
 const Router = () => {
   return (
@@ -18,19 +22,20 @@ const Router = () => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/arcive" component={Shop} />
-        <Route exact path="/Authorization" component={Authorization} />
-        <Route
-          exact
-          path="/Authorization/Registration"
+        <Route exact path="/authorization" component={Authorization} />
+        <Route exact path="/authorization/registration"
           component={Registration}
         />
-        <Route exact path="/ContactUs" component={ContactUs} />
-        <Route path="/Shop/Card/:id" component={Card} />
+        <Route exact path="/contactUs" component={ContactUs} />
+        <Route exact path="/shop/card/:id" component={Card} />
         {/*<Route path="/News" component={News} />*/}
-        <Route path='/staff/Editor' component={Editor}/>
-        <Route path='/staff/Members' component={Members}/>
-        <Route path='/subscribe' component={Subscribe}/>
-        <Route component={App}></Route>
+        <Route exact path='/staff/editor' component={Editor}/>
+        <Route exact path='/leadership' component={Leadership}/>
+        <Route exact path='/staff/members' component={Members}/>
+        <Route exact path='/subscribe' component={Subscribe}/>
+        <Route exact path='/requirimend' component={Requirimend}/>
+        <Route exact path='/layout' component={ArticleLayout}/>
+        <Route component={NotFound}></Route>
       </Switch>
       <ToastContainer/>
     </BrowserRouter>

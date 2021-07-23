@@ -19,35 +19,59 @@ const recentData = [
     subtitle: "журнали 2020 йил 3-сони мундарижаси",
   },
   {
-    pdf: "/image/pdf/jurnal1.pdf",
+    pdf: "/pdf/jurnal1.pdf",
     img: "/images/arxive4.jpg",
     id: 4,
     subtitle: "журнали 2020 йил 2-сони мундарижаси",
   },
   {
-    pdf: "/image/pdf/jurnal1.pdf",
+    pdf: "/pdf/jurnal1.pdf",
     img: "/images/arxive5.jpg",
     id: 5,
     subtitle: "журнали 2020 йил 2-сони мундарижаси",
   },
   {
-    pdf: "/image/pdf/jurnal.pdf",
+    pdf: "/pdf/jurnal.pdf",
     img: "/images/arxive6.jpg",
     id: 6,
     subtitle: "журнали 2020 йил 1-сони мундарижаси",
   },
 
   {
-    pdf: "/image/pdf/jurnal.pdf",
+    pdf: "/pdf/jurnal.pdf",
     img: "/images/arxive7.jpg",
     id: 7,
     subtitle: "журнали 2019 йил 3-сони мундарижаси",
   },
   {
-    pdf: "/image/pdf/jurnal.pdf",
+    pdf: "/pdf/jurnal.pdf",
     img: "/images/arxive8.jpg",
     id: 8,
     subtitle: "журнали 2019 йил 2-сони мундарижаси",
+  },
+  {
+    pdf: "/pdf/jurnal.pdf",
+    img: "/images/background/jurnal2019_1.jpg",
+    id: 8,
+    subtitle: "журнали 2019 йил 1-сони мундарижаси",
+  },
+  {
+    pdf: "/pdf/jurnal.pdf",
+    img: "/images/background/jurnal2018_4.jpg",
+    id: 8,
+    subtitle: "журнали 2018 йил 4-сони мундарижаси",
+  },
+  {
+    pdf: "/pdf/jurnal.pdf",
+    img: "/images/background/jurnal2018_3.jpg",
+    id: 8,
+    subtitle: "журнали 2018 йил 3-сони мундарижаси",
+  },
+  {
+    pdf: "/pdf/jurnal.pdf",
+    img: "/images/background/jurnal2018_2.jpg",
+    id: 8,
+    subtitle: "журнали 2018 йил 2-сони мундарижаси",
   },
 ];
 class RecentWorkSlide extends React.Component {
@@ -81,7 +105,7 @@ class RecentWorkSlide extends React.Component {
                       >
                         {/*<i className="icon-maximize"></i>*/}
                       </a>
-                      <a href={element.pdf}>
+                      <a target="_blank" href={element.pdf}>
                         <i className="icon-link"></i>
                       </a>
                     </div>

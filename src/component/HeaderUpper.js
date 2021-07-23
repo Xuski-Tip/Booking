@@ -36,7 +36,7 @@ export default function HeaderUpper(stateAction) {
               <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
                 {t("Shop.litsenziya")}
               </ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/leadership">
                 {t("Shop.leadership")}
               </ReactBootStrap.NavDropdown.Item>
             </ReactBootStrap.NavDropdown>
@@ -57,10 +57,10 @@ export default function HeaderUpper(stateAction) {
               title={t("submitting an article to the journal.submiting")}
               id="basic-nav-dropdown"
             >
-              <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/requirimend">
                 {t("submitting an article to the journal.article")}
               </ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/members">
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/layout">
                 {t("submitting an article to the journal.mode")}
               </ReactBootStrap.NavDropdown.Item>
             </ReactBootStrap.NavDropdown>
