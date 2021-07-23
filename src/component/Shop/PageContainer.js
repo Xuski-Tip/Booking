@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Pagination from "../Pagination";
 import PageInfo from "./PageInfo";
 import PageShop from "./PageShop";
+import axios from "axios";
+import {API} from "../../simpleJs/loginApi";
 const PageContainer = () => {
   const [dataFrom, setCountirs] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -14,6 +16,7 @@ const PageContainer = () => {
   const currentCountry = dataFrom.slice(firstCountryIndex, lastCountryIndex);
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   useEffect(() => {
+
     setCountirs([
       {
         pdf: "",

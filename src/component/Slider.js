@@ -23,7 +23,7 @@ function Slider() {
               {t("Welcom.The magazine has been 1999")}
             </p>
             <div>
-              <Link to="/Shop" className="btn scroll-to">
+              <Link to="/arcive" className="btn scroll-to">
                 {t("Welcom.Explore more")}
               </Link>
             </div>
@@ -36,7 +36,7 @@ function Slider() {
               alt="error"
               className="MainBg__right-img"
               src="/images/azolar/jurnal2.jpg"
-            ></img>
+            />
           </Link>
           <div className="p-3">
             <button type="button" className="btn btn-outline-danger btn-block">Sotib olish</button>

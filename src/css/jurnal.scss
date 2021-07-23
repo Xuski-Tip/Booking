@@ -45,7 +45,13 @@
 .bglight{
   background-image: linear-gradient(to right, white 50%, #D3D1E9 50%);
 }
-
+.object{
+  img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
+}
 .typing-demo {
     font-weight: 700;
     text-align: center;
