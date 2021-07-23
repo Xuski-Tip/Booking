@@ -52,25 +52,25 @@ const recentData = [
   {
     pdf: "/pdf/jurnal.pdf",
     img: "/images/background/jurnal2019_1.jpg",
-    id: 8,
+    id: 9,
     subtitle: "журнали 2019 йил 1-сони мундарижаси",
   },
   {
     pdf: "/pdf/jurnal.pdf",
     img: "/images/background/jurnal2018_4.jpg",
-    id: 8,
+    id: 10,
     subtitle: "журнали 2018 йил 4-сони мундарижаси",
   },
   {
     pdf: "/pdf/jurnal.pdf",
     img: "/images/background/jurnal2018_3.jpg",
-    id: 8,
+    id:11,
     subtitle: "журнали 2018 йил 3-сони мундарижаси",
   },
   {
     pdf: "/pdf/jurnal.pdf",
     img: "/images/background/jurnal2018_2.jpg",
-    id: 8,
+    id:12,
     subtitle: "журнали 2018 йил 2-сони мундарижаси",
   },
 ];

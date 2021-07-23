@@ -74,4 +74,4 @@ const Registration = (props) => {
       </>
     );
 }
-export default Registration;
+export default connect(null, {login}) (Registration);

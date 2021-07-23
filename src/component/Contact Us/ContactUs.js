@@ -3,12 +3,11 @@ import MapContainer from "./MapContainer.js";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { LANGUAGE } from "../../simpleJs/Tipelang";
-import {toast} from "react-toastify";
+import { toast } from "react-toastify";
 import SendMessage from "./SendMessage";
 export default function ContactUs() {
   const [state, setState] = useState([]);
   const langRename = localStorage.getItem(LANGUAGE);
-  // const [answerstate, setAnswer] = useState("");
   useEffect(() => {
     async function fetchMyApi() {
       const res = await axios.get(
@@ -40,7 +39,7 @@ export default function ContactUs() {
       // document.getElementById("phone").value = "";
       // document.getElementById("message").value = "";
     } catch (error) {
-      toast.success("Xabaringiz jo'natildi")
+      toast.success("Xabaringiz jo'natildi");
     }
   };
 
@@ -86,8 +85,9 @@ export default function ContactUs() {
                       ? element.address_en
                       : langRename === "ru"
                       ? element.address_ru
-                      : langRename === "uz" 
-                      ? element.address_uz : "error"}
+                      : langRename === "uz"
+                      ? element.address_uz
+                      : "error"}
                   </span>
                 </div>
                 <br />
@@ -145,14 +145,10 @@ export default function ContactUs() {
         })}
       </section>
 
-      <SendMessage/>
-
-
-
+      <SendMessage />
     </div>
   );
 }
-
 
 // <section>
 //   <div className="container">
@@ -244,6 +240,12 @@ export default function ContactUs() {
 //         {/*  </div>*/}
 //         {/*)}*/}
 //       </div>
-{/*    </div>*/}
-{/*  </div>*/}
-{/*</section>*/}
+{
+  /*    </div>*/
+}
+{
+  /*  </div>*/
+}
+{
+  /*</section>*/
+}
