@@ -1,16 +1,14 @@
-import React, {useEffect, useState} from "react";
-import {Modal, ModalBody, ModalFooter} from "reactstrap";
-import {AvForm, AvFiled, AvField} from "availity-reactstrap-validation";
+import React, { useEffect, useState } from "react";
+import { Modal, ModalBody, ModalFooter } from "reactstrap";
+import { AvForm, AvFiled, AvField } from "availity-reactstrap-validation";
 import * as ReactBootStrap from "react-bootstrap";
-import {Link} from "react-router-dom";
-import {useTranslation} from "react-i18next"
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"
 import {LANGUAGE} from '../simpleJs/Tipelang';
-import axios from "axios";
-import {API} from "../simpleJs/loginApi";
 // import { useTranslation } from "react-i18next";
 // import { LANGUAGE } from "../simpleJs/Tipelang";
 export default function HeaderUpper(stateAction) {
-    const {t, i18n} = useTranslation();
+    const { t, i18n } = useTranslation();
 
     function handleChange(event) {
         event.preventDefault();
@@ -29,18 +27,6 @@ export default function HeaderUpper(stateAction) {
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
     const [open3, setOpen3] = useState(false);
-
-    const [journal, setJournal] = useState([]);
-
-    useEffect(() => {
-        axios.get(API + "magazine")
-            .then((res) => {
-                console.log(res);
-                console.log("Salom");
-                setJournal(res.data.magazine.splice(-8, 8))
-            })
-    }, []);
-
     const [array] = useState([]);
     const showModal1 = () => {
         setOpen1(!open1);
@@ -76,7 +62,7 @@ export default function HeaderUpper(stateAction) {
           <strong>{t("Offical Site.navbar")}</strong>
         </ReactBootStrap.Navbar.Brand> */}
 
-                <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
                     <ReactBootStrap.Nav className="mr-auto">
                         <ReactBootStrap.NavLink href="/">
@@ -84,7 +70,7 @@ export default function HeaderUpper(stateAction) {
                         </ReactBootStrap.NavLink>
 
                         <ReactBootStrap.NavDropdown title={t("Shop.navbar")}>
-                            <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
+                            <ReactBootStrap.NavDropdown.Item as={Link} to="/letsenziya">
                                 {t("Shop.litsenziya")}
                             </ReactBootStrap.NavDropdown.Item>
                             <ReactBootStrap.NavDropdown.Item as={Link} to="/leadership">
@@ -145,7 +131,7 @@ export default function HeaderUpper(stateAction) {
                         </Link>
                         <div className="p-dropdown">
                             <select
-                                style={{paddingRight: 25, cursor: "pointer",}}
+                                style={{ paddingRight: 25, cursor: "pointer", }}
                                 onChange={handleChange}
                                 defaultValue={changeLang}
                             >
@@ -162,30 +148,29 @@ export default function HeaderUpper(stateAction) {
             <Modal isOpen={open1} toggle={showModal1}>
                 <AvForm>
                     <ModalBody>
-                        <AvField name="name" required label="F.I.SH" type="text"/>
-                        <AvField name="adres" required label="Adres" type="text"/>
-                        <AvField name="email" required label="Email" type="text"/>
+                        <AvField name="name" required label="F.I.SH" type="text" />
+                        <AvField name="adres" required label="Adres" type="text" />
+                        <AvField name="email" required label="Email" type="text" />
                         <AvField
                             name="number"
                             required
                             label="Telefon nomer"
                             type="number"
                         />
-                        <div className="">
-                          {
-                            journal.map((item, index) => {
-                              return (
-                                  <div className="col-10">
-                                    <AvField
-                                        type="checkbox"
-                                        label={item.description_uz}
-                                        className="w-75"
-                                        name="jurnal1"
-                                    ></AvField>
-                                  </div>
-                              )
-                            })
-                          }
+                        <div className="d-flex justify-content-between">
+                            <AvField
+                                type="select"
+                                className="w-75"
+                                required
+                                name="jurnal"
+                                label="Jurnalni tanlang"
+                            >
+                                <option value="1">2021-yil 1-son</option>
+                                <option value="2">2021-yil 2-son</option>
+                                <option value="3">2021-yil 3-son</option>
+                                <option value="4">2021-yil 4-son</option>
+
+                            </AvField>
                             <AvField
                                 name="nusxa"
                                 required
@@ -209,32 +194,48 @@ export default function HeaderUpper(stateAction) {
                 </AvForm>
             </Modal>
 
+
             <Modal isOpen={open2} toggle={showModal2}>
                 <AvForm onSubmit={buy}>
                     <ModalBody>
-                        <AvField name="name" required label="F.I.SH" type="text"/>
+                        <AvField name="name" required label="F.I.SH" type="text" />
                         {/*<AvField name="adres" required label="Adres" type="text"/>*/}
-                        <AvField name="email" required label="Email" type="text"/>
-                        <AvField name="number" label="Telefon nomer" type="number"/>
+                        <AvField name="email" required label="Email" type="text" />
+                        <AvField name="number" label="Telefon nomer" type="number" />
                         <div className="">
                             <div className="row">
-                                {/*<div className="col-9">*/}
-                                {
-                                    journal.map((item, index) => {
-                                        return (
-                                            <div className="col-10">
-                                                <AvField
-                                                    type="checkbox"
-                                                    label={item.description_uz}
-                                                    className="w-75"
-                                                    name="jurnal1"
-                                                ></AvField>
-                                            </div>
-                                        )
-                                    })
-                                }
-                                {/*</div>*/}
-
+                                <div className="col-6">
+                                    <AvField
+                                        type="checkbox"
+                                        label="Jurnal1"
+                                        className="w-75"
+                                        name="jurnal1"
+                                    ></AvField>
+                                </div>
+                                <div className="col-6">
+                                    <AvField
+                                        type="checkbox"
+                                        label="Jurnal2"
+                                        className="w-75"
+                                        name="jurnal2"
+                                    ></AvField>
+                                </div>
+                                <div className="col-6">
+                                    <AvField
+                                        type="checkbox"
+                                        label="Jurnal3"
+                                        className="w-75"
+                                        name="jurnal3"
+                                    ></AvField>
+                                </div>
+                                <div className="col-6">
+                                    <AvField
+                                        type="checkbox"
+                                        label="Jurnal4"
+                                        className="w-75"
+                                        name="jurnal4"
+                                    ></AvField>
+                                </div>
                             </div>
                             <AvField
                                 name="nusxa"

@@ -4,7 +4,6 @@ import PageInfo from "./PageInfo";
 import PageShop from "./PageShop";
 import axios from "axios";
 import {API} from "../../simpleJs/loginApi";
-
 const PageContainer = () => {
     const [jurnal, setJurnal] = useState([]);
     const [jurnal8, setJurna8] = useState([]);

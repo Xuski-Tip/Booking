@@ -1,8 +1,4 @@
-import React, {useEffect, useState} from "react";
-import axios from "axios";
-import {API} from "../../simpleJs/loginApi";
-import {jurnal} from "../../redux/Action/jurnalAction";
-
+import React from "react";
 // ! Wate to backend
 export default function PageShop(props) {
     console.log(props);
