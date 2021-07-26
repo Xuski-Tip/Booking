@@ -247,7 +247,7 @@ export default function Editor() {
             <div className="team__member">
               <img
                 alt="Error"
-                src="/images/Client.jpg"
+                src="/images/batler.jpg"
                 className="team__member-vesual"
               ></img>
             </div>
