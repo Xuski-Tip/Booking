@@ -436,7 +436,7 @@ export default function Editor() {
               ></img>
             </div>
             <div className="team__info">
-              <h3 className="team__info-subtitle mt-3">Tatyana Maskalkova</h3>
+              <h3 className="team__info-subtitle mt-3">Tatyana Moskalkova</h3>
               <span className="team__info-developer">
                 ({t("state.state2")})
               </span>

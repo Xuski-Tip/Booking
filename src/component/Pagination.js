@@ -15,7 +15,7 @@ const Pagination = ({
       <ul className="pagination">
         <li className="page-item">
           <button onClick={prevPage} className="page-link">
-            <i className="fa fa-angle-left">Prev</i>
+            <i className="fa fa-angle-left"></i> Orqaga
           </button>
         </li>
         {pageNumbers.map((num) => {
@@ -29,7 +29,7 @@ const Pagination = ({
         })}
         <li className="page-item">
           <button onClick={nextPage} className="page-link" href="#">
-            <i className="fa fa-angle-right">Next</i>
+            Oldinga <i className="fa fa-angle-right"></i>
           </button>
         </li>
       </ul>

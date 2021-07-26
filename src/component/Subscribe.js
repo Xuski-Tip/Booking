@@ -38,7 +38,6 @@ const Subscribe = () => {
             <Header/>
             <HeaderUpper/>
             <div className="jurnal">
-
                 <div className="container mt-5">
                     <div className="d-flex justify-content-around">
                         <button type="button" className="btn btn-outline-danger" onClick={showModal1}>

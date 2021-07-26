@@ -93,7 +93,7 @@ export default function Members() {
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">
-                    Mirzatillo Tillaboyev
+                    Mirzatillo Tillabayev
                   </h3>
                   <span className="team__info-developer">
                     {t("members.member1")}
@@ -279,7 +279,7 @@ export default function Members() {
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">
-                    Muzaffar Mamasiddqov
+                    Muzaffar Mamasiddiqov
                   </h3>
                   <span className="team__info-developer">
                     {t("members.member4")}
@@ -373,7 +373,7 @@ export default function Members() {
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">
-                    Yelizavet Kutibayeva
+                    Yelizaveta Kutibayeva
                   </h3>
                   <span className="team__info-developer">
                     {t("members.member4")}

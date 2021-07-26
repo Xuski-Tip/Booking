@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"
 import {LANGUAGE} from '../simpleJs/Tipelang';
 
-
 export default function HeaderUpper(stateAction) {
   const { t, i18n } = useTranslation();
   function handleChange(event) {
@@ -123,14 +122,15 @@ export default function HeaderUpper(stateAction) {
             </Link>
             <div className="p-dropdown">
               <select
-                style={{ paddingRight: 25, cursor: "pointer" }}
+                style={{ paddingRight: 25, cursor: "pointer", }}
                 onChange={handleChange}
                 defaultValue={changeLang}
-              >
+          >
                 <option value="en">ENG</option>
                 <option value="ru">RUS</option>
                 <option value="uz">UZB</option>
               </select>
+            
             </div>
           </ReactBootStrap.Form>
         </ReactBootStrap.Navbar.Collapse>
@@ -150,6 +150,7 @@ export default function HeaderUpper(stateAction) {
                 <option value="2">2021-yil 2-son</option>
                 <option value="3">2021-yil 3-son</option>
                 <option value="4">2021-yil 4-son</option>
+                
               </AvField>
               <AvField name="nusxa" required type="number" label="Necha nusxada"/>
             </div>
