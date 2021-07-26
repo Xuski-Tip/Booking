@@ -14,6 +14,7 @@ import NotFound from "./NotFound";
 import Leadership from "./Jurnal/Leadership";
 import Requirimend from "./article/requirimend";
 import ArticleLayout from "./article/articleLayout";
+import Misol from "./misol";
 
 const Router = () => {
   return (
@@ -33,6 +34,7 @@ const Router = () => {
         <Route exact path='/staff/members' component={Members}/>
         <Route exact path='/requirimend' component={Requirimend}/>
         <Route exact path='/layout' component={ArticleLayout}/>
+        <Route exact path='/misol' component={Misol}/>
         <Route component={NotFound}></Route>
       </Switch>
       <ToastContainer/>
