@@ -1,0 +1,1 @@
+export default SET_TYPE = "JURNAL/TYPE";
