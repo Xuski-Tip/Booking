@@ -139,7 +139,7 @@ export default function HeaderUpper(stateAction) {
                 <option value="ru">RUS</option>
                 <option value="uz">UZB</option>
               </select>
-            
+
             </div>
           </ReactBootStrap.Form>
         </ReactBootStrap.Navbar.Collapse>
@@ -286,39 +286,39 @@ export default function HeaderUpper(stateAction) {
                 <AvField
                   type="text"
                   name="phone"
-                  label="Phone Number"
-                  placeholder="Enter your Phone Number"
-                  required
-                  errorMessage="Phone Number kiriting!"
-                />
-              </div>
-              <div className="col-6">
-                <AvField
-                  type="file"
-                  name="file"
-                  label="Maqolani pdf varianti"
-                  accept=".pdf, .doc, .docx, .txt"
-                  required
-                />
-              </div>
-              <div className="col-12">
-                <AvField
-                  type="textarea"
-                  name="message"
-                  rows="7"
-                  label="Message"
-                  placeholder="Enter your Message"
-                  errorMessage="Message kiriting!"
-                />
-              </div>
-            </div>
-            <button className="btn" type="submit" id="form-submit">
-              <i className="fa fa-paper-plane"></i>
-              &nbsp;Send file
-            </button>
-          </ModalBody>
-        </AvForm>
-      </Modal>
-    </>
-  );
+ label="Phone Number"
+placeholder="Enter your Phone Number"
+required
+errorMessage="Phone Number kiriting!"
+    />
+    </div>
+<div className="col-6">
+  <AvField
+      type="file"
+      name="file"
+      label="Maqolani pdf varianti"
+      accept=".pdf, .doc, .docx, .txt"
+      required
+  />
+</div>
+<div className="col-12">
+    <AvField
+type="textarea"
+name="message"
+rows="7"
+label="Message"
+placeholder="Enter your Message"
+errorMessage="Message kiriting!"
+    />
+    </div>
+</div>
+<button className="btn" type="submit" id="form-submit">
+<i className="fa fa-paper-plane"></i>
+&nbsp;Send file
+</button>
+</ModalBody>
+</AvForm>
+</Modal>
+</>
+);
 }
