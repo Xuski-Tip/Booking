@@ -6,7 +6,7 @@ const Litsinziya = () => {
   return (
     <>
       <HeaderUpper />
-      <div className="bglight">
+      <div className="">
         <div className="container d-flex justify-content-center">
           <img
             src="/images/letsenziya.jpg"
