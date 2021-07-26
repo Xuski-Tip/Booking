@@ -1,1 +1,1 @@
-export default SET_TYPE = "JURNAL/TYPE";
+export const SET_TYPE = "JURNAL/TYPE";
