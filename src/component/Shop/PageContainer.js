@@ -19,7 +19,7 @@ const PageContainer = () => {
 
     setCountirs([
       {
-        pdf: "",
+        pdf: "/pdf/jurnal1.pdf",
         img: "/images/arxive1.jpg",
         id: 1,
         subtitle: "журнали 2021 йил 1-сони мундарижаси",

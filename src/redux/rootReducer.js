@@ -3,5 +3,6 @@ import { appReducer } from './appReducer';
 
 const rootReducer = combineReducers({
     app: appReducer,
+    // jurnal:
 });
 export { rootReducer };
