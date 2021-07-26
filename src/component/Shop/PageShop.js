@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // ! Wate to backend
 export default function PageShop({ dataFrom }) {
-  
+
   return (
     <div className="Page-shop">
       <div className="Page-slider grid-4-columns" data-item="grid-item">

@@ -16,7 +16,6 @@ const PageContainer = () => {
   const currentCountry = dataFrom.slice(firstCountryIndex, lastCountryIndex);
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   useEffect(() => {
-
     setCountirs([
       {
         pdf: "/pdf/jurnal1.pdf",
