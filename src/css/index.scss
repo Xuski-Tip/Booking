@@ -503,6 +503,10 @@ cursor: pointer;
   width: 50%;
 
 }
+.Page-slider {
+  display: flex;
+  flex-wrap: wrap
+}
 @import "./media";
 @import "./jurnal";
 @import "./savdo";
