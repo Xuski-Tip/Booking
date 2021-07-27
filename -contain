@@ -1,0 +1,250 @@
+[33mcommit ef247f7409dfc82677cc9e727b85300197b1b4f2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: d88a3ca 45267f5
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Tue Jul 6 17:13:39 2021 +0500
+
+    news-apdate
+
+[33mcommit d88a3ca7ab8326ffc6aea453859f83f2a501e0eb[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Tue Jul 6 16:41:26 2021 +0500
+
+    News-contain
+
+[33mcommit 45267f5c5521c8306b3abbb38a5f5e1ccdf4dd7f[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Tue Jul 6 16:22:45 2021 +0500
+
+    add react-hook-form
+
+[33mcommit 3d1280573720c96f04e4d81d8401827df0eb7d1a[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Tue Jul 6 15:55:41 2021 +0500
+
+    fix contact page
+
+[33mcommit cd73474ca4580894fdbdd78b44579127f60b66f1[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Tue Jul 6 15:16:33 2021 +0500
+
+    news-backend
+
+[33mcommit a71562b028e602becc310e7257d888d03cf6f876[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Mon Jul 5 15:18:39 2021 +0500
+
+    add sorting
+
+[33mcommit 9708ded5216d179d1a86acf62a4c1c69730c33ba[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Mon Jul 5 11:59:25 2021 +0500
+
+    fix Link
+
+[33mcommit 8c48cc58e29806250642d66f3dfe1de602402324[m
+Merge: 17910d0 a18a3ea
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Mon Jul 5 11:41:08 2021 +0500
+
+    Merge branch 'main' of https://github.com/Xuski-Tip/Booking
+
+[33mcommit 17910d032cf9d9fe68193c511849bc481543eb14[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Mon Jul 5 11:41:02 2021 +0500
+
+    some upgrade
+
+[33mcommit a18a3ea13d562483e1ecfc2b4f3de73bb955986e[m
+Merge: 8ecbc30 66e29ba
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Mon Jul 5 11:40:16 2021 +0500
+
+    Newcomponent-News
+
+[33mcommit 8ecbc30aaf2a7bbcbbd9f40b9687aa57953e4a39[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Mon Jul 5 11:38:51 2021 +0500
+
+    Newcomponent-News
+
+[33mcommit 66e29baef21057cefb0504db5bd20c63eb56eb96[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Mon Jul 5 09:14:18 2021 +0500
+
+    change headerupper component
+
+[33mcommit 58a2ba76eeb63cbe610f92e6e5d9572a37236d73[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Mon Jul 5 08:40:31 2021 +0500
+
+    uninstall some packages and connect with backend
+
+[33mcommit c60cc8222e7ea1013107911d40469c9c477d3189[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sun Jul 4 14:09:41 2021 +0500
+
+    zero1
+
+[33mcommit 8a785078b2c0df77fbbb16f723aef3e9ac58a7da[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sun Jul 4 14:03:34 2021 +0500
+
+    add axios
+
+[33mcommit 1138c2cb31fbb400c36806f6c64c6ded9d071bbd[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sun Jul 4 13:17:04 2021 +0500
+
+    remove exact
+
+[33mcommit 5bb282c4848507263a86fa209b2a33ec23f098de[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sun Jul 4 12:54:40 2021 +0500
+
+    delete target blank
+
+[33mcommit 59a6bee65209a5473c623c169cfb346d66a620ab[m
+Merge: c41dc72 fa79311
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sun Jul 4 12:42:13 2021 +0500
+
+    Merge branch 'main' of https://github.com/Xuski-Tip/Booking
+
+[33mcommit c41dc7273e54fde2ffad08c80284ee6897832d18[m
+Merge: de1c54b b7307e1
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sun Jul 4 12:26:46 2021 +0500
+
+    Merge branch 'dev'
+
+[33mcommit b7307e1cfbfd1b1e7e342b3d545567f0e5e1b0dc[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sun Jul 4 12:26:06 2021 +0500
+
+    merge
+
+[33mcommit fa79311414f48846b74ca62d9ddf26aad1c69fab[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sun Jul 4 12:15:16 2021 +0500
+
+    zero1
+
+[33mcommit de1c54b05cb965ae0d212fcffdc1936a718b512e[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sun Jul 4 11:40:49 2021 +0500
+
+    gg
+
+[33mcommit f8cc17343551923e1fda05104b38111b062ac371[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sun Jul 4 11:35:26 2021 +0500
+
+    zero1
+
+[33mcommit 1fbc6e9b6d8bc77568b95cc1544d82f7879fe9cc[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sun Jul 4 11:33:25 2021 +0500
+
+    add some new commit
+
+[33mcommit bde998474638aa33893a01751cee0eaea507a75d[m
+Author: NereonNeo <nodirayakubova26@gmail.com>
+Date:   Sat Jul 3 20:59:49 2021 +0500
+
+    change structur and navigation
+
+[33mcommit 144066d5117609a7729ccd14cdf25f73151f0b1b[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Fri Jul 2 16:03:13 2021 +0500
+
+    zero1
+
+[33mcommit 60c60627567884d6bb0caedf62972fd07ebb2cb1[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Fri Jul 2 15:27:45 2021 +0500
+
+    zero1
+
+[33mcommit 8507236601429f9fa45bb696e7232b62d0bcb0a2[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Fri Jul 2 13:51:26 2021 +0500
+
+    zero1
+
+[33mcommit 9413482795295426a27ab3ee74ec7d95b77a1bdb[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Mon Jun 28 17:26:55 2021 +0500
+
+    zero1
+
+[33mcommit d1cc88946357e87fcadd83f75c820c1dccde7975[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Mon Jun 28 15:33:54 2021 +0500
+
+    zero1
+
+[33mcommit 78fc63346c9943067f9a0cd3e7ef012abd19c986[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Mon Jun 28 14:51:57 2021 +0500
+
+    zero1
+
+[33mcommit 4346fbcc00bf9993c968c45290cdc0ba35e5f3f4[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sun Jun 27 18:09:19 2021 +0500
+
+    zero1
+
+[33mcommit 16b445c8ca909da0d55fb66032d142727217ffaf[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sun Jun 27 14:11:21 2021 +0500
+
+    zero1
+
+[33mcommit 0d17e426b723ef5d874ad0d9d73c3c0e966e62dc[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sat Jun 26 23:04:18 2021 +0500
+
+    zero1
+
+[33mcommit cc736da076b6d6c0d4b84e3803d6f3b6a1a532e6[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sat Jun 26 23:02:46 2021 +0500
+
+    zero1
+
+[33mcommit 8f184ce55b82d5d5c079d5291fbe067420f0c9c7[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sat Jun 26 22:45:05 2021 +0500
+
+    zero1
+
+[33mcommit 5d9b46be33fc5afd1ae88ef9596fee77cb3c394b[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sat Jun 26 22:41:01 2021 +0500
+
+    zero1
+
+[33mcommit 33acf03c88c644a326dca2f1bdc8d41112b4e746[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sat Jun 26 22:40:21 2021 +0500
+
+    zero1
+
+[33mcommit 7cd252e74af8f3db5715095f0246c1223f25814f[m
+Author: Xuski-Tip <75438787+Xuski-Tip@users.noreply.github.com>
+Date:   Sat Jun 26 22:35:45 2021 +0500
+
+    Update package.json
+
+[33mcommit a3ad7a561a461355039e0ae5c4d431ce0c16e7a2[m
+Author: Xuski-Tip <75438787+Xuski-Tip@users.noreply.github.com>
+Date:   Sat Jun 26 22:25:40 2021 +0500
+
+    Update package.json
+
+[33mcommit bf98d933e7be88468683cf2fba9936c23c282a27[m
+Author: Xuski-Tip <billkiller.com@gmail.com>
+Date:   Sat Jun 26 20:35:25 2021 +0500
+
+    zero1

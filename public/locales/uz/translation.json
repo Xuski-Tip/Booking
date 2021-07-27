@@ -1,0 +1,85 @@
+{
+  "Home": {
+    "navbar": "Bosh sahifa"
+  },
+  "Shop": {
+    "navbar": "Jurnal haqida",
+    "litsenziya": "Litsenziya",
+    "leadership": "Rahbariyat"
+  },
+  "avtorizatsiya": {
+    "navbar": "Kirish",
+    "navbar2": "Ro'yxatdan o'tish"
+  },
+
+  "Offical Site": {
+    "navbar": "Rasmiy Sait",
+    "of the National Center": "Inson huquqlari bo'yicha",
+    "for Human Rights": "O'zbekiston Respublikasi",
+    "of the Republic of Uzbekistan": "Milliy markazi",
+    "scientific and educational journal": "ilmiy-ma'rifiy jurnal",
+    "democration": "«DEMOKRATLASHTIRISH VA INSON HUQUQLARI»",
+    "Contact Phone": "Telefon raqami",
+    "Our address": "Elektron pochta"
+  },
+  "News": {
+    "navbar": "Yangiliklar"
+  },
+  "Welcom": {
+    "welcom to the": "DEMOKRATLASHTIRISH VA INSON HUQUQLARI JURNALI",
+    "The magazine has been 1999": "Jurnal 1999-yildan buyon muntazam nashr etib kelinmoqda",
+    "Explore more": "Ko'proq o'rganing"
+  },
+  "our work": {
+    "WHAT WE DO": "Indexlar"
+  },
+  "Recent Work": {
+    "work": "So'nggi ishlar"
+  },
+  "SERVICES": {
+    "service": "XIZMATLAR"
+  },
+  "Our blog": {
+    "blog": "BIZNING BLOG"
+  },
+  "Our staff": {
+    "staff": "Tahrir kengashi",
+    "Editor": "Xalqaro tahrir kengashi a'zolari",
+    "lives": "Tahrir hay'ati a'zolari"
+  },
+  "submitting an article to the journal": {
+    "submiting": "Maqola mualliflariga",
+    "article": "Maqolalarga qo'yilgan talablar",
+    "mode": "Jurnalda maqola chiqarish tartibi"
+  },
+  "About Us": {
+    "aboutUs": "Biz haqimizda"
+  },
+    "Arxiv": {
+      "arxiv": "Arxiv"
+    },
+  "Subscription": {
+    "obuna": "Obuna",
+    "ofline": "Jurnalning bosma shakliga obuna",
+    "online": "Jurnalning elektron shakliga obuna"
+  },
+  "members": {
+    "member1": "yuridik fanlar doktori, dotsent",
+    "member2": "yuridik fanlar doktori, professor, O'zbekiston Respublikasi fan arbobi",
+    "member3": "yuridik fanlar doktori, professor, O'zbekistonda xizmat ko'rsatgan yurist",
+    "member4": "yuridik fanlar doktori",
+    "member5": "yuridik fanlar doktori, professor",
+    "member6": "yuridik fanlar nomzodi, dotsent",
+    "member7": "yuridik fanlar nomzodi, professor"
+  },
+  "state": {
+    "state1": "O'zbekiston",
+    "state2": "Rossiya Federatsiyasi",
+    "state3": "Yaponiya",
+    "state4": "AQSH",
+    "state5": "Polsha",
+    "state6": "Islom hamkorlik tashkiloti",
+    "state7": "Estoniya",
+    "state8": "Qozog'iston"
+  }
+}
