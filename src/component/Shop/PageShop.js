@@ -9,29 +9,14 @@ export default function PageShop(props) {
             <div className="grid-item grid-3-columns" key={item.id}>
               <div className="product">
                 <div className="product-image">
-                  {index <= props.jurnal.length - 8 ? (
-                    <a
-                      target="_blank"
-                      // href={
-                      //   index <= props.jurnal.length - 8
-                      //     ? "https://paycom-test.napaautomotive.uz/storage/" +
-                      //       item.file
-                      //     : " "
-                      // }
-                      href={
-                        "https://paycom-test.napaautomotive.uz/storage/" +
-                        item.file
-                      }
-                    >
-                      <img
-                        alt="#"
-                        src={
-                          "https://paycom-test.napaautomotive.uz/storage/" +
-                          item.image
-                        }
-                      />
-                    </a>
-                  ) : (
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={
+                      "https://paycom-test.napaautomotive.uz/storage/" +
+                      item.file
+                    }
+                  >
                     <img
                       alt="#"
                       src={
@@ -39,7 +24,7 @@ export default function PageShop(props) {
                         item.image
                       }
                     />
-                  )}
+                  </a>
 
                   <div className="product-overlay">
                     <a
@@ -53,12 +38,8 @@ export default function PageShop(props) {
                   </div>
                 </div>
                 <div className="product-description">
-                  <div className="product-title">
-                    <h3></h3>
-                  </div>
-
-                  <div className="product-title">
-                    <p>{item.title_uz}</p>
+                  <div>
+                    <p className="product-title">{item.title_uz}</p>
                   </div>
                 </div>
               </div>

@@ -105,7 +105,7 @@ class RecentWorkSlide extends React.Component {
                       >
                         {/*<i className="icon-maximize"></i>*/}
                       </a>
-                      <a target="_blank" href={element.pdf}>
+                      <a target="_blank" rel = "noopener noreferrer"  href={element.pdf}>
                         <i className="icon-link"></i>
                       </a>
                     </div>

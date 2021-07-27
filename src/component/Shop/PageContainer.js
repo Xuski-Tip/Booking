@@ -6,8 +6,6 @@ import axios from "axios";
 import {API} from "../../simpleJs/loginApi";
 const PageContainer = () => {
     const [jurnal, setJurnal] = useState([]);
-    const [jurnal8, setJurna8] = useState([]);
-    const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [coutriesPerPage] = useState(8);
     const nextPage = () => setCurrentPage((prev) => prev + 1);
@@ -20,10 +18,7 @@ const PageContainer = () => {
     useEffect(() => {
         axios.get(API + "magazine")
             .then((res) => {
-                console.log("salom");
-                console.log(res);
                 setJurnal(res.data.magazine);
-                setJurna8(res.data.magazine.slice(0, -8));
             })
     }, []);
 
@@ -31,7 +26,7 @@ const PageContainer = () => {
     return (
         <div>
             <PageInfo/>
-            <PageShop jurnal={currentCountry} loading={loading}/>
+            <PageShop jurnal={currentCountry}/>
             <Pagination
                 countriesPerPage={coutriesPerPage}
                 totalCountries={jurnal.length}

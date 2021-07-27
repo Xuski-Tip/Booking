@@ -18,7 +18,7 @@ const Requirimend = () => {
       <div className="container d-flex justify-content-center text-center my-3">
         {" "}
         <div className="text_button">
-          <a className="text_button-target" target="_blank" href="/pdf/buklet.pdf">
+          <a className="text_button-target" rel = "noopener noreferrer" target="_blank" href="/pdf/buklet.pdf">
             Maqolaga qo'yilgan asosiy talablar.pdf{" "}
           </a>
         </div>{" "}
