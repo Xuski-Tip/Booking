@@ -5,6 +5,9 @@ import * as ReactBootStrap from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"
 import {LANGUAGE} from '../simpleJs/Tipelang';
+import axios from "axios";
+import {API} from "../simpleJs/loginApi";
+import {toast} from "react-toastify";
 // import { useTranslation } from "react-i18next";
 // import { LANGUAGE } from "../simpleJs/Tipelang";
 export default function HeaderUpper(stateAction) {
@@ -22,11 +25,24 @@ export default function HeaderUpper(stateAction) {
         i18n.changeLanguage(changeLang);
     }
 
-    useEffect(handleClick, []);
+    useEffect(() =>{
+        handleClick();
+
+    }, []);
+
+    const addJurnal = (event, error, values) =>{
+        axios.post(API+"article/store", values)
+            .then((res) => {
+                console.log(res);
+                toast.success("Maqola qo'shildi");
+                setOpen3(false)
+            })
+    };
 
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
     const [open3, setOpen3] = useState(false);
+    const [open4, setOpen4] = useState([]);
     const [array] = useState([]);
     const showModal1 = () => {
         setOpen1(!open1);
@@ -149,8 +165,8 @@ export default function HeaderUpper(stateAction) {
                 <AvForm>
                     <ModalBody>
                         <AvField name="name" required label="F.I.SH" type="text" />
-                        <AvField name="adres" required label="Adres" type="text" />
-                        <AvField name="email" required label="Email" type="text" />
+                        <AvField name="manzil" required label="Manzil" type="text" />
+                        <AvField name="email" required label="E-mail" type="text" />
                         <AvField
                             name="number"
                             required
@@ -188,7 +204,7 @@ export default function HeaderUpper(stateAction) {
                             className="btn btn-success"
                             onClick={showModal1}
                         >
-                            Cansel
+                            Orqaga
                         </button>
                     </ModalFooter>
                 </AvForm>
@@ -200,7 +216,7 @@ export default function HeaderUpper(stateAction) {
                     <ModalBody>
                         <AvField name="name" required label="F.I.SH" type="text" />
                         {/*<AvField name="adres" required label="Adres" type="text"/>*/}
-                        <AvField name="email" required label="Email" type="text" />
+                        <AvField name="email" required label="E-mail" type="text" />
                         <AvField name="number" label="Telefon nomer" type="number" />
                         <div className="">
                             <div className="row">
@@ -254,22 +270,22 @@ export default function HeaderUpper(stateAction) {
                             className="btn btn-success"
                             onClick={showModal2}
                         >
-                            Cansel
+                            Orqaga
                         </button>
                     </ModalFooter>
                 </AvForm>
             </Modal>
 
             <Modal isOpen={open3} toggle={showModal3}>
-                <AvForm>
+                <AvForm onSubmit={addJurnal}>
                     <ModalBody>
                         <div className="row">
                             <div className="col-6">
                                 <AvField
                                     type="text"
                                     name="name"
-                                    label="Name"
-                                    placeholder="Enter your Name"
+                                    label="Ism"
+                                    placeholder="Ismingizni kiriting"
                                     required
                                     errorMessage="Name kiriting!"
                                 />
@@ -278,8 +294,8 @@ export default function HeaderUpper(stateAction) {
                                 <AvField
                                     type="email"
                                     name="email"
-                                    label="Email"
-                                    placeholder="Enter your Email"
+                                    label="E-mail"
+                                    placeholder="E-mailni kiriting"
                                     errorMessage="Email kiriting!"
                                 />
                             </div>
@@ -287,8 +303,8 @@ export default function HeaderUpper(stateAction) {
                                 <AvField
                                     type="text"
                                     name="phone"
-                                    label="Phone Number"
-                                    placeholder="Enter your Phone Number"
+                                    label="Telefon nomer"
+                                    placeholder="Nomeringizni kiriting"
                                     required
                                     errorMessage="Phone Number kiriting!"
                                 />
@@ -305,17 +321,17 @@ export default function HeaderUpper(stateAction) {
                             <div className="col-12">
                                 <AvField
                                     type="textarea"
-                                    name="message"
+                                    name="text"
                                     rows="7"
-                                    label="Message"
-                                    placeholder="Enter your Message"
-                                    errorMessage="Message kiriting!"
+                                    label="Maqola"
+                                    placeholder="Maqolaga qo'shimcha"
+                                    errorMessage="Xabar kiriting!"
                                 />
                             </div>
                         </div>
-                        <button className="btn" type="submit" id="form-submit">
+                        <button className="btn btn-primary" type="submit">
                             <i className="fa fa-paper-plane"></i>
-                            &nbsp;Send file
+                            &nbsp;Fayl yuborish
                         </button>
                     </ModalBody>
                 </AvForm>
