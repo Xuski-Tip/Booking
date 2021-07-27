@@ -1,48 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // ! Wate to backend
-export default function PageShop({ dataFrom }) {
-  
+export default function PageShop(props) {
+    console.log(props);
   return (
     <div className="Page-shop">
       <div className="Page-slider grid-4-columns" data-item="grid-item">
-        {dataFrom.map((element) => {
+        {props.jurnal.map((item, index) => {
           return (
-            <div className="grid-item grid-3-columns" key={element.id}>
-              <div className="product">
-                <div className="product-image">
-                  <a href={element.pdf}>
-                    <img alt="#" src={element.img} />
-                  </a>
-                  <div className="product-overlay">
-                    <a href={element.img}>Quick View</a>
-                  </div>
-                </div>
-                <div className="product-description">
-                  <div className="product-title">
-                    <h3>
-                      <Link
-                        to={`/Shop/Card/${element.id}`}
-                        data-lightbox="ajax"
-                      >
-                        {element.subtitle}
-                      </Link>
-                    </h3>
-                  </div>
+              <div className="grid-item grid-3-columns" key={item.id}>
+                  <div className="product">
+                      <div className="product-image">
+                          {index<=props.jurnal.length-8?
+                              <a target="_blank" href={index<=props.jurnal.length-8 ? "https://paycom-test.napaautomotive.uz/storage/"+item.file : " "}>
+                                <img alt="#" src={"https://paycom-test.napaautomotive.uz/storage/"+item.image} />
+                              </a>
+                              :
+                              <img alt="#" src={"https://paycom-test.napaautomotive.uz/storage/"+item.image} />
 
-                  <div className="product-title">
-                    <p>
-                      <Link
-                        to={`/Shop/Card/${element.id}`}
-                        data-lightbox="ajax"
-                      >
-                        {element.title}
-                      </Link>
-                    </p>
+                          }
+
+                          <div className="product-overlay">
+                              <a href={"https://paycom-test.napaautomotive.uz/storage/"+item.image}>Quick View</a>
+                          </div>
+                      </div>
+                      <div className="product-description">
+                          <div className="product-title">
+                              <h3>
+
+                              </h3>
+                          </div>
+
+                          <div className="product-title">
+                              <p>
+                                  {item.title_uz}
+                              </p>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-            </div>
           );
         })}
       </div>

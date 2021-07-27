@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
 import { appReducer } from './appReducer';
+import {jurnalReducer} from "./jurnalReducer";
 
 const rootReducer = combineReducers({
     app: appReducer,
-    // jurnal:
+    jurnal: jurnalReducer,
 });
 export { rootReducer };
