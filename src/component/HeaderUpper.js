@@ -156,9 +156,10 @@ export default function HeaderUpper(stateAction) {
                         </Link>
                         <div className="p-dropdown">
                             <select
-                                style={{ paddingRight: 25, cursor: "pointer", }}
+                                // style={{ paddingRight: 25, cursor: "pointer", }}
                                 onChange={handleChange}
                                 defaultValue={changeLang}
+                                className="options"
                             >
                                 <option value="en">ENG</option>
                                 <option value="ru">RUS</option>
