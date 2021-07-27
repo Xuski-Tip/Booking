@@ -213,10 +213,10 @@ export default function HeaderUpper(stateAction) {
                         </button>
                         <button
                             type="button"
-                            className="btn btn-success"
+                            className="btn btn-danger"
                             onClick={showModal1}
                         >
-                            Orqaga
+                            Bekor qilish
                         </button>
                     </ModalFooter>
                 </AvForm>
@@ -261,10 +261,10 @@ export default function HeaderUpper(stateAction) {
                         </button>
                         <button
                             type="button"
-                            className="btn btn-success"
+                            className="btn btn-danger"
                             onClick={showModal2}
                         >
-                            Orqaga
+                            Bekor qilish
                         </button>
                     </ModalFooter>
                 </AvForm>
@@ -278,8 +278,8 @@ export default function HeaderUpper(stateAction) {
                                 <AvField
                                     type="text"
                                     name="name"
-                                    label="Ism"
-                                    placeholder="Ismingizni kiriting"
+                                    label="F.I.SH"
+                                    placeholder="Familiya, ism va sharifingiz"
                                     required
                                     errorMessage="Name kiriting!"
                                 />
@@ -289,7 +289,7 @@ export default function HeaderUpper(stateAction) {
                                     type="email"
                                     name="email"
                                     label="E-mail"
-                                    placeholder="E-mailni kiriting"
+                                    placeholder="Elektron pochtangizni kiriting"
                                     errorMessage="Email kiriting!"
                                 />
                             </div>
@@ -297,7 +297,7 @@ export default function HeaderUpper(stateAction) {
                                 <AvField
                                     type="text"
                                     name="phone"
-                                    label="Telefon nomer"
+                                    label="Telefon raqami"
                                     placeholder="Nomeringizni kiriting"
                                     required
                                     errorMessage="Phone Number kiriting!"
@@ -307,8 +307,8 @@ export default function HeaderUpper(stateAction) {
                                 <AvField
                                     type="file"
                                     name="file"
-                                    label="Maqolani pdf varianti"
-                                    accept=".pdf, .doc, .docx, .txt"
+                                    label='Maqolani "word" shaklda yuklang'
+                                    accept=".doc, .docx"
                                     required
                                 />
                             </div>
@@ -318,7 +318,7 @@ export default function HeaderUpper(stateAction) {
                                     name="text"
                                     rows="7"
                                     label="Maqola"
-                                    placeholder="Maqolaga qo'shimcha"
+                                    placeholder="Qo'shimcha izohingiz bo'lsa, yozing"
                                     errorMessage="Xabar kiriting!"
                                 />
                             </div>

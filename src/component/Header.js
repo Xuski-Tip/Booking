@@ -42,7 +42,7 @@ function Header() {
                 <a href="#">{t("Offical Site.Contact Phone")}</a>
               </span>
               <span className="moreInfo__navigation-lorem--dawn">
-                <a href="tel:+998712391358">+998 71 239 13 58</a>
+                <a href="tel:+998712394142">+998 71 239 41 42</a>
               </span>
             </div>
           </li>
@@ -59,7 +59,7 @@ function Header() {
                 <a href="#">{t("Offical Site.Our address")}</a>
               </span>
               <span className="moreInfo__navigation-lorem--dawn">
-                <a href="#">jurnal@HNRC.UZ</a>
+                <a href="#">journal@nhrc.uz</a>
               </span>
             </div>
           </li>
