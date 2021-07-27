@@ -210,7 +210,6 @@ export default function HeaderUpper(stateAction) {
                 </AvForm>
             </Modal>
 
-
             <Modal isOpen={open2} toggle={showModal2}>
                 <AvForm onSubmit={buy}>
                     <ModalBody>
