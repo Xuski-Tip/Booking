@@ -16,6 +16,7 @@ import Requirimend from "./article/requirimend";
 import ArticleLayout from "./article/articleLayout";
 import Litsinziya from "./Jurnal/Litsinziya";
 import Misol from "./misol";
+import Savdo from "./Savdo";
 
 const Router = () => {
   return (
@@ -38,7 +39,7 @@ const Router = () => {
         <Route exact path="/requirimend" component={Requirimend} />
         <Route exact path="/layout" component={ArticleLayout} />
         <Route exact path="/letsenziya" component={Litsinziya} />
-        <Route exact path="/misol" component={Misol} />
+        <Route exact path="/sale" component={Savdo} />
         <Route component={NotFound}></Route>
       </Switch>
       <ToastContainer />
