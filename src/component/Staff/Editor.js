@@ -25,6 +25,7 @@ export default function Editor() {
           display: "block",
           background: "#888888",
           borderRadius: "50%",
+
         }}
         onClick={onClick}
       />
