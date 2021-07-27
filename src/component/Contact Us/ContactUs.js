@@ -47,13 +47,10 @@ export default function ContactUs() {
     <div className="body-inner">
       <div className="container">
         <div className="heading-text heading-section text-center">
-          <h2>Contact Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse
-            condimentum porttitor cursumus.
-          </p>
+          <h2 className="mt-3">Biz bilan bog'laning</h2>
         </div>
       </div>
+      <SendMessage />
       <section className="no-padding">
         <div className="Map">
           <MapContainer />
@@ -145,7 +142,7 @@ export default function ContactUs() {
         })}
       </section>
 
-      <SendMessage />
+
     </div>
   );
 }
