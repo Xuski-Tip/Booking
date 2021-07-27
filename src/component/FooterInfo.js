@@ -1,5 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {Link} from "react-router-dom";
+
 function FooterInfo() {
   const { t } = useTranslation();
   return (
@@ -28,80 +30,43 @@ function FooterInfo() {
                 </a>
               </p>
             </div>
-            <div className="col-lg-7">
+            <div className="col-lg-8">
               <div className="row">
                 <div className="col-lg-3">
                   <div className="widget">
-                    <div className="widget-title">Discover</div>
+                    <div className="widget-title">{t('Shop.navbar')}</div>
                     <ul className="list">
                       <li>
-                        <a href="http://localhost:3000/">Features</a>
+                        <Link to="/letsenziya">{t('Shop.litsenziya')}</Link>
                       </li>
                       <li>
-                        <a href="http://localhost:3000/">Layouts</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Corporate</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Updates</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Pricing</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Customers</a>
+                        <Link to="/leadership">{t('Shop.leadership')}</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <div className="widget">
-                    <div className="widget-title">Features</div>
+                    <div className="widget-title">{t('Our staff.staff')}</div>
                     <ul className="list">
                       <li>
-                        <a href="http://localhost:3000/">Layouts</a>
+                        <Link to="/staff/editor">{t('Our staff.Editor')}</Link>
                       </li>
                       <li>
-                        <a href="http://localhost:3000/">Headers</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Widgets</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Footers</a>
+                        <Link to="/staff/members">{t('Our staff.lives')}</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-5">
                   <div className="widget">
-                    <div className="widget-title">Pages</div>
+                    <div className="widget-title">{t('submitting an article to the journal.submiting')}</div>
                     <ul className="list">
                       <li>
-                        <a href="http://localhost:3000/">Portfolio</a>
+                        <Link to="/">{t('submitting an article to the journal.article')}</Link>
                       </li>
                       <li>
-                        <a href="http://localhost:3000/">Blog</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Shop</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="widget">
-                    <div className="widget-title">Support</div>
-                    <ul className="list">
-                      <li>
-                        <a href="http://localhost:3000/">Help Desk</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Documentation</a>
-                      </li>
-                      <li>
-                        <a href="http://localhost:3000/">Contact Us</a>
+                        <Link to="">{t('submitting an article to the journal.mode')}</Link>
                       </li>
                     </ul>
                   </div>

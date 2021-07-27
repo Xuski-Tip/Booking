@@ -16,16 +16,18 @@ function Header() {
         <p className="moreInfo__logo-lorem">
           <a href="!#">
             {/*<br></br>*/}
-            <span>{t('Offical Site.of the National Center')}</span>
-            <br></br> <span>{t('Offical Site.for Human Rights')}</span>
-            <br></br><span>{t("Offical Site.of the Republic of Uzbekistan")}</span>
+            <span>{t("Offical Site.of the National Center")}</span>
+            <br></br> <span>{t("Offical Site.for Human Rights")}</span>
+            <br></br>
+            <span>{t("Offical Site.of the Republic of Uzbekistan")}</span>
             {/*<span className="moreInfo__logo-dawnText">{t('Offical Site.navbar')}</span>*/}
           </a>
         </p>
       </div>
       <div className="TextDemocratic">
         {" "}
-        {t("Offical Site.democration")} <br></br> {t("Offical Site.scientific and educational journal")}
+        {t("Offical Site.democration")} <br></br>{" "}
+        {t("Offical Site.scientific and educational journal")}
       </div>
       <nav className="moreInfo__navigation">
         <ul className="moreInfo__navigation-mainList">
@@ -42,7 +44,7 @@ function Header() {
                 <a href="!#">{t("Offical Site.Contact Phone")}</a>
               </span>
               <span className="moreInfo__navigation-lorem--dawn">
-                <a href="tel:+998712391358">+998 71 239 13 58</a>
+                <a href="tel:+998712394142">+998 71 239 41 42</a>
               </span>
             </div>
           </li>
@@ -59,7 +61,7 @@ function Header() {
                 <a href="!#">{t("Offical Site.Our address")}</a>
               </span>
               <span className="moreInfo__navigation-lorem--dawn">
-                <a href="!#">jurnal@HNRC.UZ</a>
+                <a href="#">journal@nhrc.uz</a>
               </span>
             </div>
           </li>

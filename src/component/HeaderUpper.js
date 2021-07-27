@@ -74,10 +74,6 @@ export default function HeaderUpper(stateAction) {
   return (
     <>
       <ReactBootStrap.Navbar sticky="top" bg="light" expand="lg">
-        {/* <ReactBootStrap.Navbar.Brand as={Link} to="/">
-          <strong>{t("Offical Site.navbar")}</strong>
-        </ReactBootStrap.Navbar.Brand> */}
-
         <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
           <ReactBootStrap.Nav className="mr-auto">
@@ -124,42 +120,59 @@ export default function HeaderUpper(stateAction) {
             <ReactBootStrap.Nav.Link as={Link} to="/arcive">
               {t("Arxiv.arxiv")}
             </ReactBootStrap.Nav.Link>
-
-            <ReactBootStrap.NavDropdown
-              title={t("Subscription.obuna")}
-              id="basic-nav-dropdown"
-            >
-              <ReactBootStrap.NavDropdown.Item onClick={showModal1}>
-                {t("Subscription.ofline")}
-              </ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Item onClick={showModal2}>
-                {t("Subscription.online")}
-              </ReactBootStrap.NavDropdown.Item>
-            </ReactBootStrap.NavDropdown>
           </ReactBootStrap.Nav>
-          <ReactBootStrap.Form inline>
-            <Link className="Link-autho" to={"/Authorization"}>
-              {t("avtorizatsiya.navbar")}
-            </Link>{" "}
-            /
-            <Link className="Link-registr" to={"/Authorization/Registration"}>
-              {t("avtorizatsiya.navbar2")}
-            </Link>
-            <div className="p-dropdown">
-              <select
-                // style={{ paddingRight: 25, cursor: "pointer", }}
-                onChange={handleChange}
-                defaultValue={changeLang}
-                className="options"
-              >
-                <option value="en">ENG</option>
-                <option value="ru">RUS</option>
-                <option value="uz">UZB</option>
-              </select>
-            </div>
-          </ReactBootStrap.Form>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
+
+      <Modal isOpen={open1} toggle={showModal1}>
+        <AvForm>
+          <ModalBody>
+            <AvField name="name" required label="F.I.SH" type="text" />
+            <AvField name="manzil" required label="Manzil" type="text" />
+            <AvField name="email" required label="E-mail" type="text" />
+            <AvField
+              name="number"
+              required
+              label="Telefon nomer"
+              type="number"
+            />
+            <div className="row">
+              {jurnal8.map((item, index) => {
+                return (
+                  <div className="col-6">
+                    <AvField
+                      type="checkbox"
+                      label={item.title_uz}
+                      className=""
+                      name={"jurnal" + index}
+                    ></AvField>
+                  </div>
+                );
+              })}
+              <div className="col-12">
+                <AvField
+                  name="nusxa"
+                  required
+                  type="number"
+                  label="Necha nusxada"
+                />
+              </div>
+            </div>
+          </ModalBody>
+          <ModalFooter className="d-flex justify-content-between">
+            <button type="button" className="btn btn-success">
+              To'lov
+            </button>
+            <button
+              type="button"
+              className="btn btn-danger"
+              onClick={showModal1}
+            >
+              Bekor qilish
+            </button>
+          </ModalFooter>
+        </AvForm>
+      </Modal>
 
       <Modal isOpen={open1} toggle={showModal1}>
         <AvForm>
@@ -211,51 +224,6 @@ export default function HeaderUpper(stateAction) {
         </AvForm>
       </Modal>
 
-      <Modal isOpen={open2} toggle={showModal2}>
-        <AvForm onSubmit={buy}>
-          <ModalBody>
-            <AvField name="name" required label="F.I.SH" type="text" />
-            {/*<AvField name="adres" required label="Adres" type="text"/>*/}
-            <AvField name="email" required label="E-mail" type="text" />
-            <AvField name="number" label="Telefon nomer" type="number" />
-            <div className="">
-              <div className="row">
-                {jurnal8.map((item, index) => {
-                  return (
-                    <div key={item.id} className="col-6">
-                      <AvField
-                        type="checkbox"
-                        label={item.title_uz}
-                        className=""
-                        name={"jurnal" + index}
-                      ></AvField>
-                    </div>
-                  );
-                })}
-              </div>
-              <AvField
-                name="nusxa"
-                required
-                type="number"
-                label="Necha nusxada"
-              />
-            </div>
-          </ModalBody>
-          <ModalFooter className="d-flex justify-content-between">
-            <button type="submit" className="btn btn-success">
-              To'lov
-            </button>
-            <button
-              type="button"
-              className="btn btn-success"
-              onClick={showModal2}
-            >
-              Orqaga
-            </button>
-          </ModalFooter>
-        </AvForm>
-      </Modal>
-
       <Modal isOpen={open3} toggle={showModal3}>
         <AvForm onSubmit={addJurnal}>
           <ModalBody>
@@ -264,8 +232,8 @@ export default function HeaderUpper(stateAction) {
                 <AvField
                   type="text"
                   name="name"
-                  label="Ism"
-                  placeholder="Ismingizni kiriting"
+                  label="F.I.SH"
+                  placeholder="Familiya, ism va sharifingiz"
                   required
                   errorMessage="Name kiriting!"
                 />
@@ -275,7 +243,7 @@ export default function HeaderUpper(stateAction) {
                   type="email"
                   name="email"
                   label="E-mail"
-                  placeholder="E-mailni kiriting"
+                  placeholder="Elektron pochtangizni kiriting"
                   errorMessage="Email kiriting!"
                 />
               </div>
@@ -283,7 +251,7 @@ export default function HeaderUpper(stateAction) {
                 <AvField
                   type="text"
                   name="phone"
-                  label="Telefon nomer"
+                  label="Telefon raqami"
                   placeholder="Nomeringizni kiriting"
                   required
                   errorMessage="Phone Number kiriting!"
@@ -293,8 +261,8 @@ export default function HeaderUpper(stateAction) {
                 <AvField
                   type="file"
                   name="file"
-                  label="Maqolani pdf varianti"
-                  accept=".pdf, .doc, .docx, .txt"
+                  label='Maqolani "word" shaklda yuklang'
+                  accept=".doc, .docx"
                   required
                 />
               </div>
@@ -304,7 +272,7 @@ export default function HeaderUpper(stateAction) {
                   name="text"
                   rows="7"
                   label="Maqola"
-                  placeholder="Maqolaga qo'shimcha"
+                  placeholder="Qo'shimcha izohingiz bo'lsa, yozing"
                   errorMessage="Xabar kiriting!"
                 />
               </div>

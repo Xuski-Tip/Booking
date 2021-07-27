@@ -8,7 +8,7 @@
     "leadership": "Rahbariyat"
   },
   "avtorizatsiya": {
-    "navbar": "Avtorizatsiya",
+    "navbar": "Kirish",
     "navbar2": "Ro'yxatdan o'tish"
   },
 
@@ -19,8 +19,8 @@
     "of the Republic of Uzbekistan": "Milliy markazi",
     "scientific and educational journal": "ilmiy-ma'rifiy jurnal",
     "democration": "«DEMOKRATLASHTIRISH VA INSON HUQUQLARI»",
-    "Contact Phone": "Maslahat telefoni",
-    "Our address": "Bizning pochtamiz"
+    "Contact Phone": "Telefon raqami",
+    "Our address": "Elektron pochta"
   },
   "News": {
     "navbar": "Yangiliklar"
