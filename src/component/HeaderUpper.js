@@ -25,8 +25,17 @@ export default function HeaderUpper(stateAction) {
         i18n.changeLanguage(changeLang);
     }
 
+    const [jurnal8, setJurnal8] = useState([]);
+
     useEffect(() =>{
         handleClick();
+
+        axios.get(API + "magazine")
+            .then((res) => {
+                console.log("aslom");
+                setJurnal8(res.data.magazine.splice(-8, 8));
+                // console.log(res)
+            })
 
     }, []);
 
@@ -174,26 +183,29 @@ export default function HeaderUpper(stateAction) {
                             label="Telefon nomer"
                             type="number"
                         />
-                        <div className="d-flex justify-content-between">
-                            <AvField
-                                type="select"
-                                className="w-75"
-                                required
-                                name="jurnal"
-                                label="Jurnalni tanlang"
-                            >
-                                <option value="1">2021-yil 1-son</option>
-                                <option value="2">2021-yil 2-son</option>
-                                <option value="3">2021-yil 3-son</option>
-                                <option value="4">2021-yil 4-son</option>
-
-                            </AvField>
-                            <AvField
-                                name="nusxa"
-                                required
-                                type="number"
-                                label="Necha nusxada"
-                            />
+                        <div className="row">
+                            {
+                                jurnal8.map((item, index) => {
+                                    return (
+                                        <div className="col-6">
+                                            <AvField
+                                                type="checkbox"
+                                                label={item.title_uz}
+                                                className=""
+                                                name={"jurnal" + index}
+                                            ></AvField>
+                                        </div>
+                                    )
+                                })
+                            }
+                            <div className="col-12">
+                                <AvField
+                                    name="nusxa"
+                                    required
+                                    type="number"
+                                    label="Necha nusxada"
+                                />
+                            </div>
                         </div>
                     </ModalBody>
                     <ModalFooter className="d-flex justify-content-between">
@@ -220,38 +232,21 @@ export default function HeaderUpper(stateAction) {
                         <AvField name="number" label="Telefon nomer" type="number" />
                         <div className="">
                             <div className="row">
-                                <div className="col-6">
-                                    <AvField
-                                        type="checkbox"
-                                        label="Jurnal1"
-                                        className="w-75"
-                                        name="jurnal1"
-                                    ></AvField>
-                                </div>
-                                <div className="col-6">
-                                    <AvField
-                                        type="checkbox"
-                                        label="Jurnal2"
-                                        className="w-75"
-                                        name="jurnal2"
-                                    ></AvField>
-                                </div>
-                                <div className="col-6">
-                                    <AvField
-                                        type="checkbox"
-                                        label="Jurnal3"
-                                        className="w-75"
-                                        name="jurnal3"
-                                    ></AvField>
-                                </div>
-                                <div className="col-6">
-                                    <AvField
-                                        type="checkbox"
-                                        label="Jurnal4"
-                                        className="w-75"
-                                        name="jurnal4"
-                                    ></AvField>
-                                </div>
+                                {
+                                    jurnal8.map((item, index) => {
+                                        return (
+                                            <div className="col-6">
+                                                <AvField
+                                                    type="checkbox"
+                                                    label={item.title_uz}
+                                                    className=""
+                                                    name={"jurnal" + index}
+                                                ></AvField>
+                                            </div>
+                                        )
+                                    })
+                                }
+
                             </div>
                             <AvField
                                 name="nusxa"
