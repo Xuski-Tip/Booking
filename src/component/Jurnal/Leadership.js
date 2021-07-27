@@ -32,7 +32,7 @@ const Leadership = () => {
                             </h5>
                             <h3>Akmal Saidov</h3>
 
-                            <button type="button" className="btn btn-primary" onClick={openModal}>Tarjimai holi</button>
+                            <button type="button" className="btn btn-primary" onClick={openModal}>Tarjimai hol</button>
                             <Collapse isOpen={open}>
                                 Акмал Холматович Саидов – 1958 йилда Тошкент вилоятининг Зангиота қишлоғида туғилган.
                                 Миллати – ўзбек. Маълумоти – олий. 1981 йилда Мирзо Улуғбек номидаги Ўзбекистон Миллий
@@ -106,7 +106,7 @@ const Leadership = () => {
                             <h3>
                                 Erkin Ernazarov
                             </h3>
-                            <button type="button" className="btn btn-primary" onClick={openModal2}>Tarjimai holi</button>
+                            <button type="button" className="btn btn-primary" onClick={openModal2}>Tarjimai hol</button>
                             <Collapse isOpen={open2}>
                                 hello
                             </Collapse>

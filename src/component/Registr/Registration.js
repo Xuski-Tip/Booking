@@ -3,7 +3,13 @@ import HeaderUpper from "../HeaderUpper";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 import { login } from "../../redux/Action/registerAction";
 import { connect } from "react-redux";
+
 const Registration = (props) => {
+
+  const prevMain = () => {
+    props.history.push("/")
+  };
+
   return (
     <>
       <HeaderUpper />
@@ -65,7 +71,7 @@ const Registration = (props) => {
                       <button className="btn" type="submit">
                         Register New Account{" "}
                       </button>
-                      <button type="button" className="btn btn-danger m-l-10">
+                      <button type="button" className="btn btn-danger m-l-10" onClick={prevMain}>
                         Cancel
                       </button>
                     </div>

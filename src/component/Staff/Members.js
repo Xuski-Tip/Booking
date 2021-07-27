@@ -234,7 +234,7 @@ export default function Members() {
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">Asqar G'afurov</h3>
                   <span className="team__info-developer">
-                    {t("members.member1")}
+                    {t("members.member6")}
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
@@ -282,7 +282,7 @@ export default function Members() {
                     Muzaffar Mamasiddiqov
                   </h3>
                   <span className="team__info-developer">
-                    {t("members.member4")}
+                    {t("members.member5")}
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
@@ -376,7 +376,7 @@ export default function Members() {
                     Yelizaveta Kutibayeva
                   </h3>
                   <span className="team__info-developer">
-                    {t("members.member4")}
+                    {t("members.member5")}
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">
@@ -424,7 +424,7 @@ export default function Members() {
                     Xaydarali Muxamedov
                   </h3>
                   <span className="team__info-developer">
-                    {t("members.member4")}
+                    {t("members.member7")}
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">

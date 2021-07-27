@@ -5,7 +5,15 @@
   align-items: center;
   justify-content: center;
 }
-
+.options{
+cursor: pointer;
+  padding-right: 25px;
+  background-color: #e2d2ff;
+  option{
+    background-color: #b9abd6;
+    color: #0b0b0b;
+  }
+}
 // 1025
 .Recent-Works__content {
   margin: 3px;
@@ -501,3 +509,4 @@
 }
 @import "./media";
 @import "./jurnal";
+@import "./savdo";

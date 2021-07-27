@@ -60,15 +60,17 @@
     },
   "Subscription": {
     "obuna": "Obuna",
-    "ofline": "Jurnalning an'anaviy(qog'oz) shakliga obuna",
+    "ofline": "Jurnalning bosma shakliga obuna",
     "online": "Jurnalning elektron shakliga obuna"
   },
   "members": {
-    "member1": "yuridik fanlar nomzodi",
+    "member1": "yuridik fanlar doktori, dotsent",
     "member2": "yuridik fanlar doktori, professor, O'zbekiston Respublikasi fan arbobi",
     "member3": "yuridik fanlar doktori, professor, O'zbekistonda xizmat ko'rsatgan yurist",
     "member4": "yuridik fanlar doktori",
-    "member5": "dotsent"
+    "member5": "yuridik fanlar doktori, professor",
+    "member6": "yuridik fanlar nomzodi, dotsent",
+    "member7": "yuridik fanlar nomzodi, professor"
   },
   "state": {
     "state1": "O'zbekiston",

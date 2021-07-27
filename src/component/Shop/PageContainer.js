@@ -20,8 +20,8 @@ const PageContainer = () => {
     useEffect(() => {
         axios.get(API + "magazine")
             .then((res) => {
+                console.log("salom");
                 console.log(res);
-                console.log("Salom");
                 setJurnal(res.data.magazine);
                 setJurna8(res.data.magazine.slice(0, -8));
             })

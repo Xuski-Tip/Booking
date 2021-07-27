@@ -1,7 +1,6 @@
 import React from "react";
 // ! Wate to backend
 export default function PageShop(props) {
-  console.log(props);
   return (
     <div className="Page-shop">
       <div className="Page-slider grid-4-columns" data-item="grid-item">
@@ -19,7 +18,10 @@ export default function PageShop(props) {
                       //       item.file
                       //     : " "
                       // }
-                      href={'https://paycom-test.napaautomotive.uz/storage/' + item.file}
+                      href={
+                        "https://paycom-test.napaautomotive.uz/storage/" +
+                        item.file
+                      }
                     >
                       <img
                         alt="#"
