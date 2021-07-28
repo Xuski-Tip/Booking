@@ -30,14 +30,14 @@ const SendMessage = () => {
 
 
     return (
-        <>
+        <div className="container">
             <div className="row mt-5 application">
-                <div className="col-6 offset-3">
+                <div className="col-xl-6 col-md-10 offset-md-1 col-12  offset-xl-3">
                     <div className="card">
                         <div className="card-body">
                             <AvForm onSubmit={OnSubmit}>
                                <div className="row">
-                                   <div className="col-6">
+                                   <div className="col-12 col-md-8 col-lg-6 ">
                                        <AvField
                                            type="text"
                                            name="name"
@@ -48,7 +48,7 @@ const SendMessage = () => {
 
                                        />
                                    </div>
-                                   <div className="col-6">
+                                   <div className="col-12 col-md-8 col-lg-6">
                                        <AvField
                                            type="email"
                                            name="email"
@@ -59,7 +59,7 @@ const SendMessage = () => {
 
                                        />
                                    </div>
-                                   <div className="col-6">
+                                   <div className="col-12 col-md-8 col-lg-6">
                                        <AvField
                                            type="text"
                                            name="phone"
@@ -92,7 +92,7 @@ const SendMessage = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

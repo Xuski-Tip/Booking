@@ -39,7 +39,7 @@ function Slider() {
             />
           </Link>
           <div className="link-button-main">
-            <button type="button" className="btn btn-outline-danger btn-block">Sotib olish</button>
+            <button type="button" className="btn btn-outline-danger btn-block">{t("send.send")}</button>
           </div>
 
         </div>

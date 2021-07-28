@@ -125,7 +125,12 @@
     "cansel": "Bekor qilish",
     "errorName": "Ismingizni kiriting",
     "errorParol": "Parol kiriting",
-    "errorEamil": "E-mail kiriting"
-
+    "errorEamil": "E-mail kiriting",
+    "tulov": "To'lov",
+    "nusxa": "Necha nusxada",
+    "manzil": "Manzil"
+  },
+  "send": {
+    "send": "Sotib olish"
   }
 }

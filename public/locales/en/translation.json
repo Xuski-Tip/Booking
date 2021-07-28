@@ -124,7 +124,13 @@
     "cansel": "Cansel",
     "errorName": "Enter the name",
     "errorParol": "Enter the password",
-    "errorEamil": "Enter the email"
+    "errorEamil": "Enter the email",
+    "tulov": "Payment",
+    "nusxa": "How many copies",
+    "manzil": "Address"
+  },
+  "send": {
+    "send": "Shopping"
   }
 }
 

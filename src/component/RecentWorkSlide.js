@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {API} from "../simpleJs/loginApi";
+import {getLanguage} from "../simpleJs/locale";
 
 
 const RecentWorkSlide = () => {
@@ -19,7 +20,7 @@ const RecentWorkSlide = () => {
 
     return (
         <div className="portfolio">
-            <div id="portfolio" className="portfolio-6-columns" data-margin="0">
+            <div id="portfolio" className="portfolio-6-columns m-auto" data-margin="0">
                 {jurnal12.map((item) => {
                     return (
                         <div key={item.id}>
@@ -36,7 +37,7 @@ const RecentWorkSlide = () => {
                                                 alt=""
                                             />
                                         </a>
-                                        <h6 className="mt-2">{item.title_uz}</h6>
+                                        <h6 className="mt-2 marginleft">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</h6>
                                     </div>
                                     <div className="portfolio-description">
                                         <a
