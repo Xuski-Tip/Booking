@@ -24,14 +24,15 @@ export default function PageShop(props) {
                       //   item.file
                       // }
                     >
-                      <img
-                        alt="#"
-                        src={
-                          "https://paycom-test.napaautomotive.uz/storage/" +
-                          item.image
-                        }
-                      />
+                        <img
+                            alt="#"
+                            src={
+                                "https://paycom-test.napaautomotive.uz/storage/" +
+                                item.image
+                            }
+                        />
                     </a>
+                    </>
                   ) : (
                     <img
                       alt="#"
