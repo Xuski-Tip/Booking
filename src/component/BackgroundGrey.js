@@ -14,7 +14,7 @@ function BackgroundGrey() {
           <h2>{t("our work.WHAT WE DO")}</h2>
         </div>
         <div className="row">
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0s"
@@ -22,7 +22,7 @@ function BackgroundGrey() {
               <img className="index-img bg-white" src="/images/doi.png" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0s"
@@ -30,7 +30,7 @@ function BackgroundGrey() {
               <img className="index-img" src="/images/DoiCrossref.png" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0.2s"
@@ -38,7 +38,7 @@ function BackgroundGrey() {
               <img className="index-img" src="/images/elibrary.png" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0.4s"
@@ -50,7 +50,7 @@ function BackgroundGrey() {
               />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0.6s"
@@ -62,7 +62,7 @@ function BackgroundGrey() {
               />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp"
               data-wow-delay="0.8s"
@@ -74,7 +74,7 @@ function BackgroundGrey() {
               />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp"
               data-animate="fadeInUp"
@@ -83,7 +83,7 @@ function BackgroundGrey() {
               <img className="index-img" src="/images/World Cate.png" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp"
               data-animate="fadeInUp"
@@ -92,7 +92,7 @@ function BackgroundGrey() {
               <img className="index-img" src="/images/Research Gate.png" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp"
               data-animate="fadeInUp"
@@ -101,7 +101,7 @@ function BackgroundGrey() {
               <img className="index-img" src="/images/CL_logo.jpg" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp"
               data-animate="fadeInUp"
@@ -110,7 +110,7 @@ function BackgroundGrey() {
               <img className="index-img" src="/images/Academic Resource Index.png" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp"
               data-animate="fadeInUp"
@@ -119,7 +119,7 @@ function BackgroundGrey() {
               <img className="index-img" src="/images/Advanced Sciences Index.png" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 index__main-img">
+          <div className="col-lg-2 col-6 col-md-4 index__main-img">
             <div
               className="wow animate__animated animate__fadeInUp"
               data-animate="fadeInUp"

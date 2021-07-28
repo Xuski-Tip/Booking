@@ -3,7 +3,6 @@ import App from "./App";
 import Shop from "./Shop/Shop";
 import Authorization from "./Registr/Authorization";
 import Registration from "./Registr/Registration";
-import ContactUs from "./Contact Us/ContactUs";
 import Card from "./Shop/InfoCard/Card";
 // import News from "./News/News";
 import Editor from "./Staff/Editor";
@@ -15,8 +14,8 @@ import Leadership from "./Jurnal/Leadership";
 import Requirimend from "./article/requirimend";
 import ArticleLayout from "./article/articleLayout";
 import Litsinziya from "./Jurnal/Litsinziya";
-import Misol from "./misol";
 import Savdo from "./Savdo";
+import Maqola from "./Maqola";
 
 const Router = () => {
   return (
@@ -30,7 +29,6 @@ const Router = () => {
           path="/authorization/registration"
           component={Registration}
         />
-        <Route exact path="/contactUs" component={ContactUs} />
         <Route exact path="/shop/card/:id" component={Card} />
         {/*<Route path="/News" component={News} />*/}
         <Route exact path="/staff/editor" component={Editor} />
@@ -39,6 +37,8 @@ const Router = () => {
         <Route exact path="/requirimend" component={Requirimend} />
         <Route exact path="/layout" component={ArticleLayout} />
         <Route exact path="/letsenziya" component={Litsinziya} />
+        <Route exact path="/letsenziya" component={Litsinziya} />
+        <Route exact path="/maqola" component={Maqola} />
         <Route exact path="/sale" component={Savdo} />
         <Route component={NotFound}></Route>
       </Switch>

@@ -3,8 +3,11 @@ import HeaderUpper from "../HeaderUpper";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 import { login } from "../../redux/Action/registerAction";
 import { connect } from "react-redux";
+import {useTranslation} from "react-i18next";
 
 const Registration = (props) => {
+
+  const {t} = useTranslation();
 
   const prevMain = () => {
     props.history.push("/")
@@ -29,50 +32,51 @@ const Registration = (props) => {
                 >
                   <div className="row">
                     <div className="col-lg-12">
-                      <h3>Register New Account</h3>
+                      <h3>{t("registr.accaunt")}</h3>
                       <p>
-                        Create an account by entering the information below. If
-                        you are a returning customer please login at the top of
-                        the page.
+                        {t("registr.list")}
                       </p>
                     </div>
                     <div className="col-lg-6 form-group">
                       <AvField
-                        label="Name"
+                        label={t("registr.name")}
                         type="text"
-                        placeholder="Name"
+                        placeholder={t("registr.name")}
                         className="form-control"
                         name="name"
                         required
+                        errorMessage={t("registr.errorName")}
                       />
                     </div>
                     <div className="col-lg-6 form-group">
                       <AvField
-                        label="password"
+                        label={t("registr.password")}
                         type="password"
-                        placeholder="Password"
+                        placeholder={t("registr.password")}
                         className="form-control"
                         name="password"
                         required
+                        errorMessage={t("registr.errorParol")}
                       />
                     </div>
                     <div className="col-lg-12 form-group">
                       <AvField
-                        label="Email"
+                        label={t("registr.email")}
                         type="email"
-                        placeholder="Email"
+                        placeholder={t("registr.email")}
                         name="email"
                         className="form-control"
                         required
+                        errorMessage={t("registr.errorEmail")}
                       />
                     </div>
 
-                    <div className="col-lg-12 form-group">
+                    <div className="col-lg-12 d-md-flex justify-content-between form-group">
                       <button className="btn" type="submit">
-                        Register New Account{" "}
+                        {t("registr.registr")}{" "}
                       </button>
                       <button type="button" className="btn btn-danger m-l-10" onClick={prevMain}>
-                        Cancel
+                        {t("registr.cansel")}
                       </button>
                     </div>
                   </div>

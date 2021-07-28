@@ -54,10 +54,10 @@ const Savdo = () => {
                                 </select>
                             </div>
                             <div className="form-group" id="credit_cards">
-                                <img src="/images/clients/visa.jpg" id="visa"/>
-                                <img src="/images/clients/mastercard.jpg" id="mastercard"/> <br/>
-                                <img src="/images/clients/uzcard.jpg" id="amex" width="88px" height={"59px"}/>
-                                <img src="/images/clients/humo.jpg" id="amex" width="88px" height={"59px"}/>
+                                <img  alt="Error"src="/images/clients/visa.jpg" id="visa"/>
+                                <img  alt="Error"src="/images/clients/mastercard.jpg" id="mastercard"/> <br/>
+                                <img  alt="Error"src="/images/clients/uzcard.jpg" id="amex" width="88px" height={"59px"}/>
+                                <img  alt="Error"src="/images/clients/humo.jpg" id="amex" width="88px" height={"59px"}/>
                             </div>
                             <div className="form-group" id="pay-now">
                                 <button type="submit" className="btn btn-default" id="confirm-purchase">Tasdiqlang
