@@ -33,7 +33,7 @@ const SendMessage = () => {
     return (
         <div className="container">
             <div className="row mt-5 application">
-                <div className="col-xl-6 col-md-10 offset-md-1 col-12  offset-xl-3">
+                <div className="col-xl-8 col-md-10 offset-md-1 col-12  offset-xl-2">
                     <div className="card">
                         <div className="card-body">
                             <AvForm onSubmit={OnSubmit}>
