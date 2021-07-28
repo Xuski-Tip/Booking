@@ -10,7 +10,7 @@ const Requirimend = () => {
         <div className="container d-flex justify-content-center">
           <img
             src="/images/background/maqolatalabi.jpg"
-            className="w-100 "
+            className="w-50 image-talab "
             alt="Error"
           />
         </div>
