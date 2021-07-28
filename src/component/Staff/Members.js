@@ -328,7 +328,7 @@ export default function Members() {
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">Mixail Gasanov</h3>
                   <span className="team__info-developer">
-                    {t("members.member5")}
+                    {t("members.member6")}
                   </span>
                   <p className="team__info-lorem"></p>
                   <div className="align-center">

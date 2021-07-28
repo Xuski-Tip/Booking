@@ -38,7 +38,7 @@ function Slider() {
               src="/images/azolar/jurnal2.jpg"
             />
           </Link>
-          <div className="p-3">
+          <div className="link-button-main">
             <button type="button" className="btn btn-outline-danger btn-block">Sotib olish</button>
           </div>
 

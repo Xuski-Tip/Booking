@@ -46,9 +46,9 @@ const RecentWorkSlide = () => {
                       >
                         {/*<i className="icon-maximize"></i>*/}
                       </a>
-                      {/*<a target="_blank" href={item.pdf}>*/}
-                      {/*  <i className="icon-link"></i>*/}
-                      {/*</a>*/}
+                      <a target="_blank" href={element.pdf}>
+                        <i className="icon-link"></i>
+                      </a>
                     </div>
                   </div>
                 </div>

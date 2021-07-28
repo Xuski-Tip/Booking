@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import MapContainer from "./MapContainer.js";
 import axios from "axios";
-import { useForm } from "react-hook-form";
 import { LANGUAGE } from "../../simpleJs/Tipelang";
-import { toast } from "react-toastify";
+
 import SendMessage from "./SendMessage";
 export default function ContactUs() {
   const [state, setState] = useState([]);
@@ -18,42 +17,14 @@ export default function ContactUs() {
     }
     fetchMyApi();
   }, []);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = async (data) => {
-    try {
-      await axios.post(
-        "https://paycom-test.napaautomotive.uz/api/contact/store",
-        {
-          name: data.name,
-          email: data.email,
-          phone: data.phone,
-          message: data.message,
-        }
-      );
-      // document.getElementById("name").value = "";
-      // document.getElementById("email").value = "";
-      // document.getElementById("phone").value = "";
-      // document.getElementById("message").value = "";
-    } catch (error) {
-      toast.success("Xabaringiz jo'natildi");
-    }
-  };
-
   return (
     <div className="body-inner">
       <div className="container">
         <div className="heading-text heading-section text-center">
-          <h2>Contact Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse
-            condimentum porttitor cursumus.
-          </p>
+          <h2 className="mt-3">Biz bilan bog'laning</h2>
         </div>
       </div>
+      <SendMessage />
       <section className="no-padding">
         <div className="Map">
           <MapContainer />
@@ -145,107 +116,7 @@ export default function ContactUs() {
         })}
       </section>
 
-      <SendMessage />
+
     </div>
   );
-}
-
-// <section>
-//   <div className="container">
-//     <div
-//         className="row"
-//         style={{
-//           justifyContent: "center",
-//         }}
-//     >
-//       <div className="col-lg-7">
-//         <form
-//             onSubmit={handleSubmit(onSubmit)}
-//             className="widget-contact-form"
-//         >
-//           <div className="row">
-//             <div className="form-group col-md-6">
-//               <label>Name</label>
-//               <input
-//                   {...register("name", {
-//                     required: true,
-//                     pattern: {
-//                       value: /^[a-zA-Z\s]/,
-//                     },
-//                     maxlength: 15,
-//                   })}
-//                   type="text"
-//                   name="name"
-//                   className="form-control required name"
-//                   placeholder="Enter your Name"
-//               />
-//               {errors.name && <p className="table-danger">invalid name</p>}
-//             </div>
-//             <div className="form-group col-md-6">
-//               <label>Email</label>
-//               <input
-//                   {...register("email", {
-//                     required: true,
-//                     pattern: {
-//                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-//                     },
-//                   })}
-//                   type="email"
-//                   name="email"
-//                   className="form-control required email"
-//                   placeholder="Enter your Email"
-//               />
-//               {errors.email && <p>invalid email address</p>}
-//             </div>
-//           </div>
-//           <div className="row">
-//             <div className="form-group col-md-12">
-//               <label>Your Number</label>
-//               <input
-//                   {...register("phone", {
-//                     required: true,
-//                   })}
-//                   pattern="\d*"
-//                   type="tel"
-//                   name="phone"
-//                   className="form-control required"
-//                   placeholder="Phone number"
-//               />
-//               {errors.phone && <p>invalid phone number</p>}
-//             </div>
-//           </div>
-//           <div className="form-group">
-//             <label>Message</label>
-//             <textarea
-//                 {...register("message", {
-//                   required: true,
-//                   maxLength: 100,
-//                 })}
-//                 type="text"
-//                 name="message"
-//                 rows="5"
-//                 className="form-control required"
-//                 placeholder="Enter your Message"
-//             ></textarea>
-//           </div>
-//
-//           <button className="btn" type="submit" id="form-submit">
-//             <i className="fa fa-paper-plane"></i>
-//             &nbsp;Send message
-//           </button>
-//         </form>
-//         {/*{answerstate && (*/}
-//         {/*  <div className={`alert alert ${answerstate}`} role="alert">*/}
-//         {/*    {answerstate.toUpperCase()}*/}
-//         {/*  </div>*/}
-//         {/*)}*/}
-//       </div>
-{
-  /*    </div>*/
-}
-{
-  /*  </div>*/
-}
-{
-  /*</section>*/
 }
