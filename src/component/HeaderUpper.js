@@ -8,7 +8,10 @@ import { LANGUAGE } from "../simpleJs/Tipelang";
 import axios from "axios";
 import { API } from "../simpleJs/loginApi";
 import { toast } from "react-toastify";
+import {getLanguage} from "../simpleJs/locale";
+
 export default function HeaderUpper(stateAction) {
+
   const { t, i18n } = useTranslation();
 
   function handleChange(event) {
@@ -86,6 +89,9 @@ export default function HeaderUpper(stateAction) {
             </ReactBootStrap.NavLink>
 
             <ReactBootStrap.NavDropdown title={t("Shop.navbar")}>
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/jurnal">
+                {t("jurnale.text")}
+              </ReactBootStrap.NavDropdown.Item>
               <ReactBootStrap.NavDropdown.Item as={Link} to="/letsenziya">
                 {t("Shop.litsenziya")}
               </ReactBootStrap.NavDropdown.Item>
@@ -169,13 +175,13 @@ export default function HeaderUpper(stateAction) {
       <Modal isOpen={open1} toggle={showModal1}>
         <AvForm>
           <ModalBody>
-            <AvField name="name" required label="F.I.SH" type="text" />
-            <AvField name="manzil" required label="Manzil" type="text" />
-            <AvField name="email" required label="E-mail" type="text" />
+            <AvField name="name" required label={t("send file.nameLabel")} type="text" />
+            <AvField name="manzil" required label={t("registr.manzil")} type="text" />
+            <AvField name="email" required label={t("registr.email")} type="text" />
             <AvField
               name="number"
               required
-              label="Telefon nomer"
+              label={t("send file.phonePlaceholder")}
               type="number"
             />
             <div className="row">
@@ -184,10 +190,10 @@ export default function HeaderUpper(stateAction) {
                   <div key={item.id} className="col-6">
                     <AvField
                       type="checkbox"
-                      label={item.title_uz}
+                      label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}
                       className=""
                       name={"jurnal" + index}
-                    ></AvField>
+                    />
                   </div>
                 );
               })}
@@ -196,21 +202,21 @@ export default function HeaderUpper(stateAction) {
                   name="nusxa"
                   required
                   type="number"
-                  label="Necha nusxada"
+                  label={t("registr.nusxa")}
                 />
               </div>
             </div>
           </ModalBody>
           <ModalFooter className="d-flex justify-content-between">
             <button type="button" className="btn btn-success">
-              To'lov
+              {t("registr.tulov")}
             </button>
             <button
               type="button"
-              className="btn btn-success"
+              className="btn btn-danger"
               onClick={showModal1}
             >
-              Orqaga
+              {t("registr.cansel")}
             </button>
           </ModalFooter>
         </AvForm>
@@ -219,10 +225,10 @@ export default function HeaderUpper(stateAction) {
       <Modal isOpen={open2} toggle={showModal2}>
         <AvForm onSubmit={buy}>
           <ModalBody>
-            <AvField name="name" required label="F.I.SH" type="text" />
+            <AvField name="name" required label={t("send file.nameLabel")} type="text" />
             {/*<AvField name="adres" required label="Adres" type="text"/>*/}
-            <AvField name="email" required label="E-mail" type="text" />
-            <AvField name="number" label="Telefon nomer" type="number" />
+            <AvField name="email" required label={t("registr.email")} type="text" />
+            <AvField name="number" label={t("send file.phonePlaceholder")} type="number" />
             <div className="">
               <div className="row">
                 {jurnal8.map((item, index) => {
@@ -230,10 +236,10 @@ export default function HeaderUpper(stateAction) {
                     <div key={item.id} className="col-6">
                       <AvField
                         type="checkbox"
-                        label={item.title_uz}
+                        label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}
                         className=""
                         name={"jurnal" + index}
-                      ></AvField>
+                      />
                     </div>
                   );
                 })}
@@ -242,20 +248,20 @@ export default function HeaderUpper(stateAction) {
                 name="nusxa"
                 required
                 type="number"
-                label="Necha nusxada"
+                label={t("registr.nusxa")}
               />
             </div>
           </ModalBody>
           <ModalFooter className="d-flex justify-content-between">
             <button type="submit" className="btn btn-success">
-              To'lov
+              {t("registr.tulov")}
             </button>
             <button
               type="button"
-              className="btn btn-success"
+              className="btn btn-danger"
               onClick={showModal2}
             >
-              Orqaga
+              {t("registr.cansel")}
             </button>
           </ModalFooter>
         </AvForm>

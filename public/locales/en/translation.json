@@ -3,7 +3,7 @@
     "navbar": "Home page"
   },
   "Shop": {
-    "navbar": "Jurnal haqida",
+    "navbar": "About the magazine",
     "litsenziya": "License",
     "leadership": "Leadership"
   },
@@ -142,7 +142,14 @@
     "button" : "Send a message"
   },
   "connect" : {
-    "connect" : "Contact us"
+    "connect" : "Contact us",
+    "errorEamil": "Enter the email",
+    "tulov": "Payment",
+    "nusxa": "How many copies",
+    "manzil": "Address"
+  },
+  "send": {
+    "send": "Shopping"
   }
 }
 

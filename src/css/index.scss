@@ -481,6 +481,23 @@ cursor: pointer;
 }
 .portfolio-img {
   height: 310px !important;
+  @media (max-width: 481px) {
+    width: 80% !important;
+    height: 550px !important;
+    margin: 10px auto;
+  }
+  @media (max-width: 767px) {
+    height: 310px !important;
+  }
+  @media (min-width: 1400px) {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+.marginleft{
+  @media (max-width: 481px) {
+    margin: 0 10%;
+  }
 }
 .link-button-main {
   margin: 10px  5px 0 5px ;
@@ -500,8 +517,11 @@ cursor: pointer;
 .application {
   .card {
     background-color: transparent;
-    border: none;
+    border: 0!important;
     box-shadow: none;
+    //width: 100%;
+    padding: 0 0;
+    margin: 0 0;
   }
 }
 .letsenziya-img {

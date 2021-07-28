@@ -16,6 +16,7 @@ import ArticleLayout from "./article/articleLayout";
 import Litsinziya from "./Jurnal/Litsinziya";
 import Savdo from "./Savdo";
 import Maqola from "./Maqola";
+import Jurnal from "./Jurnal";
 
 const Router = () => {
   return (
@@ -40,6 +41,7 @@ const Router = () => {
         <Route exact path="/letsenziya" component={Litsinziya} />
         <Route exact path="/maqola" component={Maqola} />
         <Route exact path="/sale" component={Savdo} />
+        <Route exact path="/jurnal" component={Jurnal} />
         <Route component={NotFound}></Route>
       </Switch>
       <ToastContainer />

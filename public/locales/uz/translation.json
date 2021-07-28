@@ -143,6 +143,13 @@
     "button" : "Xabar yuborish"
   },
   "connect" : {
-    "connect" : "Biz bilan bog'laning"
+    "connect" : "Biz bilan bog'laning",
+    "errorEamil": "E-mail kiriting",
+    "tulov": "To'lov",
+    "nusxa": "Necha nusxada",
+    "manzil": "Manzil"
+  },
+  "send": {
+    "send": "Sotib olish"
   }
 }
