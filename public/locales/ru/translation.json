@@ -125,6 +125,24 @@
     "errorName": "Введите ваше имя",
     "errorParol": "Введите пароль",
     "errorEamil": "Введите адрес электронной почты"
+  },
+  "send message": {
+    "nameLabel" : "Имя",
+    "namePlaceholder" : "Введите ваше имя",
+    "nameErrorMessage" : "Введите ваше имя!",
+    "emailLabel" : "Электронная почта",
+    "emailPlaceholder" : "Введите адрес электронной почты",
+    "emailErrorMessage" : "Введите адрес электронной почты!",
+    "phoneLabel" : "Телефонный номер",
+    "phonePlaceholder" : "Введите свой номер телефона",
+    "phoneErrorMessage" : "Введите свой номер телефона!",
+    "messageLabel" : "Для обращений",
+    "messagePlaceholder" : "Введите комментарий",
+    "messageErrorMessage" : "Введите комментарий!",
+    "button" : "Послать сообщение"
+  },
+  "connect" : {
+    "connect" : "Свяжитесь с нами"
   }
 
 }

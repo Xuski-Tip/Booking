@@ -32,7 +32,6 @@ export default function PageShop(props) {
                             }
                         />
                     </a>
-                    </>
                   ) : (
                     <img
                       alt="#"

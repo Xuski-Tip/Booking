@@ -125,6 +125,24 @@
     "errorName": "Enter the name",
     "errorParol": "Enter the password",
     "errorEamil": "Enter the email"
+  },
+  "send message": {
+    "nameLabel" : "Name",
+    "namePlaceholder" : "Enter your name",
+    "nameErrorMessage" : "Enter your name!",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Enter the email",
+    "emailErrorMessage" : "Enter the email!",
+    "phoneLabel" : "Phone number",
+    "phonePlaceholder" : "Enter your phone number",
+    "phoneErrorMessage" : "Enter your phone number!",
+    "messageLabel" : "For appeals",
+    "messagePlaceholder" : "Enter a comment",
+    "messageErrorMessage" : "Enter a comment!",
+    "button" : "Send a message"
+  },
+  "connect" : {
+    "connect" : "Contact us"
   }
 }
 

@@ -30,25 +30,25 @@ const RecentWorkSlide = () => {
                   <div className="portfolio-item-wrap">
                     <div className="portfolio-image">
                       <a href="!#">
-                        <img
-                          className="portfolio-img"
-                          src={"https://paycom-test.napaautomotive.uz/storage/" +item.image}
-                          alt=""
-                        />
+                      <div className="overflow-hidden">
+                          <img
+                              className="portfolio-img"
+                              src={"https://paycom-test.napaautomotive.uz/storage/" +item.image}
+                              alt=""
+                          />
+                      </div>
                       </a>
-                      <h6 className="mt-2">{item.title_uz}</h6>
+
                     </div>
+                      <h6 className="mt-2">{item.title_uz}</h6>
                     <div className="portfolio-description">
                       <a
                         title="Paper Pouch!"
                         data-lightbox="image"
                         href={"https://paycom-test.napaautomotive.uz/storage/" +item.image}
                       >
-                        {/*<i className="icon-maximize"></i>*/}
                       </a>
-                      <a target="_blank" href={element.pdf}>
-                        <i className="icon-link"></i>
-                      </a>
+
                     </div>
                   </div>
                 </div>

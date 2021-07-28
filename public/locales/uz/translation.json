@@ -51,7 +51,7 @@
     "submiting": "Maqola mualliflariga",
     "article": "Maqolalarga qo'yilgan talablar",
     "mode": "Jurnalda maqola chiqarish tartibi",
-    "editorial" : "Tahririyatga maqola jo'natish"
+    "editorial" : "Tahririyatga maqola jo'natish",
   },
   "About Us": {
     "aboutUs": "Biz haqimizda"
@@ -126,6 +126,23 @@
     "errorName": "Ismingizni kiriting",
     "errorParol": "Parol kiriting",
     "errorEamil": "E-mail kiriting"
-
+  },
+  "send message": {
+    "nameLabel" : "Ism",
+    "namePlaceholder" : "Ismingizni kiriting",
+    "nameErrorMessage" : "Ismingizni kiriting!",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "E-mail kiriting",
+    "emailErrorMessage" : "E-mail kiriting!",
+    "phoneLabel" : "Telefon raqam",
+    "phonePlaceholder" : "Telefon raqamingizni kiriting",
+    "phoneErrorMessage" : "Telefon raqamingizni kiriting!",
+    "messageLabel" : "Murojatlar uchun",
+    "messagePlaceholder" : "Izoh kiriting",
+    "messageErrorMessage" : "Izoh kiriting!",
+    "button" : "Xabar yuborish"
+  },
+  "connect" : {
+    "connect" : "Biz bilan bog'laning"
   }
 }
