@@ -11,7 +11,6 @@
     "navbar": "Kirish",
     "navbar2": "Ro'yxatdan o'tish"
   },
-
   "Offical Site": {
     "navbar": "Rasmiy Sait",
     "of the National Center": "Inson huquqlari bo'yicha",
@@ -23,7 +22,8 @@
     "Our address": "Elektron pochta"
   },
   "News": {
-    "navbar": "Yangiliklar"
+    "navbar": "Yangiliklar",
+    "maqola": "Maqolalar"
   },
   "Welcom": {
     "welcom to the": "DEMOKRATLASHTIRISH VA INSON HUQUQLARI JURNALI",
@@ -55,9 +55,9 @@
   "About Us": {
     "aboutUs": "Biz haqimizda"
   },
-    "Arxiv": {
-      "arxiv": "Arxiv"
-    },
+  "Arxiv": {
+    "arxiv": "Arxiv"
+  },
   "Subscription": {
     "obuna": "Obuna",
     "ofline": "Jurnalning bosma shakliga obuna",
@@ -81,5 +81,18 @@
     "state6": "Islom hamkorlik tashkiloti",
     "state7": "Estoniya",
     "state8": "Qozog'iston"
+  },
+  "registr": {
+    "accaunt": "Saytda ro'yxatdan o'tish",
+    "list": "Saytdan ro'yxatdan o'tsangiz jurnalning oldingi sonlarini bepul yuklab olish imkoniyatiga ega bo'lasiz",
+    "name": "Ism",
+    "password": "parol",
+    "email": "E-mail",
+    "registr": "Ro'yxatdan o'tish",
+    "cansel": "Bekor qilish",
+    "errorName": "Ismingizni kiriting",
+    "errorParol": "Parol kiriting",
+    "errorEamil": "E-mail kiriting"
+
   }
 }

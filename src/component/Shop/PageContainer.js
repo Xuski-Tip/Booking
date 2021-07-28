@@ -4,6 +4,7 @@ import PageInfo from "./PageInfo";
 import PageShop from "./PageShop";
 import axios from "axios";
 import {API} from "../../simpleJs/loginApi";
+
 const PageContainer = () => {
     const [jurnal, setJurnal] = useState([]);
     const [jurnal8, setJurna8] = useState([]);
@@ -15,7 +16,10 @@ const PageContainer = () => {
     const lastCountryIndex = currentPage * coutriesPerPage;
     const firstCountryIndex = lastCountryIndex - coutriesPerPage;
     const currentCountry = jurnal.slice(firstCountryIndex, lastCountryIndex);
-    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+        window.scrollTo(0, 0);
+    };
 
     useEffect(() => {
         axios.get(API + "magazine")
@@ -31,7 +35,7 @@ const PageContainer = () => {
     return (
         <div>
             <PageInfo/>
-            <PageShop jurnal={currentCountry} loading={loading}/>
+            <PageShop jurnal={currentCountry} loading={loading} currentPage={currentPage}/>
             <Pagination
                 countriesPerPage={coutriesPerPage}
                 totalCountries={jurnal.length}

@@ -17,6 +17,7 @@ import ArticleLayout from "./article/articleLayout";
 import Litsinziya from "./Jurnal/Litsinziya";
 import Misol from "./misol";
 import Savdo from "./Savdo";
+import Maqola from "./Maqola";
 
 const Router = () => {
   return (
@@ -39,6 +40,8 @@ const Router = () => {
         <Route exact path="/requirimend" component={Requirimend} />
         <Route exact path="/layout" component={ArticleLayout} />
         <Route exact path="/letsenziya" component={Litsinziya} />
+        <Route exact path="/letsenziya" component={Litsinziya} />
+        <Route exact path="/maqola" component={Maqola} />
         <Route exact path="/sale" component={Savdo} />
         <Route component={NotFound}></Route>
       </Switch>

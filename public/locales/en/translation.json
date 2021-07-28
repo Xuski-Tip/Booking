@@ -22,7 +22,8 @@
     "Our address": "Electron address"
   },
   "News": {
-    "navbar": "News"
+    "navbar": "News",
+    "maqola": "Article"
   },
   "Welcom": {
     "welcom to the": "JOURNAL OF DEMOCRATICIZATION AND HUMAN RIGHTS",
@@ -78,5 +79,18 @@
     "state6": "Organization of Islamic Cooperation",
     "state7": "Estonia",
     "state8": "Kazakhstan"
+  },
+
+  "registr": {
+    "accaunt": "Register on the site",
+    "list": "If you register on the site, you will be able to download previous issues of the magazine for free",
+    "name": "Name",
+    "password": "Password",
+    "email": "E-mail",
+    "registr": "Sign up",
+    "cansel": "Cansel",
+    "errorName": "Enter the name",
+    "errorParol": "Enter the password",
+    "errorEamil": "Enter the email"
   }
 }

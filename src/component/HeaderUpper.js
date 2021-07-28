@@ -8,8 +8,6 @@ import {LANGUAGE} from '../simpleJs/Tipelang';
 import axios from "axios";
 import {API} from "../simpleJs/loginApi";
 import {toast} from "react-toastify";
-// import { useTranslation } from "react-i18next";
-// import { LANGUAGE } from "../simpleJs/Tipelang";
 export default function HeaderUpper(stateAction) {
     const { t, i18n } = useTranslation();
 
@@ -33,7 +31,7 @@ export default function HeaderUpper(stateAction) {
         axios.get(API + "magazine")
             .then((res) => {
                 console.log("aslom");
-                setJurnal8(res.data.magazine.splice(-8, 8));
+                setJurnal8(res.data.magazine.splice(0, 8));
                 // console.log(res)
             })
 
@@ -134,6 +132,10 @@ export default function HeaderUpper(stateAction) {
                             {t("Arxiv.arxiv")}
                         </ReactBootStrap.Nav.Link>
 
+                        <ReactBootStrap.Nav.Link as={Link} to="/maqola">
+                            {t("News.maqola")}
+                        </ReactBootStrap.Nav.Link>
+
                         <ReactBootStrap.NavDropdown
                             title={t("Subscription.obuna")}
                             id="basic-nav-dropdown"
@@ -154,7 +156,7 @@ export default function HeaderUpper(stateAction) {
                         <Link className="Link-registr" to={"/Authorization/Registration"}>
                             {t("avtorizatsiya.navbar2")}
                         </Link>
-                        <div className="p-dropdown">
+                        <div className="p-dropdown ml-3">
                             <select
                                 // style={{ paddingRight: 25, cursor: "pointer", }}
                                 onChange={handleChange}
