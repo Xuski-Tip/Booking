@@ -9,28 +9,23 @@ export default function PageShop(props) {
             <div className="grid-item grid-3-columns" key={item.id}>
               <div className="product">
                 <div className="product-image">
-                  {index <= props.jurnal.length - 8 ? (
+
+                  {index >= props.jurnal.length - 8 ? (
+                    <>
                     <a
-                      target="_blank"
-                      // href={
-                      //   index <= props.jurnal.length - 8
-                      //     ? "https://paycom-test.napaautomotive.uz/storage/" +
-                      //       item.file
-                      //     : " "
-                      // }
-                      href={
-                        "https://paycom-test.napaautomotive.uz/storage/" +
-                        item.file
-                      }
-                    >
-                      <img
-                        alt="#"
-                        src={
-                          "https://paycom-test.napaautomotive.uz/storage/" +
-                          item.image
+                        target="_blank"
+                        href={"https://paycom-test.napaautomotive.uz/storage/" + item.file
                         }
-                      />
+                    >
+                        <img
+                            alt="#"
+                            src={
+                                "https://paycom-test.napaautomotive.uz/storage/" +
+                                item.image
+                            }
+                        />
                     </a>
+                    </>
                   ) : (
                     <img
                       alt="#"

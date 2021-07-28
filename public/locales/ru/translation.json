@@ -50,7 +50,8 @@
   "submitting an article to the journal": {
     "submiting": "Авторам статьи",
     "article": "Требования к статьям",
-    "mode": "Порядок публикации статей в журнале"
+    "mode": "Порядок публикации статей в журнале",
+    "editorial" : "Отправить статью в редакцию"
   },
   "About Us": {
     "aboutUs": "Насчет нас"
@@ -79,5 +80,37 @@
     "state6": "Организация исламского сотрудничества",
     "state7": "Эстония",
     "state8": "Казахстан"
+  },
+  "login": {
+    "loginAccount" : "Вступление",
+    "emailLabel" : "Электронная почта",
+    "emailPlaceholder" : "Имя пользователя или адрес электронной почты",
+    "passwordLabel" : "пароль",
+    "passwordPlaceholder" : "Пароль",
+    "submitButton" : "Вступление",
+    "caution" : "Еще нет учетной записи?",
+    "caution2"  : "Зарегистрируйте новую учетную запись",
+    "emailError" : "Введите адрес электронной почты",
+    "passwordError" : "Введите пароль"
+  },
+  "send file" : {
+    "nameLabel" : "F.I.SH",
+    "namePlaceholder" : "Ваша фамилия, имя и отчество",
+    "nameErrorMessage" : "Введите имя!",
+    "emailLabel" : "Электронная почта",
+    "emailPlaceholder" : "Введите адрес электронной почты",
+    "emailErrorMessage" : "Введите адрес электронной почты!",
+    "phoneLabel" : "Телефонный номер",
+    "phonePlaceholder" : "Введите номер телефона",
+    "phoneErrorMessage" : "Введите номер телефона!",
+    "fileLabel" : "Загрузите статью в формате \"word\"",
+    "fileErrorMessage" : "Загрузить файл",
+    "textLabel" : "Статья",
+    "textPlaceholder" : "Если есть дополнительные комментарии, пишите",
+    "textErrorMessage" : "Введите сообщение!",
+    "buttonText" : "Отправить файл"
+  },
+  "jurnale" : {
+    "text" : "Журнал демократизации и прав человека"
   }
 }

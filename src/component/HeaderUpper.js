@@ -126,7 +126,7 @@ export default function HeaderUpper(stateAction) {
                                 {t("submitting an article to the journal.mode")}
                             </ReactBootStrap.NavDropdown.Item>
                             <ReactBootStrap.NavDropdown.Item onClick={showModal3}>
-                                Tahririyatga maqola jo'natish
+                                {t("submitting an article to the journal.editorial")}
                             </ReactBootStrap.NavDropdown.Item>
                         </ReactBootStrap.NavDropdown>
 
@@ -279,38 +279,40 @@ export default function HeaderUpper(stateAction) {
                                 <AvField
                                     type="text"
                                     name="name"
-                                    label="F.I.SH"
-                                    placeholder="Familiya, ism va sharifingiz"
+                                    label={t("send file.nameLabel")}
+                                    placeholder={t("send file.namePlaceholder")}
                                     required
-                                    errorMessage="Name kiriting!"
+                                    errorMessage={t("send file.nameErrorMessage")}
                                 />
                             </div>
                             <div className="col-6">
                                 <AvField
                                     type="email"
                                     name="email"
-                                    label="E-mail"
-                                    placeholder="Elektron pochtangizni kiriting"
-                                    errorMessage="Email kiriting!"
+                                    label={t("send file.emailLabel")}
+                                    placeholder={t("send file.emailPlaceholder")}
+                                    required
+                                    errorMessage={t("send file.emailErrorMessage")}
                                 />
                             </div>
                             <div className="col-6">
                                 <AvField
                                     type="text"
                                     name="phone"
-                                    label="Telefon raqami"
-                                    placeholder="Nomeringizni kiriting"
+                                    label={t("send file.phoneLabel")}
+                                    placeholder={t("send file.phonePlaceholder")}
                                     required
-                                    errorMessage="Phone Number kiriting!"
+                                    errorMessage={t("send file.phoneErrorMessage")}
                                 />
                             </div>
                             <div className="col-6">
                                 <AvField
                                     type="file"
                                     name="file"
-                                    label='Maqolani "word" shaklda yuklang'
+                                    label={t("send file.fileLabel")}
                                     accept=".doc, .docx"
                                     required
+                                    errorMessage = {t("send file.fileErrorMessage")}
                                 />
                             </div>
                             <div className="col-12">
@@ -318,15 +320,15 @@ export default function HeaderUpper(stateAction) {
                                     type="textarea"
                                     name="text"
                                     rows="7"
-                                    label="Maqola"
-                                    placeholder="Qo'shimcha izohingiz bo'lsa, yozing"
-                                    errorMessage="Xabar kiriting!"
+                                    label={t("send file.textLabel")}
+                                    placeholder={t("send file.textPlaceholder")}
+                                    errorMessage={t("send file.textErrorMessage")}
                                 />
                             </div>
                         </div>
                         <button className="btn btn-primary" type="submit">
                             <i className="fa fa-paper-plane"></i>
-                            &nbsp;Fayl yuborish
+                            &nbsp;{t("send file.buttonText")}
                         </button>
                     </ModalBody>
                 </AvForm>

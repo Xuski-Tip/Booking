@@ -6,7 +6,6 @@ import axios from "axios";
 import {API} from "../../simpleJs/loginApi";
 const PageContainer = () => {
     const [jurnal, setJurnal] = useState([]);
-    const [jurnal8, setJurna8] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [coutriesPerPage] = useState(8);
@@ -23,7 +22,6 @@ const PageContainer = () => {
                 console.log("salom");
                 console.log(res);
                 setJurnal(res.data.magazine);
-                setJurna8(res.data.magazine.slice(0, -8));
             })
     }, []);
 

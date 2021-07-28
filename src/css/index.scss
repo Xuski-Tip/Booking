@@ -146,6 +146,8 @@ cursor: pointer;
 // }
 .fullscreen {
   background-image: url(/images/pages/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 .fullscreen__background {
@@ -156,7 +158,7 @@ cursor: pointer;
 }
 .fullscreen__container {
   border-radius: 6px;
-  padding: 40px;
+  //padding: 40px;
   background-color: white;
 }
 .btn__profit {

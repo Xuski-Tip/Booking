@@ -50,7 +50,8 @@
   "submitting an article to the journal": {
     "submiting": "Maqola mualliflariga",
     "article": "Maqolalarga qo'yilgan talablar",
-    "mode": "Jurnalda maqola chiqarish tartibi"
+    "mode": "Jurnalda maqola chiqarish tartibi",
+    "editorial" : "Tahririyatga maqola jo'natish"
   },
   "About Us": {
     "aboutUs": "Biz haqimizda"
@@ -81,5 +82,37 @@
     "state6": "Islom hamkorlik tashkiloti",
     "state7": "Estoniya",
     "state8": "Qozog'iston"
+  },
+  "login": {
+    "loginAccount" : "Kirish",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Foydalanuvchi nomi yoki elektron pochta",
+    "passwordLabel" : "parol",
+    "passwordPlaceholder" : "Parol",
+    "submitButton" : "Kirish",
+    "caution" : "Sizda hali hisob yo'qmi?",
+    "caution2"  : "Yangi hisob qaydnomasini ro'yxatdan o'tkazish",
+    "emailError" : "E-mail kiriting",
+    "passwordError" : "Parol kiriting"
+  },
+  "send file" : {
+    "nameLabel" : "F.I.SH",
+    "namePlaceholder" : "Familiya, ism va sharifingiz",
+    "nameErrorMessage" : "Ism kiriting!",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Elektron pochtangizni kiriting",
+    "emailErrorMessage" : "Email kiriting!",
+    "phoneLabel" : "Telefon raqami",
+    "phonePlaceholder" : "Telefon raqam kiriting",
+    "phoneErrorMessage" : "Telefon raqam kiriting!",
+    "fileLabel" : "Maqolani \"word\" shaklda yuklang",
+    "fileErrorMessage" : "File yuklang",
+    "textLabel" : "Maqola",
+    "textPlaceholder" : "Qo'shimcha izohingiz bo'lsa, yozing",
+    "textErrorMessage" : "Xabar kiriting!",
+    "buttonText" : "Fayl yuborish"
+  },
+  "jurnale" : {
+    "text" : "\"Demokratlashtirish va inson huquqlari\" jurnali"
   }
 }
