@@ -131,9 +131,9 @@ export default function HeaderUpper(stateAction) {
               {t("Arxiv.arxiv")}
             </ReactBootStrap.Nav.Link>
 
-                        <ReactBootStrap.Nav.Link as={Link} to="/maqola">
-                            {t("News.maqola")}
-                        </ReactBootStrap.Nav.Link>
+                        {/*<ReactBootStrap.Nav.Link as={Link} to="/maqola">*/}
+                        {/*    {t("News.maqola")}*/}
+                        {/*</ReactBootStrap.Nav.Link>*/}
 
                         <ReactBootStrap.NavDropdown
                             title={t("Subscription.obuna")}
@@ -176,7 +176,7 @@ export default function HeaderUpper(stateAction) {
         <AvForm>
           <ModalBody>
             <AvField name="name" required label={t("send file.nameLabel")} type="text" />
-            <AvField name="manzil" required label={t("registr.manzil")} type="text" />
+            <AvField name="manzil" required label={t("connect.manzil")} type="text" />
             <AvField name="email" required label={t("registr.email")} type="text" />
             <AvField
               name="number"
@@ -202,14 +202,14 @@ export default function HeaderUpper(stateAction) {
                   name="nusxa"
                   required
                   type="number"
-                  label={t("registr.nusxa")}
+                  label={t("connect.nusxa")}
                 />
               </div>
             </div>
           </ModalBody>
           <ModalFooter className="d-flex justify-content-between">
             <button type="button" className="btn btn-success">
-              {t("registr.tulov")}
+              {t("send message.tulov")}
             </button>
             <button
               type="button"
@@ -248,13 +248,13 @@ export default function HeaderUpper(stateAction) {
                 name="nusxa"
                 required
                 type="number"
-                label={t("registr.nusxa")}
+                label={t("connect.nusxa")}
               />
             </div>
           </ModalBody>
           <ModalFooter className="d-flex justify-content-between">
             <button type="submit" className="btn btn-success">
-              {t("registr.tulov")}
+              {t("send message.tulov")}
             </button>
             <button
               type="button"

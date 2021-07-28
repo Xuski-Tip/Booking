@@ -140,7 +140,9 @@
     "messageLabel" : "Murojatlar uchun",
     "messagePlaceholder" : "Izoh kiriting",
     "messageErrorMessage" : "Izoh kiriting!",
-    "button" : "Xabar yuborish"
+    "button" : "Xabar yuborish",
+    "tulov": "Xarid qilish",
+    "manzil": "Manzil"
   },
   "connect" : {
     "connect" : "Biz bilan bog'laning",
@@ -150,6 +152,7 @@
     "manzil": "Manzil"
   },
   "send": {
-    "send": "Sotib olish"
+    "send": "Sotib olish",
+    "new": "Jurnalning yangi soni"
   }
 }

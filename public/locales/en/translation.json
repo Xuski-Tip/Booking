@@ -139,7 +139,8 @@
     "messageLabel" : "For appeals",
     "messagePlaceholder" : "Enter a comment",
     "messageErrorMessage" : "Enter a comment!",
-    "button" : "Send a message"
+    "button" : "Send a message",
+    "tulov": "Payment"
   },
   "connect" : {
     "connect" : "Contact us",
@@ -149,7 +150,8 @@
     "manzil": "Address"
   },
   "send": {
-    "send": "Shopping"
+    "send": "Shopping",
+    "new": "New issue of the magazine"
   }
 }
 
