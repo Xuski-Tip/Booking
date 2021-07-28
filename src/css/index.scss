@@ -478,7 +478,11 @@ cursor: pointer;
   padding: 10px;
 }
 .portfolio-img {
-  height: 310px !important;
+  //height: 310px !important;
+  @media (max-width: 481px) {
+    width: 80% !important;
+    margin: 10px auto;
+  }
 }
 .link-button-main {
   margin: 10px  5px 0 5px ;
