@@ -89,6 +89,9 @@ export default function HeaderUpper(stateAction) {
             </ReactBootStrap.NavLink>
 
             <ReactBootStrap.NavDropdown title={t("Shop.navbar")}>
+              <ReactBootStrap.NavDropdown.Item as={Link} to="/jurnal">
+                {t("jurnale.text")}
+              </ReactBootStrap.NavDropdown.Item>
               <ReactBootStrap.NavDropdown.Item as={Link} to="/letsenziya">
                 {t("Shop.litsenziya")}
               </ReactBootStrap.NavDropdown.Item>
