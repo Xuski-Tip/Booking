@@ -103,12 +103,12 @@ export default function ContactUs() {
                   </li>
                   <li className="social-google">
                     <a href={element.telegram}>
-                      <i className="fab fa-telegram"></i>
+                      <i className="fab text-primary fa-telegram"></i>
                     </a>
                   </li>
                   <li className="social-vimeo">
                     <a href={element.youtube}>
-                      <i className="fab fa-youtube"></i>
+                      <i className="fab text-danger fa-youtube"></i>
                     </a>
                   </li>
                 </ul>

@@ -36,8 +36,9 @@ const RecentWorkSlide = () => {
                                                 alt=""
                                             />
                                         </a>
-                                        <h6 className="mt-2 marginleft">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</h6>
                                     </div>
+                                    <h6 className="mt-2 marginleft">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</h6>
+
                                     <div className="portfolio-description">
                                         <a
                                             title="Paper Pouch!"
