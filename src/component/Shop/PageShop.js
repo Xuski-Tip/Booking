@@ -15,7 +15,7 @@ export default function PageShop(props) {
             <div className="grid-item grid-3-columns" key={item.id}>
               <div className="product h-100">
                 <div className="product-image">
-                  {localStorage.getItem(TOKEN_LOCAL).length > 0 ? (
+                  {localStorage.getItem(TOKEN_LOCAL) ? (
                     <a
                       target="_blank"
                       href={"https://paycom-test.napaautomotive.uz/storage/" + item.file}
