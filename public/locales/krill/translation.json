@@ -1,0 +1,158 @@
+{
+  "Home": {
+    "navbar": "Бош саҳифа"
+  },
+  "Shop": {
+    "navbar": "Журнал ҳақида",
+    "litsenziya": "Лицензия",
+    "leadership": "Раҳбарият"
+  },
+  "avtorizatsiya": {
+    "navbar": "Кириш",
+    "navbar2": "Рўйхатдан ўтиш"
+  },
+  "Offical Site": {
+    "navbar": "Расмий Саит",
+    "of the National Center": "Инсон ҳуқуқлари бўйича",
+    "for Human Rights": "Ўзбекистон Республикаси",
+    "of the Republic of Uzbekistan": "Миллий маркази",
+    "scientific and educational journal": "илмий-маърифий журнал",
+    "democration": "«ДEМОКРАТЛАШТИРИШ ВА ИНСОН ҲУҚУҚЛАРИ»",
+    "Contact Phone": "Телефон рақами",
+    "Our address": "Электрон почта"
+  },
+  "News": {
+    "navbar": "Янгиликлар",
+    "maqola": "Мақолалар"
+  },
+  "Welcom": {
+    "welcom to the": "ДEМОКРАТЛАШТИРИШ ВА ИНСОН ҲУҚУҚЛАРИ ЖУРНАЛИ",
+    "The magazine has been 1999": "Журнал 1999 йилдан буён мунтазам нашр этиб келинмоқда",
+    "Explore more": "Кўпроқ ўрганинг"
+  },
+  "our work": {
+    "WHAT WE DO": "Индехлар"
+  },
+  "Recent Work": {
+    "work": "Сўнгги ишлар"
+  },
+  "SERVICES": {
+    "service": "ХИЗМАТЛАР"
+  },
+  "Our blog": {
+    "blog": "БИЗНИНГ БЛОГ"
+  },
+  "Our staff": {
+    "staff": "Таҳрир кенгаши",
+    "Editor": "Халқаро таҳрир кенгаши аъзолари",
+    "lives": "Таҳрир ҳайъати аъзолари"
+  },
+  "submitting an article to the journal": {
+    "submiting": "Мақола муаллифларига",
+    "article": "Мақолаларга қўйилган талаблар",
+    "mode": "Журналда мақола чиқариш тартиби",
+    "editorial" : "Таҳририятга мақола жўнатиш"
+  },
+  "About Us": {
+    "aboutUs": "Биз ҳақимизда"
+  },
+  "Arxiv": {
+    "arxiv": "Архив"
+  },
+  "Subscription": {
+    "obuna": "Обуна",
+    "ofline": "Журналнинг босма шаклига обуна",
+    "online": "Журналнинг электрон шаклига обуна"
+  },
+  "members": {
+    "member1": "юридик фанлар доктори, доцент",
+    "member2": "юридик фанлар доктори, профессор, Ўзбекистон Республикаси фан арбоби",
+    "member3": "юридик фанлар доктори, профессор, Ўзбекистонда хизмат кўрсатган юрист",
+    "member4": "юридик фанлар доктори",
+    "member5": "юридик фанлар доктори, профессор",
+    "member6": "юридик фанлар номзоди, доцент",
+    "member7": "юридик фанлар номзоди, профессор"
+  },
+  "state": {
+    "state1": "Ўзбекистон",
+    "state2": "Россия Федерацияси",
+    "state3": "Япония",
+    "state4": "АҚШ",
+    "state5": "Полша",
+    "state6": "Ислом ҳамкорлик ташкилоти",
+    "state7": "Эстония",
+    "state8": "Қозоғистон"
+  },
+  "login": {
+    "loginAccount" : "Кириш",
+    "emailLabel" : "Э-майл",
+    "emailPlaceholder" : "Фойдаланувчи номи ёки электрон почта",
+    "passwordLabel" : "пароль",
+    "passwordPlaceholder" : "Пароль",
+    "submitButton" : "Кириш",
+    "caution" : "Сизда ҳали ҳисоб йўқми?",
+    "caution2"  : "Янги ҳисоб қайдномасини рўйхатдан ўтказиш",
+    "emailError" : "Э-майл киритинг",
+    "passwordError" : "Пароль киритинг"
+  },
+  "send file" : {
+    "nameLabel" : "Ф.И.Ш",
+    "namePlaceholder" : "Familiya, ism va sharifingiz",
+    "nameErrorMessage" : "Исм киритинг!",
+    "emailLabel" : "Э-майл",
+    "emailPlaceholder" : "Электрон почтангизни киритинг",
+    "emailErrorMessage" : "Эмаил киритинг!",
+    "phoneLabel" : "Телефон рақами",
+    "phonePlaceholder" : "Телефон рақам киритинг",
+    "phoneErrorMessage" : "Телефон рақам киритинг!",
+    "fileLabel" : "Мақолани \"wорд\" шаклда юкланг",
+    "fileErrorMessage" : "Файл юкланг",
+    "textLabel" : "Мақола",
+    "textPlaceholder" : "Қўшимча изоҳингиз бўлса, ёзинг",
+    "textErrorMessage" : "Хабар киритинг!",
+    "buttonText" : "Файл юбориш"
+  },
+  "jurnale" : {
+    "text" : "\"Демократлаштириш ва инсон ҳуқуқлари\" журнали"
+  },
+  "registr": {
+    "accaunt": "Сайтда рўйхатдан ўтиш",
+    "list": "Сайтдан рўйхатдан ўтсангиз журналнинг олдинги сонларини бепул юклаб олиш имкониятига эга бўласиз",
+    "name": "Исм",
+    "password": "пароль",
+    "email": "Э-майл",
+    "registr": "Рўйхатдан ўтиш",
+    "cansel": "Бекор қилиш",
+    "errorName": "Исмингизни киритинг",
+    "errorParol": "Пароль киритинг",
+    "errorEamil": "Э-майл киритинг"
+  },
+  "send message": {
+    "nameLabel" : "Исм",
+    "namePlaceholder" : "Исмингизни киритинг",
+    "nameErrorMessage" : "Исмингизни киритинг!",
+    "emailLabel" : "Э-майл",
+    "emailPlaceholder" : "Э-майл киритинг",
+    "emailErrorMessage" : "Э-майл киритинг!",
+    "phoneLabel" : "Телефон рақам",
+    "phonePlaceholder" : "Телефон рақамингизни киритинг",
+    "phoneErrorMessage" : "Телефон рақамингизни киритинг!",
+    "messageLabel" : "Мурожатлар учун",
+    "messagePlaceholder" : "Изоҳ киритинг",
+    "messageErrorMessage" : "Изоҳ киритинг!",
+    "button" : "Хабар юбориш",
+    "tulov": "Харид қилиш",
+    "manzil": "Манзил"
+  },
+  "connect" : {
+    "connect" : "Биз билан боғланинг",
+    "errorEamil": "Э-майл киритинг",
+    "tulov": "Тўлов",
+    "nusxa": "Неча нусхада",
+    "manzil": "Манзил"
+  },
+  "send": {
+    "send": "Сотиб олиш",
+    "new": "Журналнинг янги сони"
+  }
+}

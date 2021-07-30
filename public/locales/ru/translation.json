@@ -95,7 +95,7 @@
     "passwordError" : "Введите пароль"
   },
   "send file" : {
-    "nameLabel" : "F.I.SH",
+    "nameLabel" : "Ф.И.О",
     "namePlaceholder" : "Ваша фамилия, имя и отчество",
     "nameErrorMessage" : "Введите имя!",
     "emailLabel" : "Электронная почта",
