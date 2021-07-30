@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Slider from "../component/Slider";
+import Sliderr from "../component/Slider";
 import BackgroundGrey from "../component/BackgroundGrey";
 import RecentWork from "./RecentWork";
 import FooterInfo from "./FooterInfo";
@@ -20,7 +20,7 @@ function App() {
     <div className="body-inner">
       <Header />
       <HeaderUpper />
-      <Slider />
+      <Sliderr />
       <BackgroundGrey />
       <RecentWork />
       <ContactUs />

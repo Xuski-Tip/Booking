@@ -13,18 +13,10 @@ const Jurnal = () => {
             <div className="container my-5">
                 <h2 className="text-center">{t("jurnale.text")}</h2>
                 <h5 className="mb-0 ml-5">
-                    DEMOKRATLASHTIRISH VA INSON HUQUQLARI JURNALI-
-                    ilmiy-maʼrifiy jurnal
-                    Jurnal 2020-yil 16-martda
+                    {t("malumot.malumot1")}
                 </h5>
                 <h5>
-                    Oʻzbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi
-                    Axborot va ommaviy kommunikatsiyalar agentligida 0202 raqami bilan roʻyxatdan oʻtgan.
-                    “Demokratlashtirish va inson huquqlari” jurnali
-                    Oʻzbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Oliy attestatsiya komissiyasining
-                    huquqshunoslik, falsafa, tarix, siyosiy, islomshunoslik va sotsiologiya fanlari boʻyicha
-                    dissertatsiya asosiy ilmiy natijalarini chop etish tavsiya etilgan
-                    ilmiy nashrlar roʻyxatiga kiritilgan
+                    {t("malumot.malumot")}
                 </h5>
             </div>
             <FooterInfo/>

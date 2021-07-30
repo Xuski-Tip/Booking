@@ -28,7 +28,7 @@
   "Welcom": {
     "welcom to the": "JOURNAL OF DEMOCRATICIZATION AND HUMAN RIGHTS",
     "The magazine has been 1999": "The magazine has been published regularly since 1999",
-    "Explore more": "Explore more"
+    "Explore more": "More"
   },
   "our work": {
     "WHAT WE DO": "indices"
@@ -152,6 +152,11 @@
   "send": {
     "send": "Shopping",
     "new": "New issue of the magazine"
+  },
+  "malumot": {
+    "malumot1": "JOURNAL OF DEMOCRATICIZATION AND HUMAN RIGHTS Scientific-educational journal Journal March 16, 2020",
+    "malumot": "Registered with the Information and Mass Communications Agency under the Presidential Administration of the Republic of Uzbekistan under number 0202. The journal \"Democratization and Human Rights\" is included in the list of scientific publications recommended for publication by the Higher Attestation Commission under the Cabinet of Ministers of the Republic of Uzbekistan on the main scientific results of dissertations in law, philosophy, history, politics, Islamic studies and sociology"
+
   }
 }
 

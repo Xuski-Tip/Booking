@@ -12,7 +12,7 @@ function Slider() {
               alt="#"
               src="/images/background/main.jpg"
               className="MainSlider__bg-img"
-            ></img>
+            />
             <div className="MainSlider__bg-black"></div>
             {/*<div className="wrapper">*/}
               <h1 className="MainSlider__subtitle typing-demo">
@@ -23,7 +23,7 @@ function Slider() {
               {t("Welcom.The magazine has been 1999")}
             </p>
             <div>
-              <Link to="/arcive" className="btn scroll-to">
+              <Link to="/jurnal" className="btn scroll-to">
                 {t("Welcom.Explore more")}
               </Link>
             </div>
