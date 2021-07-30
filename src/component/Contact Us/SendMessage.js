@@ -2,11 +2,13 @@ import React from 'react';
 import {AvForm, AvField} from "availity-reactstrap-validation"
 import axios from "axios";
 import {toast} from "react-toastify";
+import {useTranslation} from "react-i18next";
 
 const SendMessage = () => {
 
+    const {t} = useTranslation();
 
-    const OnSubmit = (event, errors, values) => {
+ const OnSubmit = (event, errors, values) => {
 
         axios.post("https://paycom-test.napaautomotive.uz/api/contact/store", values)
             .then( (res) => {
@@ -28,45 +30,42 @@ const SendMessage = () => {
     }
 
 
-
     return (
-        <>
+        <div className="container">
             <div className="row mt-5 application">
-                <div className="col-6 offset-3">
+                <div className="col-xl-8 col-md-10 offset-md-1 col-12  offset-xl-2">
                     <div className="card">
                         <div className="card-body">
                             <AvForm onSubmit={OnSubmit}>
                                <div className="row">
-                                   <div className="col-6">
+                                   <div className="col-12 col-md-8 col-lg-6 ">
                                        <AvField
                                            type="text"
                                            name="name"
-                                           label="Name"
-                                           placeholder="Enter your Name"
+                                           label={t("send message.nameLabel")}
+                                           placeholder={t("send message.namePlaceholder")}
                                            required
-                                           errorMessage="Name kiriting!"
-
+                                           errorMessage={t("send message.nameErrorMessage")}
                                        />
                                    </div>
-                                   <div className="col-6">
+                                   <div className="col-12 col-md-8 col-lg-6">
                                        <AvField
                                            type="email"
                                            name="email"
-                                           label="Email"
-                                           placeholder="Enter your Email"
+                                           label={t("send message.emailLabel")}
+                                           placeholder={t("send message.emailPlaceholder")}
                                            required
-                                           errorMessage="Email kiriting!"
-
+                                           errorMessage={t("send message.emailErrorMessage")}
                                        />
                                    </div>
-                                   <div className="col-6">
+                                   <div className="col-12 col-md-8 col-lg-6">
                                        <AvField
                                            type="text"
                                            name="phone"
-                                           label="Phone Number"
-                                           placeholder="Enter your Phone Number"
+                                           label={t("send message.phoneLabel")}
+                                           placeholder={t("send message.phonePlaceholder")}
                                            required
-                                           errorMessage="Phone Number kiriting!"
+                                           errorMessage={t("send message.phoneErrorMessage")}
 
                                        />
                                    </div>
@@ -75,24 +74,24 @@ const SendMessage = () => {
                                            type="textarea"
                                            name="message"
                                            rows="7"
-                                           label="Message"
-                                           placeholder="Enter your Message"
+                                           label={t("send message.messageLabel")}
+                                           placeholder={t("send message.messagePlaceholder")}
                                            required
-                                           errorMessage="Message kiriting!"
+                                           errorMessage={t("send message.messageErrorMessage")}
 
                                        />
                                    </div>
                                </div>
                                 <button className="btn" type="submit" id="form-submit">
                                     <i className="fa fa-paper-plane"></i>
-                                    &nbsp;Send message
+                                    &nbsp;{t("send message.button")}
                                 </button>
                             </AvForm>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

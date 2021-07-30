@@ -1,22 +1,38 @@
 import React from "react";
+import {TOKEN_LOCAL} from "../../simpleJs/loginApi";
+import {getLanguage} from "../../simpleJs/locale";
 // ! Wate to backend
 export default function PageShop(props) {
+
+    console.log(getLanguage());
+
   return (
     <div className="Page-shop">
       <div className="Page-slider grid-4-columns" data-item="grid-item">
         {props.jurnal.map((item, index) => {
+
           return (
             <div className="grid-item grid-3-columns" key={item.id}>
               <div className="product">
                 <div className="product-image">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={
-                      "https://paycom-test.napaautomotive.uz/storage/" +
-                      item.file
-                    }
-                  >
+                  {props.currentPage !== 1 && localStorage.getItem(TOKEN_LOCAL).length > 0 ? (
+                    <a
+                      target="_blank"
+                      href={"https://paycom-test.napaautomotive.uz/storage/" + item.file}
+                      // href={
+                      //   "https://paycom-test.napaautomotive.uz/storage/" +
+                      //   item.file
+                      // }
+                    >
+                        <img
+                            alt="#"
+                            src={
+                                "https://paycom-test.napaautomotive.uz/storage/" +
+                                item.image
+                            }
+                        />
+                    </a>
+                  ) : (
                     <img
                       alt="#"
                       src={
@@ -24,7 +40,7 @@ export default function PageShop(props) {
                         item.image
                       }
                     />
-                  </a>
+                  )}
 
                   <div className="product-overlay">
                     <a
@@ -38,8 +54,12 @@ export default function PageShop(props) {
                   </div>
                 </div>
                 <div className="product-description">
-                  <div>
-                    <p className="product-title">{item.title_uz}</p>
+                  <div className="product-title">
+                    <h3></h3>
+                  </div>
+
+                  <div className="product-title">
+                    <p>{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</p>
                   </div>
                 </div>
               </div>

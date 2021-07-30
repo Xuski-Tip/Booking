@@ -3,7 +3,7 @@
     "navbar": "Home page"
   },
   "Shop": {
-    "navbar": "Jurnal haqida",
+    "navbar": "About the magazine",
     "litsenziya": "License",
     "leadership": "Leadership"
   },
@@ -22,7 +22,8 @@
     "Our address": "Electron address"
   },
   "News": {
-    "navbar": "News"
+    "navbar": "News",
+    "maqola": "Article"
   },
   "Welcom": {
     "welcom to the": "JOURNAL OF DEMOCRATICIZATION AND HUMAN RIGHTS",
@@ -49,7 +50,8 @@
   "submitting an article to the journal": {
     "submiting": "To the authors of the article",
     "article": "Requirements for articles",
-    "mode": "The order of publication of articles in the journal"
+    "mode": "The order of publication of articles in the journal",
+    "editorial" : "Send an article to the editor"
   },
   "About Us": {
     "aboutUs": "About Us"
@@ -78,5 +80,78 @@
     "state6": "Organization of Islamic Cooperation",
     "state7": "Estonia",
     "state8": "Kazakhstan"
+  },
+  "login": {
+    "loginAccount" : "Log in",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Username or email",
+    "passwordLabel" : "password",
+    "passwordPlaceholder" : "Password",
+    "submitButton" : "Log in",
+    "caution" : "Don't have an account yet?",
+    "caution2"  : "Register a new account",
+    "emailError" : "Enter the email",
+    "passwordError" : "Enter the password"
+  },
+  "send file" : {
+    "nameLabel" : "F.I.SH",
+    "namePlaceholder" : "Your last name, first name and patronymic",
+    "nameErrorMessage" : "Enter a name!",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Enter your email",
+    "emailErrorMessage" : "Enter your email!",
+    "phoneLabel" : "Phone number",
+    "phonePlaceholder" : "Enter a phone number",
+    "phoneErrorMessage" : "Enter a phone number!",
+    "fileLabel" : "Download the article in \"word\" format",
+    "fileErrorMessage" : "Upload file",
+    "textLabel" : "Article",
+    "textPlaceholder" : "If you have additional comments, please write",
+    "textErrorMessage" : "Enter a message!",
+    "buttonText" : "Send a file"
+  },
+  "jurnale" : {
+    "text" : "Journal of Democratization and Human Rights"
+  },
+
+  "registr": {
+    "accaunt": "Register on the site",
+    "list": "If you register on the site, you will be able to download previous issues of the magazine for free",
+    "name": "Name",
+    "password": "Password",
+    "email": "E-mail",
+    "registr": "Sign up",
+    "cansel": "Cansel",
+    "errorName": "Enter the name",
+    "errorParol": "Enter the password",
+    "errorEamil": "Enter the email"
+  },
+  "send message": {
+    "nameLabel" : "Name",
+    "namePlaceholder" : "Enter your name",
+    "nameErrorMessage" : "Enter your name!",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Enter the email",
+    "emailErrorMessage" : "Enter the email!",
+    "phoneLabel" : "Phone number",
+    "phonePlaceholder" : "Enter your phone number",
+    "phoneErrorMessage" : "Enter your phone number!",
+    "messageLabel" : "For appeals",
+    "messagePlaceholder" : "Enter a comment",
+    "messageErrorMessage" : "Enter a comment!",
+    "button" : "Send a message",
+    "tulov": "Payment"
+  },
+  "connect" : {
+    "connect" : "Contact us",
+    "errorEamil": "Enter the email",
+    "tulov": "Payment",
+    "nusxa": "How many copies",
+    "manzil": "Address"
+  },
+  "send": {
+    "send": "Shopping",
+    "new": "New issue of the magazine"
   }
 }
+

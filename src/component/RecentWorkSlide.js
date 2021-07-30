@@ -1,122 +1,58 @@
-import React from "react";
-const recentData = [
-  {
-    pdf: "/pdf/jurnal1.pdf",
-    img: "/images/arxive1.jpg",
-    id: 1,
-    subtitle: "журнали 2021 йил 1-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal1.pdf",
-    img: "/images/arxive2.jpg",
-    id: 2,
-    subtitle: "журнали 2020 йил 4-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal1.pdf",
-    img: "/images/arxive3.jpg",
-    id: 3,
-    subtitle: "журнали 2020 йил 3-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal1.pdf",
-    img: "/images/arxive4.jpg",
-    id: 4,
-    subtitle: "журнали 2020 йил 2-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal1.pdf",
-    img: "/images/arxive5.jpg",
-    id: 5,
-    subtitle: "журнали 2020 йил 2-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal.pdf",
-    img: "/images/arxive6.jpg",
-    id: 6,
-    subtitle: "журнали 2020 йил 1-сони мундарижаси",
-  },
+import React, {useEffect, useState} from "react";
+import axios from "axios";
+import {API} from "../simpleJs/loginApi";
+import {getLanguage} from "../simpleJs/locale";
 
-  {
-    pdf: "/pdf/jurnal.pdf",
-    img: "/images/arxive7.jpg",
-    id: 7,
-    subtitle: "журнали 2019 йил 3-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal.pdf",
-    img: "/images/arxive8.jpg",
-    id: 8,
-    subtitle: "журнали 2019 йил 2-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal.pdf",
-    img: "/images/background/jurnal2019_1.jpg",
-    id: 9,
-    subtitle: "журнали 2019 йил 1-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal.pdf",
-    img: "/images/background/jurnal2018_4.jpg",
-    id: 10,
-    subtitle: "журнали 2018 йил 4-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal.pdf",
-    img: "/images/background/jurnal2018_3.jpg",
-    id:11,
-    subtitle: "журнали 2018 йил 3-сони мундарижаси",
-  },
-  {
-    pdf: "/pdf/jurnal.pdf",
-    img: "/images/background/jurnal2018_2.jpg",
-    id:12,
-    subtitle: "журнали 2018 йил 2-сони мундарижаси",
-  },
-];
-class RecentWorkSlide extends React.Component {
-  render() {
+
+const RecentWorkSlide = () => {
+
+    const [jurnal12, setJurnal12] = useState([]);
+
+    useEffect(() => {
+        axios.get(API + "magazine")
+            .then((res) => {
+                console.log("salom");
+                console.log(res);
+                setJurnal12(res.data.magazine.splice(0, 12));
+            })
+    }, []);
+
     return (
-      <div className="portfolio">
-        <div id="portfolio" className="portfolio-6-columns" data-margin="0">
-          {recentData.map((element) => {
-            return (
-              <div key={element.id}>
-                <div
-                  className="portfolio-item img-zoom ct-photography ct-marketing ct-media"
-                  key={element.id}
-                >
-                  <h6 className="recent-subtitle">{element.subtitle}</h6>
-                  <div className="portfolio-item-wrap">
-                    <div className="portfolio-image">
-                      <a href="!#">
-                        <img
-                          className="portfolio-img"
-                          src={element.img}
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="portfolio-description">
-                      <a
-                        title="Paper Pouch!"
-                        data-lightbox="image"
-                        href={element.img}
-                      >
-                        {/*<i className="icon-maximize"></i>*/}
-                      </a>
-                      <a target="_blank" rel = "noopener noreferrer"  href={element.pdf}>
-                        <i className="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+        <div className="portfolio">
+            <div id="portfolio" className="portfolio-6-columns m-auto" data-margin="0">
+                {jurnal12.map((item) => {
+                    return (
+                        <div key={item.id}>
+                            <div
+                                className="portfolio-item img-zoom h-100 ct-photography ct-marketing ct-media"
+                                key={item.id}
+                            >
+                                <div className="portfolio-item-wrap">
+                                    <div className="portfolio-image">
+                                        <a href="!#">
+                                            <img
+                                                className="portfolio-img"
+                                                src={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
+                                                alt=""
+                                            />
+                                        </a>
+                                    </div>
+                                    <h6 className="mt-2 marginleft">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</h6>
+
+                                    <div className="portfolio-description">
+                                        <a
+                                            title="Paper Pouch!"
+                                            data-lightbox="image"
+                                            href={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })};
+            </div>
         </div>
-      </div>
-    );
-  }
-}
+       );
+};
 export default RecentWorkSlide;

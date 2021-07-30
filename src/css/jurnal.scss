@@ -71,6 +71,13 @@
   position: relative;
 }
 
+.image-talab{
+  @media (max-width: 800px) {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+}
+
 @keyframes shine {
   0% {
     background-position-x: -500%;

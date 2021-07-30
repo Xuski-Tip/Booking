@@ -23,7 +23,8 @@
   },
 
   "News": {
-    "navbar": "Новости"
+    "navbar": "Новости",
+    "maqola": "Cтатьи"
   },
   "Welcom": {
     "welcom to the": "ЖУРНАЛ ДЕМОКРАТИЗАЦИИ И ПРАВ ЧЕЛОВЕКА",
@@ -50,7 +51,8 @@
   "submitting an article to the journal": {
     "submiting": "Авторам статьи",
     "article": "Требования к статьям",
-    "mode": "Порядок публикации статей в журнале"
+    "mode": "Порядок публикации статей в журнале",
+    "editorial" : "Отправить статью в редакцию"
   },
   "About Us": {
     "aboutUs": "Насчет нас"
@@ -79,5 +81,77 @@
     "state6": "Организация исламского сотрудничества",
     "state7": "Эстония",
     "state8": "Казахстан"
+  },
+  "login": {
+    "loginAccount" : "Вступление",
+    "emailLabel" : "Электронная почта",
+    "emailPlaceholder" : "Имя пользователя или адрес электронной почты",
+    "passwordLabel" : "пароль",
+    "passwordPlaceholder" : "Пароль",
+    "submitButton" : "Вступление",
+    "caution" : "Еще нет учетной записи?",
+    "caution2"  : "Зарегистрируйте новую учетную запись",
+    "emailError" : "Введите адрес электронной почты",
+    "passwordError" : "Введите пароль"
+  },
+  "send file" : {
+    "nameLabel" : "Ф.И.О",
+    "namePlaceholder" : "Ваша фамилия, имя и отчество",
+    "nameErrorMessage" : "Введите имя!",
+    "emailLabel" : "Электронная почта",
+    "emailPlaceholder" : "Введите адрес электронной почты",
+    "emailErrorMessage" : "Введите адрес электронной почты!",
+    "phoneLabel" : "Телефонный номер",
+    "phonePlaceholder" : "Введите номер телефона",
+    "phoneErrorMessage" : "Введите номер телефона!",
+    "fileLabel" : "Загрузите статью в формате \"word\"",
+    "fileErrorMessage" : "Загрузить файл",
+    "textLabel" : "Статья",
+    "textPlaceholder" : "Если есть дополнительные комментарии, пишите",
+    "textErrorMessage" : "Введите сообщение!",
+    "buttonText" : "Отправить файл"
+  },
+  "jurnale" : {
+    "text" : "Журнал демократизации и прав человека"
+  },
+  "registr": {
+    "accaunt": "Создать новый аккаунт",
+    "list": "Если вы зарегистрируетесь на сайте, вы сможете бесплатно скачать предыдущие выпуски журнала.",
+    "name": "Имя",
+    "password": "Пароль",
+    "email": "Электронная почта",
+    "registr": "Зарегистрироваться",
+    "cansel": "Отмена",
+    "errorName": "Введите ваше имя",
+    "errorParol": "Введите пароль",
+    "errorEamil": "Введите адрес электронной почты"
+  },
+  "send message": {
+    "nameLabel" : "Имя",
+    "namePlaceholder" : "Введите ваше имя",
+    "nameErrorMessage" : "Введите ваше имя!",
+    "emailLabel" : "Электронная почта",
+    "emailPlaceholder" : "Введите адрес электронной почты",
+    "emailErrorMessage" : "Введите адрес электронной почты!",
+    "phoneLabel" : "Телефонный номер",
+    "phonePlaceholder" : "Введите свой номер телефона",
+    "phoneErrorMessage" : "Введите свой номер телефона!",
+    "messageLabel" : "Для обращений",
+    "messagePlaceholder" : "Введите комментарий",
+    "messageErrorMessage" : "Введите комментарий!",
+    "button" : "Послать сообщение",
+    "tulov": "Оплата"
+  },
+  "connect" : {
+    "connect" : "Свяжитесь с нами",
+    "errorEamil": "Введите адрес электронной почты",
+    "tulov": "Оплата",
+    "nusxa": "Сколько копий",
+    "manzil": "Адрес"
+  },
+  "send": {
+    "send": "Покупка товаров",
+    "new": "Новый номер журнала"
   }
+
 }

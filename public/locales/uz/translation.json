@@ -11,9 +11,8 @@
     "navbar": "Kirish",
     "navbar2": "Ro'yxatdan o'tish"
   },
-
   "Offical Site": {
-    "navbar": "Rasmiy Sait",
+    "navbar": "rasmiy sayti",
     "of the National Center": "Inson huquqlari bo'yicha",
     "for Human Rights": "O'zbekiston Respublikasi",
     "of the Republic of Uzbekistan": "Milliy markazi",
@@ -23,7 +22,8 @@
     "Our address": "Elektron pochta"
   },
   "News": {
-    "navbar": "Yangiliklar"
+    "navbar": "Yangiliklar",
+    "maqola": "Maqolalar"
   },
   "Welcom": {
     "welcom to the": "DEMOKRATLASHTIRISH VA INSON HUQUQLARI JURNALI",
@@ -50,14 +50,15 @@
   "submitting an article to the journal": {
     "submiting": "Maqola mualliflariga",
     "article": "Maqolalarga qo'yilgan talablar",
-    "mode": "Jurnalda maqola chiqarish tartibi"
+    "mode": "Jurnalda maqola chiqarish tartibi",
+    "editorial" : "Tahririyatga maqola jo'natish"
   },
   "About Us": {
     "aboutUs": "Biz haqimizda"
   },
-    "Arxiv": {
-      "arxiv": "Arxiv"
-    },
+  "Arxiv": {
+    "arxiv": "Arxiv"
+  },
   "Subscription": {
     "obuna": "Obuna",
     "ofline": "Jurnalning bosma shakliga obuna",
@@ -81,5 +82,77 @@
     "state6": "Islom hamkorlik tashkiloti",
     "state7": "Estoniya",
     "state8": "Qozog'iston"
+  },
+  "login": {
+    "loginAccount" : "Kirish",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Foydalanuvchi nomi yoki elektron pochta",
+    "passwordLabel" : "parol",
+    "passwordPlaceholder" : "Parol",
+    "submitButton" : "Kirish",
+    "caution" : "Sizda hali hisob yo'qmi?",
+    "caution2"  : "Yangi hisob qaydnomasini ro'yxatdan o'tkazish",
+    "emailError" : "E-mail kiriting",
+    "passwordError" : "Parol kiriting"
+  },
+  "send file" : {
+    "nameLabel" : "F.I.SH",
+    "namePlaceholder" : "Familiya, ism va sharifingiz",
+    "nameErrorMessage" : "Ism kiriting!",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Elektron pochtangizni kiriting",
+    "emailErrorMessage" : "Email kiriting!",
+    "phoneLabel" : "Telefon raqami",
+    "phonePlaceholder" : "Telefon raqam kiriting",
+    "phoneErrorMessage" : "Telefon raqam kiriting!",
+    "fileLabel" : "Maqolani \"word\" shaklda yuklang",
+    "fileErrorMessage" : "Fayl yuklang",
+    "textLabel" : "Maqola",
+    "textPlaceholder" : "Qo'shimcha izohingiz bo'lsa, yozing",
+    "textErrorMessage" : "Xabar kiriting!",
+    "buttonText" : "Fayl yuborish"
+  },
+  "jurnale" : {
+    "text" : "\"Demokratlashtirish va inson huquqlari\" jurnali"
+  },
+  "registr": {
+    "accaunt": "Saytda ro'yxatdan o'tish",
+    "list": "Saytdan ro'yxatdan o'tsangiz jurnalning oldingi sonlarini bepul yuklab olish imkoniyatiga ega bo'lasiz",
+    "name": "Ism",
+    "password": "parol",
+    "email": "E-mail",
+    "registr": "Ro'yxatdan o'tish",
+    "cansel": "Bekor qilish",
+    "errorName": "Ismingizni kiriting",
+    "errorParol": "Parol kiriting",
+    "errorEamil": "E-mail kiriting"
+  },
+  "send message": {
+    "nameLabel" : "Ism",
+    "namePlaceholder" : "Ismingizni kiriting",
+    "nameErrorMessage" : "Ismingizni kiriting!",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "E-mail kiriting",
+    "emailErrorMessage" : "E-mail kiriting!",
+    "phoneLabel" : "Telefon raqam",
+    "phonePlaceholder" : "Telefon raqamingizni kiriting",
+    "phoneErrorMessage" : "Telefon raqamingizni kiriting!",
+    "messageLabel" : "Murojatlar uchun",
+    "messagePlaceholder" : "Izoh kiriting",
+    "messageErrorMessage" : "Izoh kiriting!",
+    "button" : "Xabar yuborish",
+    "tulov": "Xarid qilish",
+    "manzil": "Manzil"
+  },
+  "connect" : {
+    "connect" : "Biz bilan bog'laning",
+    "errorEamil": "E-mail kiriting",
+    "tulov": "To'lov",
+    "nusxa": "Necha nusxada",
+    "manzil": "Manzil"
+  },
+  "send": {
+    "send": "Sotib olish",
+    "new": "Jurnalning yangi soni"
   }
 }

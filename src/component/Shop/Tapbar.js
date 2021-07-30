@@ -44,7 +44,7 @@ class Tapbar extends React.Component {
                   </li>
                   <li className="social-vimeo">
                     <a href="http://localhost:3000/">
-                      <i className="fab fa-vimeo"></i>
+                      <i className="fab fa-vimeo "></i>
                     </a>
                   </li>
                   <li className="social-linkedin">

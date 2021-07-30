@@ -30,7 +30,7 @@ function Slider() {
           </div>
         </div>
         <div className="MainBg__right">
-          <h4 className="text-primary pb-2 text-center">Jurnalning yangi soni</h4>
+          <h4 className="text-primary pb-2 text-center">{t("send.new")}</h4>
           <Link to="/Shop">
             <img
               alt="error"
@@ -39,7 +39,7 @@ function Slider() {
             />
           </Link>
           <div className="link-button-main">
-            <button type="button" className="btn btn-outline-danger btn-block">Sotib olish</button>
+            <button type="button" className="btn btn-outline-danger btn-block">{t("send.send")}</button>
           </div>
 
         </div>

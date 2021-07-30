@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import MapContainer from "./MapContainer.js";
 import axios from "axios";
 import { LANGUAGE } from "../../simpleJs/Tipelang";
-
 import SendMessage from "./SendMessage";
+import {useTranslation} from "react-i18next";
+
 export default function ContactUs() {
+    const {t} = useTranslation();
   const [state, setState] = useState([]);
   const langRename = localStorage.getItem(LANGUAGE);
   useEffect(() => {
@@ -21,7 +23,7 @@ export default function ContactUs() {
     <div className="body-inner">
       <div className="container">
         <div className="heading-text heading-section text-center">
-          <h2 className="mt-3">Biz bilan bog'laning</h2>
+          <h2 className="mt-3">{t("connect.connect")}</h2>
         </div>
       </div>
       <SendMessage />
@@ -101,12 +103,12 @@ export default function ContactUs() {
                   </li>
                   <li className="social-google">
                     <a href={element.telegram}>
-                      <i className="fab fa-telegram"></i>
+                      <i className="fab text-primary fa-telegram"></i>
                     </a>
                   </li>
                   <li className="social-vimeo">
                     <a href={element.youtube}>
-                      <i className="fab fa-youtube"></i>
+                      <i className="fab text-danger fa-youtube"></i>
                     </a>
                   </li>
                 </ul>
