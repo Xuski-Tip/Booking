@@ -95,22 +95,22 @@
     "emailError": "E-mail kiriting",
     "passwordError": "Parol kiriting"
   },
-  "send file": {
-    "nameLabel": "F.I.SH",
-    "namePlaceholder": "Familiya, ism va sharifingiz",
-    "nameErrorMessage": "Ism kiriting!",
-    "emailLabel": "E-mail",
-    "emailPlaceholder": "Elektron pochtangizni kiriting",
-    "emailErrorMessage": "Email kiriting!",
-    "phoneLabel": "Telefon raqami",
-    "phonePlaceholder": "Telefon raqam kiriting",
-    "phoneErrorMessage": "Telefon raqam kiriting!",
-    "fileLabel": "Maqolani \"word\" shaklda yuklang",
-    "fileErrorMessage": "File yuklang",
-    "textLabel": "Maqola",
-    "textPlaceholder": "Qo'shimcha izohingiz bo'lsa, yozing",
-    "textErrorMessage": "Xabar kiriting!",
-    "buttonText": "Fayl yuborish"
+  "send file" : {
+    "nameLabel" : "F.I.SH",
+    "namePlaceholder" : "Familiya, ism va sharifingiz",
+    "nameErrorMessage" : "Ism kiriting!",
+    "emailLabel" : "E-mail",
+    "emailPlaceholder" : "Elektron pochtangizni kiriting",
+    "emailErrorMessage" : "Email kiriting!",
+    "phoneLabel" : "Telefon raqami",
+    "phonePlaceholder" : "Telefon raqam kiriting",
+    "phoneErrorMessage" : "Telefon raqam kiriting!",
+    "fileLabel" : "Maqolani \"word\" shaklda yuklang",
+    "fileErrorMessage" : "Fayl yuklang",
+    "textLabel" : "Maqola",
+    "textPlaceholder" : "Qo'shimcha izohingiz bo'lsa, yozing",
+    "textErrorMessage" : "Xabar kiriting!",
+    "buttonText" : "Fayl yuborish"
   },
   "jurnale": {
     "text": "Umumiy ma'lumot"
