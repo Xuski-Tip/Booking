@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-function Slider() {
+
+function Slider () {
   const { t } = useTranslation();
+
+
   return (
     <>
+
       <div className="MainHeader">
+
+
         <div className="MainSlider slide kenburns">
           <div className="MainSlider__bg wrapper slide-captions text-center text-light">
             <img
@@ -29,6 +35,8 @@ function Slider() {
             </div>
           </div>
         </div>
+
+
         <div className="MainBg__right">
           <h4 className="text-primary pb-2 text-center">{t("send.new")}</h4>
           <Link to="/Shop">
@@ -44,6 +52,9 @@ function Slider() {
 
         </div>
       </div>
+
+
+
     </>
   );
 }
