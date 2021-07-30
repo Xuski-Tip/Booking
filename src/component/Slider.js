@@ -1,36 +1,56 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import SlickSlider from "react-slick";
 function Slider() {
   const { t } = useTranslation();
+  const settings = {
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    prevArrow: false,
+    nextArrow: false
+  };
   return (
     <>
-      <div className="MainHeader">
-        <div className="MainSlider slide kenburns">
-          <div className="MainSlider__bg wrapper slide-captions text-center text-light">
-            <img
-              alt="#"
-              src="/images/background/main.jpg"
-              className="MainSlider__bg-img"
-            ></img>
-            <div className="MainSlider__bg-black"></div>
-            {/*<div className="wrapper">*/}
+      <div className="MainHeader ">
+        <div className="MainSlider slide kenburns border">
+          <SlickSlider {...settings}>
+            <div className="MainSlider__bg">
+              <div className="MainSlider__bg-black"></div>
               <h1 className="MainSlider__subtitle typing-demo">
                 {t("Welcom.welcom to the")}
               </h1>
-            {/*</div>*/}
-            <p className="MainSlider__lorem">
-              {t("Welcom.The magazine has been 1999")}
-            </p>
-            <div>
-              <Link to="/arcive" className="btn scroll-to">
-                {t("Welcom.Explore more")}
-              </Link>
+              <p className="MainSlider__lorem">
+                {t("Welcom.The magazine has been 1999")}
+              </p>
+              <div>
+                <Link to="/arcive" className="btn scroll-to">
+                  {t("Welcom.Explore more")}
+                </Link>
+              </div>
             </div>
-          </div>
+            <div className="MainSlider__bg">
+              <div className="MainSlider__bg-black"></div>
+              <h1 className="MainSlider__subtitle typing-demo">
+                {t("Welcom.welcom to the")}
+              </h1>
+              <p className="MainSlider__lorem">
+                {t("Welcom.The magazine has been 1999")}
+              </p>
+              <div>
+                <Link to="/arcive" className="btn scroll-to">
+                  {t("Welcom.Explore more")}
+                </Link>
+              </div>
+            </div>
+          </SlickSlider>
         </div>
         <div className="MainBg__right">
-          <h4 className="text-primary pb-2 text-center">Jurnalning yangi soni</h4>
+          <h4 className="text-primary pb-2 text-center">
+            Jurnalning yangi soni
+          </h4>
           <Link to="/Shop">
             <img
               alt="error"
@@ -39,9 +59,10 @@ function Slider() {
             />
           </Link>
           <div className="link-button-main">
-            <button type="button" className="btn btn-outline-danger btn-block">Sotib olish</button>
+            <button type="button" className="btn btn-outline-danger btn-block">
+              Sotib olish
+            </button>
           </div>
-
         </div>
       </div>
     </>

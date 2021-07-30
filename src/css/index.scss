@@ -5,11 +5,11 @@
   align-items: center;
   justify-content: center;
 }
-.options{
-cursor: pointer;
+.options {
+  cursor: pointer;
   padding-right: 25px;
   background-color: #e2d2ff;
-  option{
+  option {
     background-color: #b9abd6;
     color: #0b0b0b;
   }
@@ -198,6 +198,9 @@ cursor: pointer;
     height: 100%;
   }
 }
+.border {
+  border: 1px solid red;
+}
 .product {
   height: 600px;
 }
@@ -266,27 +269,17 @@ cursor: pointer;
   z-index: 2;
 }
 .MainSlider__bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
   flex-direction: column;
-  height: 100%;
-}
-.MainSlider__bg-img {
-  position: absolute;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
   height: 700px;
-  top: 50%;
-  transform: translateY(-50%);
-  object-fit: cover;
-  z-index: -1;
-}
-.MainSlider__bg-black {
-  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
+  background-color: rgba(255,255, 255, 0.1);
+  background-image: url("/images/background/main.jpg");
+  background-size: cover;
 }
 .Team__card {
   display: flex;
@@ -484,7 +477,7 @@ cursor: pointer;
   height: 310px !important;
 }
 .link-button-main {
-  margin: 10px  5px 0 5px ;
+  margin: 10px 5px 0 5px;
 }
 .recent-subtitle {
   text-align: center;
@@ -507,17 +500,16 @@ cursor: pointer;
 }
 .letsenziya-img {
   width: 50%;
-
 }
 .product-title {
   text-align: center;
   font-size: 27px;
   font-weight: bold;
-  min-width: 100% ;
+  min-width: 100%;
 }
 .Page-slider {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 @import "./media";
 @import "./jurnal";
