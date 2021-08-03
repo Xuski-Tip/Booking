@@ -36,7 +36,7 @@ function Slider() {
                                <h1 className="MainSlider__subtitle typing-demo">
                                    {t("Welcom.welcom to the")}
                                </h1>
-                               <p className="MainSlider__lorem">
+                               <p className="MainSlider__lorem mb-4">
                                    {t("Welcom.The magazine has been 1999")}
                                </p>
                                <div>
@@ -50,7 +50,7 @@ function Slider() {
                             <h1 className="MainSlider__subtitle typing-demo">
                                 {t("Welcom.welcom to the")}
                             </h1>
-                            <p className="MainSlider__lorem">
+                            <p className="MainSlider__lorem mb-4">
                                 {t("Welcom.The magazine has been 1999")}
                             </p>
                             <div>
@@ -63,7 +63,7 @@ function Slider() {
                             <h1 className="MainSlider__subtitle typing-demo">
                                 {t("Welcom.welcom to the")}
                             </h1>
-                            <p className="MainSlider__lorem">
+                            <p className="MainSlider__lorem mb-4">
                                 {t("Welcom.The magazine has been 1999")}
                             </p>
                             <div>
@@ -76,7 +76,7 @@ function Slider() {
                             <h1 className="MainSlider__subtitle typing-demo">
                                 {t("Welcom.welcom to the")}
                             </h1>
-                            <p className="MainSlider__lorem">
+                            <p className="MainSlider__lorem mb-4">
                                 {t("Welcom.The magazine has been 1999")}
                             </p>
                             <div>

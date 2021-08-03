@@ -22,12 +22,12 @@ const RecentWorkSlide = () => {
             <div id="portfolio" className="portfolio-6-columns m-auto" data-margin="0">
                 {jurnal12.map((item) => {
                     return (
-                        <div key={item.id}>
+                        <div className="h-100" key={item.id}>
                             <div
                                 className="portfolio-item img-zoom h-100 ct-photography ct-marketing ct-media"
                                 key={item.id}
                             >
-                                <div className="portfolio-item-wrap">
+                                <div className="portfolio-item-wrap h-100">
                                     <div className="portfolio-image">
                                         <a href="!#">
                                             <img
@@ -37,7 +37,7 @@ const RecentWorkSlide = () => {
                                             />
                                         </a>
                                     </div>
-                                    <h6 className="mt-2 marginleft">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</h6>
+                                    <h6 className="mt-2 marginleft">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}</h6>
 
                                     <div className="portfolio-description">
                                         <a

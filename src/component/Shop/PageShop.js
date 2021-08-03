@@ -57,7 +57,7 @@ export default function PageShop(props) {
                 </div>
                 <div className="product-description">
                   <div className="product-title">
-                    <p>{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</p>
+                    <p>{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}</p>
                   </div>
                 </div>
               </div>

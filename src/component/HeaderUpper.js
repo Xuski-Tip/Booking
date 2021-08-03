@@ -37,7 +37,7 @@ export default function HeaderUpper(stateAction) {
     useEffect(() => {
         axios.get(API + "magazine").then((res) => {
             console.log("aslom");
-            setJurnal8(res.data.magazine.splice(-8, 8));
+            setJurnal8(res.data.magazine.splice(0, 8));
             // console.log(res)
         });
     }, []);
@@ -203,7 +203,7 @@ export default function HeaderUpper(stateAction) {
                                     <div key={item.id} className="col-6">
                                         <AvField
                                             type="checkbox"
-                                            label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}
+                                            label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}
                                             className=""
                                             name={"jurnal" + index}
                                         />
@@ -249,7 +249,7 @@ export default function HeaderUpper(stateAction) {
                                         <div key={item.id} className="col-6">
                                             <AvField
                                                 type="checkbox"
-                                                label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}
+                                                label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}
                                                 className=""
                                                 name={"jurnal" + index}
                                             />
