@@ -10,7 +10,7 @@ function BackgroundGrey() {
   return (
     <section className="background-grey">
       <div className="container">
-        <div className="heading-text heading-section">
+        <div className="heading-text heading-section text-center">
           <h2>{t("our work.WHAT WE DO")}</h2>
         </div>
         <div className="row">

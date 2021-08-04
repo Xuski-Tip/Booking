@@ -37,7 +37,7 @@ export default function HeaderUpper(stateAction) {
     useEffect(() => {
         axios.get(API + "magazine").then((res) => {
             console.log("aslom");
-            setJurnal8(res.data.magazine.splice(0, 4));
+            setJurnal8(res.data.magazine.splice(0, 8));
             // console.log(res)
         });
     }, []);

@@ -6,8 +6,8 @@ function RecentWork() {
   return (
     <section className="p-b-0">
       <div className="container">
-        <div className="heading-text heading-section">
-          <h2>{t("Arxiv.arxiv")}</h2>
+        <div className="heading-text heading-section text-center">
+          <h2 className="">{t("Arxiv.arxiv")}</h2>
         </div>
       </div>
       <RecentWorkSlide />

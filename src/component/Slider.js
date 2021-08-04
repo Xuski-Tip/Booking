@@ -23,7 +23,7 @@ function Slider() {
         dots: true,
         slidesToShow: 1,
         autoplay:true,
-        autoplaySpeed:2000,
+        autoplaySpeed:5000,
         slidesToScroll: 1,
     };
     return (
@@ -36,9 +36,9 @@ function Slider() {
                                <h1 className="MainSlider__subtitle typing-demo">
                                    {t("Welcom.welcom to the")}
                                </h1>
-                               <p className="MainSlider__lorem mb-4">
-                                   {t("Welcom.The magazine has been 1999")}
-                               </p>
+                               {/*<p className="MainSlider__lorem mb-4">*/}
+                               {/*    {t("Welcom.The magazine has been 1999")}*/}
+                               {/*</p>*/}
                                <div>
                                    <Link to="/jurnal" className="btn scroll-to">
                                        {t("Welcom.Explore more")}
@@ -50,9 +50,9 @@ function Slider() {
                             <h1 className="MainSlider__subtitle typing-demo">
                                 {t("Welcom.welcom to the")}
                             </h1>
-                            <p className="MainSlider__lorem mb-4">
-                                {t("Welcom.The magazine has been 1999")}
-                            </p>
+                            {/*<p className="MainSlider__lorem mb-4">*/}
+                            {/*    {t("Welcom.The magazine has been 1999")}*/}
+                            {/*</p>*/}
                             <div>
                                 <Link to="/jurnal" className="btn scroll-to">
                                     {t("Welcom.Explore more")}
@@ -63,9 +63,9 @@ function Slider() {
                             <h1 className="MainSlider__subtitle typing-demo">
                                 {t("Welcom.welcom to the")}
                             </h1>
-                            <p className="MainSlider__lorem mb-4">
-                                {t("Welcom.The magazine has been 1999")}
-                            </p>
+                            {/*<p className="MainSlider__lorem mb-4">*/}
+                            {/*    {t("Welcom.The magazine has been 1999")}*/}
+                            {/*</p>*/}
                             <div>
                                 <Link to="/jurnal" className="btn scroll-to">
                                     {t("Welcom.Explore more")}
@@ -76,9 +76,9 @@ function Slider() {
                             <h1 className="MainSlider__subtitle typing-demo">
                                 {t("Welcom.welcom to the")}
                             </h1>
-                            <p className="MainSlider__lorem mb-4">
-                                {t("Welcom.The magazine has been 1999")}
-                            </p>
+                                {/*<p className="MainSlider__lorem">*/}
+                                {/*    {t("Welcom.The magazine has been 1999")}*/}
+                                {/*</p>*/}
                             <div>
                                 <Link to="/jurnal" className="btn scroll-to">
                                     {t("Welcom.Explore more")}
@@ -88,24 +88,28 @@ function Slider() {
                     </SlickSlider>
                 </div>
 
-
                 <div className="MainBg__right">
-                    <h4 className="text-primary pb-2 text-center">{t("send.new")}</h4>
-                    <Link to="/arcive">
-                        {jurnal12.map((item, index) => {
-                            return(
-                                <img
-                                    alt="error"
-                                    className="MainBg__right-img"
-                                    src={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
-                                />
-                            )
-                        })}
-                    </Link>
+                    <div className="link">
+                        <Link to="/arcive">
+                            {jurnal12.map((item, index) => {
+                                return(
+                                    <img
+                                        alt="error"
+                                        className="MainBg__right-img"
+                                        src={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
+                                    />
+                                )
+                            })}
+                        </Link>
+                    </div>
+
+                    <div className="d-flex justify-content-between align-items-center mt-3 ml-0">
+                        <h4 className="newNumber">{t("send.new")}</h4>
                     <div className="link-button-main">
-                        <button type="button" className="btn btn-outline-danger btn-block">
+                        <button type="button" className="btn btn-outline-danger ">
                             {t("send.send")}
                         </button>
+                    </div>
                     </div>
                 </div>
             </div>
