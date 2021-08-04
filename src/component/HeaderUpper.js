@@ -37,7 +37,7 @@ export default function HeaderUpper(stateAction) {
     useEffect(() => {
         axios.get(API + "magazine").then((res) => {
             console.log("aslom");
-            setJurnal8(res.data.magazine.splice(0, 8));
+            setJurnal8(res.data.magazine.splice(0, 4));
             // console.log(res)
         });
     }, []);
@@ -200,7 +200,7 @@ export default function HeaderUpper(stateAction) {
                         <div className="row">
                             {jurnal8.map((item, index) => {
                                 return (
-                                    <div key={item.id} className="col-6">
+                                    <div key={item.id} className="col-12 my-3">
                                         <AvField
                                             type="checkbox"
                                             label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}
@@ -246,7 +246,7 @@ export default function HeaderUpper(stateAction) {
                             <div className="row">
                                 {jurnal8.map((item, index) => {
                                     return (
-                                        <div key={item.id} className="col-6">
+                                        <div key={item.id} className="col-12 mt-3">
                                             <AvField
                                                 type="checkbox"
                                                 label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}
@@ -284,7 +284,7 @@ export default function HeaderUpper(stateAction) {
                 <AvForm onSubmit={addJurnal}>
                     <ModalBody>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-12 ">
                                 <AvField
                                     type="text"
                                     name="name"
@@ -294,7 +294,7 @@ export default function HeaderUpper(stateAction) {
                                     errorMessage={t("send file.nameErrorMessage")}
                                 />
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 ">
                                 <AvField
                                     type="email"
                                     name="email"
@@ -304,7 +304,7 @@ export default function HeaderUpper(stateAction) {
                                     errorMessage={t("send file.emailErrorMessage")}
                                 />
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 ">
                                 <AvField
                                     type="text"
                                     name="phone"
@@ -314,7 +314,7 @@ export default function HeaderUpper(stateAction) {
                                     errorMessage={t("send file.phoneErrorMessage")}
                                 />
                             </div>
-                            <div className="col-6">
+                            <div className="col-12">
                                 <AvField
                                     type="file"
                                     name="file"

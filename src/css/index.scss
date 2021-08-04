@@ -585,12 +585,6 @@ cursor: pointer;
   flex-wrap: wrap
 }
 
-.MainHeader{
-  .slick-prev, .slick-next{
-    display: none!important;
-  }
-}
-
 @import "./media";
 @import "./jurnal";
 @import "./savdo";
