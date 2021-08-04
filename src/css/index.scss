@@ -642,6 +642,27 @@ z-index: 1;
 
 }
 
+.product-overlay{
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  top: auto;
+  bottom: 25px;
+  left: 0;
+  z-index: -2;
+  transition: bottom .3s ease;
+}
+
+.portfolio-item-wrap{
+  transition: all 2s ease;
+  &:hover{
+    .product-overlay{
+      z-index: 5000000000000000000000000000;
+    }
+  }
+}
+
 @import "./media";
 @import "./jurnal";
 @import "./savdo";

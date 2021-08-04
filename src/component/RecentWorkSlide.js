@@ -2,10 +2,13 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {API} from "../simpleJs/loginApi";
 import {getLanguage} from "../simpleJs/locale";
+import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 
 const RecentWorkSlide = () => {
 
+    const {t} = useTranslation();
     const [jurnal12, setJurnal12] = useState([]);
 
     useEffect(() => {
@@ -17,6 +20,10 @@ const RecentWorkSlide = () => {
             })
     }, []);
 
+    function salom(){
+        console.log("Salom")
+    }
+
     return (
         <div className="portfolio">
             <div id="portfolio" className="portfolio-4-columns m-auto" data-margin="0">
@@ -27,12 +34,14 @@ const RecentWorkSlide = () => {
                                 "https://paycom-test.napaautomotive.uz/storage/" + item.file
                             }>
                                 <div
-                                    className="portfolio-item img-zoom ct-photography ct-marketing ct-media"
+                                    className="portfolio-item"
                                     key={item.id}
                                 >
                                     <div className="portfolio-item-wrap">
-                                        <div className="portfolio-image">
-                                            <a href="#">
+                                        <div className="portfolio-image position-relative">
+                                            <a href={
+                                                "https://paycom-test.napaautomotive.uz/storage/" + item.file
+                                            }>
                                                 <img
                                                     className="portfolio-img"
                                                     src={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
@@ -40,8 +49,7 @@ const RecentWorkSlide = () => {
                                                 />
                                             </a>
                                         </div>
-                                        <h6 className="mt-2 marginleft">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}</h6>
-
+                                        <h6 className="mt-2 marginleft">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en : item.title_cril}</h6>
                                         <div className="portfolio-description">
                                             <a
                                                 title="Paper Pouch!"
@@ -49,14 +57,21 @@ const RecentWorkSlide = () => {
                                                 href={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
                                             />
                                         </div>
+                                        <div className="product-overlay">
+                                            <button type="button" className="btn btn-primary btn-block" onClick={salom}>Sotib olish</button>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
+
                         </div>
                     );
                 })};
             </div>
+            <Link to="/arcive">
+                <h5 className="text-right mr-4 text-primary">{t("malumot.malumot2")} ...</h5>
+            </Link>
         </div>
-       );
+    );
 };
 export default RecentWorkSlide;
