@@ -45,19 +45,25 @@ export default function PageShop(props) {
                   )}
 
                   <div className="product-overlay">
-                    <a
-                      href={
-                        "https://paycom-test.napaautomotive.uz/storage/" +
-                        item.image
+                      {
+                          props.currentPage ===1 ?
+                              <button type="button" className="btn btn-primary btn-block">Sotib olish</button>
+                              :
+                              <a
+                              href={
+                                  "https://paycom-test.napaautomotive.uz/storage/" +
+                                  item.image
+                              }
+                          >
+                              Quick View
+                          </a>
                       }
-                    >
-                      Quick View
-                    </a>
+
                   </div>
                 </div>
                 <div className="product-description">
                   <div className="product-title">
-                    <p>{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</p>
+                    <p>{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}</p>
                   </div>
                 </div>
               </div>

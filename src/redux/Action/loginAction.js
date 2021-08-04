@@ -13,10 +13,10 @@ export function avtorizatsiya(event, errors, values, history) {
                 localStorage.setItem(LOGIN, res.data.token);
                 console.log(LOGIN);
                 history.push("/");
-                toast.success("fine")
+                toast.success("Muvaffaqiyatli !!!")
             })
             .catch((res) => {
-                    toast.error("Error")
+                    toast.error("Xatolik")
                 }
             );
     }

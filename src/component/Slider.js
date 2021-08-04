@@ -31,28 +31,28 @@ function Slider() {
             <div className="MainHeader">
                 <div className="MainSlider slide kenburns">
                     <SlickSlider {...settings}>
-                        <div className="backImg">
-                            <div className="MainSlider__bg">
-                                <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Welcom.welcom to the")}
-                            </h1>
-                                {/*<p className="MainSlider__lorem">*/}
-                                {/*    {t("Welcom.The magazine has been 1999")}*/}
-                                {/*</p>*/}
-                                <div>
-                                    <Link to="/jurnal" className="btn scroll-to">
-                                        {t("Welcom.Explore more")}
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
+                       <div className="backImg">
+                           <div className="MainSlider__bg">
+                               <h1 className="MainSlider__subtitle typing-demo">
+                                   {t("Welcom.welcom to the")}
+                               </h1>
+                               <p className="MainSlider__lorem mb-4">
+                                   {t("Welcom.The magazine has been 1999")}
+                               </p>
+                               <div>
+                                   <Link to="/jurnal" className="btn scroll-to">
+                                       {t("Welcom.Explore more")}
+                                   </Link>
+                               </div>
+                           </div>
+                       </div>
                         <div className="MainSlider__bg1">
                             <h1 className="MainSlider__subtitle typing-demo">
                                 {t("Welcom.welcom to the")}
                             </h1>
-                            {/*<p className="MainSlider__lorem">*/}
-                            {/*    {t("Welcom.The magazine has been 1999")}*/}
-                            {/*</p>*/}
+                            <p className="MainSlider__lorem mb-4">
+                                {t("Welcom.The magazine has been 1999")}
+                            </p>
                             <div>
                                 <Link to="/jurnal" className="btn scroll-to">
                                     {t("Welcom.Explore more")}
@@ -63,9 +63,9 @@ function Slider() {
                             <h1 className="MainSlider__subtitle typing-demo">
                                 {t("Welcom.welcom to the")}
                             </h1>
-                            {/*<p className="MainSlider__lorem">*/}
-                            {/*    {t("Welcom.The magazine has been 1999")}*/}
-                            {/*</p>*/}
+                            <p className="MainSlider__lorem mb-4">
+                                {t("Welcom.The magazine has been 1999")}
+                            </p>
                             <div>
                                 <Link to="/jurnal" className="btn scroll-to">
                                     {t("Welcom.Explore more")}

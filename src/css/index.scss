@@ -346,6 +346,7 @@ cursor: pointer;
   background-image: url("/images/background/main4.jpg");
   background-size: cover;
 }
+
 .Team__card {
   display: flex;
   flex-wrap: wrap;
@@ -549,7 +550,7 @@ cursor: pointer;
     height: 310px !important;
   }
   @media (min-width: 1400px) {
-    height: 100% !important;
+    height: 400px !important;
     width: 100% !important;
   }
 }

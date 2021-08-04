@@ -8,7 +8,6 @@ class Header extends React.Component {
     render() {
         return (
             <>
-                <Tapbar />
                 <HeaderUpper />
                 <div className="container-fluid">
                     <PageContainer />

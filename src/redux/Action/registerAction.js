@@ -11,10 +11,10 @@ export function login(events, error, value, history) {
                 dispatch({type: ""});
                 localStorage.setItem(TOKEN_LOCAL, res.data.token);
                 history.push("/");
-                toast.success("fine")
+                toast.success("Muvaffaqiyatli !!!")
             })
             .catch((res) => {
-                toast.error("Error")
+                toast.error("Xatolik")
             })
         console.log(value)
     }
