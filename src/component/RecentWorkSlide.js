@@ -13,13 +13,13 @@ const RecentWorkSlide = () => {
             .then((res) => {
                 console.log("salom");
                 console.log(res);
-                setJurnal12(res.data.magazine.splice(0, 12));
+                setJurnal12(res.data.magazine.splice(0, 8));
             })
     }, []);
 
     return (
         <div className="portfolio">
-            <div id="portfolio" className="portfolio-6-columns m-auto" data-margin="0">
+            <div id="portfolio" className="portfolio-4-columns m-auto" data-margin="0">
                 {jurnal12.map((item) => {
                     return (
                         <div className="" key={item.id}>
