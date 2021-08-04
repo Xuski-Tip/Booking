@@ -192,16 +192,19 @@ cursor: pointer;
   margin-left: 10px;
 }
 .btn-search {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
   height: 100%;
 }
 .product-image {
   width: 100%;
-  height: 50% !important;
+  height: 90% !important;
   img {
     width: 100%;
     height: 100%;
   }
+}
+.product {
+  height: 600px;
 }
 
 .product-cart {
@@ -225,14 +228,27 @@ cursor: pointer;
 }
 .MainBg__right {
   display: inline-block;
-  width: 30%;
+  width: 28%;
   height: 85%;
-  margin-bottom: 67px;
+  margin-right: 45px;
+  //border: 2px solid blue;
+  .newNumber{
+   //font-family: "Century Schoolbook";
+    color: blue;
+    font-style: normal;
+    font-family: "Century Schoolbook";
+    font-weight: 400;
+  }
+}
+.asd{
+
 }
 .MainBg__right-img {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
+  width: 378px;
+  height: 573.75px;
+  //padding: 20px;
+  margin-bottom: 54px;
+  box-shadow: 0px 0px 5px 5px rgba(14, 19, 81, 0.73);
 }
 .TextDemocratic {
   text-align: center;
@@ -243,23 +259,23 @@ cursor: pointer;
 }
 .MainHeader {
   width: 100%;
-  height: 700px;
+  //height: 700px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .MainSlider {
-  width: 70%;
+  width: 65%;
   height: 100%;
   position: relative;
 }
 .MainSlider__subtitle {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 60px;
-  margin-bottom: 30px;
-  color: white;
-  z-index: 2;
+  line-height: 40px;
+  //margin-bottom: 30px;
+  //color: white;
+  //z-index: 2;
 }
 .MainSlider__lorem {
   font-size: 20px;
@@ -267,28 +283,68 @@ cursor: pointer;
   margin-bottom: 40px;
   z-index: 2;
 }
+.MainSlider__lorem{
+  background-color: rgba(182, 182, 182, 0.84);
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: white;
+}
 .MainSlider__bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
   flex-direction: column;
-  height: 100%;
-}
-.MainSlider__bg-img {
-  position: absolute;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
   height: 700px;
-  top: 50%;
-  transform: translateY(-50%);
-  object-fit: cover;
-  z-index: -1;
-}
-.MainSlider__bg-black {
-  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
+  //margin-top: 50px;
+  //background-color: rgba(40, 40, 40, 0.65);
+  background-image: url("/images/background/main.jpg");
+  background-size: cover;
+  //opacity: 0.4;
+}
+.backImg{
+  background-image: linear-gradient(90deg, rgba(0, 0, 212, 0.44) 20%, rgba(155, 155, 155, 0.84) 80%);
+}
+.MainSlider__bg1 {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  background-color: rgba(255,255, 255, 0.1);
+  background-image: url("/images/background/main2.jpg");
+  background-size: cover;
+}
+.MainSlider__bg2 {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  background-color: rgba(255,255, 255, 0.1);
+  background-image: url("/images/background/main5.jpg");
+  background-size: cover;
+}
+.MainSlider__bg3 {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  background-color: rgba(255,255, 255, 0.1);
+  background-image: url("/images/background/main4.jpg");
+  background-size: cover;
 }
 .Team__card {
   display: flex;
@@ -503,7 +559,11 @@ cursor: pointer;
   }
 }
 .link-button-main {
-  margin: 10px  5px 0 5px ;
+  //margin: 10px  5px 0 5px ;
+
+  //padding-bottom: 10px;
+  //padding-bottom: 0;
+  //margin-bottom: 0;
 }
 .recent-subtitle {
   text-align: center;
@@ -514,7 +574,7 @@ cursor: pointer;
 }
 .Map {
   width: 100%;
-  min-height: 460px;
+  min-height: 385px;
   height: auto;
 }
 .application {
@@ -535,11 +595,34 @@ cursor: pointer;
   text-align: center;
   font-size: 27px;
   font-weight: bold;
+  min-width: 100% ;
 }
 .Page-slider {
   display: flex;
   flex-wrap: wrap
 }
+
+.slick-prev, .slick-next{
+  //display: none!important;
+}
+.MainHeader{
+  .slick-next{
+    right: 40px!important;
+    &::before{
+    font-size: 35px;
+    }
+  }
+  .slick-prev{
+    left: 40px!important;
+z-index: 1;
+    &::before{
+      font-size: 35px;
+      color: #F8F9FA;
+    }
+  }
+
+}
+
 @import "./media";
 @import "./jurnal";
 @import "./savdo";

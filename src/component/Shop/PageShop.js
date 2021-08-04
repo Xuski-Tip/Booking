@@ -13,9 +13,9 @@ export default function PageShop(props) {
 
           return (
             <div className="grid-item grid-3-columns" key={item.id}>
-              <div className="product">
+              <div className="product h-100">
                 <div className="product-image">
-                  {props.currentPage !== 1 && localStorage.getItem(TOKEN_LOCAL).length > 0 ? (
+                  {localStorage.getItem(TOKEN_LOCAL) ? (
                     <a
                       target="_blank"
                       href={"https://paycom-test.napaautomotive.uz/storage/" + item.file}
@@ -26,6 +26,7 @@ export default function PageShop(props) {
                     >
                         <img
                             alt="#"
+                            className="h-100"
                             src={
                                 "https://paycom-test.napaautomotive.uz/storage/" +
                                 item.image
@@ -35,6 +36,7 @@ export default function PageShop(props) {
                   ) : (
                     <img
                       alt="#"
+                      className="h-100"
                       src={
                         "https://paycom-test.napaautomotive.uz/storage/" +
                         item.image
@@ -54,10 +56,6 @@ export default function PageShop(props) {
                   </div>
                 </div>
                 <div className="product-description">
-                  <div className="product-title">
-                    <h3></h3>
-                  </div>
-
                   <div className="product-title">
                     <p>{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : item.title_en}</p>
                   </div>

@@ -1,61 +1,119 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import SlickSlider from "react-slick";
+import axios from "axios";
+import {API} from "../simpleJs/loginApi";
+function Slider() {
 
-function Slider () {
-  const { t } = useTranslation();
+    const [jurnal12, setJurnal12] = useState([]);
 
+    useEffect(() => {
+        axios.get(API + "magazine")
+            .then((res) => {
+                console.log("hello");
+                setJurnal12(res.data.magazine.splice(0, 1));
+            })
+    }, []);
+    console.log(jurnal12);
+    console.log(jurnal12.price);
 
-  return (
-    <>
+    const { t } = useTranslation();
+    const settings = {
+        dots: true,
+        slidesToShow: 1,
+        autoplay:true,
+        autoplaySpeed:5000,
+        slidesToScroll: 1,
+    };
+    return (
+        <>
+            <div className="MainHeader">
+                <div className="MainSlider slide kenburns">
+                    <SlickSlider {...settings}>
+                        <div className="backImg">
+                            <div className="MainSlider__bg">
+                                <h1 className="MainSlider__subtitle typing-demo">
+                                {t("Welcom.welcom to the")}
+                            </h1>
+                                {/*<p className="MainSlider__lorem">*/}
+                                {/*    {t("Welcom.The magazine has been 1999")}*/}
+                                {/*</p>*/}
+                                <div>
+                                    <Link to="/jurnal" className="btn scroll-to">
+                                        {t("Welcom.Explore more")}
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="MainSlider__bg1">
+                            <h1 className="MainSlider__subtitle typing-demo">
+                                {t("Welcom.welcom to the")}
+                            </h1>
+                            {/*<p className="MainSlider__lorem">*/}
+                            {/*    {t("Welcom.The magazine has been 1999")}*/}
+                            {/*</p>*/}
+                            <div>
+                                <Link to="/jurnal" className="btn scroll-to">
+                                    {t("Welcom.Explore more")}
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="MainSlider__bg2">
+                            <h1 className="MainSlider__subtitle typing-demo">
+                                {t("Welcom.welcom to the")}
+                            </h1>
+                            {/*<p className="MainSlider__lorem">*/}
+                            {/*    {t("Welcom.The magazine has been 1999")}*/}
+                            {/*</p>*/}
+                            <div>
+                                <Link to="/jurnal" className="btn scroll-to">
+                                    {t("Welcom.Explore more")}
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="MainSlider__bg3">
+                            <h1 className="MainSlider__subtitle typing-demo">
+                                {t("Welcom.welcom to the")}
+                            </h1>
+                                {/*<p className="MainSlider__lorem">*/}
+                                {/*    {t("Welcom.The magazine has been 1999")}*/}
+                                {/*</p>*/}
+                            <div>
+                                <Link to="/jurnal" className="btn scroll-to">
+                                    {t("Welcom.Explore more")}
+                                </Link>
+                            </div>
+                        </div>
+                    </SlickSlider>
+                </div>
 
-      <div className="MainHeader">
+                <div className="MainBg__right">
+                    <div className="link">
+                        <Link to="/arcive">
+                            {jurnal12.map((item, index) => {
+                                return(
+                                    <img
+                                        alt="error"
+                                        className="MainBg__right-img"
+                                        src={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
+                                    />
+                                )
+                            })}
+                        </Link>
+                    </div>
 
-
-        <div className="MainSlider slide kenburns">
-          <div className="MainSlider__bg wrapper slide-captions text-center text-light">
-            <img
-              alt="#"
-              src="/images/background/main.jpg"
-              className="MainSlider__bg-img"
-            ></img>
-            <div className="MainSlider__bg-black"></div>
-            {/*<div className="wrapper">*/}
-              <h1 className="MainSlider__subtitle typing-demo">
-                {t("Welcom.welcom to the")}
-              </h1>
-            {/*</div>*/}
-            <p className="MainSlider__lorem">
-              {t("Welcom.The magazine has been 1999")}
-            </p>
-            <div>
-              <Link to="/arcive" className="btn scroll-to">
-                {t("Welcom.Explore more")}
-              </Link>
+                    <div className="d-flex justify-content-between align-items-center mt-3 ml-0">
+                        <h4 className="newNumber">{t("send.new")}</h4>
+                    <div className="link-button-main">
+                        <button type="button" className="btn btn-outline-danger ">
+                            {t("send.send")}
+                        </button>
+                    </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-
-
-        <div className="MainBg__right">
-          <h4 className="text-primary pb-2 text-center">{t("send.new")}</h4>
-          <Link to="/Shop">
-            <img
-              alt="error"
-              className="MainBg__right-img"
-              src="/images/azolar/jurnal2.jpg"
-            />
-          </Link>
-          <div className="link-button-main">
-            <button type="button" className="btn btn-outline-danger btn-block">{t("send.send")}</button>
-          </div>
-
-        </div>
-      </div>
-
-
-
-    </>
-  );
+        </>
+    );
 }
 export default Slider;
