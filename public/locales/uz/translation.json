@@ -151,8 +151,13 @@
     "nusxa": "Necha nusxada",
     "manzil": "Manzil",
     "muassis" : "Muassis",
-    "muassis2" : "Hammuassislar"
-
+    "muassis2" : "Hammuassislar",
+    "m1" : "O'zbekiston",
+    "m2" : "kasaba uyushmalari",
+    "m3" : "Federatsiyasi ",
+    "o1" : "O'zbekiston Respublikasi Oliy",
+    "o2" : "Majlisning Inson huquqlari buyicha",
+    "o3" : "vakili (Ombudsman)"
   },
   "send": {
     "send": "Sotib olish",

@@ -39,18 +39,18 @@ const Muassis = () => {
                   <div className="d-lg-flex">
 
                       <div className="moreInfo__logo mr-4">
-                          <a href="!#">
+                          <a href="https://www.kasaba.uz">
                               <img
-                                  alt="https://kasaba.uz"
+                                  alt="#"
                                   className="moreInfo__logo-img2"
                                   src="/images/kasaba.png"
                               ></img>
                           </a>
                           <p className="moreInfo__logo-lorem">
-                              <a href="https://kasaba.uz">
-                          O'zbekiston
-                                  <br/>kasaba uyushmalari
-                                  <br/>Federatsiyasi
+                              <a href="https://www.kasaba.uz">
+                          {t("connect.m1")}
+                                  <br/> {t("connect.m2")}
+                                  <br/> {t("connect.m3")}
                               </a>
                           </p>
 
@@ -66,9 +66,9 @@ const Muassis = () => {
                           </a>
                           <p className="moreInfo__logo-lorem">
                               <a href="http://www.ombudsman.uz">
-                                 O'zbekiston Respublikasi Oliy <br/>
-                                  Majlisning Inson huquqlari buyicha<br/>
-                                  vakili (Ombudsman)
+                                  {t("connect.o1")} <br/>
+                                  {t("connect.o2")}<br/>
+                                  {t("connect.o3")}
                               </a>
                           </p>
 
