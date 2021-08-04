@@ -149,7 +149,10 @@
     "errorEamil": "E-mail kiriting",
     "tulov": "To'lov",
     "nusxa": "Necha nusxada",
-    "manzil": "Manzil"
+    "manzil": "Manzil",
+    "muassis" : "Muassis",
+    "muassis2" : "Hammuassislar"
+
   },
   "send": {
     "send": "Sotib olish",

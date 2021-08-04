@@ -8,6 +8,7 @@ import HeaderUpper from "./HeaderUpper";
 import ContactUs from "./Contact Us/ContactUs";
 import Header from "./Header";
 import {ToastContainer} from "react-toastify";
+import Muassis from "./Contact Us/Muassis";
 function App() {
   const [state] = useState('en');
   // console.log(state);
@@ -23,6 +24,7 @@ function App() {
       <Sliderr />
       <BackgroundGrey />
       <RecentWork />
+     <Muassis/>
       <ContactUs />
       <FooterInfo />
       <LinkerUp />

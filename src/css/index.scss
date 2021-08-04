@@ -219,8 +219,16 @@ cursor: pointer;
   margin-left: 10px;
 }
 .moreInfo__logo-img {
-  width: 100px;
+   width: 100px;
+   height: 100px;
+ }
+.moreInfo__logo-img2 {
+  width: 150px;
   height: 100px;
+}
+.moreInfo__logo-img3 {
+  width: 140px;
+  height: 140px;
 }
 .moreInfo__navigation-img {
   width: 30px;
@@ -513,6 +521,13 @@ cursor: pointer;
 .heading-text {
   padding: 50px;
 }
+.heading-text2 {
+  padding: 50px;
+  h2{
+    font-size: 30px!important;
+  }
+}
+
 
 .slick-prev,
 .slick-next {
