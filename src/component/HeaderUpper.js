@@ -245,6 +245,7 @@ export default function HeaderUpper(stateAction) {
                         <div className="">
                             <div className="row">
                                 {jurnal8.map((item, index) => {
+
                                     return (
                                         <div key={item.id} className="col-12 mt-3">
                                             <AvField
