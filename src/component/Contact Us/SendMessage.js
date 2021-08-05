@@ -42,30 +42,30 @@ const SendMessage = () => {
                                        <AvField
                                            type="text"
                                            name="name"
-                                           label={t("send message.nameLabel")}
-                                           placeholder={t("send message.namePlaceholder")}
+                                           label={t("send file.nameLabel")}
+                                           placeholder={t("send file.namePlaceholder")}
                                            required
-                                           errorMessage={t("send message.nameErrorMessage")}
+                                           errorMessage={t("send file.nameErrorMessage")}
                                        />
                                    </div>
                                    <div className="col-12 col-md-8 col-lg-6">
                                        <AvField
                                            type="email"
                                            name="email"
-                                           label={t("send message.emailLabel")}
-                                           placeholder={t("send message.emailPlaceholder")}
+                                           label={t("send file.emailLabel")}
+                                           placeholder={t("send file.emailPlaceholder")}
                                            required
-                                           errorMessage={t("send message.emailErrorMessage")}
+                                           errorMessage={t("send file.emailErrorMessage")}
                                        />
                                    </div>
                                    <div className="col-12 col-md-8 col-lg-6">
                                        <AvField
                                            type="text"
                                            name="phone"
-                                           label={t("send message.phoneLabel")}
-                                           placeholder={t("send message.phonePlaceholder")}
+                                           label={t("send file.phoneLabel")}
+                                           placeholder={t("send file.phonePlaceholder")}
                                            required
-                                           errorMessage={t("send message.phoneErrorMessage")}
+                                           errorMessage={t("send file.phoneErrorMessage")}
 
                                        />
                                    </div>

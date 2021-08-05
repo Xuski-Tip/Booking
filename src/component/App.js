@@ -24,7 +24,7 @@ function App() {
       <Sliderr />
       <BackgroundGrey />
       <RecentWork />
-     <Muassis/>
+      <Muassis/>
       <ContactUs />
       <FooterInfo />
       <LinkerUp />

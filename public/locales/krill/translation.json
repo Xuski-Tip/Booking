@@ -31,7 +31,7 @@
     "Explore more": "Кўпроқ ўрганинг"
   },
   "our work": {
-    "WHAT WE DO": "Интернатионал индехес оф тҳе жоурнал"
+    "WHAT WE DO": "Журналнинг халкаро индекслари"
   },
   "Recent Work": {
     "work": "Сўнгги ишлар"
@@ -57,7 +57,7 @@
     "aboutUs": "Биз ҳақимизда"
   },
   "Arxiv": {
-    "arxiv": "Архив"
+    "arxiv": "Электрон кутубхона"
   },
   "Subscription": {
     "obuna": "Обуна",
@@ -99,7 +99,7 @@
     "nameLabel" : "Ф.И.Ш",
     "namePlaceholder" : "Familiya, ism va sharifingiz",
     "nameErrorMessage" : "Исм киритинг!",
-    "emailLabel" : "Э-майл",
+    "emailLabel" : "Э-маил",
     "emailPlaceholder" : "Электрон почтангизни киритинг",
     "emailErrorMessage" : "Эмаил киритинг!",
     "phoneLabel" : "Телефон рақами",
@@ -113,7 +113,8 @@
     "buttonText" : "Файл юбориш"
   },
   "jurnale" : {
-    "text" : "\"Демократлаштириш ва инсон ҳуқуқлари\" журнали"
+    "text" : "\"Демократлаштириш ва инсон ҳуқуқлари\" журнали",
+    "text2": "Электрон кутубхона"
   },
   "registr": {
     "accaunt": "Сайтда рўйхатдан ўтиш",
