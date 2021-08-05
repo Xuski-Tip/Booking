@@ -30,16 +30,13 @@ const RecentWorkSlide = () => {
                 {jurnal12.map((item) => {
                     return (
                         <div className="" key={item.id}>
-                            <a target="_blank" href={
-                                "https://paycom-test.napaautomotive.uz/storage/" + item.file
-                            }>
                                 <div
                                     className="portfolio-item"
                                     key={item.id}
                                 >
                                     <div className="portfolio-item-wrap">
                                         <div className="portfolio-image position-relative">
-                                            <a href={
+                                            <a target="_blank" href={
                                                 "https://paycom-test.napaautomotive.uz/storage/" + item.file
                                             }>
                                                 <img
@@ -62,8 +59,6 @@ const RecentWorkSlide = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-
                         </div>
                     );
                 })};

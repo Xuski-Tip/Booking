@@ -55,7 +55,7 @@ export default function PageShop(props) {
                                   item.image
                               }
                           >
-                              Quick View
+                              Muqova rasmi
                           </a>
                       }
 

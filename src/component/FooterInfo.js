@@ -83,8 +83,8 @@ function FooterInfo() {
             <a href="http://localhost:3000/" rel="noopener">
               {" "}
               {t("Offical Site.of the National Center")}{" "}
-              {t("Offical Site.for Human Rights")}
-              {t("Offical Site.of the Republic of Uzbekistan")}
+              {t("Offical Site.for Human Rights")}{" "}
+              {t("Offical Site.of the Republic of Uzbekistan")}{" "}
               {t("Offical Site.navbar")}{" "}
             </a>{" "}
           </div>

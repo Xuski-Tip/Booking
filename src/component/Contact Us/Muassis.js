@@ -20,7 +20,7 @@ const Muassis = () => {
                            ></img>
                        </a>
                        <p className="moreInfo__logo-lorem">
-                           <a href="http://insonhuquqlari.uz">
+                           <a target="_blank" href="http://insonhuquqlari.uz">
                                {/*<br></br>*/}
                                <span>{t("Offical Site.of the National Center")}</span>
                                <br></br> <span>{t("Offical Site.for Human Rights")}</span>

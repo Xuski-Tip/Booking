@@ -57,7 +57,7 @@
     "aboutUs": "About Us"
   },
   "Arxiv": {
-    "arxiv": "Archive"
+    "arxiv": "Electronic library"
   },
   "Subscription": {
     "obuna": "Subscribe",
@@ -111,7 +111,8 @@
     "buttonText" : "Send a file"
   },
   "jurnale" : {
-    "text" : "Journal of Democratization and Human Rights"
+    "text" : "General information",
+    "text2": "Article"
   },
 
   "registr": {
@@ -168,9 +169,7 @@
   "malumot": {
     "malumot1": "JOURNAL OF DEMOCRATICIZATION AND HUMAN RIGHTS Scientific-educational journal Journal March 16, 2020",
     "malumot": "Registered with the Information and Mass Communications Agency under the Presidential Administration of the Republic of Uzbekistan under number 0202. The journal \"Democratization and Human Rights\" is included in the list of scientific publications recommended for publication by the Higher Attestation Commission under the Cabinet of Ministers of the Republic of Uzbekistan on the main scientific results of dissertations in law, philosophy, history, politics, Islamic studies and sociology",
-    "malumot2": "More",
-
-    "malumot": "Registered with the Information and Mass Communications Agency under the Presidential Administration of the Republic of Uzbekistan under number 0202. The journal \"Democratization and Human Rights\" is included in the list of scientific publications recommended for publication by the Higher Attestation Commission under the Cabinet of Ministers of the Republic of Uzbekistan on the main scientific results of dissertations in law, philosophy, history, politics, Islamic studies and sociology"
+    "malumot2": "Full archive"
   }
 }
 
