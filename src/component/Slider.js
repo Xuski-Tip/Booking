@@ -35,7 +35,7 @@ function Slider() {
                         <div className="backImg">
                             <div className="MainSlider__bg">
                                 <h1 className="MainSlider__subtitle typing-demo">
-                                    {t("Welcom.welcom to the")}
+                                    {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
                                 </h1>
                                 {/*<p className="MainSlider__lorem mb-4">*/}
                                 {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -49,7 +49,7 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg1">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Welcom.welcom to the")}
+                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem mb-4">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -62,7 +62,7 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg2">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Welcom.welcom to the")}
+                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem mb-4">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -75,7 +75,7 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg3">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Welcom.welcom to the")}
+                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}

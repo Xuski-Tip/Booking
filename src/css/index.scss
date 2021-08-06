@@ -568,7 +568,15 @@ cursor: pointer;
     height: 410px !important;
   }
   @media (min-width: 1400px) {
-    height: 400px !important;
+    height: 625px !important;
+    width: 100% !important;
+  }
+  @media (min-width: 2000px) {
+  height: 725px !important;
+  width: 100% !important;
+}
+  @media (min-width: 2000px) {
+    height: 1000px !important;
     width: 100% !important;
   }
 }
@@ -577,6 +585,13 @@ cursor: pointer;
     margin: 0 10%;
   }
 }
+
+.animate__fadeInUp{
+  img{
+    cursor: pointer;
+  }
+}
+
 .link-button-main {
   //margin: 10px  5px 0 5px ;
 

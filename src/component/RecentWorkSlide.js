@@ -55,7 +55,7 @@ const RecentWorkSlide = () => {
                                             />
                                         </div>
                                         <div className="product-overlay">
-                                            <button type="button" className="btn btn-primary btn-block" onClick={salom}>Sotib olish</button>
+                                            <button type="button" className="btn btn-primary btn-block" onClick={salom}>{t("leadershep.send")}</button>
                                         </div>
                                     </div>
                                 </div>

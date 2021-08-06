@@ -1,9 +1,11 @@
 import React from "react";
 import {TOKEN_LOCAL} from "../../simpleJs/loginApi";
 import {getLanguage} from "../../simpleJs/locale";
+import {useTranslation} from "react-i18next";
 // ! Wate to backend
 export default function PageShop(props) {
 
+    const {t} = useTranslation();
     console.log(getLanguage());
 
   return (
@@ -47,7 +49,7 @@ export default function PageShop(props) {
                   <div className="product-overlay">
                       {
                           props.currentPage ===1 ?
-                              <button type="button" className="btn btn-primary btn-block">Sotib olish</button>
+                              <button type="button" className="btn btn-primary btn-block">{t("leadershep.send")}</button>
                               :
                               <a
                               href={
