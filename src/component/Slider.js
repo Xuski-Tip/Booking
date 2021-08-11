@@ -40,7 +40,7 @@ function Slider() {
                                 {/*<p className="MainSlider__lorem mb-4">*/}
                                 {/*    {t("Welcom.The magazine has been 1999")}*/}
                                 {/*</p>*/}
-                                <div>
+                                <div className='moreButton'>
                                     <Link to="/jurnal" className="btn scroll-to">
                                         {t("Welcom.Explore more")}
                                     </Link>
@@ -54,7 +54,7 @@ function Slider() {
                             {/*<p className="MainSlider__lorem mb-4">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
                             {/*</p>*/}
-                            <div>
+                            <div className='moreButton'>
                                 <Link to="/jurnal" className="btn scroll-to">
                                     {t("Welcom.Explore more")}
                                 </Link>
@@ -67,7 +67,7 @@ function Slider() {
                             {/*<p className="MainSlider__lorem mb-4">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
                             {/*</p>*/}
-                            <div>
+                            <div className='moreButton'>
                                 <Link to="/jurnal" className="btn scroll-to">
                                     {t("Welcom.Explore more")}
                                 </Link>
@@ -80,7 +80,7 @@ function Slider() {
                             {/*<p className="MainSlider__lorem">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
                             {/*</p>*/}
-                            <div>
+                            <div className='moreButton'>
                                 <Link to="/jurnal" className="btn scroll-to">
                                     {t("Welcom.Explore more")}
                                 </Link>
