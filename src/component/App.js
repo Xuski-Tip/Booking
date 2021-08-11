@@ -11,7 +11,7 @@ import {ToastContainer} from "react-toastify";
 import Muassis from "./Contact Us/Muassis";
 function App() {
   const [state] = useState('en');
-  // console.log(state);
+
 
   useEffect(() => {
       window.scrollTo(0, 0);

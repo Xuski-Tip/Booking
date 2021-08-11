@@ -17,6 +17,7 @@ import Litsinziya from "./Jurnal/Litsinziya";
 import Savdo from "./Savdo";
 import Maqola from "./Maqola";
 import Jurnal from "./Jurnal";
+import Profile from "./profile";
 
 const Router = () => {
   return (
@@ -24,6 +25,7 @@ const Router = () => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/arcive" component={Shop} />
+        <Route exact path="/profile" component={Profile} />
         <Route exact path="/authorization" component={Authorization} />
         <Route
           exact

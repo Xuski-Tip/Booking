@@ -1,12 +1,28 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import HeaderUpper from "../HeaderUpper";
 import {AvForm, AvField} from "availity-reactstrap-validation";
 import {connect} from "react-redux";
 import {avtorizatsiya} from "../../redux/Action/loginAction";
 import {useTranslation} from "react-i18next";
+import axios from "axios";
+import {API, LOGIN, TOKEN_LOCAL} from "../../simpleJs/loginApi";
+import {toast} from "react-toastify";
 
 const Authorization = (props) => {
+
+    const [logout, setLogout] = useState("");
+
+    function logOut() {
+        axios.get(API + "me/logout")
+            .then((res) => {
+                setLogout(res.data.status);
+                toast.success("Log out");
+                props.history.push("/");
+                localStorage.setItem(TOKEN_LOCAL, null);
+                localStorage.setItem(LOGIN, null)
+            })
+    }
 
     const {t} = useTranslation();
     return (
@@ -54,9 +70,14 @@ const Authorization = (props) => {
                     {/*  </div>*/}
                     {/*</div>*/}
                     {/*<div className="text-left form-group">*/}
-                      <button type="submit" className="btn">
-                        {t("login.submitButton")}
-                      </button>
+                      <div className="d-flex justify-content-between">
+                          <button type="submit" className="btn">
+                              {t("login.submitButton")}
+                          </button>
+                          <button type="button" className="btn btn-danger" onClick={logOut}>
+                              {t("login.logout")}
+                          </button>
+                      </div>
                     {/*</div>*/}
                   </AvForm>
                   <p className="small">
@@ -73,5 +94,5 @@ const Authorization = (props) => {
       </>
     );
 
-}
+};
 export default connect(null, {avtorizatsiya})(Authorization) ;

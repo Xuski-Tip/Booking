@@ -91,7 +91,8 @@
     "caution" : "Don't have an account yet?",
     "caution2"  : "Register a new account",
     "emailError" : "Enter the email",
-    "passwordError" : "Enter the password"
+    "passwordError" : "Enter the password",
+    "logout": "Log out"
   },
   "send file" : {
     "nameLabel" : "F.I.SH",
@@ -112,7 +113,7 @@
   },
   "jurnale" : {
     "text" : "General information",
-    "text2": "Article"
+    "rasm": "Cover picture"
   },
 
   "registr": {
@@ -167,7 +168,7 @@
     "new": "New issue of the magazine"
   },
   "malumot": {
-    "malumot1": "JOURNAL OF DEMOCRATICIZATION AND HUMAN RIGHTS Scientific-educational journal Journal March 16, 2020",
+    "malumot1": "JOURNAL OF DEMOCRATICIZATION AND HUMAN RIGHTS Scientific-educational journal. Journal March 16, 2020",
     "malumot": "Registered with the Information and Mass Communications Agency under the Presidential Administration of the Republic of Uzbekistan under number 0202. The journal \"Democratization and Human Rights\" is included in the list of scientific publications recommended for publication by the Higher Attestation Commission under the Cabinet of Ministers of the Republic of Uzbekistan on the main scientific results of dissertations in law, philosophy, history, politics, Islamic studies and sociology",
     "malumot2": "Full archive"
   },
@@ -181,6 +182,28 @@
     "name": "Erkin Ernzarov",
     "back": "Back",
     "send": "Purchase"
+  },
+  "azolar": {
+    "azo1": "Mirzatillo Tillabayev",
+    "azo2": "Xalim Boboyev",
+    "azo3": "Omon Oqyulov",
+    "azo4": "Asqar G'afurov",
+    "azo5": "Yelizaveta Kutibayeva",
+    "azo6": "Xaydarali Muxamedov",
+    "azo7": "Muzaffar Mamasiddiqov",
+    "azo8": "Mixail Gasanov"
+  },
+  "azolar2": {
+    "azo1": "Tanzila Narbayeva",
+    "azo2": "Qudratilla Rafiqov",
+    "azo3": "Aslan Abashidze",
+    "azo4": "Akira Fujimoto",
+    "azo5": "Uilyam Batler",
+    "azo6": "Tadeush Bodio",
+    "azo7": "Marg'ub But",
+    "azo8": "Reyn Mullerson",
+    "azo9": "Tatyana Moskalkova",
+    "azo10": "Sergey Udarsev"
   }
 }
 

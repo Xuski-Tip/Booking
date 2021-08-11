@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import SlickSlider from "react-slick";
 import axios from "axios";
-import {API} from "../simpleJs/loginApi";
+import {API, API_PATH} from "../simpleJs/loginApi";
 
 function Slider() {
 
@@ -12,12 +12,10 @@ function Slider() {
     useEffect(() => {
         axios.get(API + "magazine")
             .then((res) => {
-                console.log("hello");
+
                 setJurnal12(res.data.magazine.splice(0, 1));
             })
     }, []);
-    console.log(jurnal12);
-    console.log(jurnal12.price);
 
     const {t} = useTranslation();
     const settings = {
@@ -93,11 +91,11 @@ function Slider() {
                     <div className="link">
                         {jurnal12.map((item, index) => {
                             return (
-                                <a target="_blank" href={"https://paycom-test.napaautomotive.uz/storage/" + item.file}>
+                                <a target="_blank" href={API_PATH + "storage/" + item.file}>
                                     <img
                                         alt="error"
                                         className="MainBg__right-img"
-                                        src={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
+                                        src={API_PATH + "storage/" + item.image}
                                     />
                                 </a>
 

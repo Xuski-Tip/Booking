@@ -93,7 +93,8 @@
     "caution": "Sizda hali hisob yo'qmi?",
     "caution2": "Yangi hisob qaydnomasini ro'yxatdan o'tkazish",
     "emailError": "E-mail kiriting",
-    "passwordError": "Parol kiriting"
+    "passwordError": "Parol kiriting",
+    "logout": "Akkauntdan chiqish"
   },
   "send file" : {
     "nameLabel" : "F.I.SH",
@@ -113,7 +114,8 @@
     "buttonText" : "Fayl yuborish"
   },
   "jurnale": {
-    "text": "Umumiy ma'lumot"
+    "text": "Umumiy ma'lumot",
+    "rasm": "Muqova rasmi"
   },
   "registr": {
     "accaunt": "Saytda ro'yxatdan o'tish",
@@ -164,7 +166,7 @@
     "new": "Jurnalning yangi soni"
   },
   "malumot": {
-    "malumot1": "DEMOKRATLASHTIRISH VA INSON HUQUQLARI JURNALI ilmiy-maʼrifiy jurnal Jurnal 2020-yil 16-martda",
+    "malumot1": "DEMOKRATLASHTIRISH VA INSON HUQUQLARI JURNALI ilmiy-maʼrifiy jurnal. Jurnal 2020-yil 16-martda",
     "malumot": "Oʻzbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy kommunikatsiyalar agentligida 0202 raqami bilan roʻyxatdan oʻtgan. “Demokratlashtirish va inson huquqlari” jurnali Oʻzbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Oliy attestatsiya komissiyasining huquqshunoslik, falsafa, tarix, siyosiy, islomshunoslik va sotsiologiya fanlari boʻyicha dissertatsiya asosiy ilmiy natijalarini chop etish tavsiya etilgan ilmiy nashrlar roʻyxatiga kiritilgan",
     "malumot2": "To'liq arxiv"
   },
@@ -181,5 +183,27 @@
     "name": "Erkin Ernzarov",
     "back": "Orqaga",
     "send": "Sotib olish"
+  },
+  "azolar": {
+    "azo1": "Mirzatillo Tillabayev",
+    "azo2": "Xalim Boboyev",
+    "azo3": "Omon Oqyulov",
+    "azo4": "Asqar G'afurov",
+    "azo5": "Yelizaveta Kutibayeva",
+    "azo6": "Xaydarali Muxamedov",
+    "azo7": "Muzaffar Mamasiddiqov",
+    "azo8": "Mixail Gasanov"
+  },
+  "azolar2": {
+    "azo1": "Tanzila Narbayeva",
+    "azo2": "Qudratilla Rafiqov",
+    "azo3": "Aslan Abashidze",
+    "azo4": "Akira Fujimoto",
+    "azo5": "Uilyam Batler",
+    "azo6": "Tadeush Bodio",
+    "azo7": "Marg'ub But",
+    "azo8": "Reyn Mullerson",
+    "azo9": "Tatyana Moskalkova",
+    "azo10": "Sergey Udarsev"
   }
 }
