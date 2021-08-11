@@ -9,7 +9,7 @@ export function login(events, error, value, history) {
                 console.log("salom");
                 console.log(res);
                 dispatch({type: ""});
-                localStorage.setItem(TOKEN_LOCAL, res.data.token);
+                localStorage.setItem(TOKEN_LOCAL, "Bearer" + " " + res.data.token);
                 history.push("/");
                 toast.success("Muvaffaqiyatli !!!")
             })

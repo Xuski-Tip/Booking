@@ -93,7 +93,8 @@
     "caution" : "Сизда ҳали ҳисоб йўқми?",
     "caution2"  : "Янги ҳисоб қайдномасини рўйхатдан ўтказиш",
     "emailError" : "Э-майл киритинг",
-    "passwordError" : "Пароль киритинг"
+    "passwordError" : "Пароль киритинг",
+    "logout": "Аккаунтдан чиқиш"
   },
   "send file" : {
     "nameLabel" : "Ф.И.Ш",
@@ -114,7 +115,7 @@
   },
   "jurnale" : {
     "text" : "\"Демократлаштириш ва инсон ҳуқуқлари\" журнали",
-    "text2": "Электрон кутубхона"
+    "rasm": "Мукова расми"
   },
   "registr": {
     "accaunt": "Сайтда рўйхатдан ўтиш",
@@ -161,12 +162,45 @@
     "o3" : "вакили (Омбудсман)"
   },
   "malumot": {
-    "malumot1": "ДЕМОКРАТЛАШТИРИШ ВА ИНСОН ХУКУКЛАРИ ЖУРНАЛИ илмий-марифий журнал Журнал 2020-йил 16-мартда",
+    "malumot1": "ДЕМОКРАТЛАШТИРИШ ВА ИНСОН ХУКУКЛАРИ ЖУРНАЛИ илмий-марифий журнал. Журнал 2020-йил 16-мартда",
     "malumot": "Узбекистан Республикаси Президенти Админстратсияси хузуридаги Ахборот ва оммавий коммуникатсиялар агентлигида 0202 раками билан руйхатдан утган. «Демократлаштириш ва инсон ҳуқуқлари» журнали Ўзбекистон Республикаси Вазирлар Маҳкамаси ҳузуридаги Олий аттестация комиссиясининг ҳуқуқшунослик, фалсафа, тарих, сиёсий, исломшунослик ва социология фанлари бўйича диссертация асосий илмий натижаларини чоп этиш тавсия этилган илмий нашрлар рўйхатига киритилган",
     "malumot2": "Батафсил"
   },
   "send": {
     "send": "Сотиб олиш",
     "new": "Журналнинг янги сони"
+  },
+  "leadershep": {
+    "leadershep": "Akmal Xolmatovich Saidov – 1958-yilda Toshkent viloyatining Zangiota qishlogʻida tugʻilgan. Millati – oʻzbek. Maʼlumoti – oliy. 1981-yilda Mirzo Ulugʻbek nomidagi Oʻzbekiston Milliy universitetining huquqshunoslik fakultetini imtiyozli diplom bilan tamomlagan. 1981-1984-yillarda sobiq ittifoq Fanlar akademiyasining Davlat va huquq instituti aspiranturasida oʻqib, 1984-yili nomzodlik dissertatsiyasini yoqlagan. 1990-yilda – yuridik fanlar doktori ilmiy darajasini, 1993-yilda xalqaro va qiyosiy huquq professori ilmiy unvonini olgan. 2017-yildan Oʻzbekiston Respublikasi Fanlar akademiyasining haqiqiy aʼzosi. 1985-1992-yillarda Falsafa va huquq institutining katta ilmiy xodimi, sektor mudiri va direktori, 1986-1987-yillarda Oʻzbekiston Fanlar akademiyasi Prezidiumining Falsafa, iqtisod va yuridik fanlar boʻlimi ilmiy kotibi, 1989-1991-yillarda Oʻzbekiston Yoshlar tashkilotlari qoʻmitasi raisi, 1992-1993-yillarda Oʻzbekiston Respublikasi Prezidenti huzuridagi Jahon muammolari instituti direktori, 1993-1994-yillarda Toshkent Davlat yuridik instituti rektori lavozimlarida faoliyat yuritgan. A.X.Saidov 1994-1996-yillarda Oʻzbekiston Respublikasining Fransiyadagi Favqulodda va muxtor elchisi, shuningdek, Oʻzbekistonning YUNESKO huzuridagi Doimiy vakili sifatida faoliyat koʻrsatgan. Favqulodda va muxtor elchi martabasiga ega. Oʻzbekiston Respublikasi Prezidentining Farmoniga muvofiq, 1996-yil oktyabr oyidan buyon Inson huquqlari boʻyicha Oʻzbekiston Respublikasi Milliy markazi direktori lavozimida ishlamoqda. A.X.Saidovning Parlamentarizm sohasida qariyb 30 yillik amaliy tajribasi bor. Istiqlolning oʻtgan davrida 5 marotaba milliy parlament deputatligiga saylangan. 1999-yildan beri parlamentning Demokratik institutlar, nodavlat tashkilotlar va fuqarolarning oʻzini oʻzi boshqarish organlari qoʻmitasi raisi hisoblanadi. Ayni paytda Oʻzbekiston Respublikasi Oliy Majlisi huzuridagi Nodavlat notijorat tashkilotlarini va fuqarolik jamiyatining boshqa institutlarini qoʻllab-quvvatlash jamoat fondining mablagʻlarini boshqarish boʻyicha parlament komissiyasining raisi hamdir. A.X.Saidov 2019-yil 17-oktyabrda Belgrad shahrida (Serbiya) boʻlib oʻtgan Parlamentlararo ittifoqning 141-Assambleyasida mustaqil Oʻzbekiston tarixida ilk bor 2020-2023-yillar oraligʻidagi muddatga ushbu tashkilot Ijroiya qoʻmitasining aʼzosi etib saylandi. IHT Tashqi ishlar vazirlari kengashining 2017-yil 10-11-iyul kunlari Kot dʻIvuarda boʻlib oʻtgan 44-sessiyasida IHTning Inson huquqlari boʻyicha mustaqil doimiy komissiyasi tarkibiga Osiyo qitʼasidan Oʻzbekiston vakili sifatida aʼzo boʻlgan. Bir yildan soʻng IHT Komissiyasining raisi etib saylangan. “Oʻzbekiston – Belgiya” deputatlar guruhi raisi, Oʻzbekiston-Fransiya parlamentlari doʻstlik guruhi rahbari hamda “Oʻzbekiston – Yevropa Ittifoqi” parlamentlararo hamkorlik boʻyicha qoʻmita aʼzosi hisoblanadi. A.X.Saidov Konstitutsiyaviy huquq xalqaro assotsiatsiyasining haqiqiy aʼzosi, Xalqaro qiyosiy huquq akademiyasining muxbir-aʼzosi, Fransiya Qiyosiy qonunshunoslik jamiyatining xorijiy aʼzosi, Osiyo va Tinch okeani mintaqasi yuristlari xalqaro assotsiatsiyasi va Rossiya xalqaro huquq assotsiatsiyasi aʼzosi, Parij-1 Sorbonna Universitetining taklif etilgan professoridir. Qiyosiy huquqshunoslik, xalqaro huquq, konstitutsiyaviy huquq, inson huquqlari, davlat va huquq nazariyasi va tarixi boʻyicha 30 ta darslik hamda oʻquv qoʻllanmalari, 300 dan ortiq risola va ilmiy maqolalar muallifidir. Asarlari AQSH, Buyuk Britaniya, Avstriya, Germaniya, Fransiya, Polsha, Belgiya, Rossiya, Xitoy, Hindiston, Janubiy Koreya, Yaponiya va boshqa davlatlarda chop etilgan. U 100 dan ortiq xalqaro ilmiy anjumanlarda qatnashgan. 1998-yilda “Oʻzbekiston belgisi” koʻkrak nishoni, 2002-yilda – “Mehnat shuhrati”, 2006-yilda – “Doʻstlik” va 2017-yilda “El-yurt hurmati” ordenlari bilan taqdirlangan. Oilali. Ikki nafar farzandi bor.",
+    "leader": "Раҳбарият",
+    "rais": "Таҳрир кенгаши раиси",
+    "name1": "Акмал Саидов",
+    "tarjima": "Таржимаи ҳол",
+    "muharrir": "Бош муҳаррир",
+    "name": "Эркин Эрнзаров",
+    "back": "Оркага",
+    "send": "Сотиб олиш"
+  },
+  "azolar": {
+    "azo1": "Мирзатилло Тиллабаев",
+    "azo2": "Xalim Boboyev",
+    "azo3": "Omon Oqyulov",
+    "azo4": "Asqar G'afurov",
+    "azo5": "Yelizaveta Kutibayeva",
+    "azo6": "Xaydarali Muxamedov",
+    "azo7": "Muzaffar Mamasiddiqov",
+    "azo8": "Mixail Gasanov"
+  },
+  "azolar2": {
+    "azo1": "Танзила Нарбаева",
+    "azo2": "Кудратилла Рафиков",
+    "azo3": "Аслан Абашидзе",
+    "azo4": "Акира Фудзимото",
+    "azo5": "Уильям Батлер",
+    "azo6": "Тадеуш Бодио",
+    "azo7": "Маргуб Но",
+    "azo8": "Рейн Мюллерсон",
+    "azo9": "Татьяна Москалькова",
+    "azo10": ""
   }
 }

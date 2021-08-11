@@ -13,7 +13,6 @@ class InfoCard extends React.Component {
             dots: true,
             speed: 500,
         };
-        console.log(this.props.match);
         return (
             <>
                 <Tapbar />

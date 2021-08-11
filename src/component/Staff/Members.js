@@ -94,7 +94,7 @@ export default function Members() {
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">
-                    Mirzatillo Tillabayev
+                    {t("azolar.azo1")}
                   </h3>
                   <span className="team__info-developer">
                     {t("members.member1")}
@@ -141,7 +141,7 @@ export default function Members() {
                   ></img>
                 </div>
                 <div className="team__info">
-                  <h3 className="team__info-subtitle mt-3">Xalim Boboyev</h3>
+                  <h3 className="team__info-subtitle mt-3">{t("azolar.azo2")}</h3>
                   <span className="team__info-developer">
                     {t("members.member2")}
                   </span>
@@ -187,7 +187,7 @@ export default function Members() {
                   ></img>
                 </div>
                 <div className="team__info">
-                  <h3 className="team__info-subtitle mt-3">Omon Oqyulov</h3>
+                  <h3 className="team__info-subtitle mt-3">{t("azolar.azo3")}</h3>
                   <span className="team__info-developer">
                     {t("members.member3")}
                   </span>
@@ -233,7 +233,7 @@ export default function Members() {
                   ></img>
                 </div>
                 <div className="team__info">
-                  <h3 className="team__info-subtitle mt-3">Asqar G'afurov</h3>
+                  <h3 className="team__info-subtitle mt-3">{t("azolar.azo4")}</h3>
                   <span className="team__info-developer">
                     {t("members.member6")}
                   </span>
@@ -280,7 +280,7 @@ export default function Members() {
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">
-                    Muzaffar Mamasiddiqov
+                    {t("azolar.azo7")}
                   </h3>
                   <span className="team__info-developer">
                     {t("members.member5")}
@@ -327,7 +327,7 @@ export default function Members() {
                   ></img>
                 </div>
                 <div className="team__info">
-                  <h3 className="team__info-subtitle mt-3">Mixail Gasanov</h3>
+                  <h3 className="team__info-subtitle mt-3">{t("azolar.azo8")}</h3>
                   <span className="team__info-developer">
                     {t("members.member6")}
                   </span>
@@ -374,7 +374,7 @@ export default function Members() {
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">
-                    Yelizaveta Kutibayeva
+                    {t("azolar.azo5")}
                   </h3>
                   <span className="team__info-developer">
                     {t("members.member5")}
@@ -422,7 +422,7 @@ export default function Members() {
                 </div>
                 <div className="team__info">
                   <h3 className="team__info-subtitle mt-3">
-                    Xaydarali Muxamedov
+                    {t("azolar.azo7")}
                   </h3>
                   <span className="team__info-developer">
                     {t("members.member7")}

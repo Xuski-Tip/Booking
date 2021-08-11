@@ -68,7 +68,7 @@ export default function Editor() {
               ></img>
             </div>
             <div className="team__info">
-              <h3 className="team__info-subtitle mt-3">Tanzila Narbayeva</h3>
+              <h3 className="team__info-subtitle mt-3">{t("azolar2.azo1")}</h3>
               <span className="team__info-developer">
                 ({t("state.state1")})
               </span>
@@ -114,7 +114,7 @@ export default function Editor() {
               ></img>
             </div>
             <div className="team__info">
-              <h3 className="team__info-subtitle mt-3">Qudratilla Rafiqov</h3>
+              <h3 className="team__info-subtitle mt-3">{t("azolar2.azo2")}</h3>
               <span className="team__info-developer">
                 ({t("state.state1")})
               </span>

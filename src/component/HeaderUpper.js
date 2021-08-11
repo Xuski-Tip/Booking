@@ -36,16 +36,13 @@ export default function HeaderUpper(stateAction) {
     const [jurnal8, setJurnal8] = useState([]);
     useEffect(() => {
         axios.get(API + "magazine").then((res) => {
-            console.log("aslom");
             setJurnal8(res.data.magazine.splice(0, 4));
-            // console.log(res)
         });
     }, []);
     useEffect(handleClick, []);
 
     const addJurnal = (event, error, values) => {
         axios.post(API + "article/store", values).then((res) => {
-            console.log(res);
             toast.success("Maqola qo'shildi");
             setOpen3(false);
         });
@@ -70,8 +67,6 @@ export default function HeaderUpper(stateAction) {
         array.push(values.jurnal2);
         array.push(values.jurnal3);
         array.push(values.jurnal4);
-        console.log("array");
-        console.log(array);
         let k = 0;
         let soni = values.nusxa;
 
@@ -79,7 +74,6 @@ export default function HeaderUpper(stateAction) {
             if (number === true) k++;
         }
         let summ = k * soni * 25000;
-        console.log(summ);
     };
 
     return (
@@ -156,10 +150,15 @@ export default function HeaderUpper(stateAction) {
                         </ReactBootStrap.NavDropdown>
                     </ReactBootStrap.Nav>
                     <ReactBootStrap.Form inline>
+
+                        <Link className="Link-autho" to={"/profile"}>
+                            <img src="/images/about/user.png" alt="Error" className="rounded-circle" width="30px" height="30px"/>
+                        </Link>{" "}
+
                         <Link className="Link-autho" to={"/Authorization"}>
                             {t("avtorizatsiya.navbar")}
                         </Link>{" "}
-                        /
+
                         <Link className="Link-registr" to={"/Authorization/Registration"}>
                             {t("avtorizatsiya.navbar2")}
                         </Link>

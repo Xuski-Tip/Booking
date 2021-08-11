@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import SlickSlider from "react-slick";
 import axios from "axios";
-import {API} from "../simpleJs/loginApi";
+import {API, API_PATH} from "../simpleJs/loginApi";
 
 function Slider() {
 
@@ -12,12 +12,10 @@ function Slider() {
     useEffect(() => {
         axios.get(API + "magazine")
             .then((res) => {
-                console.log("hello");
+
                 setJurnal12(res.data.magazine.splice(0, 1));
             })
     }, []);
-    console.log(jurnal12);
-    console.log(jurnal12.price);
 
     const {t} = useTranslation();
     const settings = {
@@ -35,7 +33,7 @@ function Slider() {
                         <div className="backImg">
                             <div className="MainSlider__bg">
                                 <h1 className="MainSlider__subtitle typing-demo">
-                                    {t("Welcom.welcom to the")}
+                                    {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
                                 </h1>
                                 {/*<p className="MainSlider__lorem mb-4">*/}
                                 {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -49,7 +47,7 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg1">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Welcom.welcom to the")}
+                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem mb-4">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -62,7 +60,7 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg2">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Welcom.welcom to the")}
+                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem mb-4">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -75,7 +73,7 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg3">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Welcom.welcom to the")}
+                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -93,11 +91,11 @@ function Slider() {
                     <div className="link">
                         {jurnal12.map((item, index) => {
                             return (
-                                <a target="_blank" href={"https://paycom-test.napaautomotive.uz/storage/" + item.file}>
+                                <a target="_blank" href={API_PATH + "storage/" + item.file}>
                                     <img
                                         alt="error"
                                         className="MainBg__right-img"
-                                        src={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
+                                        src={API_PATH + "storage/" + item.image}
                                     />
                                 </a>
 

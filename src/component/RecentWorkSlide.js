@@ -14,8 +14,6 @@ const RecentWorkSlide = () => {
     useEffect(() => {
         axios.get(API + "magazine")
             .then((res) => {
-                console.log("salom");
-                console.log(res);
                 setJurnal12(res.data.magazine.splice(0, 8));
             })
     }, []);
@@ -37,11 +35,11 @@ const RecentWorkSlide = () => {
                                     <div className="portfolio-item-wrap">
                                         <div className="portfolio-image position-relative">
                                             <a target="_blank" href={
-                                                "https://paycom-test.napaautomotive.uz/storage/" + item.file
+                                                "https://backend-magazine.napaautomotive.uz/storage/" + item.file
                                             }>
                                                 <img
                                                     className="portfolio-img"
-                                                    src={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
+                                                    src={"https://backend-magazine.napaautomotive.uz/storage/" + item.image}
                                                     alt=""
                                                 />
                                             </a>
@@ -51,11 +49,11 @@ const RecentWorkSlide = () => {
                                             <a
                                                 title="Paper Pouch!"
                                                 data-lightbox="image"
-                                                href={"https://paycom-test.napaautomotive.uz/storage/" + item.image}
+                                                href={"https://backend-magazine.napaautomotive.uz/storage/" + item.image}
                                             />
                                         </div>
                                         <div className="product-overlay">
-                                            <button type="button" className="btn btn-primary btn-block" onClick={salom}>Sotib olish</button>
+                                            <button type="button" className="btn btn-primary btn-block" onClick={salom}>{t("leadershep.send")}</button>
                                         </div>
                                     </div>
                                 </div>

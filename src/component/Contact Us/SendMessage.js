@@ -10,12 +10,12 @@ const SendMessage = () => {
 
  const OnSubmit = (event, errors, values) => {
 
-        axios.post("https://paycom-test.napaautomotive.uz/api/contact/store", values)
+        axios.post("https://backend-magazine.napaautomotive.uz/api/contact/store", values)
             .then( (res) => {
 
-                console.log(res)
-                toast.success(res.data.status)
-                console.log(event)
+                console.log(res);
+                toast.success(res.data.status);
+                console.log(event);
                 console.log(errors)
                 // values.email = ""
                 // values.phone = ""

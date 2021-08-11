@@ -4,17 +4,16 @@ import HeaderUpper from '../HeaderUpper';
 import FooterInfo from '../FooterInfo';
 import Tapbar from './Tapbar';
 import PageContainer from './PageContainer';
-class Header extends React.Component {
-    render() {
+const Header = (props) =>  {
         return (
             <>
                 <HeaderUpper />
                 <div className="container-fluid">
-                    <PageContainer />
+                    <PageContainer _history={props.history}/>
                 </div>
                 <FooterInfo />
             </>
         );
-    }
+
 }
 export default Header;

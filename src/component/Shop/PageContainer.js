@@ -5,7 +5,7 @@ import PageShop from "./PageShop";
 import axios from "axios";
 import {API} from "../../simpleJs/loginApi";
 
-const PageContainer = () => {
+const PageContainer = (props) => {
     const [jurnal, setJurnal] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
@@ -19,13 +19,17 @@ const PageContainer = () => {
         setCurrentPage(pageNumber);
         window.scrollTo(0, 0);
     };
+    const [user, setUser] = useState({});
 
     useEffect(() => {
         axios.get(API + "magazine")
             .then((res) => {
-                console.log("salom");
-                console.log(res);
                 setJurnal(res.data.magazine);
+            });
+        axios.get(API + "me")
+            .then((respons) => {
+                setUser(respons);
+                console.log(respons);
             })
     }, []);
 
@@ -33,7 +37,7 @@ const PageContainer = () => {
     return (
         <div>
             <PageInfo/>
-            <PageShop jurnal={currentCountry} loading={loading} currentPage={currentPage}/>
+            <PageShop __hitory={props._history} jurnal={currentCountry} loading={loading} currentPage={currentPage}/>
             <Pagination
                 countriesPerPage={coutriesPerPage}
                 totalCountries={jurnal.length}
