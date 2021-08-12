@@ -41,7 +41,7 @@ export default function HeaderUpper(stateAction) {
     };
     useEffect(() => {
         axios.get(API + "magazine").then((res) => {
-            setJurnal8(res.data.magazine.splice(0, 4));
+            // setJurnal8(res.data.magazine.splice(0, 4));
         });
         axios.get(API + "subscription", {headers: headers})
             .then((res2) => {
@@ -51,9 +51,6 @@ export default function HeaderUpper(stateAction) {
             });
         handleClick();
     }, []);
-
-console.log(id);
-console.log(obuna);
 
     const addJurnal = (event, error, values) => {
         axios.post(API + "article/store", values).then((res) => {
@@ -77,11 +74,15 @@ console.log(obuna);
     }
 
     function navigateToLogin() {
-        stateAction.his.push("/Authorization")
+        console.log(stateAction.his);
+        if (stateAction.his.length>0){
+            stateAction.his.push("/authorization")
+        }
     }
     var token = localStorage.getItem(LOGIN);
-    var array = (token.length > 0) ? token.split(".") : navigateToLogin();
-    var obj = JSON.parse(array ? atob(array[1]) : "");
+    console.log(token);
+    var array = (token === null || token === "null" ||token === "") ? "" : token.split(".");
+    var obj = JSON.parse(array ? atob(array[1]) : {});
 
 
 

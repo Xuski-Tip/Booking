@@ -12,7 +12,7 @@ import Muassis from "./Contact Us/Muassis";
 
 function App(props) {
   const [state] = useState('en');
-console.log(props);
+  console.log(props.history);
 
   useEffect(() => {
       window.scrollTo(0, 0);

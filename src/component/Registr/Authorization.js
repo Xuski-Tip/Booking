@@ -74,9 +74,9 @@ const Authorization = (props) => {
                           <button type="submit" className="btn">
                               {t("login.submitButton")}
                           </button>
-                          <button type="button" className="btn btn-danger" onClick={logOut}>
-                              {t("login.logout")}
-                          </button>
+                          {/*<button type="button" className="btn btn-danger" onClick={logOut}>*/}
+                          {/*    {t("login.logout")}*/}
+                          {/*</button>*/}
                       </div>
                     {/*</div>*/}
                   </AvForm>

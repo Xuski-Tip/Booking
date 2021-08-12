@@ -27,7 +27,7 @@ const RecentWorkSlide = (props) => {
     }
 
     function navigateToLogin() {
-        props.his.push("/Authorization")
+        props.his.push("/authorization")
     }
     var token = localStorage.getItem(LOGIN);
     var array = (token.length > 0) ? token.split(".") : props.his.push("/Authorization");
