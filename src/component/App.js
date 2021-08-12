@@ -21,7 +21,7 @@ console.log(props);
   return (
     <div className="body-inner">
       <Header />
-      <HeaderUpper />
+      <HeaderUpper his={props.history}/>
       <Sliderr his={props.history}/>
       <BackgroundGrey />
       <RecentWork histor={props.history}/>

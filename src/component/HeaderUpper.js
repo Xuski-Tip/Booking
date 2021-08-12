@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
-import {Modal, ModalBody, ModalFooter} from "reactstrap";
+import {Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 import {AvForm, AvField} from "availity-reactstrap-validation";
 import * as ReactBootStrap from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {LANGUAGE} from "../simpleJs/Tipelang";
 import axios from "axios";
-import {API} from "../simpleJs/loginApi";
+import {API, LOGIN} from "../simpleJs/loginApi";
 import {toast} from "react-toastify";
 import {getLanguage} from "../simpleJs/locale";
 
@@ -20,6 +20,8 @@ export default function HeaderUpper(stateAction) {
     const [lastClicked, setLastClicked] = useState(null);
 
     const {t, i18n} = useTranslation();
+    const [obuna, setObuna] = useState();
+    const [id, setId] = useState();
 
     function handleChange(event) {
         event.preventDefault();
@@ -34,12 +36,24 @@ export default function HeaderUpper(stateAction) {
     }
 
     const [jurnal8, setJurnal8] = useState([]);
+    const headers = {
+        'Authorization': localStorage.getItem(LOGIN)
+    };
     useEffect(() => {
         axios.get(API + "magazine").then((res) => {
             setJurnal8(res.data.magazine.splice(0, 4));
         });
+        axios.get(API + "subscription", {headers: headers})
+            .then((res2) => {
+                console.log(res2);
+                setId(res2.data.subscription[res2.data.subscription.length - 1].id);
+                setObuna(res2.data.subscription);
+            });
+        handleClick();
     }, []);
-    useEffect(handleClick, []);
+
+console.log(id);
+console.log(obuna);
 
     const addJurnal = (event, error, values) => {
         axios.post(API + "article/store", values).then((res) => {
@@ -48,12 +62,36 @@ export default function HeaderUpper(stateAction) {
         });
     };
 
+    const [open, setOpen] = useState();
+    const [open0, setOpen0] = useState();
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
     const [open3, setOpen3] = useState(false);
-    const [array] = useState([]);
+
+
+
+    function auto() {
+        setOpen(true);
+        setOpen1(false);
+        setOpen0(false);
+    }
+
+    function navigateToLogin() {
+        stateAction.his.push("/Authorization")
+    }
+    var token = localStorage.getItem(LOGIN);
+    var array = (token.length > 0) ? token.split(".") : navigateToLogin();
+    var obj = JSON.parse(array ? atob(array[1]) : "");
+
+
+
     const showModal1 = () => {
         setOpen1(!open1);
+        // axios.get(API + "subscription", {headers: headers})
+        //     .then((res2) => {
+        //         console.log(res2);
+        //         setObuna(res2.data.subscription.splice(0, 1))
+        //     })
     };
 
     const showModal2 = () => {
@@ -62,19 +100,34 @@ export default function HeaderUpper(stateAction) {
     const showModal3 = () => {
         setOpen3(!open3);
     };
-    const buy = (event, error, values) => {
-        array.push(values.jurnal1);
-        array.push(values.jurnal2);
-        array.push(values.jurnal3);
-        array.push(values.jurnal4);
-        let k = 0;
-        let soni = values.nusxa;
 
-        for (let number of array) {
-            if (number === true) k++;
+    function subscribe(event, error, values) {
+        console.log(values);
+        if(values.name?.length > 0 && values.email?.length > 0 && values.number?.length > 0){
+            (localStorage.getItem(LOGIN) !== "") ? auto() : navigateToLogin()
         }
-        let summ = k * soni * 25000;
-    };
+        else {
+            toast.error("Malumotlarni to'ldiring !!!")
+        }
+    }
+
+    function hello(event, error, values) {
+        setOpen(!open);
+        const headers = {
+            'Authorization': localStorage.getItem(LOGIN)
+        };
+        axios.post(API + "magazinebuy", values, {
+            headers: headers
+        })
+            .then((res) => {
+                if(res.data.status === "success"){
+                    window.open(res.data.checkout_url, '_blank');
+                } else if(res.data.status === "Token is Expired" || res.data.status === "Authorization Token not found"){
+                    navigateToLogin();
+                    toast.warning(res.data.status);
+                }
+            })
+    }
 
     return (
         <>
@@ -185,7 +238,7 @@ export default function HeaderUpper(stateAction) {
             </ReactBootStrap.Navbar>
 
             <Modal isOpen={open1} toggle={showModal1}>
-                <AvForm>
+                <AvForm onSubmit={subscribe}>
                     <ModalBody>
                         <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
                         <AvField name="manzil" required label={t("connect.manzil")} type="text"/>
@@ -197,30 +250,31 @@ export default function HeaderUpper(stateAction) {
                             type="number"
                         />
                         <div className="row">
-                            {jurnal8.map((item, index) => {
-                                return (
-                                    <div key={item.id} className="col-12 my-3">
-                                        <AvField
-                                            type="checkbox"
-                                            label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}
-                                            className=""
-                                            name={"jurnal" + index}
-                                        />
-                                    </div>
-                                );
-                            })}
-                            <div className="col-12">
-                                <AvField
-                                    name="nusxa"
-                                    required
-                                    type="number"
-                                    label={t("connect.nusxa")}
-                                />
-                            </div>
+
+                            {
+                                obuna?.map((item, index) => {
+                                    return(
+                                        <div key={item.id} className="col-12 my-3">
+                                            <h6 className="text-dark">{item.name + " yil"}</h6>
+                                            <p className="text-dark">Narxi: {" "} {item.price}</p>
+                                        </div>
+                                    )
+                                })
+                            }
+
+
+                            {/*<div className="col-12">*/}
+                            {/*    <AvField*/}
+                            {/*        name="nusxa"*/}
+                            {/*        required*/}
+                            {/*        type="number"*/}
+                            {/*        label={t("connect.nusxa")}*/}
+                            {/*    />*/}
+                            {/*</div>*/}
                         </div>
                     </ModalBody>
                     <ModalFooter className="d-flex justify-content-between">
-                        <button type="button" className="btn btn-success">
+                        <button type="submit" className="btn btn-success">
                             {t("send message.tulov")}
                         </button>
                         <button
@@ -234,8 +288,30 @@ export default function HeaderUpper(stateAction) {
                 </AvForm>
             </Modal>
 
+            <Modal isOpen={open} toggle={() => setOpen(!open)}>
+                <AvForm onSubmit={hello}>
+                    <ModalHeader>
+                        Jurnalni keyingi mavsumdagi sonlariga obuna bo'lishni xohlaysizmi ? <br/>
+
+                        {/*<ModalBody>*/}
+                        <div className="d-none">
+                            <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
+                            <AvField name="product_id" value={id} type="text" label="product_id"/>
+                            <AvField name="type" value="subscription" type="text" label="Magazine"/>
+                        </div>
+                        {/*</ModalBody>*/}
+                    </ModalHeader>
+                    <ModalFooter className="d-flex justify-content-between">
+                        <button type="submit" className="btn btn-primary">Sotib olish</button>
+                        <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>Cansel</button>
+                    </ModalFooter>
+                </AvForm>
+            </Modal>
+
+
+
             <Modal isOpen={open2} toggle={showModal2}>
-                <AvForm onSubmit={buy}>
+                <AvForm onSubmit={subscribe}>
                     <ModalBody>
                         <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
                         {/*<AvField name="adres" required label="Adres" type="text"/>*/}
@@ -243,26 +319,23 @@ export default function HeaderUpper(stateAction) {
                         <AvField name="number" label={t("send file.phonePlaceholder")} type="number"/>
                         <div className="">
                             <div className="row">
-                                {jurnal8.map((item, index) => {
-
-                                    return (
-                                        <div key={item.id} className="col-12 mt-3">
-                                            <AvField
-                                                type="checkbox"
-                                                label={getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}
-                                                className=""
-                                                name={"jurnal" + index}
-                                            />
-                                        </div>
-                                    );
-                                })}
+                                {
+                                    obuna?.map((item, index) => {
+                                        return(
+                                            <div key={item.id} className="col-12 my-3">
+                                                <h6 className="text-dark">{item.name + " yil"}</h6>
+                                                <p className="text-dark">Narxi: {" "} {item.price}</p>
+                                            </div>
+                                        )
+                                    })
+                                }
                             </div>
-                            <AvField
-                                name="nusxa"
-                                required
-                                type="number"
-                                label={t("connect.nusxa")}
-                            />
+                            {/*<AvField*/}
+                            {/*    name="nusxa"*/}
+                            {/*    required*/}
+                            {/*    type="number"*/}
+                            {/*    label={t("connect.nusxa")}*/}
+                            {/*/>*/}
                         </div>
                     </ModalBody>
                     <ModalFooter className="d-flex justify-content-between">
@@ -279,6 +352,27 @@ export default function HeaderUpper(stateAction) {
                     </ModalFooter>
                 </AvForm>
             </Modal>
+
+            <Modal isOpen={open0} toggle={() => setOpen0(!open0)}>
+                <AvForm onSubmit={hello}>
+                    <ModalHeader>
+                        Jurnalni keyingi mavsumdagi sonlariga obuna bo'lishni xohlaysizmi ? <br/>
+
+                        {/*<ModalBody>*/}
+                        <div className="">
+                            <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
+                            <AvField name="product_id" value={id} type="text" label="product_id"/>
+                            <AvField name="type" value="subscription" type="text" label="Magazine"/>
+                        </div>
+                        {/*</ModalBody>*/}
+                    </ModalHeader>
+                    <ModalFooter className="d-flex justify-content-between">
+                        <button type="submit" className="btn btn-primary">Sotib olish</button>
+                        <button type="button" className="btn btn-danger" onClick={() => setOpen0(false)}>Cansel</button>
+                    </ModalFooter>
+                </AvForm>
+            </Modal>
+
 
             <Modal isOpen={open3} toggle={showModal3}>
                 <AvForm onSubmit={addJurnal}>
