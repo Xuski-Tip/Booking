@@ -4,8 +4,9 @@ import {API, LOGIN} from "../simpleJs/loginApi";
 import HeaderUpper from "./HeaderUpper";
 import FooterInfo from "./FooterInfo";
 import {getLanguage} from "../simpleJs/locale";
+import {toast} from "react-toastify";
 
-const Profile = () => {
+const Profile = (props) => {
 
     const [me, setMe] = useState({});
     const [magazine , setMagazine] = useState([]);
@@ -23,9 +24,13 @@ const Profile = () => {
 
         axios.get(API + "mymagazine" , {headers:headers})
             .then((res2) => {
-                setMagazine(res2.data.user)
-                console.log("magazine");
-                console.log(res2)
+                if (res2.data.status === "success"){
+                    setMagazine(res2.data.user)
+                } else if (res2.data.status === "Token is Expired" || res2.data.status === "Authorization Token not found"){
+                    props.history.push("/Authorization");
+                    toast.warning(res2.data.status)
+                }
+
             })
 
 

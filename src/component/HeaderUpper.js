@@ -69,7 +69,6 @@ console.log(obuna);
     const [open3, setOpen3] = useState(false);
 
 
-
     function auto() {
         setOpen(true);
         setOpen1(false);
