@@ -205,5 +205,13 @@
     "azo8": "Reyn Mullerson",
     "azo9": "Tatyana Moskalkova",
     "azo10": "Sergey Udarsev"
+  },
+  "subscribe": {
+    "money": "Narxi",
+    "sum": "so'm",
+    "ofline": "Jurnalning keyingi mavsumdagi sonlariga obuna bo'lishni xohaysizmi ?",
+    "buy": "Jurnalni sotib olishni xohlaysizmi ?",
+    "nomi": "Nomi"
   }
+
 }

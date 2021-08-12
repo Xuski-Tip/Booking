@@ -110,9 +110,9 @@ const RecentWorkSlide = (props) => {
             <Modal isOpen={open} toggle={() => setOpen(!open)}>
                 <AvForm onSubmit={hello}>
                     <ModalHeader>
-                        Jurnalni sotib olishni xohlaysizmi ? <br/>
-                        Narxi : {sent} <br/>
-                        Nomi: {name}
+                        {t("subscribe.buy")} <br/>
+                        {t("subscribe.money")} : {sent} {" "} {t("subscribe.sum")} <br/>
+                        {t("subscribe.nomi")}: {name}
 
                         {/*<ModalBody>*/}
                         <div className="d-none">
@@ -123,8 +123,8 @@ const RecentWorkSlide = (props) => {
                         {/*</ModalBody>*/}
                     </ModalHeader>
                     <ModalFooter className="d-flex justify-content-between">
-                        <button type="submit" className="btn btn-primary">Sotib olish</button>
-                        <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>Cansel</button>
+                        <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
+                        <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>{t("registr.cansel")}</button>
                     </ModalFooter>
                 </AvForm>
             </Modal>

@@ -256,7 +256,7 @@ console.log(obuna);
                                     return(
                                         <div key={item.id} className="col-12 my-3">
                                             <h6 className="text-dark">{item.name + " yil"}</h6>
-                                            <p className="text-dark">Narxi: {" "} {item.price}</p>
+                                            <p className="text-dark">{t("subscribe.money")}: {" "} {item.price} {" "} {t("subscribe.sum")}</p>
                                         </div>
                                     )
                                 })
@@ -291,7 +291,7 @@ console.log(obuna);
             <Modal isOpen={open} toggle={() => setOpen(!open)}>
                 <AvForm onSubmit={hello}>
                     <ModalHeader>
-                        Jurnalni keyingi mavsumdagi sonlariga obuna bo'lishni xohlaysizmi ? <br/>
+                        {t("subscribe.ofline")} <br/>
 
                         {/*<ModalBody>*/}
                         <div className="d-none">
@@ -302,8 +302,8 @@ console.log(obuna);
                         {/*</ModalBody>*/}
                     </ModalHeader>
                     <ModalFooter className="d-flex justify-content-between">
-                        <button type="submit" className="btn btn-primary">Sotib olish</button>
-                        <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>Cansel</button>
+                        <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
+                        <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>{t("registr.cansel")}</button>
                     </ModalFooter>
                 </AvForm>
             </Modal>
@@ -324,7 +324,7 @@ console.log(obuna);
                                         return(
                                             <div key={item.id} className="col-12 my-3">
                                                 <h6 className="text-dark">{item.name + " yil"}</h6>
-                                                <p className="text-dark">Narxi: {" "} {item.price}</p>
+                                                <p className="text-dark">{t("subscribe.money")}: {" "} {item.price} {" "} {t("subscribe.sum")}</p>
                                             </div>
                                         )
                                     })
@@ -356,7 +356,7 @@ console.log(obuna);
             <Modal isOpen={open0} toggle={() => setOpen0(!open0)}>
                 <AvForm onSubmit={hello}>
                     <ModalHeader>
-                        Jurnalni keyingi mavsumdagi sonlariga obuna bo'lishni xohlaysizmi ? <br/>
+                        {t("subscribe.ofline")} <br/>
 
                         {/*<ModalBody>*/}
                         <div className="">
@@ -367,8 +367,8 @@ console.log(obuna);
                         {/*</ModalBody>*/}
                     </ModalHeader>
                     <ModalFooter className="d-flex justify-content-between">
-                        <button type="submit" className="btn btn-primary">Sotib olish</button>
-                        <button type="button" className="btn btn-danger" onClick={() => setOpen0(false)}>Cansel</button>
+                        <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
+                        <button type="button" className="btn btn-danger" onClick={() => setOpen0(false)}>{t("registr.cansel")}</button>
                     </ModalFooter>
                 </AvForm>
             </Modal>

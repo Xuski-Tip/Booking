@@ -118,8 +118,8 @@ export default function PageShop(props) {
                 <Modal isOpen={open} toggle={() => setOpen(!open)}>
                     <AvForm onSubmit={hello}>
                         <ModalHeader>
-                            Jurnalni sotib olishni xohlaysizmi ? <br/>
-                            Narxi : {sent}
+                            {t("subscribe.buy")} <br/>
+                            {t("subscribe.money")} : {sent} {" "} {t("subscribe.sum")}  <br/>
 
                         {/*<ModalBody>*/}
                             <div className="d-none">
@@ -130,8 +130,8 @@ export default function PageShop(props) {
                         {/*</ModalBody>*/}
                         </ModalHeader>
                         <ModalFooter className="d-flex justify-content-between">
-                            <button type="submit" className="btn btn-primary">Sotib olish</button>
-                            <button type="" className="btn btn-danger" onClick={() => setOpen(!open)}>Cansel</button>
+                            <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
+                            <button type="" className="btn btn-danger" onClick={() => setOpen(!open)}>{t("registr.cansel")}</button>
                         </ModalFooter>
                     </AvForm>
                 </Modal>

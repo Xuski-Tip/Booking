@@ -123,7 +123,7 @@
     "password": "Password",
     "email": "E-mail",
     "registr": "Sign up",
-    "cansel": "Cansel",
+    "cansel": "Cancel",
     "errorName": "Enter the name",
     "errorParol": "Enter the password",
     "errorEamil": "Enter the email"
@@ -204,6 +204,13 @@
     "azo8": "Reyn Mullerson",
     "azo9": "Tatyana Moskalkova",
     "azo10": "Sergey Udarsev"
+  },
+  "subscribe": {
+    "money": "Price",
+    "sum": "sum",
+    "ofline": "Would you like to subscribe to next season’s issues of the magazine ?",
+    "buy": "Would you like to buy a magazine?",
+    "nomi": "The number of the magazine"
   }
 }
 
