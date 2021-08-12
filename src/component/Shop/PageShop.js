@@ -72,7 +72,7 @@ export default function PageShop(props) {
                                     {localStorage.getItem(TOKEN_LOCAL) ? (
                                         <a
                                             target="_blank"
-                                            href={"https://backend-magazine.napaautomotive.uz/" + item.file}
+                                            href={"https://backend-magazine.napaautomotive.uz/storage/" + item.file}
                                             // href={
                                             //   "https://paycom-test.napaautomotive.uz/storage/" +
                                             //   item.file
