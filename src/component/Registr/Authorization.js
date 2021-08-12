@@ -19,8 +19,8 @@ const Authorization = (props) => {
                 setLogout(res.data.status);
                 toast.success("Log out");
                 props.history.push("/");
-                localStorage.setItem(TOKEN_LOCAL, null);
-                localStorage.setItem(LOGIN, null)
+                localStorage.setItem(TOKEN_LOCAL, "");
+                localStorage.setItem(LOGIN, "")
             })
     }
 

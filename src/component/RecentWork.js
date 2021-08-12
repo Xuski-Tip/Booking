@@ -1,7 +1,7 @@
 import React from "react";
 import RecentWorkSlide from "./RecentWorkSlide";
 import { useTranslation } from "react-i18next";
-function RecentWork() {
+function RecentWork(props) {
   const { t } = useTranslation();
   return (
     <section className="p-b-0">
@@ -10,7 +10,7 @@ function RecentWork() {
           <h2 className="">{t("Arxiv.arxiv")}</h2>
         </div>
       </div>
-      <RecentWorkSlide />
+      <RecentWorkSlide his={props.histor}/>
     </section>
   );
 }

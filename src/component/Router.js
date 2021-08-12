@@ -40,7 +40,6 @@ const Router = () => {
         <Route exact path="/requirimend" component={Requirimend} />
         <Route exact path="/layout" component={ArticleLayout} />
         <Route exact path="/letsenziya" component={Litsinziya} />
-        <Route exact path="/letsenziya" component={Litsinziya} />
         <Route exact path="/maqola" component={Maqola} />
         <Route exact path="/sale" component={Savdo} />
         <Route exact path="/jurnal" component={Jurnal} />

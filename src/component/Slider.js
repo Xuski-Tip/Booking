@@ -3,16 +3,23 @@ import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import SlickSlider from "react-slick";
 import axios from "axios";
-import {API, API_PATH} from "../simpleJs/loginApi";
+import {API, API_PATH, LOGIN} from "../simpleJs/loginApi";
+import {getLanguage} from "../simpleJs/locale";
+import {toast} from "react-toastify";
+import {AvField, AvForm} from "availity-reactstrap-validation";
+import {Modal, ModalFooter, ModalHeader} from "reactstrap";
 
-function Slider() {
+function Slider(props) {
 
     const [jurnal12, setJurnal12] = useState([]);
+    const [open, setOpen] = useState(false);
+    const [id, setId] = useState("");
+    const [sent, setSend] = useState("");
+    const [name, setName] = useState("");
 
     useEffect(() => {
         axios.get(API + "magazine")
             .then((res) => {
-
                 setJurnal12(res.data.magazine.splice(0, 1));
             })
     }, []);
@@ -25,6 +32,42 @@ function Slider() {
         autoplaySpeed: 5000,
         slidesToScroll: 1,
     };
+
+    function auto(item) {
+        setId(item.id);
+        setSend(item.price);
+        setName(getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en : item.title_cril);
+        setOpen(true);
+    }
+
+    function navigateToLogin() {
+        props.his.push("/Authorization")
+    }
+    var token = localStorage.getItem(LOGIN);
+    var array = (token.length > 0) ? token.split(".") : props.his.push("/Authorization");
+    var obj = JSON.parse(array ? atob(array[1]) : "");
+
+    /**************  BUY  ********************/
+
+    function hello(event, error, values) {
+        setOpen(!open);
+        const headers = {
+            'Authorization': localStorage.getItem(LOGIN)
+        };
+        axios.post(API + "magazinebuy", values, {
+            headers: headers
+        })
+            .then((res) => {
+                if(res.data.status === "success"){
+                    window.open(res.data.checkout_url, '_blank');
+                } else if(res.data.status === "Token is Expired" || res.data.status === "Authorization Token not found"){
+                    navigateToLogin();
+                    toast.warning(res.data.status);
+                }
+            })
+    }
+
+
     return (
         <>
             <div className="MainHeader">
@@ -33,7 +76,8 @@ function Slider() {
                         <div className="backImg">
                             <div className="MainSlider__bg">
                                 <h1 className="MainSlider__subtitle typing-demo">
-                                    {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
+                                    {t("Offical Site.democration")} {" "}
+                                    <br/> {t("Offical Site.scientific and educational journal")}
                                 </h1>
                                 {/*<p className="MainSlider__lorem mb-4">*/}
                                 {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -47,7 +91,8 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg1">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
+                                {t("Offical Site.democration")} {" "}
+                                <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem mb-4">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -60,7 +105,8 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg2">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
+                                {t("Offical Site.democration")} {" "}
+                                <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem mb-4">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -73,7 +119,8 @@ function Slider() {
                         </div>
                         <div className="MainSlider__bg3">
                             <h1 className="MainSlider__subtitle typing-demo">
-                                {t("Offical Site.democration")} {" "} <br/> {t("Offical Site.scientific and educational journal")}
+                                {t("Offical Site.democration")} {" "}
+                                <br/> {t("Offical Site.scientific and educational journal")}
                             </h1>
                             {/*<p className="MainSlider__lorem">*/}
                             {/*    {t("Welcom.The magazine has been 1999")}*/}
@@ -91,28 +138,54 @@ function Slider() {
                     <div className="link">
                         {jurnal12.map((item, index) => {
                             return (
-                                <a target="_blank" href={API_PATH + "storage/" + item.file}>
-                                    <img
-                                        alt="error"
-                                        className="MainBg__right-img"
-                                        src={API_PATH + "storage/" + item.image}
-                                    />
-                                </a>
-
+                                <div className="">
+                                    <a target="_blank" href={API_PATH + "storage/" + item.file}>
+                                        <img
+                                            alt="error"
+                                            className="MainBg__right-img"
+                                            src={API_PATH + "storage/" + item.image}
+                                        />
+                                    </a>
+                                    <div className="d-flex justify-content-between align-items-center mt-3 ml-0">
+                                        <h4 className="newNumber">{t("send.new")}</h4>
+                                        <div className="link-button-main">
+                                            <button type="button" className="btn btn-outline-danger"
+                                                    onClick={() => (localStorage.getItem(LOGIN) !== "") ? auto(item):navigateToLogin()}
+                                            >
+                                                {t("send.send")}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             )
                         })}
                     </div>
 
-                    <div className="d-flex justify-content-between align-items-center mt-3 ml-0">
-                        <h4 className="newNumber">{t("send.new")}</h4>
-                        <div className="link-button-main">
-                            <button type="button" className="btn btn-outline-danger ">
-                                {t("send.send")}
-                            </button>
-                        </div>
-                    </div>
                 </div>
             </div>
+
+            <Modal isOpen={open} toggle={() => setOpen(!open)}>
+                <AvForm onSubmit={hello}>
+                    <ModalHeader>
+                        {t("subscribe.buy")} <br/>
+                        {t("subscribe.money")} : {sent} {" "} {t("subscribe.sum")} <br/>
+                        {t("subscribe.nomi")}: {name}
+
+                        {/*<ModalBody>*/}
+                        <div className="d-none">
+                            <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
+                            <AvField name="product_id" value={id} type="text" label="product_id"/>
+                            <AvField name="type" value="magazine" type="text" label="Magazine"/>
+                        </div>
+                        {/*</ModalBody>*/}
+                    </ModalHeader>
+                    <ModalFooter className="d-flex justify-content-between">
+                        <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
+                        <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>{t("registr.cansel")}</button>
+                    </ModalFooter>
+                </AvForm>
+            </Modal>
+
         </>
     );
 }

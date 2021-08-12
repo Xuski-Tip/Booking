@@ -9,9 +9,10 @@ import ContactUs from "./Contact Us/ContactUs";
 import Header from "./Header";
 import {ToastContainer} from "react-toastify";
 import Muassis from "./Contact Us/Muassis";
-function App() {
-  const [state] = useState('en');
 
+function App(props) {
+  const [state] = useState('en');
+console.log(props);
 
   useEffect(() => {
       window.scrollTo(0, 0);
@@ -20,10 +21,10 @@ function App() {
   return (
     <div className="body-inner">
       <Header />
-      <HeaderUpper />
-      <Sliderr />
+      <HeaderUpper his={props.history}/>
+      <Sliderr his={props.history}/>
       <BackgroundGrey />
-      <RecentWork />
+      <RecentWork histor={props.history}/>
       <Muassis/>
       <ContactUs />
       <FooterInfo />
