@@ -69,19 +69,18 @@ export default function HeaderUpper(stateAction) {
     function auto() {
         setOpen(true);
         setOpen1(false);
-        setOpen0(false);
+        setOpen2(false);
     }
 
     function navigateToLogin() {
         console.log(stateAction.his);
-        if (stateAction.his.length>0){
+        if (stateAction.his){
             stateAction.his.push("/authorization")
         }
     }
     var token = localStorage.getItem(LOGIN);
-    console.log(token);
-    var array = (token === null || token === "null" ||token === "") ? "" : token.split(".");
-    var obj = JSON.parse(array ? atob(array[1]) : {});
+    var array = (token) ? token.split(".") : "";
+    var obj = array? JSON.parse(atob(array[1])) : "";
 
 
 
@@ -186,9 +185,9 @@ export default function HeaderUpper(stateAction) {
                             {t("Arxiv.arxiv")}
                         </ReactBootStrap.Nav.Link>
 
-                        <ReactBootStrap.Nav.Link as={Link} to="/maqola">
-                            {t("News.maqola")}
-                        </ReactBootStrap.Nav.Link>
+                        {/*<ReactBootStrap.Nav.Link as={Link} to="/maqola">*/}
+                        {/*    {t("News.maqola")}*/}
+                        {/*</ReactBootStrap.Nav.Link>*/}
 
                         <ReactBootStrap.NavDropdown
                             title={t("Subscription.obuna")}

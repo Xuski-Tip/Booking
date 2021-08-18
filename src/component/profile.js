@@ -30,9 +30,7 @@ const Profile = (props) => {
                     props.history.push("/Authorization");
                     toast.warning(res2.data.status)
                 }
-
             })
-
 
         axios.get(API + "magazine")
             .then((res3) => {
@@ -40,6 +38,8 @@ const Profile = (props) => {
                 console.log("magazine2");
                 console.log(res3)
             })
+
+
     }, []);
 
     return (
