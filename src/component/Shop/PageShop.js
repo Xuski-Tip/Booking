@@ -6,7 +6,9 @@ import axios from "axios";
 import {AvForm, AvField} from "availity-reactstrap-validation"
 import {Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 import {toast} from "react-toastify";
+
 // ! Wate to backend
+
 export default function PageShop(props) {
 
     const {t} = useTranslation();
@@ -45,6 +47,8 @@ export default function PageShop(props) {
     var array = (token) ? token.split(".") : "";
     var obj = array? JSON.parse(atob(array[1])) : "";
 
+    var array = (token) ? token.split(".") : "";
+    var obj = array? JSON.parse(atob(array[1])) : "";
     return (
         <div className="Page-shop">
             <div className="Page-slider grid-4-columns" data-item="grid-item">

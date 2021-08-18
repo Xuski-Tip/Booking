@@ -61,7 +61,7 @@ function Header() {
                 <a href="!#">{t("Offical Site.Our address")}</a>
               </span>
               <span className="moreInfo__navigation-lorem--dawn">
-                <a href="">journal@nhrc.uz</a>
+                <a href="http://journal@nhrc.uz">journal@nhrc.uz</a>
               </span>
             </div>
           </li>

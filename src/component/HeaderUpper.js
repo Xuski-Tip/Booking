@@ -185,9 +185,9 @@ export default function HeaderUpper(stateAction) {
                             {t("Arxiv.arxiv")}
                         </ReactBootStrap.Nav.Link>
 
-                        <ReactBootStrap.Nav.Link as={Link} to="/maqola">
-                            {t("News.maqola")}
-                        </ReactBootStrap.Nav.Link>
+                        {/*<ReactBootStrap.Nav.Link as={Link} to="/maqola">*/}
+                        {/*    {t("News.maqola")}*/}
+                        {/*</ReactBootStrap.Nav.Link>*/}
 
                         <ReactBootStrap.NavDropdown
                             title={t("Subscription.obuna")}

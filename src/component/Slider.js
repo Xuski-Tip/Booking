@@ -48,7 +48,6 @@ function Slider(props) {
     var obj = array? JSON.parse(atob(array[1])) : "";
     // var obj = JSON.parse(array ? atob(array[1]) : "");
 
-    /**************  BUY  ********************/
 
     function hello(event, error, values) {
         setOpen(!open);
@@ -147,7 +146,7 @@ function Slider(props) {
                                             src={API_PATH + "storage/" + item.image}
                                         />
                                     </a>
-                                    <div className="d-flex justify-content-between align-items-center mt-3 ml-0">
+                                    <div className="d-flex justify-content-between align-items-center mt-3 ml-0 rightSliderLink">
                                         <h4 className="newNumber">{t("send.new")}</h4>
                                         <div className="link-button-main">
                                             <button type="button" className="btn btn-outline-danger"
