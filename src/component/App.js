@@ -20,13 +20,17 @@ function App(props) {
 
   return (
     <div className="body-inner">
-      <Header />
-      <HeaderUpper his={props.history}/>
-      <Sliderr his={props.history}/>
+      <div className="container">
+          <Header />
+          <HeaderUpper his={props.history}/>
+          <Sliderr his={props.history}/>
+      </div>
       <BackgroundGrey />
       <RecentWork histor={props.history}/>
       <Muassis/>
-      <ContactUs />
+      <div className="container">
+          <ContactUs />
+      </div>
       <FooterInfo />
       <LinkerUp />
       <ToastContainer/>

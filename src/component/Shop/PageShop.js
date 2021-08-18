@@ -42,8 +42,8 @@ export default function PageShop(props) {
         props.__hitory.push("/Authorization")
     }
     var token = localStorage.getItem(LOGIN);
-    var array = (token.length > 0) ? token.split(".") : props.__hitory.push("/Authorization");
-    var obj = JSON.parse(array ? atob(array[1]) : "");
+    var array = (token) ? token.split(".") : "";
+    var obj = array? JSON.parse(atob(array[1])) : "";
 
     return (
         <div className="Page-shop">

@@ -75,15 +75,13 @@ export default function HeaderUpper(stateAction) {
 
     function navigateToLogin() {
         console.log(stateAction.his);
-        if (stateAction.his.length>0){
+        if (stateAction.his){
             stateAction.his.push("/authorization")
         }
     }
     var token = localStorage.getItem(LOGIN);
-    console.log(token);
-    var array = (token === null || token === "null" ||token === "") ? "" : token.split(".");
-    var obj = JSON.parse(array ? atob(array[1]) : {});
-
+    var array = (token) ? token.split(".") : "";
+    var obj = array? JSON.parse(atob(array[1])) : "";
 
 
     const showModal1 = () => {
@@ -248,7 +246,7 @@ export default function HeaderUpper(stateAction) {
                             name="number"
                             required
                             label={t("send file.phonePlaceholder")}
-                            type="number"
+                            type="phone"
                         />
                         <div className="row">
 
@@ -317,7 +315,7 @@ export default function HeaderUpper(stateAction) {
                         <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
                         {/*<AvField name="adres" required label="Adres" type="text"/>*/}
                         <AvField name="email" required label={t("registr.email")} type="text"/>
-                        <AvField name="number" label={t("send file.phonePlaceholder")} type="number"/>
+                        <AvField name="number" label={t("send file.phonePlaceholder")} type="phone"/>
                         <div className="">
                             <div className="row">
                                 {

@@ -30,9 +30,8 @@ const RecentWorkSlide = (props) => {
         props.his.push("/authorization")
     }
     var token = localStorage.getItem(LOGIN);
-    var array = (token.length > 0) ? token.split(".") : props.his.push("/Authorization");
-    var obj = JSON.parse(array ? atob(array[1]) : "");
-
+    var array = (token) ? token.split(".") : "";
+    var obj = array? JSON.parse(atob(array[1])) : "";
 
     useEffect(() => {
         axios.get(API + "magazine")
