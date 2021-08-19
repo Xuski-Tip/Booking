@@ -129,312 +129,319 @@ export default function HeaderUpper(stateAction) {
     }
 
     return (
-        <>
-            <ReactBootStrap.Navbar sticky="top" bg="light" expand="lg">
-                {/* <ReactBootStrap.Navbar.Brand as={Link} to="/">
+      <div className="container">
+          <div className="row">
+              <>
+                  <ReactBootStrap.Navbar sticky="top"  expand="lg">
+                      {/* <ReactBootStrap.Navbar.Brand as={Link} to="/">
           <strong>{t("Offical Site.navbar")}</strong>
         </ReactBootStrap.Navbar.Brand> */}
 
-                <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
-                    <ReactBootStrap.Nav className="mr-auto">
-                        <ReactBootStrap.NavLink href="/">
-                            {t("Home.navbar")}
-                        </ReactBootStrap.NavLink>
+                      <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                      <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
+                          <ReactBootStrap.Nav className="mr-auto">
+                              <ReactBootStrap.NavLink href="/">
+                                  {t("Home.navbar")}
+                              </ReactBootStrap.NavLink>
 
-                        <ReactBootStrap.NavDropdown title={t("Shop.navbar")}>
-                            <ReactBootStrap.NavDropdown.Item as={Link} to="/jurnal">
-                                {t("jurnale.text")}
-                            </ReactBootStrap.NavDropdown.Item>
-                            <ReactBootStrap.NavDropdown.Item as={Link} to="/letsenziya">
-                                {t("Shop.litsenziya")}
-                            </ReactBootStrap.NavDropdown.Item>
-                            <ReactBootStrap.NavDropdown.Item as={Link} to="/leadership">
-                                {t("Shop.leadership")}
-                            </ReactBootStrap.NavDropdown.Item>
-                        </ReactBootStrap.NavDropdown>
+                              <ReactBootStrap.NavDropdown title={t("Shop.navbar")}>
+                                  <ReactBootStrap.NavDropdown.Item as={Link} to="/jurnal">
+                                      {t("jurnale.text")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                                  <ReactBootStrap.NavDropdown.Item as={Link} to="/letsenziya">
+                                      {t("Shop.litsenziya")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                                  <ReactBootStrap.NavDropdown.Item as={Link} to="/leadership">
+                                      {t("Shop.leadership")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                              </ReactBootStrap.NavDropdown>
 
-                        <ReactBootStrap.NavDropdown
-                            title={t("Our staff.staff")}
-                            id="basic-nav-dropdown"
-                        >
-                            <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
-                                {t("Our staff.Editor")}
-                            </ReactBootStrap.NavDropdown.Item>
-                            <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/members">
-                                {t("Our staff.lives")}
-                            </ReactBootStrap.NavDropdown.Item>
-                        </ReactBootStrap.NavDropdown>
+                              <ReactBootStrap.NavDropdown
+                                  title={t("Our staff.staff")}
+                                  id="basic-nav-dropdown"
+                              >
+                                  <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/editor">
+                                      {t("Our staff.Editor")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                                  <ReactBootStrap.NavDropdown.Item as={Link} to="/staff/members">
+                                      {t("Our staff.lives")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                              </ReactBootStrap.NavDropdown>
 
-                        <ReactBootStrap.NavDropdown
-                            title={t("submitting an article to the journal.submiting")}
-                            id="basic-nav-dropdown"
-                        >
-                            <ReactBootStrap.NavDropdown.Item as={Link} to="/requirimend">
-                                {t("submitting an article to the journal.article")}
-                            </ReactBootStrap.NavDropdown.Item>
-                            <ReactBootStrap.NavDropdown.Item as={Link} to="/layout">
-                                {t("submitting an article to the journal.mode")}
-                            </ReactBootStrap.NavDropdown.Item>
-                            <ReactBootStrap.NavDropdown.Item onClick={showModal3}>
-                                {t("submitting an article to the journal.editorial")}
-                            </ReactBootStrap.NavDropdown.Item>
-                        </ReactBootStrap.NavDropdown>
+                              <ReactBootStrap.NavDropdown
+                                  title={t("submitting an article to the journal.submiting")}
+                                  id="basic-nav-dropdown"
+                              >
+                                  <ReactBootStrap.NavDropdown.Item as={Link} to="/requirimend">
+                                      {t("submitting an article to the journal.article")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                                  <ReactBootStrap.NavDropdown.Item as={Link} to="/layout">
+                                      {t("submitting an article to the journal.mode")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                                  <ReactBootStrap.NavDropdown.Item onClick={showModal3}>
+                                      {t("submitting an article to the journal.editorial")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                              </ReactBootStrap.NavDropdown>
 
-                        <ReactBootStrap.Nav.Link as={Link} to="/arcive">
-                            {t("Arxiv.arxiv")}
-                        </ReactBootStrap.Nav.Link>
+                              <ReactBootStrap.Nav.Link as={Link} to="/arcive">
+                                  {t("Arxiv.arxiv")}
+                              </ReactBootStrap.Nav.Link>
 
-                        {/*<ReactBootStrap.Nav.Link as={Link} to="/maqola">*/}
-                        {/*    {t("News.maqola")}*/}
-                        {/*</ReactBootStrap.Nav.Link>*/}
+                              {/*<ReactBootStrap.Nav.Link as={Link} to="/maqola">*/}
+                              {/*    {t("News.maqola")}*/}
+                              {/*</ReactBootStrap.Nav.Link>*/}
 
-                        <ReactBootStrap.NavDropdown
-                            title={t("Subscription.obuna")}
-                            id="basic-nav-dropdown"
-                        >
-                            <ReactBootStrap.NavDropdown.Item onClick={showModal1}>
-                                {t("Subscription.ofline")}
-                            </ReactBootStrap.NavDropdown.Item>
-                            <ReactBootStrap.NavDropdown.Item onClick={showModal2}>
-                                {t("Subscription.online")}
-                            </ReactBootStrap.NavDropdown.Item>
-                        </ReactBootStrap.NavDropdown>
-                    </ReactBootStrap.Nav>
-                    <ReactBootStrap.Form inline>
+                              <ReactBootStrap.NavDropdown
+                                  title={t("Subscription.obuna")}
+                                  id="basic-nav-dropdown"
+                              >
+                                  <ReactBootStrap.NavDropdown.Item onClick={showModal1}>
+                                      {t("Subscription.ofline")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                                  <ReactBootStrap.NavDropdown.Item onClick={showModal2}>
+                                      {t("Subscription.online")}
+                                  </ReactBootStrap.NavDropdown.Item>
+                              </ReactBootStrap.NavDropdown>
+                          </ReactBootStrap.Nav>
+                          <ReactBootStrap.Form inline>
 
-                        <Link className="Link-autho" to={"/profile"}>
-                            <img src="/images/about/user.png" alt="Error" className="rounded-circle" width="30px" height="30px"/>
-                        </Link>{" "}
+                        <div className="d-flex justify-content-between align-items-center ml-auto">
+                            <Link className="Link-autho" to={"/profile"}>
+                                <img src="/images/about/user.png" alt="Error" className="rounded-circle" width="30px" height="30px"/>
+                            </Link>{" "}
 
-                        <Link className="Link-autho" to={"/Authorization"}>
-                            {t("avtorizatsiya.navbar")}
-                        </Link>{" "}
+                            <Link className="Link-autho" to={"/Authorization"}>
+                                {t("avtorizatsiya.navbar")}
+                            </Link>{" "}
 
-                        <Link className="Link-registr" to={"/Authorization/Registration"}>
-                            {t("avtorizatsiya.navbar2")}
-                        </Link>
-                        <div className="p-dropdown ml-3">
-                            <select
-                                // style={{ paddingRight: 25, cursor: "pointer", }}
-                                onChange={handleChange}
-                                defaultValue={changeLang}
-                                className="options"
-                            >
-                                <option value="uz">
-                                  {/*<img alt="#" src="/flag/uz.png" className="flag"/>*/}
-                                  O'zbekcha</option>
-                                <option value="krill">Ўзбекча</option>
-                                <option value="en">English</option>
-                                <option value="ru">Русcкий</option>
-                            </select>
+                            <Link className="Link-registr" to={"/Authorization/Registration"}>
+                                {t("avtorizatsiya.navbar2")}
+                            </Link>
+
+                            <div className="p-dropdown ml-3">
+                                <select
+                                    // style={{ paddingRight: 25, cursor: "pointer", }}
+                                    onChange={handleChange}
+                                    defaultValue={changeLang}
+                                    className="options"
+                                >
+                                    <option value="uz">
+                                        {/*<img src="/flag/uz.png" className="flag"/>*/}
+                                        O'zbekcha</option>
+                                    <option value="krill">Ўзбекча</option>
+                                    <option value="en">English</option>
+                                    <option value="ru">Русcкий</option>
+                                </select>
+
+                            </div>
 
                         </div>
 
+                          </ReactBootStrap.Form>
+                      </ReactBootStrap.Navbar.Collapse>
+                  </ReactBootStrap.Navbar>
 
-                    </ReactBootStrap.Form>
-                </ReactBootStrap.Navbar.Collapse>
-            </ReactBootStrap.Navbar>
+                  <Modal isOpen={open1} toggle={showModal1}>
+                      <AvForm onSubmit={subscribe}>
+                          <ModalBody>
+                              <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
+                              <AvField name="manzil" required label={t("connect.manzil")} type="text"/>
+                              <AvField name="email" required label={t("registr.email")} type="text"/>
+                              <AvField
+                                  name="number"
+                                  required
+                                  label={t("send file.phonePlaceholder")}
+                                  type="number"
+                              />
+                              <div className="row">
 
-            <Modal isOpen={open1} toggle={showModal1}>
-                <AvForm onSubmit={subscribe}>
-                    <ModalBody>
-                        <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
-                        <AvField name="manzil" required label={t("connect.manzil")} type="text"/>
-                        <AvField name="email" required label={t("registr.email")} type="text"/>
-                        <AvField
-                            name="number"
-                            required
-                            label={t("send file.phonePlaceholder")}
-                            type="number"
-                        />
-                        <div className="row">
-
-                            {
-                                obuna?.map((item, index) => {
-                                    return(
-                                        <div key={item.id} className="col-12 my-3">
-                                            <h6 className="text-dark">{item.name + " yil"}</h6>
-                                            <p className="text-dark">{t("subscribe.money")}: {" "} {item.price} {" "} {t("subscribe.sum")}</p>
-                                        </div>
-                                    )
-                                })
-                            }
-
-
-                            {/*<div className="col-12">*/}
-                            {/*    <AvField*/}
-                            {/*        name="nusxa"*/}
-                            {/*        required*/}
-                            {/*        type="number"*/}
-                            {/*        label={t("connect.nusxa")}*/}
-                            {/*    />*/}
-                            {/*</div>*/}
-                        </div>
-                    </ModalBody>
-                    <ModalFooter className="d-flex justify-content-between">
-                        <button type="submit" className="btn btn-success">
-                            {t("send message.tulov")}
-                        </button>
-                        <button
-                            type="button"
-                            className="btn btn-danger"
-                            onClick={showModal1}
-                        >
-                            {t("registr.cansel")}
-                        </button>
-                    </ModalFooter>
-                </AvForm>
-            </Modal>
-
-            <Modal isOpen={open} toggle={() => setOpen(!open)}>
-                <AvForm onSubmit={hello}>
-                    <ModalHeader>
-                        {t("subscribe.ofline")} <br/>
-
-                        {/*<ModalBody>*/}
-                        <div className="d-none">
-                            <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
-                            <AvField name="product_id" value={id} type="text" label="product_id"/>
-                            <AvField name="type" value="subscription" type="text" label="Magazine"/>
-                        </div>
-                        {/*</ModalBody>*/}
-                    </ModalHeader>
-                    <ModalFooter className="d-flex justify-content-between">
-                        <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
-                        <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>{t("registr.cansel")}</button>
-                    </ModalFooter>
-                </AvForm>
-            </Modal>
+                                  {
+                                      obuna?.map((item, index) => {
+                                          return(
+                                              <div key={item.id} className="col-12 my-3">
+                                                  <h6 className="text-dark">{item.name + " yil"}</h6>
+                                                  <p className="text-dark">{t("subscribe.money")}: {" "} {item.price} {" "} {t("subscribe.sum")}</p>
+                                              </div>
+                                          )
+                                      })
+                                  }
 
 
+                                  {/*<div className="col-12">*/}
+                                  {/*    <AvField*/}
+                                  {/*        name="nusxa"*/}
+                                  {/*        required*/}
+                                  {/*        type="number"*/}
+                                  {/*        label={t("connect.nusxa")}*/}
+                                  {/*    />*/}
+                                  {/*</div>*/}
+                              </div>
+                          </ModalBody>
+                          <ModalFooter className="d-flex justify-content-between">
+                              <button type="submit" className="btn btn-success">
+                                  {t("send message.tulov")}
+                              </button>
+                              <button
+                                  type="button"
+                                  className="btn btn-danger"
+                                  onClick={showModal1}
+                              >
+                                  {t("registr.cansel")}
+                              </button>
+                          </ModalFooter>
+                      </AvForm>
+                  </Modal>
 
-            <Modal isOpen={open2} toggle={showModal2}>
-                <AvForm onSubmit={subscribe}>
-                    <ModalBody>
-                        <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
-                        {/*<AvField name="adres" required label="Adres" type="text"/>*/}
-                        <AvField name="email" required label={t("registr.email")} type="text"/>
-                        <AvField name="number" label={t("send file.phonePlaceholder")} type="number"/>
-                        <div className="">
-                            <div className="row">
-                                {
-                                    obuna?.map((item, index) => {
-                                        return(
-                                            <div key={item.id} className="col-12 my-3">
-                                                <h6 className="text-dark">{item.name + " yil"}</h6>
-                                                <p className="text-dark">{t("subscribe.money")}: {" "} {item.price} {" "} {t("subscribe.sum")}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                            {/*<AvField*/}
-                            {/*    name="nusxa"*/}
-                            {/*    required*/}
-                            {/*    type="number"*/}
-                            {/*    label={t("connect.nusxa")}*/}
-                            {/*/>*/}
-                        </div>
-                    </ModalBody>
-                    <ModalFooter className="d-flex justify-content-between">
-                        <button type="submit" className="btn btn-success">
-                            {t("send message.tulov")}
-                        </button>
-                        <button
-                            type="button"
-                            className="btn btn-danger"
-                            onClick={showModal2}
-                        >
-                            {t("registr.cansel")}
-                        </button>
-                    </ModalFooter>
-                </AvForm>
-            </Modal>
+                  <Modal isOpen={open} toggle={() => setOpen(!open)}>
+                      <AvForm onSubmit={hello}>
+                          <ModalHeader>
+                              {t("subscribe.ofline")} <br/>
 
-            <Modal isOpen={open0} toggle={() => setOpen0(!open0)}>
-                <AvForm onSubmit={hello}>
-                    <ModalHeader>
-                        {t("subscribe.ofline")} <br/>
-
-                        {/*<ModalBody>*/}
-                        <div className="">
-                            <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
-                            <AvField name="product_id" value={id} type="text" label="product_id"/>
-                            <AvField name="type" value="subscription" type="text" label="Magazine"/>
-                        </div>
-                        {/*</ModalBody>*/}
-                    </ModalHeader>
-                    <ModalFooter className="d-flex justify-content-between">
-                        <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
-                        <button type="button" className="btn btn-danger" onClick={() => setOpen0(false)}>{t("registr.cansel")}</button>
-                    </ModalFooter>
-                </AvForm>
-            </Modal>
+                              {/*<ModalBody>*/}
+                              <div className="d-none">
+                                  <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
+                                  <AvField name="product_id" value={id} type="text" label="product_id"/>
+                                  <AvField name="type" value="subscription" type="text" label="Magazine"/>
+                              </div>
+                              {/*</ModalBody>*/}
+                          </ModalHeader>
+                          <ModalFooter className="d-flex justify-content-between">
+                              <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
+                              <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>{t("registr.cansel")}</button>
+                          </ModalFooter>
+                      </AvForm>
+                  </Modal>
 
 
-            <Modal isOpen={open3} toggle={showModal3}>
-                <AvForm onSubmit={addJurnal}>
-                    <ModalBody>
-                        <div className="row">
-                            <div className="col-12 ">
-                                <AvField
-                                    type="text"
-                                    name="name"
-                                    label={t("send file.nameLabel")}
-                                    placeholder={t("send file.namePlaceholder")}
-                                    required
-                                    errorMessage={t("send file.nameErrorMessage")}
-                                />
-                            </div>
-                            <div className="col-12 ">
-                                <AvField
-                                    type="email"
-                                    name="email"
-                                    label={t("send file.emailLabel")}
-                                    placeholder={t("send file.emailPlaceholder")}
-                                    required
-                                    errorMessage={t("send file.emailErrorMessage")}
-                                />
-                            </div>
-                            <div className="col-12 ">
-                                <AvField
-                                    type="text"
-                                    name="phone"
-                                    label={t("send file.phoneLabel")}
-                                    placeholder={t("send file.phonePlaceholder")}
-                                    required
-                                    errorMessage={t("send file.phoneErrorMessage")}
-                                />
-                            </div>
-                            <div className="col-12">
-                                <AvField
-                                    type="file"
-                                    name="file"
-                                    label={t("send file.fileLabel")}
-                                    accept=".pdf, .doc, .docx, .txt"
-                                    required
-                                    errorMessage={t("send file.fileErrorMessage")}
-                                />
-                            </div>
-                            <div className="col-12">
-                                <AvField
-                                    type="textarea"
-                                    name="text"
-                                    rows="7"
-                                    label={t("send file.textLabel")}
-                                    placeholder={t("send file.textPlaceholder")}
-                                    errorMessage={t("send file.textErrorMessage")}
-                                />
-                            </div>
-                        </div>
-                        <button className="btn btn-primary" type="submit">
-                            <i className="fa fa-paper-plane"></i>
-                            &nbsp;{t("send file.buttonText")}
-                        </button>
-                    </ModalBody>
-                </AvForm>
-            </Modal>
-        </>
+
+                  <Modal isOpen={open2} toggle={showModal2}>
+                      <AvForm onSubmit={subscribe}>
+                          <ModalBody>
+                              <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
+                              {/*<AvField name="adres" required label="Adres" type="text"/>*/}
+                              <AvField name="email" required label={t("registr.email")} type="text"/>
+                              <AvField name="number" label={t("send file.phonePlaceholder")} type="number"/>
+                              <div className="">
+                                  <div className="row">
+                                      {
+                                          obuna?.map((item, index) => {
+                                              return(
+                                                  <div key={item.id} className="col-12 my-3">
+                                                      <h6 className="text-dark">{item.name + " yil"}</h6>
+                                                      <p className="text-dark">{t("subscribe.money")}: {" "} {item.price} {" "} {t("subscribe.sum")}</p>
+                                                  </div>
+                                              )
+                                          })
+                                      }
+                                  </div>
+                                  {/*<AvField*/}
+                                  {/*    name="nusxa"*/}
+                                  {/*    required*/}
+                                  {/*    type="number"*/}
+                                  {/*    label={t("connect.nusxa")}*/}
+                                  {/*/>*/}
+                              </div>
+                          </ModalBody>
+                          <ModalFooter className="d-flex justify-content-between">
+                              <button type="submit" className="btn btn-success">
+                                  {t("send message.tulov")}
+                              </button>
+                              <button
+                                  type="button"
+                                  className="btn btn-danger"
+                                  onClick={showModal2}
+                              >
+                                  {t("registr.cansel")}
+                              </button>
+                          </ModalFooter>
+                      </AvForm>
+                  </Modal>
+
+                  <Modal isOpen={open0} toggle={() => setOpen0(!open0)}>
+                      <AvForm onSubmit={hello}>
+                          <ModalHeader>
+                              {t("subscribe.ofline")} <br/>
+
+                              {/*<ModalBody>*/}
+                              <div className="">
+                                  <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
+                                  <AvField name="product_id" value={id} type="text" label="product_id"/>
+                                  <AvField name="type" value="subscription" type="text" label="Magazine"/>
+                              </div>
+                              {/*</ModalBody>*/}
+                          </ModalHeader>
+                          <ModalFooter className="d-flex justify-content-between">
+                              <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
+                              <button type="button" className="btn btn-danger" onClick={() => setOpen0(false)}>{t("registr.cansel")}</button>
+                          </ModalFooter>
+                      </AvForm>
+                  </Modal>
+
+
+                  <Modal isOpen={open3} toggle={showModal3}>
+                      <AvForm onSubmit={addJurnal}>
+                          <ModalBody>
+                              <div className="row">
+                                  <div className="col-12 ">
+                                      <AvField
+                                          type="text"
+                                          name="name"
+                                          label={t("send file.nameLabel")}
+                                          placeholder={t("send file.namePlaceholder")}
+                                          required
+                                          errorMessage={t("send file.nameErrorMessage")}
+                                      />
+                                  </div>
+                                  <div className="col-12 ">
+                                      <AvField
+                                          type="email"
+                                          name="email"
+                                          label={t("send file.emailLabel")}
+                                          placeholder={t("send file.emailPlaceholder")}
+                                          required
+                                          errorMessage={t("send file.emailErrorMessage")}
+                                      />
+                                  </div>
+                                  <div className="col-12 ">
+                                      <AvField
+                                          type="text"
+                                          name="phone"
+                                          label={t("send file.phoneLabel")}
+                                          placeholder={t("send file.phonePlaceholder")}
+                                          required
+                                          errorMessage={t("send file.phoneErrorMessage")}
+                                      />
+                                  </div>
+                                  <div className="col-12">
+                                      <AvField
+                                          type="file"
+                                          name="file"
+                                          label={t("send file.fileLabel")}
+                                          accept=".pdf, .doc, .docx, .txt"
+                                          required
+                                          errorMessage={t("send file.fileErrorMessage")}
+                                      />
+                                  </div>
+                                  <div className="col-12">
+                                      <AvField
+                                          type="textarea"
+                                          name="text"
+                                          rows="7"
+                                          label={t("send file.textLabel")}
+                                          placeholder={t("send file.textPlaceholder")}
+                                          errorMessage={t("send file.textErrorMessage")}
+                                      />
+                                  </div>
+                              </div>
+                              <button className="btn btn-primary" type="submit">
+                                  <i className="fa fa-paper-plane"></i>
+                                  &nbsp;{t("send file.buttonText")}
+                              </button>
+                          </ModalBody>
+                      </AvForm>
+                  </Modal>
+              </>
+          </div>
+      </div>
     );
 }

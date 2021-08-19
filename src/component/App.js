@@ -9,6 +9,7 @@ import ContactUs from "./Contact Us/ContactUs";
 import Header from "./Header";
 import {ToastContainer} from "react-toastify";
 import Muassis from "./Contact Us/Muassis";
+import Generalinformation from "./Generalinformation";
 
 function App(props) {
   const [state] = useState('en');
@@ -23,6 +24,7 @@ function App(props) {
       <Header />
       <HeaderUpper his={props.history}/>
       <Sliderr his={props.history}/>
+      <Generalinformation/>
       <BackgroundGrey />
       <RecentWork histor={props.history}/>
       <Muassis/>

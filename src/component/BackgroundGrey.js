@@ -8,10 +8,12 @@ function BackgroundGrey() {
   });
   const { t } = useTranslation();
   return (
-    <section className="background-grey">
+    <section className="background-grey1">
       <div className="container">
-        <div className="heading-text heading-section text-center">
-          <h2>{t("our work.WHAT WE DO")}</h2>
+        <div className="row">
+          <div className="heading-text heading-section">
+            <span className="indexs">{t("our work.WHAT WE DO")}</span>
+          </div>
         </div>
         <div className="row">
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -19,7 +21,7 @@ function BackgroundGrey() {
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0s"
             >
-              <img className="index-img bg-white" src="/images/doi.png" alt="" />
+              <img className="index-img bg-white" src="/imagesNew/Rectangle 3 (2).png" alt="" />
             </div>
           </div>
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -27,7 +29,7 @@ function BackgroundGrey() {
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0s"
             >
-              <img className="index-img" src="/images/DoiCrossref.png" alt="" />
+              <img className="index-img" src="/imagesNew/Rectangle 3 (3).png" alt="" />
             </div>
           </div>
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -35,7 +37,7 @@ function BackgroundGrey() {
               className="wow animate__animated animate__fadeInUp "
               data-wow-delay="0.2s"
             >
-              <img className="index-img" src="/images/elibrary.png" alt="" />
+              <img className="index-img" src="/imagesNew/Rectangle 3 (4).png" alt="" />
             </div>
           </div>
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -45,7 +47,7 @@ function BackgroundGrey() {
             >
               <img
                 className="index-img"
-                src="/images/Journal Impact Faktor Services.png"
+                src="/imagesNew/Rectangle 3 (5).png"
                 alt=""
               />
             </div>
@@ -57,7 +59,7 @@ function BackgroundGrey() {
             >
               <img
                 className="index-img"
-                src="/images/Global Impact Faktor.png"
+                src="/imagesNew/Rectangle 3 (6).png"
                 alt=""
               />
             </div>
@@ -69,7 +71,7 @@ function BackgroundGrey() {
             >
               <img
                 className="index-img"
-                src="/images/springer_link.jpg"
+                src="/imagesNew/Rectangle 3 (7).png"
                 alt=""
               />
             </div>
@@ -80,7 +82,7 @@ function BackgroundGrey() {
               data-animate="fadeInUp"
               data-wow-delay="1s"
             >
-              <img className="index-img" src="/images/World Cate.png" alt="" />
+              <img className="index-img" src="/imagesNew/Rectangle 3 (8).png" alt="" />
             </div>
           </div>
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -89,7 +91,7 @@ function BackgroundGrey() {
               data-animate="fadeInUp"
               data-wow-delay="1.2s"
             >
-              <img className="index-img" src="/images/Research Gate.png" alt="" />
+              <img className="index-img" src="/imagesNew/Rectangle 3 (9).png" alt="" />
             </div>
           </div>
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -98,7 +100,7 @@ function BackgroundGrey() {
               data-animate="fadeInUp"
               data-wow-delay="1.4s"
             >
-              <img className="index-img" src="/images/CL_logo.jpg" alt="" />
+              <img className="index-img" src="/imagesNew/Rectangle 3 (10).png" alt="" />
             </div>
           </div>
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -107,7 +109,7 @@ function BackgroundGrey() {
               data-animate="fadeInUp"
               data-wow-delay="1.6s"
             >
-              <img className="index-img" src="/images/Academic Resource Index.png" alt="" />
+              <img className="index-img" src="/imagesNew/Rectangle 3 (11).png" alt="" />
             </div>
           </div>
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -116,7 +118,7 @@ function BackgroundGrey() {
               data-animate="fadeInUp"
               data-wow-delay="1.8s"
             >
-              <img className="index-img" src="/images/Advanced Sciences Index.png" alt="" />
+              <img className="index-img" src="/imagesNew/Rectangle 3 (12).png" alt="" />
             </div>
           </div>
           <div className="col-lg-2 col-6 col-md-4 index__main-img">
@@ -125,7 +127,7 @@ function BackgroundGrey() {
               data-animate="fadeInUp"
               data-wow-delay="2s"
             >
-              <img className="index-img" src="/images/Google Scholar.png" alt="" />
+              <img className="index-img" src="/imagesNew/Rectangle 3 (13).png" alt="" />
             </div>
           </div>
         </div>
