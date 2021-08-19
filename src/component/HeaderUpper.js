@@ -66,10 +66,11 @@ export default function HeaderUpper(stateAction) {
     const [open3, setOpen3] = useState(false);
 
 
+
     function auto() {
         setOpen(true);
         setOpen1(false);
-        setOpen2(false);
+        setOpen0(false);
     }
 
     function navigateToLogin() {
@@ -81,7 +82,6 @@ export default function HeaderUpper(stateAction) {
     var token = localStorage.getItem(LOGIN);
     var array = (token) ? token.split(".") : "";
     var obj = array? JSON.parse(atob(array[1])) : "";
-
 
 
     const showModal1 = () => {
@@ -241,19 +241,19 @@ export default function HeaderUpper(stateAction) {
                       </ReactBootStrap.Navbar.Collapse>
                   </ReactBootStrap.Navbar>
 
-                  <Modal isOpen={open1} toggle={showModal1}>
-                      <AvForm onSubmit={subscribe}>
-                          <ModalBody>
-                              <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
-                              <AvField name="manzil" required label={t("connect.manzil")} type="text"/>
-                              <AvField name="email" required label={t("registr.email")} type="text"/>
-                              <AvField
-                                  name="number"
-                                  required
-                                  label={t("send file.phonePlaceholder")}
-                                  type="number"
-                              />
-                              <div className="row">
+            <Modal isOpen={open1} toggle={showModal1}>
+                <AvForm onSubmit={subscribe}>
+                    <ModalBody>
+                        <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
+                        <AvField name="manzil" required label={t("connect.manzil")} type="text"/>
+                        <AvField name="email" required label={t("registr.email")} type="text"/>
+                        <AvField
+                            name="number"
+                            required
+                            label={t("send file.phonePlaceholder")}
+                            type="phone"
+                        />
+                        <div className="row">
 
                                   {
                                       obuna?.map((item, index) => {
@@ -314,48 +314,48 @@ export default function HeaderUpper(stateAction) {
 
 
 
-                  <Modal isOpen={open2} toggle={showModal2}>
-                      <AvForm onSubmit={subscribe}>
-                          <ModalBody>
-                              <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
-                              {/*<AvField name="adres" required label="Adres" type="text"/>*/}
-                              <AvField name="email" required label={t("registr.email")} type="text"/>
-                              <AvField name="number" label={t("send file.phonePlaceholder")} type="number"/>
-                              <div className="">
-                                  <div className="row">
-                                      {
-                                          obuna?.map((item, index) => {
-                                              return(
-                                                  <div key={item.id} className="col-12 my-3">
-                                                      <h6 className="text-dark">{item.name + " yil"}</h6>
-                                                      <p className="text-dark">{t("subscribe.money")}: {" "} {item.price} {" "} {t("subscribe.sum")}</p>
-                                                  </div>
-                                              )
-                                          })
-                                      }
-                                  </div>
-                                  {/*<AvField*/}
-                                  {/*    name="nusxa"*/}
-                                  {/*    required*/}
-                                  {/*    type="number"*/}
-                                  {/*    label={t("connect.nusxa")}*/}
-                                  {/*/>*/}
-                              </div>
-                          </ModalBody>
-                          <ModalFooter className="d-flex justify-content-between">
-                              <button type="submit" className="btn btn-success">
-                                  {t("send message.tulov")}
-                              </button>
-                              <button
-                                  type="button"
-                                  className="btn btn-danger"
-                                  onClick={showModal2}
-                              >
-                                  {t("registr.cansel")}
-                              </button>
-                          </ModalFooter>
-                      </AvForm>
-                  </Modal>
+            <Modal isOpen={open2} toggle={showModal2}>
+                <AvForm onSubmit={subscribe}>
+                    <ModalBody>
+                        <AvField name="name" required label={t("send file.nameLabel")} type="text"/>
+                        {/*<AvField name="adres" required label="Adres" type="text"/>*/}
+                        <AvField name="email" required label={t("registr.email")} type="text"/>
+                        <AvField name="number" label={t("send file.phonePlaceholder")} type="phone"/>
+                        <div className="">
+                            <div className="row">
+                                {
+                                    obuna?.map((item, index) => {
+                                        return(
+                                            <div key={item.id} className="col-12 my-3">
+                                                <h6 className="text-dark">{item.name + " yil"}</h6>
+                                                <p className="text-dark">{t("subscribe.money")}: {" "} {item.price} {" "} {t("subscribe.sum")}</p>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                            {/*<AvField*/}
+                            {/*    name="nusxa"*/}
+                            {/*    required*/}
+                            {/*    type="number"*/}
+                            {/*    label={t("connect.nusxa")}*/}
+                            {/*/>*/}
+                        </div>
+                    </ModalBody>
+                    <ModalFooter className="d-flex justify-content-between">
+                        <button type="submit" className="btn btn-success">
+                            {t("send message.tulov")}
+                        </button>
+                        <button
+                            type="button"
+                            className="btn btn-danger"
+                            onClick={showModal2}
+                        >
+                            {t("registr.cansel")}
+                        </button>
+                    </ModalFooter>
+                </AvForm>
+            </Modal>
 
                   <Modal isOpen={open0} toggle={() => setOpen0(!open0)}>
                       <AvForm onSubmit={hello}>

@@ -46,6 +46,9 @@ export default function PageShop(props) {
     var token = localStorage.getItem(LOGIN);
     var array = (token) ? token.split(".") : "";
     var obj = array? JSON.parse(atob(array[1])) : "";
+
+    var array = (token) ? token.split(".") : "";
+    var obj = array? JSON.parse(atob(array[1])) : "";
     return (
         <div className="Page-shop">
             <div className="Page-slider grid-4-columns" data-item="grid-item">

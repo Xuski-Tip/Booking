@@ -41,11 +41,12 @@ function Slider(props) {
     }
 
     function navigateToLogin() {
-        props.his.push("/Authorization")
+        props.his.push("/authorization")
     }
     var token = localStorage.getItem(LOGIN);
     var array = (token) ? token.split(".") : "";
     var obj = array? JSON.parse(atob(array[1])) : "";
+    // var obj = JSON.parse(array ? atob(array[1]) : "");
 
 
     function hello(event, error, values) {

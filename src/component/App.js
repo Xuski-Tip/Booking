@@ -28,7 +28,9 @@ function App(props) {
       <BackgroundGrey />
       <RecentWork histor={props.history}/>
       <Muassis/>
-      <ContactUs />
+      <div className="container">
+          <ContactUs />
+      </div>
       <FooterInfo />
       <LinkerUp />
       <ToastContainer/>
