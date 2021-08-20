@@ -3,6 +3,7 @@ import {AvForm, AvField} from "availity-reactstrap-validation"
 import axios from "axios";
 import {toast} from "react-toastify";
 import {useTranslation} from "react-i18next";
+import {API} from "../../simpleJs/loginApi";
 
 const SendMessage = () => {
 
@@ -10,8 +11,8 @@ const SendMessage = () => {
 
     const OnSubmit = (event, errors, values) => {
 
-        axios.post("https://backend-magazine.napaautomotive.uz/api/contact/store", values)
-            .then((res) => {
+        axios.post(API + "contact/store", values)
+            .then( (res) => {
 
                 console.log(res);
                 toast.success(res.data.status);
@@ -27,7 +28,7 @@ const SendMessage = () => {
             })
 
 
-    }
+    };
 
 
     return (

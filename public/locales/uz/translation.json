@@ -213,6 +213,32 @@
     "ofline": "Jurnalning keyingi mavsumdagi sonlariga obuna bo'lishni xohaysizmi ?",
     "buy": "Jurnalni sotib olishni xohlaysizmi ?",
     "nomi": "Nomi"
+  },
+  "talab": {
+    "talab": "Maqolalarga qo’yilgan asosiy talablar",
+    "talab1": "O’zbek, ingliz yoki rus tillarida taqdim etilishi zarur.",
+    "talab2": "Maqola mavzusi demokratlashtirish jarayonlari va inson huquqlari masalalari, shuningdek, siyosiy fanlar, huquqshunoslik, falsafa, tarix, islomshunoslik va sotsiologiya fanlaridan biriga oid bo’lishi kerak.",
+    "talab3": "Maqolada ilmiy yangilik, takliflar va tadqiqot xulosalari berilishi lozim",
+    "talab4": "Faktlar, iqtiboslar, dalillar va statistik ma’lumotlardan foydalanilgan bo’lishi  zarur. Infografika va jadvallardan foydalanish tavsiya etiladi.",
+    "talab5": "Muallifning fikrlari va xulosalari ilmiy asoslangan bo’lishi kerak",
+    "talab6": "Maqola annotatsiyasi hamda kalit so’zlar 3 tilda: o’zbek, ingliz va rus tillarida taqdim etilishi lozim.",
+    "talab7": "Matn imloviy, uslubiy va punktuatsion xatolarsiz bo’lishi tavsiya etiladi.",
+    "talab8": "Matnga qo’yiladigan texnik talablar: A4 format, 14 kegel va 1,5 interval.",
+    "talab9": "Hajmi 6 - 12 bet bo’lishi tavsiya etiladi."
+  },
+  "tartib": {
+    "tartib": "Maqola chiqarish tartibi",
+    "tartib1": "Maqolaga qo’yilgan talablar bilan tanishib chiqing. \nShu asosida maqola yozing.",
+    "tartib2": "Maqolani 2 xil usulda taxririyatga yo’llashingiz mumkun:",
+    "tartib3": "Taxririyatga kelib, elektron va qog’oz shaklida maqola topshirishingiz mumkun.",
+    "tartib4": "journal@nhrc.uz elektron pochtasiga yuborishingiz mumkun.",
+    "tartib5": "Tahririyatga kelgan maqolalar jurnal talablariga muvofiqligi tekshiriladi, talablarga javob bergab maqolalar ro’yxatga olish asosida qabul qilinadi.",
+    "tartib6": "Qabul qilingan maqolalarni Tahrir kengashi anonim tarzda ko’rib chiqadi va xulasa beradi.",
+    "tartib7": "Tahrir kengashi xulosasi asosida maqola jurnal sahifalariga joylashtiriladi yoki rad etiladi yoxud zaxiraga o’tkaziladi.",
+    "tartib8": "Zaxiraga o’tkazilgan maqolalar jurnalning navbatdagi sonlarida chop etiladi.",
+    "tartib9": "Chop etiladigan maqolalar muharrirlar tomonidan tahrir qilinadi, tahrirda biror savol tug’ilganda mualliflarga murojaat qilinadi.",
+    "tartib10": "Maqolasi e’lon qilingan mualliflarga jurnal nashr etilgandan so’ng qo’ng’iroq qilinib, xabar beriladi.",
+    "tartib11": "Sayt orqali maqola yuborishingiz mumkin"
   }
 
 }

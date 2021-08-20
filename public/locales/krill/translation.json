@@ -210,5 +210,31 @@
     "ofline": "Журналнинг кейинги мавсумдаги сонларига обуна бўлишни хоҳайсизми ?",
     "buy": "Журнални сотиб олишни хоҳлайсизми ",
     "nomi": "Номи"
+  },
+  "talab": {
+    "talab": "Maqolalarga qo’yilgan asosiy talablar",
+    "talab1": "O’zbek, ingliz yoki rus tillarida taqdim etilishi zarur.",
+    "talab2": "Maqola mavzusi demokratlashtirish jarayonlari va inson huquqlari masalalari, shuningdek, siyosiy fanlar, huquqshunoslik, falsafa, tarix, islomshunoslik va sotsiologiya fanlaridan biriga oid bo’lishi kerak.",
+    "talab3": "Maqolada ilmiy yangilik, takliflar va tadqiqot xulosalari berilishi lozim",
+    "talab4": "Faktlar, iqtiboslar, dalillar va statistik ma’lumotlardan foydalanilgan bo’lishi  zarur. Infografika va jadvallardan foydalanish tavsiya etiladi.",
+    "talab5": "Muallifning fikrlari va xulosalari ilmiy asoslangan bo’lishi kerak",
+    "talab6": "Maqola annotatsiyasi hamda kalit so’zlar 3 tilda: o’zbek, ingliz va rus tillarida taqdim etilishi lozim.",
+    "talab7": "Matn imloviy, uslubiy va punktuatsion xatolarsiz bo’lishi tavsiya etiladi.",
+    "talab8": "Matnga qo’yiladigan texnik talablar: A4 format, 14 kegel va 1,5 interval.",
+    "talab9": "Hajmi 6 - 12 bet bo’lishi tavsiya etiladi."
+  },
+  "tartib": {
+    "tartib": "Мақола чиқариш тартиби",
+    "tartib1": "Мақолага қўйилган талаблар билан танишиб чиқинг. \nШу асосида мақола ёзинг.",
+    "tartib2": "Мақолани 2 хил усулда тахририятга йўллашингиз мумкун:",
+    "tartib3": "Тахририятга келиб, электрон ва қоғоз шаклида мақола топширишингиз мумкун.",
+    "tartib4": "journal@nhrc.uz электрон почтасига юборишингиз мумкун.",
+    "tartib5": "Таҳририятга келган мақолалар журнал талабларига мувофиқлиги текширилади, талабларга жавоб бергаб мақолалар рўйхатга олиш асосида қабул қилинади.",
+    "tartib6": "Қабул қилинган мақолаларни Таҳрир кенгаши аноним тарзда кўриб чиқади ва хуласа беради.",
+    "tartib7": "Таҳрир кенгаши хулосаси асосида мақола журнал саҳифаларига жойлаштирилади ёки рад этилади ёхуд захирага ўтказилади.",
+    "tartib8": "Захирага ўтказилган мақолалар журналнинг навбатдаги сонларида чоп этилади.",
+    "tartib9": "Чоп этиладиган мақолалар муҳаррирлар томонидан таҳрир қилинади, таҳрирда бирор савол туғилганда муаллифларга мурожаат қилинади.",
+    "tartib10": "Мақоласи эълон қилинган муаллифларга журнал нашр этилгандан сўнг қўнғироқ қилиниб, хабар берилади.",
+    "tartib11": "Сайт орқали мақола юборишингиз мумкин"
   }
 }

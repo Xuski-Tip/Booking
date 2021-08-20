@@ -12,12 +12,12 @@ import Muassis from "./Contact Us/Muassis";
 import Generalinformation from "./Generalinformation";
 
 function App(props) {
-  const [state] = useState('en');
-  console.log(props.history);
+    const [state] = useState('en');
+    console.log(props.history);
 
-  useEffect(() => {
-      window.scrollTo(0, 0);
-  });
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
   return (
     <div className="body-inner">
@@ -37,4 +37,5 @@ function App(props) {
     </div>
   );
 }
+
 export default App;

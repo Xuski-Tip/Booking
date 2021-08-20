@@ -212,6 +212,32 @@
     "ofline": "Would you like to subscribe to next season’s issues of the magazine ?",
     "buy": "Would you like to buy a magazine?",
     "nomi": "The number of the magazine"
+  },
+  "talab": {
+    "talab": "It is recommended that the size be 6 to 12 pages.",
+    "talab1": "Must be submitted in Uzbek, English or Russian.",
+    "talab2": "The topic of the article should be related to the processes of democratization and human rights, as well as one of the disciplines of political science, law, philosophy, history, Islamic studies and sociology.",
+    "talab3": "The article should provide scientific novelty, suggestions and research conclusions",
+    "talab4": "Facts, quotations, evidence, and statistics must be used. The use of infographics and tables is recommended.",
+    "talab5": "The author's opinions and conclusions should be scientifically based",
+    "talab6": "Article annotations and keywords must be submitted in 3 languages: Uzbek, English and Russian.",
+    "talab7": "It is recommended that the text be free of spelling, stylistic and punctuation errors.",
+    "talab8": "Technical requirements for the text: A4 format, 14 kegels and 1.5 spacing.",
+    "talab9": "It is recommended to have 6-12 pages."
+  },
+  "tartib": {
+    "tartib": "Article publishing procedure",
+    "tartib1": "Familiarize yourself with the requirements of the article.\nWrite an article based on this.",
+    "tartib2": "There are two ways to edit an article:",
+    "tartib3": "You can come to the editorial office and submit an article in electronic or paper form.",
+    "tartib4": "You can send an e-mail to journal@nhrc.uz.",
+    "tartib5": "Articles submitted to the editorial office are checked for compliance with the requirements of the journal, and articles that meet the requirements are accepted on the basis of registration.",
+    "tartib6": "Submissions will be reviewed and reviewed anonymously by the Editorial Board.",
+    "tartib7": "Based on the conclusion of the Editorial Board, the article is placed in the pages of the magazine or rejected or transferred to the reserve.",
+    "tartib8": "Reserved articles will be published in future issues of the magazine.",
+    "tartib9": "Published articles are edited by the editors, and the authors are contacted when any questions arise in the editing.",
+    "tartib10": "Authors who have published an article will be notified after the publication of the journal.",
+    "tartib11": "You can submit an article through the site"
   }
 }
 
