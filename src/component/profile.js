@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import {API, LOGIN} from "../simpleJs/loginApi";
+import {API, API_PATH, LOGIN} from "../simpleJs/loginApi";
 import HeaderUpper from "./HeaderUpper";
 import FooterInfo from "./FooterInfo";
 import {getLanguage} from "../simpleJs/locale";
@@ -60,7 +60,7 @@ const Profile = (props) => {
                         return(
                             <div className="col-lg-3 col-md-4 col-6 mt-3">
                                 <div className="card h-100">
-                                    <img src={"https://backend-magazine.napaautomotive.uz/" + "storage/" + item.image} className="profileImg"/>
+                                    <img src={API_PATH + "storage/" + item.image} className="profileImg"/>
                                     <h6 className="text-center">{getLanguage() === "uz" ? item.title_uz : getLanguage() === "ru" ? item.title_ru : getLanguage() === "en" ? item.title_en: item.title_cril}</h6>
                                 </div>
                             </div>

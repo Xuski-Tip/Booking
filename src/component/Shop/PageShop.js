@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {API, LOGIN} from "../../simpleJs/loginApi";
+import {API, API_PATH, LOGIN} from "../../simpleJs/loginApi";
 import {getLanguage} from "../../simpleJs/locale";
 import {useTranslation} from "react-i18next";
 import axios from "axios";
@@ -61,7 +61,7 @@ export default function PageShop(props) {
                                     {localStorage.getItem(LOGIN) ? (
                                         <a
                                             target="_blank"
-                                            href={"https://backend-magazine.napaautomotive.uz/storage/" + item.file}
+                                            href={API_PATH + "storage/" + item.file}
                                             // href={
                                             //   "https://paycom-test.napaautomotive.uz/storage/" +
                                             //   item.file
@@ -71,7 +71,7 @@ export default function PageShop(props) {
                                                 alt="#"
                                                 className="h-100"
                                                 src={
-                                                    "https://backend-magazine.napaautomotive.uz/storage/" +
+                                                    API_PATH + "storage/" +
                                                     item.image
                                                 }
                                             />
@@ -81,7 +81,7 @@ export default function PageShop(props) {
                                             alt="#"
                                             className="h-100"
                                             src={
-                                                "https://backend-magazine.napaautomotive.uz/storage/" +
+                                                API_PATH + "storage/" +
                                                 item.image
                                             }
                                         />
@@ -97,7 +97,7 @@ export default function PageShop(props) {
                                                 :
                                                 <a
                                                     href={
-                                                        "https://backend-magazine.napaautomotive.uz/storage/" +
+                                                        API_PATH + "storage/" +
                                                         item.image
                                                     }
                                                 >
