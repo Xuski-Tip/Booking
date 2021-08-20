@@ -107,8 +107,18 @@ cursor: pointer;
   height: 100%;
 }
 .moreInfo__logo {
-  display: flex;
+ display: flex;
   align-items: center;
+}
+.moreInfo__logo2 {
+  text-align: center;
+  align-items: center;
+  transition: all 0.5s linear;
+  &:hover{
+    transform: scale(1.1);
+    //box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.15);
+    //border-radius: 4px;
+  }
 }
 .moreInfo__navigation-container {
   display: flex;
@@ -226,25 +236,51 @@ cursor: pointer;
   //margin-top: 50px;
 }
 .moreInfo__logo-lorem {
+  a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: black!important;
+
+  }
   margin: 0px;
   margin-left: 10px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+}
+.moreInfo__logo-lorem2{
+  a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: black!important;
+  }
+  margin: 0px;
+  margin-left: 10px;
 }
 .moreInfo__logo-img {
    width: 100px;
    height: 100px;
  }
 .moreInfo__logo-img2 {
-  width: 150px;
+  //width: 150px;
   height: 100px;
+  margin-bottom: 10px;
 }
 .moreInfo__logo-img3 {
-  width: 115px;
-  height: 115px;
+  //width: 115px;
+  height: 100px;
+  margin-bottom: 10px;
+
+}
+.moreInfo__logo-img4{
+  height: 100px;
+  margin-bottom: 10px;
+
 }
 .moreInfo__navigation-img {
   width: 20px;
@@ -549,6 +585,7 @@ cursor: pointer;
 }
 .heading-text {
 margin-left: 0;
+
 }
 .indexs{
   font-family: Montserrat;
@@ -654,7 +691,7 @@ margin-left: 0;
   width: 48%;
   border: 1px solid #0C954E;
   align-items: center;
-  padding: 10px 10px;
+  padding: 5px 0px;
   color: white;
   background: #0DA155;
   border-radius: 4px;
@@ -664,19 +701,19 @@ margin-left: 0;
   font-size: 18px;
   line-height: 22px;
   &:hover{
-    background-color: white;
-    color: #0DA155!important;
-    border: 1px solid #0C954E;
+    background-color: #0c763b;
   }
 }
 .btnRight2{
   width: 48%;
   text-align: center;
-  border: 1px solid #0C954E;
+  border: 1px solid #0cc174;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 10px 10px;
+  //padding: 10px 10px;
   text-align: center;
-  color : #0C954E;
+  color : #0cc174;
   border-radius: 4px;
   font-family: Montserrat;
   font-style: normal;
@@ -684,8 +721,9 @@ margin-left: 0;
   font-size: 18px;
   line-height: 22px;
   &:hover{
-    color: white!important;
-    background-color: #0DA155;
+    border: 1px solid #0c7c3e;
+    color: #0c7c3e!important;
+
   }
 }
 .recent-subtitle {
@@ -697,7 +735,8 @@ margin-left: 0;
 }
 .Map {
   width: 100%;
-  min-height: 385px;
+  //height: 400px;
+  min-height: 415px;
   height: auto;
 }
 .application {
@@ -705,9 +744,7 @@ margin-left: 0;
     background-color: transparent;
     border: 0!important;
     box-shadow: none;
-    //width: 100%;
-    padding: 0 0;
-    margin: 0 0;
+    width: 100%;
   }
 }
 .letsenziya-img {
@@ -909,6 +946,76 @@ z-index: 1;
     border: 2px solid #1b5ea6;
     color: #1b5ea6!important;
   }
+}
+.contactUs{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.time{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.clockImg{
+  width: 20px;
+  height: 20px;
+}
+.sendMessageButton{
+  border: 0;
+  padding: 8px 15px;
+background: #1E90E2;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  &:hover{
+    background: rgba(30, 117, 198, 0.95);
+  }
+}
+.address{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 10px;
+}
+.body-inner{
+  border-bottom: 2px solid #E5E5E5;
+}
+.widget-title2{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 29px;
+  color: #000000;
+margin-bottom: 15px;
+
+}
+.list{
+  img{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
 }
 @import "./media";
 @import "./jurnal";

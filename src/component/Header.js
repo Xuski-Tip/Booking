@@ -15,7 +15,7 @@ function Header() {
                 src="/images/Logomain.jpg"
             ></img>
           </a>
-          <p className="moreInfo__logo-lorem text-dark">
+          <p className="moreInfo__logo-lorem">
             <a href="!#">
               {/*<br></br>*/}
               <span>{t("Offical Site.of the National Center")}</span>
