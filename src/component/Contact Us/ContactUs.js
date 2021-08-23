@@ -21,11 +21,18 @@ export default function ContactUs() {
   return (
     <div className="body-inner">
       <div className="container">
-        <div className="heading-text heading-section text-center">
-          <h2 className="mt-3">{t("connect.connect")}</h2>
-        </div>
-      </div>
-        <div className="row d-flex align-items-center">
+
+          <div className="row">
+              <div className="">
+                  <h2 className="mt-3 contactUs">{t("connect.connect")}</h2>
+              </div>
+          </div>
+        <div className="row d-flex justify-content-between mt-5">
+
+            <div className="col-md-6 col-12 ml-0 pl-0">
+                <SendMessage />
+            </div>
+
             <div className="col-md-6 col-12">
                 <section className="no-padding">
                 <div className="Map">
@@ -117,14 +124,16 @@ export default function ContactUs() {
                     );
                 })}
             </section>
+                <div className="text-center mt-4">
+                    <img src="/imagesNew/map-pin.png" className="mr-2 clockImg"/>
+                    <span className="address">Islom Karimov ko’chasi 15 uy</span>
+                </div>
             </div>
-            <div className="col-md-6 col-12">
-                <SendMessage />
-            </div>
+
         </div>
 
 
-
+      </div>
 
     </div>
   );

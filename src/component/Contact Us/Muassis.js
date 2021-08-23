@@ -9,14 +9,14 @@ const Muassis = () => {
            <div className="row mb-5">
                <div className="col-lg-4 mb-5">
                    <div className="heading-text2 heading-section text-center">
-                       <h2 className="mt-3">{t("connect.muassis")}</h2>
+                       <h2 className="mt-3 textMuassis">{t("connect.muassis")}</h2>
                    </div>
-                   <div className="moreInfo__logo mt-3">
+                   <div className="moreInfo__logo2 mt-3">
                        <a target="_blank" href="http://insonhuquqlari.uz">
                            <img
                                alt="#"
-                               className="moreInfo__logo-img"
-                               src="/images/Logomain.jpg"
+                               className="moreInfo__logo-img4"
+                               src="/imagesNew/image 9.png"
                            ></img>
                        </a>
                        <p className="moreInfo__logo-lorem">
@@ -32,18 +32,18 @@ const Muassis = () => {
                    </div>
                </div>
 
-               <div className="col-lg-8 mb-5">
+               <div className="col-lg-8 mb-5 w-100 text-center">
                    <div className="heading-text2 heading-section text-center">
-                       <h2 className="mt-3">{t("connect.muassis2")}</h2>
+                       <h2 className="mt-3 textMuassis">{t("connect.muassis2")}</h2>
                    </div>
-                  <div className="d-lg-flex">
+                  <div className="d-lg-flex justify-content-center align-items-center mt-3">
 
-                      <div className="moreInfo__logo mr-4">
+                      <div className="moreInfo__logo2 mr-5">
                           <a href="https://www.kasaba.uz">
                               <img
                                   alt="#"
                                   className="moreInfo__logo-img2"
-                                  src="/images/kasaba.png"
+                                  src="/imagesNew/image 9 (1).png"
                               ></img>
                           </a>
                           <p className="moreInfo__logo-lorem">
@@ -56,12 +56,12 @@ const Muassis = () => {
 
                       </div>
 
-                      <div className="moreInfo__logo">
+                      <div className="moreInfo__logo2 ml-5">
                           <a href="http://www.ombudsman.uz">
                               <img
                                   alt="#"
                                   className="moreInfo__logo-img3"
-                                  src="/images/ombudsman.jpg"
+                                  src="/imagesNew/image 9 (2).png"
                               ></img>
                           </a>
                           <p className="moreInfo__logo-lorem">
