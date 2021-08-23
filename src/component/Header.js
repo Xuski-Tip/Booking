@@ -1,14 +1,25 @@
-import React from "react";
+import React , {useState} from "react";
 import { useTranslation } from "react-i18next";
-
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import {LANGUAGE} from "../simpleJs/Tipelang";
 function Header() {
-  const { t } = useTranslation();
+
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  // const toggle = () => setDropdownOpen(prevState => !prevState);
+  const [lastClicked, setLastClicked] = useState(null);
+  const {t, i18n} = useTranslation();
+
+
+
+
+
   return (
   <div className="container">
     <div className="row">
       <div className="moreInfo">
         <div className="moreInfo__logo">
-          <a href="!#">
+          <a href="#">
             <img
                 alt="#"
                 className="moreInfo__logo-img"
@@ -16,7 +27,7 @@ function Header() {
             ></img>
           </a>
           <p className="moreInfo__logo-lorem">
-            <a href="!#">
+            <a href="#">
               {/*<br></br>*/}
               <span>{t("Offical Site.of the National Center")}</span>
               <br></br> <span>{t("Offical Site.for Human Rights")}</span>
@@ -27,6 +38,7 @@ function Header() {
           </p>
         </div>
         <div className="TextDemocratic">
+
           {" "}
           {/*{t("Offical Site.democration")} <br></br>{" "}*/}
           {/*{t("Offical Site.scientific and educational journal")}*/}

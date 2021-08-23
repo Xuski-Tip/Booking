@@ -9,12 +9,24 @@ body{
   justify-content: center;
 }
 .options{
-cursor: pointer;
+  cursor: pointer;
   padding-right: 25px;
-  background-color: #e2d2ff;
+  //background-color: #e2d2ff;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  border: 0;
+  line-height: 20px;
+  //color: #000000!important;
+  color: rgba(0,0,0,.5);
+  outline: antiquewhite;
   option{
-    background-color: #b9abd6;
-    color: #0b0b0b;
+    //background-color: #b9abd6;
+    //color: #0b0b0b!important;
+    color: rgba(0,0,0,.5);
+    border: 0;
   }
 }
 // 1025
@@ -583,9 +595,32 @@ cursor: pointer;
 }
 .Link-registr {
   padding: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E90E2;
+  border: 1px solid #1E90E2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  &:hover{
+    border: 1px solid #1d5691;
+    color : #1d5691;
+  }
 }
 .Link-autho {
   padding: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E90E2;
+  &:hover{
+    //border: 1px solid #1d5691;
+    color : #1d5691;
+  }
 }
 .heading-text {
 margin-left: 0;
@@ -798,21 +833,35 @@ z-index: 1;
     top: auto;
     z-index: 20;
     transition: bottom .3s ease;
-    display: none;
+    //display: none;
 
     @media (max-width: 1024px) {
       bottom: -7px!important;
       display: block;
     }
+    a{
+      //border: 1px solid #0DA155;
+      color: white;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      &:hover{
+        //background-color: #4C4C4C;
+        background-color: #3c3c3c;
+        color: white;
+      }
+    }
   }
 }
 
 .product-image{
-  &:hover{
-    .product-overlay{
-      display: block;
-    }
-  }
+  //&:hover{
+  //  .product-overlay{
+  //    display: block;
+  //  }
+  //}
 }
 
 .portfolio-item-wrap{
@@ -842,9 +891,9 @@ z-index: 1;
 }
 .portfolio-item-wrap{
   &:hover{
-    .product-overlay{
-      display: block;
-    }
+    //.product-overlay{
+    //  display: block;
+    //}
   }
 }
 .profileIcon{
@@ -908,24 +957,44 @@ z-index: 1;
     border: 1px solid #14B462;
   }
 }
-.btnArxiv2{
-  text-align: center;
-  background: white;
+.btnArxiv0{
+  background: #0DA155;
   border-radius: 4px;
-  width: 48%;
+  width: 100%;
   padding: 5px 5px;
-  border: 1px solid #86D0AA;
-  color: #0DA155!important;
+  border: 1px solid #0DA155;
+  color: white;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   &:hover{
-    //background-color: #0DA155;
-    border: 1px solid #09904B;
-    color: #09904B!important;
+    background-color: #14B462;
+    color: white;
+    border: 1px solid #14B462;
   }
+}
+.btnArxiv01{
+  background: #0DA155;
+  border-radius: 4px;
+  width: 100%;
+  padding: 7px 5px;
+  //border: 1px solid #0DA155;
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  &:hover{
+    background-color: #14B462;
+    color: white;
+    //border: 1px solid #14B462;
+  }
+}
+.btnArxiv2{
+
 }
 .arxivCol{
   transition: all 0.5s linear;

@@ -129,17 +129,26 @@ export default function HeaderUpper(stateAction) {
 
     return (
         <div className="container">
-            <div className="">
+            <div className="row mt-3">
 
-                    <ReactBootStrap.Navbar sticky="top" expand="lg">
+                    <ReactBootStrap.Navbar sticky="top" expand="lg" style={{padding:"0 0",display: "contents"}}>
                         {/* <ReactBootStrap.Navbar.Brand as={Link} to="/">
           <strong>{t("Offical Site.navbar")}</strong>
         </ReactBootStrap.Navbar.Brand> */}
 
                         <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
-                            <ReactBootStrap.Nav className="mr-auto">
-                                <ReactBootStrap.NavLink href="/">
+                            <ReactBootStrap.Nav className="mr-auto"
+                                                style={{
+                                                    fontFamily: "Montserrat",
+                                                    fontStyle: "normal",
+                                                    fontWeight: 500,
+                                                    fontSize: "16px",
+                                                    lineHeight: "22px",
+                                                    color: "#000000"
+                                                }}
+                            >
+                                <ReactBootStrap.NavLink href="/" style={{paddingLeft: 0}}>
                                     {t("Home.navbar")}
                                 </ReactBootStrap.NavLink>
 
@@ -218,11 +227,13 @@ export default function HeaderUpper(stateAction) {
                                         {t("avtorizatsiya.navbar")}
                                     </Link>{" "}
 
-                                    <Link className="Link-registr" to={"/Authorization/Registration"}>
+                                    <Link className="Link-registr" to={"/Authorization/Registration"}
+
+                                    >
                                         {t("avtorizatsiya.navbar2")}
                                     </Link>
 
-                                    <div className="p-dropdown ml-3">
+                                    <div className="p-dropdown ml-3" style={{marginRight :"0"}}>
                                         <select
                                             // style={{ paddingRight: 25, cursor: "pointer", }}
                                             onChange={handleChange}

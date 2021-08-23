@@ -79,7 +79,7 @@ function FooterInfo() {
                     <div className="row justify-content-between align-items-center">
 
                         <div className="moreInfo__logo">
-                            <a href="!#">
+                            <a href="#">
                                 <img
                                     alt="#"
                                     className="moreInfo__logo-img"
@@ -87,7 +87,7 @@ function FooterInfo() {
                                 ></img>
                             </a>
                             <p className="moreInfo__logo-lorem2">
-                                <a href="!#">
+                                <a href="#">
                                     {/*<br></br>*/}
                                     <span>{t("Offical Site.of the National Center")}</span>
                                     <br></br> <span>{t("Offical Site.for Human Rights")}</span>
@@ -102,7 +102,9 @@ function FooterInfo() {
                         <div className="text-right">
 
                             <div className="">
-                      <img src="/imagesNew/designed by napa.png"/>
+                                <a href="https://napaautomotive.uz/" target="_blank">
+                                    <img src="/imagesNew/designed by napa.png"/>
+                                </a>
                             </div>
 
                             <div className="copyright-text">
