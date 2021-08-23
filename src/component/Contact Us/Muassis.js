@@ -9,7 +9,7 @@ const Muassis = () => {
            <div className="row mb-5">
                <div className="col-lg-4 mb-5">
                    <div className="heading-text2 heading-section text-center">
-                       <h2 className="mt-3">{t("connect.muassis")}</h2>
+                       <h2 className="mt-3 textMuassis">{t("connect.muassis")}</h2>
                    </div>
                    <div className="moreInfo__logo2 mt-3">
                        <a target="_blank" href="http://insonhuquqlari.uz">
@@ -34,7 +34,7 @@ const Muassis = () => {
 
                <div className="col-lg-8 mb-5 w-100 text-center">
                    <div className="heading-text2 heading-section text-center">
-                       <h2 className="mt-3">{t("connect.muassis2")}</h2>
+                       <h2 className="mt-3 textMuassis">{t("connect.muassis2")}</h2>
                    </div>
                   <div className="d-lg-flex justify-content-center align-items-center mt-3">
 

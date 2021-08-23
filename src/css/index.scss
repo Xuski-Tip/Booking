@@ -235,15 +235,17 @@ cursor: pointer;
   margin-bottom: 0px;
   //margin-top: 50px;
 }
-.moreInfo__logo-lorem {
+.moreInfo__logo-lorem{
   a{
-    text-decoration: none;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 130%;
-    color: black!important;
+    //span{
+      text-decoration: none;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 130%;
+      color: black!important;
+    //}
 
   }
   margin: 0px;
@@ -251,13 +253,15 @@ cursor: pointer;
 }
 .moreInfo__logo-lorem2{
   a{
-    text-decoration: none;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 130%;
-    color: black!important;
+    span{
+      text-decoration: none;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 130%;
+      color: black!important;
+    }
   }
   margin: 0px;
   margin-left: 10px;
@@ -1010,11 +1014,24 @@ margin-bottom: 15px;
     height: 18px;
     margin-right: 10px;
   }
+ //Link{
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   color: #000000;
+ //}
+}
+.textMuassis{
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+
+  /* black */
+
   color: #000000;
 }
 @import "./media";

@@ -86,7 +86,7 @@ function FooterInfo() {
                                     src="/imagesNew/imagelogo.png"
                                 ></img>
                             </a>
-                            <p className="moreInfo__logo-lorem">
+                            <p className="moreInfo__logo-lorem2">
                                 <a href="!#">
                                     {/*<br></br>*/}
                                     <span>{t("Offical Site.of the National Center")}</span>
