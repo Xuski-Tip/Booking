@@ -8,7 +8,7 @@ function RecentWork(props) {
       <div className="container">
        <div className="row">
            {/*<div className="heading-text heading-section">*/}
-               <h2 className="arxivText">{t("Arxiv.arxiv")}</h2>
+               <h2 className="arxivText ml-3">{t("Arxiv.arxiv")}</h2>
            {/*</div>*/}
        </div>
       </div>

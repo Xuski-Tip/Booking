@@ -23,7 +23,7 @@ export default function ContactUs() {
       <div className="container">
 
           <div className="row">
-              <div className="">
+              <div className="ml-3">
                   <h2 className="mt-3 contactUs">{t("connect.connect")}</h2>
               </div>
           </div>

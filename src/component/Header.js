@@ -8,7 +8,7 @@ function Header() {
     <div className="row">
       <div className="moreInfo">
         <div className="moreInfo__logo">
-          <a href="!#">
+          <a href="/">
             <img
                 alt="#"
                 className="moreInfo__logo-img"
@@ -16,7 +16,7 @@ function Header() {
             ></img>
           </a>
           <p className="moreInfo__logo-lorem">
-            <a href="!#">
+            <a href="/">
               {/*<br></br>*/}
               <span>{t("Offical Site.of the National Center")}</span>
               <br></br> <span>{t("Offical Site.for Human Rights")}</span>
@@ -43,7 +43,7 @@ function Header() {
               </a>
               <div className="moreInfo__navigation-container">
               <span className="moreInfo__navigation-lorem--upp">
-                {/*<a href="!#">{t("Offical Site.Contact Phone")}</a>*/}
+                {/*<a href="/">{t("Offical Site.Contact Phone")}</a>*/}
               </span>
                 <span className="moreInfo__navigation-lorem--dawn">
                 <a href="tel:+998712394142">+998 71 239 41 42</a>
@@ -51,7 +51,7 @@ function Header() {
               </div>
             </li>
             <li className="moreInfo__navigation-list">
-              <a href="!#">
+              <a href="/">
                 <img
                     alt="#"
                     src="/imagesNew/mail.png"
@@ -60,7 +60,7 @@ function Header() {
               </a>
               <div className="moreInfo__navigation-container">
               <span className="moreInfo__navigation-lorem--upp">
-                {/*<a href="!#">{t("Offical Site.Our address")}</a>*/}
+                {/*<a href="/">{t("Offical Site.Our address")}</a>*/}
               </span>
                 <span className="moreInfo__navigation-lorem--dawn">
                 <a href="http://journal@nhrc.uz">journal@nhrc.uz</a>

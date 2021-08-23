@@ -12,7 +12,7 @@ const Requirimend = () => {
             <HeaderUpper/>
             <div className="container my-4 ">
                 <div className="row">
-                    <div className="col-12 col-lg-8">
+                    <div className="col-12 col-lg-8 font">
                         <h3 className="text-center mb-3">{t("talab.talab")}</h3>
                         <div className="d-flex align-items-center mt-3">
                             <img className="mr-3" src="/imagesNew/Vector%20(12).png" alt=""/>
@@ -27,11 +27,11 @@ const Requirimend = () => {
                             <p className="mb-0">{t("talab.talab3")}</p>
                         </div>
                         <div className="d-flex align-items-center mt-3">
-                            <img className="mr-3" src="/imagesNew/Vector%20(14).png" alt=""/>
+                            <img className="mr-3" src="/imagesNew/Vector%20(14).png" alt="Error"/>
                             <p className="mb-0">{t("talab.talab4")}</p>
                         </div>
                         <div className="d-flex align-items-center mt-3">
-                            <img className="mr-3" src="/imagesNew/xat.png" alt=""/>
+                            <img className="mr-3" src="/imagesNew/icon.png" alt="Error"/>
                             <p className="mb-0">{t("talab.talab5")}</p>
                         </div>
                         <div className="d-flex align-items-center mt-3">

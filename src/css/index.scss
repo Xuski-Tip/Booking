@@ -648,7 +648,7 @@ margin-left: 0;
 .portfolio-img {
   height: 350px !important;
   @media (max-width: 480px) {
-    width: 80% !important;
+    width: 100% !important;
     height: 550px !important;
     margin: 10px auto;
   }
@@ -656,7 +656,7 @@ margin-left: 0;
     height: 410px !important;
   }
   @media (min-width: 1400px) {
-    height: 625px !important;
+    height: 450px !important;
     width: 100% !important;
   }
   @media (min-width: 2000px) {
@@ -884,7 +884,7 @@ z-index: 1;
   padding: 70px 0;
 }
 .arxivText{
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -1024,7 +1024,7 @@ margin-bottom: 15px;
  //}
 }
 .textMuassis{
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -1034,6 +1034,76 @@ margin-bottom: 15px;
 
   color: #000000;
 }
+
+.font{
+  h3{
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+  }
+  div{
+    p{
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000000;
+    }
+  }
+}
+
+.fon2{
+  h3{
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+  .text-success{
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+  .d-flex{
+    h1{
+      font-family: Montserrat, sans-serif;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: 0;
+      text-align: left;
+    }
+    p{
+      font-family: Montserrat, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+  }
+}
+
 @import "./media";
 @import "./jurnal";
 @import "./savdo";

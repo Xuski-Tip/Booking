@@ -24,7 +24,7 @@ function App(props) {
       <Header />
       <HeaderUpper his={props.history}/>
       <Sliderr his={props.history}/>
-      <Generalinformation/>
+      {/*<Generalinformation/>*/}
       <BackgroundGrey />
       <RecentWork histor={props.history}/>
       <Muassis/>
