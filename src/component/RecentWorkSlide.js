@@ -63,12 +63,12 @@ const RecentWorkSlide = (props) => {
 
     return (
       <div className="container pb-5">
-          <div className="row">
+          <div className="row my-auto">
               {/*<div className="portfolion w-100">*/}
               {/*    <div id="portfolio" className="" data-margin="0">*/}
                       {jurnal12.map((item) => {
                           return (
-                              <div className="col-3 mt-4 arxivCol">
+                              <div className="col-8 offset-sm-0 offset-2 col-sm-6 col-md-4 col-xl-3 mt-4 arxivCol">
                                   <div className="" key={item.id}>
                                       <div
                                           className="portfolio-item"
@@ -97,7 +97,7 @@ const RecentWorkSlide = (props) => {
 
 
                                           <div className="d-flex justify-content-between">
-                                              <a href={"https://backend-magazine.napaautomotive.uz/storage/" + item.file}
+                                              <a target="_blank" href={"https://backend-magazine.napaautomotive.uz/storage/" + item.file}
                                                  className="btnArxiv2">
                                                   Mundarija
                                               </a>

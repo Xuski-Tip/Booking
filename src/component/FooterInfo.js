@@ -8,7 +8,7 @@ function FooterInfo() {
         <footer id="footer">
             <div className="footer-content">
                 <div className="container">
-                    <div className="row">
+                    <div className="row ml-2">
 
                         <div className="col-lg-3 pl-0">
                             <div className="">
@@ -42,10 +42,10 @@ function FooterInfo() {
                                     className="widget-title2">{t('submitting an article to the journal.submiting')}</div>
                                 <ul className="list">
                                     <li>
-                                        <Link to="/">{t('submitting an article to the journal.article')}</Link>
+                                        <Link to="/requirimend">{t('submitting an article to the journal.article')}</Link>
                                     </li>
                                     <li>
-                                        <Link to="">{t('submitting an article to the journal.mode')}</Link>
+                                        <Link to="/layout">{t('submitting an article to the journal.mode')}</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -56,15 +56,15 @@ function FooterInfo() {
                                     className="widget-title2">{t('submitting an article to the journal.submiting2')}</div>
                                 <ul className="list">
                                     <li>
-                                        <Link to="/">
-                                          <img src="/imagesNew/Vector (11).png"/>
-                                          <span>+998 71 239 41 42</span>
-                                        </Link>
+                                        <a href="tel:+998 71 239 41 42">
+                                            <img src="/imagesNew/Vector (11).png"/>
+                                            <span>+998 71 239 41 42</span>
+                                        </a>
                                     </li>
                                     <li>
                                         <Link to="">
-                                          <img src="/imagesNew/mail.png"/>
-                                          <span>journal@nhrc.uz</span>
+                                            <img src="/imagesNew/mail.png"/>
+                                            <span>journal@nhrc.uz</span>
                                         </Link>
                                     </li>
                                 </ul>
@@ -87,7 +87,7 @@ function FooterInfo() {
                                 ></img>
                             </a>
                             <p className="moreInfo__logo-lorem2">
-                                <a href="#">
+                                <a href="/">
                                     {/*<br></br>*/}
                                     <span>{t("Offical Site.of the National Center")}</span>
                                     <br></br> <span>{t("Offical Site.for Human Rights")}</span>
@@ -109,7 +109,7 @@ function FooterInfo() {
 
                             <div className="copyright-text">
                                 &copy;
-                                <a href="http://localhost:3000/" rel="noopener">
+                                <a href="/" rel="noopener">
                                     {" "}
                                     {t("Offical Site.of the National Center")}{" "}
                                     {t("Offical Site.for Human Rights")}{" "}

@@ -38,7 +38,7 @@ const SendMessage = () => {
             {/*   */}
             {/*</div>*/}
 
-            <div className="card">
+            <div className="card ml-3">
                 <div className="card-body pl-0 pt-0">
                     <AvForm onSubmit={OnSubmit}>
                         {/*<div className="row">*/}
