@@ -140,7 +140,7 @@ export default function PageShop(props) {
                         </ModalHeader>
                         <ModalFooter className="d-flex justify-content-between">
                             <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
-                            <button type="" className="btn btn-danger"
+                            <button type="button" className="btn btn-danger"
                                     onClick={() => setOpen(!open)}>{t("registr.cansel")}</button>
                         </ModalFooter>
                     </AvForm>
