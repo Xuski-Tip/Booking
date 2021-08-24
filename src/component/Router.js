@@ -17,7 +17,7 @@ import Litsinziya from "./Jurnal/Litsinziya";
 import Savdo from "./Savdo";
 import Maqola from "./Maqola";
 import Jurnal from "./Jurnal";
-import Profile from "./profile";
+import Profile from "./Profile";
 
 const Router = () => {
   return (
