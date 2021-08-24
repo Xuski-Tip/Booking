@@ -54,7 +54,7 @@ export default function PageShop(props) {
         <div className="Page-shop">
             <div className="container">
                 <div className="row">
-                    <div className="Page-slider grid-4-columns" data-item="grid-item">
+                    <div className="Page-slider grid-4-columns mb-4" data-item="grid-item">
                         {props.jurnal.map((item, index) => {
 
                             return (

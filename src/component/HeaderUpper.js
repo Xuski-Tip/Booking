@@ -223,7 +223,7 @@ export default function HeaderUpper(stateAction) {
                                              width="30px" height="30px"/>
                                     </Link>{" "}
 
-                                    <Link className="Link-autho" to={"/Authorization"}>
+                                    <Link className="Link-autho " to={"/Authorization"}>
                                         {t("avtorizatsiya.navbar")}
                                     </Link>{" "}
 

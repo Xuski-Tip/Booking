@@ -177,10 +177,25 @@ body{
 //   width: 25%;
 // }
 .fullscreen {
-  background-image: url(/images/pages/1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  //margin-top: 10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 59px;
+    color: #000000;
+  }
+  p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 29px;
+    color: #9F9F9F;
+  }
 }
 .flag{
 
@@ -897,8 +912,8 @@ z-index: 1;
   }
 }
 .profileIcon{
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
 }
 .profileImg{
   height: 85%;
@@ -994,7 +1009,24 @@ z-index: 1;
   }
 }
 .btnArxiv2{
-
+  background: white;
+  text-align: center;
+  border-radius: 4px;
+  width: 48%;
+  padding: 5px 5px;
+  border: 1px solid #0DA155;
+  color:#0DA155!important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  &:hover{
+    background-color: white;
+    color: #147c3e!important;
+    border: 1px solid #147c3e!important;
+    //border: 1px solid #14B462;
+  }
 }
 .arxivCol{
   transition: all 0.5s linear;
@@ -1172,7 +1204,74 @@ margin-bottom: 15px;
     }
   }
 }
+.profilePage{
+  //background-color: rgba(32, 167, 255, 0.37) !important;
+  background-color: #F7F9FB!important;
+  border: 1px solid gray;
+  .profileText{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    //font-size: 18px;
+    line-height: 34px;
+ color: #000000;
+  }
+}
+.registrationLeft{
+  img{
+    width: 800px;
+    height: 100vh;
+  }
+}
+.registrationRight{
+  h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 59px;
+    color: #000000;
+  }
+  p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 29px;
+    color: #9F9F9F;
+  }
+  margin-top: 10%;
 
+}
+.canselButton{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1E90E2!important;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.registrButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background: #1E90E2;
+  border-radius: 4px;
+  border: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.authorizationRight{
+  margin-top: 6%;
+}
 @import "./media";
 @import "./jurnal";
 @import "./savdo";
