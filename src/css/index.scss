@@ -554,6 +554,14 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
 }
 
 .team__info-subtitle {
@@ -563,9 +571,18 @@ body {
 }
 
 .team__info-developer {
-  font-size: 13px;
-  color: #bbb;
-  line-height: 18px;
+  //font-size: 13px;
+  //color: #bbb;
+  //line-height: 18px;
+  //
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px!important;
+  line-height: 22px;
+  color: #9F9F9F;
+
 }
 
 .team__info-lorem {
@@ -1292,7 +1309,7 @@ body {
 .font {
   h3 {
     font-family: Montserrat, sans-serif;
-    font-size: 30px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 37px;
@@ -1304,7 +1321,7 @@ body {
   div {
     p {
       font-family: Montserrat, sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 600;
       line-height: 24px;
@@ -1382,9 +1399,18 @@ body {
     width: 800px;
     height: 100vh;
   }
+  @media (max-width: 992px) {
+    display: none;
+  }
+  //@media (min-width: 992px) {
+  // height: 100vh;
+  //}
 }
 
 .registrationRight {
+  @media (max-width: 992px) {
+    width: 100%;
+  }
   h3 {
     font-family: Montserrat;
     font-style: normal;
@@ -1403,8 +1429,12 @@ body {
     color: #9F9F9F;
   }
 
-  margin-top: 10%;
-
+  @media (max-width: 1024px) {
+      margin-top: 10%;
+  }
+  @media (min-width: 1024px) {
+    margin-top: 10%;
+  }
 }
 
 .canselButton {
@@ -1438,7 +1468,66 @@ body {
 .authorizationRight {
   margin-top: 6%;
 }
-
+.maqolaChiqarish{
+  h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+     color: #000000;
+  }
+  p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+     color: #000000;
+  }
+}
+.leadertext{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px!important;
+  line-height: 44px;
+  color: #000000;
+}
+.leader{
+  h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+  }
+  h5{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px!important;
+    line-height: 24px;
+    color: #9F9F9F;
+  }
+}
+.editortext{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+   color: #000000;
+}
+.membertext{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
 @import "./media";
 @import "./jurnal";
 @import "./savdo";

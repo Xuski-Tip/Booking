@@ -77,10 +77,10 @@ export default function Members() {
   return (
     <>
       <HeaderUpper />
-      <section className="background-grey MainClient">
+      <section className="MainClient pt-0 mt-4">
         <div className="container">
-          <div className="heading-text heading-section text-center">
-            <h2>{t("Our staff.lives")}</h2>
+          <div className="row">
+            <h2 className="membertext mb-5">{t("Our staff.lives")}</h2>
           </div>
           <div className="Team__cards">
             <Slider {...settings}>

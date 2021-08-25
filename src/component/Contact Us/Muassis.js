@@ -38,41 +38,45 @@ const Muassis = () => {
                    </div>
                   <div className="d-lg-flex justify-content-center align-items-center mt-3">
 
-                      <div className="moreInfo__logo2 mr-5">
-                          <a href="https://www.kasaba.uz">
-                              <img
-                                  alt="#"
-                                  className="moreInfo__logo-img2"
-                                  src="/imagesNew/image 9 (1).png"
-                              ></img>
-                          </a>
-                          <p className="moreInfo__logo-lorem">
+                      <div className="row">
+                          <div className="col-lg-6"><div className="moreInfo__logo2 mr-5">
                               <a href="https://www.kasaba.uz">
-                          {t("connect.m1")}
-                                  <br/> {t("connect.m2")}
-                                  <br/> {t("connect.m3")}
+                                  <img
+                                      alt="#"
+                                      className="moreInfo__logo-img2"
+                                      src="/imagesNew/image 9 (1).png"
+                                  ></img>
                               </a>
-                          </p>
+                              <p className="moreInfo__logo-lorem">
+                                  <a href="https://www.kasaba.uz">
+                                      {t("connect.m1")}
+                                      <br/> {t("connect.m2")}
+                                      <br/> {t("connect.m3")}
+                                  </a>
+                              </p>
 
-                      </div>
-
-                      <div className="moreInfo__logo2 ml-5">
-                          <a href="http://www.ombudsman.uz">
-                              <img
-                                  alt="#"
-                                  className="moreInfo__logo-img3"
-                                  src="/imagesNew/image 9 (2).png"
-                              ></img>
-                          </a>
-                          <p className="moreInfo__logo-lorem">
+                          </div></div>
+                          <div className="col-lg-6"><div className="moreInfo__logo2 ">
                               <a href="http://www.ombudsman.uz">
-                                  {t("connect.o1")} <br/>
-                                  {t("connect.o2")}<br/>
-                                  {t("connect.o3")}
+                                  <img
+                                      alt="#"
+                                      className="moreInfo__logo-img3"
+                                      src="/imagesNew/image 9 (2).png"
+                                  ></img>
                               </a>
-                          </p>
+                              <p className="moreInfo__logo-lorem">
+                                  <a href="http://www.ombudsman.uz">
+                                      {t("connect.o1")} <br/>
+                                      {t("connect.o2")}<br/>
+                                      {t("connect.o3")}
+                                  </a>
+                              </p>
 
+                          </div></div>
                       </div>
+
+
+
                   </div>
                </div>
 

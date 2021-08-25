@@ -89,7 +89,7 @@ const SendMessage = () => {
                         <div className="d-flex justify-content-between align-items-center">
                             <div className="d-flex align-items-center">
                                 <img src="/imagesNew/clock.png" className="clockImg"/>
-                                <span className="time ml-2">Ish vaqti Dushanba-Juma: 9:00 - 18:00</span>
+                                <span className="time ml-2">{t("send message.worktime")}</span>
                             </div>
                             <button className="sendMessageButton" type="submit" id="form-submit">
                                 {/*<i className="fa fa-paper-plane"></i>*/}

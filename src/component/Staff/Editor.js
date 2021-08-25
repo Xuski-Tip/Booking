@@ -78,8 +78,10 @@ export default function Editor() {
     <>
       <HeaderUpper />
 
-      <div className="heading-text heading-section text-center">
-        <h2>{t("Our staff.Editor")}</h2>
+      <div className="container mt-4">
+       <div className="row">
+         <h2 className="editortext">{t("Our staff.Editor")}</h2>
+       </div>
       </div>
 
       <div className="container my-5">

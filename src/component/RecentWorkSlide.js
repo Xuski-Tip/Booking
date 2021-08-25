@@ -101,7 +101,7 @@ const RecentWorkSlide = (props) => {
                                         <a target="_blank"
                                            href={"https://backend-magazine.napaautomotive.uz/storage/" + item.file}
                                            className="btnArxiv2">
-                                            Mundarija
+                                            {t("send message.mundarija")}
                                         </a>
                                         {/*<div className="product-overlay">*/}
                                         <button type="button" className="btnArxiv"

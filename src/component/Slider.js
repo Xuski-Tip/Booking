@@ -157,7 +157,7 @@ function Slider(props) {
                                                 <div className="link-button-main">
 
                                                     <a href={API_PATH + "storage/" + item.file} className="btnRight2"
-                                                       target="_blank">Mundarija</a>
+                                                       target="_blank">{t("send message.mundarija")}</a>
                                                     <button type="button" className="btnRight"
                                                             onClick={() => (localStorage.getItem(LOGIN) !== "") ? auto(item) : navigateToLogin()}>
                                                         {t("send.send")}

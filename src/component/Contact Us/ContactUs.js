@@ -126,7 +126,7 @@ export default function ContactUs() {
             </section>
                 <div className="text-center mt-4">
                     <img src="/imagesNew/map-pin.png" className="mr-2 clockImg"/>
-                    <span className="address">Islom Karimov ko’chasi 15 uy</span>
+                    <span className="address">{t("send message.adress")}</span>
                 </div>
             </div>
 
