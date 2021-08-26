@@ -4,6 +4,7 @@ import { AvForm, AvField } from "availity-reactstrap-validation";
 import { login } from "../../redux/Action/registerAction";
 import { connect } from "react-redux";
 import {useTranslation} from "react-i18next";
+import FooterInfo from "../FooterInfo";
 
 const Registration = (props) => {
 
@@ -15,12 +16,12 @@ const Registration = (props) => {
 
   return (
     <>
-      {/*<HeaderUpper />*/}
+      <HeaderUpper />
       <section className="pt-0 pb-0">
         <div className="d-flex">
 
-          <div className="registrationLeft">
-            <img src="/imagesNew/royxat.png"/>
+          <div className="registrationLeft d-none d-md-block">
+            <img className="w-100" src="/imagesNew/royxat.png"/>
           </div>
 
           <div className="registrationRight">
@@ -87,6 +88,7 @@ const Registration = (props) => {
 
         </div>
       </section>
+      <FooterInfo/>
     </>
   );
 };

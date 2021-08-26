@@ -8,6 +8,7 @@ import {useTranslation} from "react-i18next";
 import axios from "axios";
 import {API, LOGIN, TOKEN_LOCAL} from "../../simpleJs/loginApi";
 import {toast} from "react-toastify";
+import FooterInfo from "../FooterInfo";
 
 const Authorization = (props) => {
 
@@ -27,11 +28,11 @@ const Authorization = (props) => {
     const {t} = useTranslation();
     return (
       <>
-        {/*<HeaderUpper/>*/}
+        <HeaderUpper/>
         <section className="fullscreen">
          <div className="d-flex w-100 ">
-             <div className="registrationLeft">
-                 <img src="/imagesNew/royxat.png"/>
+             <div className="registrationLeft w-100 d-none d-md-block">
+                 <img className="w-100" src="/imagesNew/royxat.png"/>
              </div>
              <div className="authorizationRight w-100">
                 <div className="container">
@@ -76,11 +77,7 @@ const Authorization = (props) => {
                                 {/*<div className="text-left form-group">*/}
                                 <div className="d-flex justify-content-end align-items-center">
 
-                                    <a type="button" className="canselButton" href="/"
-                                       // onClick={logOut}
-                                    >
-                                        {t("login.logout")}
-                                    </a>
+
                                     <button type="submit" className="registrButton">
                                         {t("login.submitButton")}
                                     </button>
@@ -99,6 +96,7 @@ const Authorization = (props) => {
              </div>
          </div>
         </section>
+        <FooterInfo/>
       </>
     );
 
