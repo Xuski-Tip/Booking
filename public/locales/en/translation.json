@@ -143,7 +143,10 @@
     "messagePlaceholder" : "Enter a comment",
     "messageErrorMessage" : "Enter a comment!",
     "button" : "Send a message",
-    "tulov": "Payment"
+    "tulov": "Payment",
+    "mundarija": "Table of contents",
+    "worktime": "Business hours Monday-Friday: 9:00 - 18:00",
+    "adress" : "15 Islam Karimov Street"
   },
   "connect" : {
     "connect" : "Contact us",
@@ -238,6 +241,11 @@
     "tartib9": "Published articles are edited by the editors, and the authors are contacted when any questions arise in the editing.",
     "tartib10": "Authors who have published an article will be notified after the publication of the journal.",
     "tartib11": "You can submit an article through the site"
+  },
+  "aboutjournal": {
+    "text0": "General information",
+    "text1": "The Journal of Democratization and Human Rights is a scientific and educational journal. The magazine was registered on March 16, 2020 at the Agency for Information and Mass Communications under the Presidential Administration of the Republic of Uzbekistan under number 0202.",
+    "text2": "The Journal of Democratization and Human Rights is included in the list of scientific publications recommended for publication by the Higher Attestation Commission under the Cabinet of Ministers of the Republic of Uzbekistan on the main scientific results of dissertations in law, philosophy, history, politics, Islamic studies and sociology."
   }
 }
 

@@ -58,7 +58,9 @@ export default function PageShop(props) {
                         {props.jurnal.map((item, index) => {
 
                             return (
-                                <div className="col-8 offset-sm-0 offset-2 col-sm-6 col-md-4 col-xl-3 grid-item arxivCol mt-4" key={item.id}>
+                                <div
+                                    className="col-8 offset-sm-0 offset-2 col-sm-6 col-md-4 col-xl-3 grid-item arxivCol mt-4"
+                                    key={item.id}>
                                     <div className="product h-100">
                                         <div className="product-image">
                                             {localStorage.getItem(LOGIN) ? (

@@ -22,19 +22,19 @@ const Leadership = () => {
             <HeaderUpper/>
 
             <div className="container">
-                <div className="row">
-                    <h3 className="w-100 mt-5 text-center">
+                <div className="row leader">
+                    <h3 className="w-100 mt-5 leadertext">
                         {t("leadershep.leader")}
                     </h3>
-                    <div className="col-12 mt-4 d-flex">
+                    <div className="col-12 mt-4 d-flex pl-0">
                         <img className="object" src="/images/azolar/rahbar.jpg" alt="Error"/>
                         <div className="ml-4 rahbar">
+                            <h3>{t("leadershep.name1")}</h3>
                             <h5 className="rahbar">
                                 {t("leadershep.rais")}
                             </h5>
-                            <h3>{t("leadershep.name1")}</h3>
 
-                            <button type="button" className="btn btn-primary" onClick={openModal}>{t("leadershep.tarjima")}</button>
+                            <button type="button" className="sendMessageButton" onClick={openModal}>{t("leadershep.tarjima")}</button>
                             <Collapse isOpen={open}>
                                 {t("leadershep.leadershep")}
                                 <p style={{cursor:"pointer"}} className="text-primary" onClick={openModal}>{t("leadershep.back")}</p>
@@ -42,16 +42,17 @@ const Leadership = () => {
 
                         </div>
                     </div>
-                    <div className="col-12 mt-4 d-flex ">
+                    <div className="col-12 mt-4 d-flex pl-0">
                         <img className="object" src="/images/ErkinErnazarov.jpeg" alt="Error"/>
                         <div className="ml-4 rahbar">
-                            <h5 className="rahbar">
-                                {t("leadershep.muharrir")}
-                            </h5>
                             <h3>
                                 {t("leadershep.name")}
                             </h3>
-                            <button type="button" className="btn btn-primary" onClick={openModal2}>{t("leadershep.tarjima")}</button>
+                            <h5 className="rahbar">
+                                {t("leadershep.muharrir")}
+                            </h5>
+
+                            <button type="button" className="sendMessageButton" onClick={openModal2}>{t("leadershep.tarjima")}</button>
                             <Collapse isOpen={open2}>
                                 hello
                             </Collapse>

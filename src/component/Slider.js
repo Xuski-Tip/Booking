@@ -43,9 +43,11 @@ function Slider(props) {
     function navigateToLogin() {
         props.his.push("/authorization")
     }
+
     var token = localStorage.getItem(LOGIN);
     var array = (token) ? token.split(".") : "";
-    var obj = array? JSON.parse(atob(array[1])) : "";
+    var obj = array ? JSON.parse(atob(array[1])) : "";
+
     // var obj = JSON.parse(array ? atob(array[1]) : "");
 
 
@@ -58,9 +60,9 @@ function Slider(props) {
             headers: headers
         })
             .then((res) => {
-                if(res.data.status === "success"){
+                if (res.data.status === "success") {
                     window.open(res.data.checkout_url, '_blank');
-                } else if(res.data.status === "Token is Expired" || res.data.status === "Authorization Token not found"){
+                } else if (res.data.status === "Token is Expired" || res.data.status === "Authorization Token not found") {
                     navigateToLogin();
                     toast.warning(res.data.status);
                 }
@@ -68,133 +70,135 @@ function Slider(props) {
     }
 
     return (
-      <div className="container mt-4">
-          <div  className="row">
-              <>
-                  <div className="MainHeader">
-                      <div className="MainSlider slide kenburns">
-                          <SlickSlider {...settings}>
-                              <div className="backImg">
-                                  <div className="MainSlider__bg">
+        <div className="container mt-4">
+            <div className="row">
+                <>
+                    <div className="MainHeader">
+                        <div className="MainSlider slide kenburns">
+                            <SlickSlider {...settings}>
+                                <div className="backImg">
+                                    <div className="MainSlider__bg">
 
-                                      {/*<p className="MainSlider__lorem mb-4">*/}
-                                      {/*    {t("Welcom.The magazine has been 1999")}*/}
-                                      {/*</p>*/}
-                                      {/*<div className='moreButton'>*/}
-                                      {/*    <Link to="/jurnal" className="btn scroll-to">*/}
-                                      {/*        {t("Welcom.Explore more")}*/}
-                                      {/*    </Link>*/}
-                                      {/*</div>*/}
-                                  </div>
-                              </div>
-                              {/*<div className="MainSlider__bg1">*/}
-                              {/*    /!*<h1 className="MainSlider__subtitle typing-demo">*!/*/}
-                              {/*    /!*    {t("Offical Site.democration")} {" "}*!/*/}
-                              {/*    /!*    <br/> {t("Offical Site.scientific and educational journal")}*!/*/}
-                              {/*    /!*</h1>*!/*/}
-                              {/*    /!*<p className="MainSlider__lorem mb-4">*!/*/}
-                              {/*    /!*    {t("Welcom.The magazine has been 1999")}*!/*/}
-                              {/*    /!*</p>*!/*/}
-                              {/*    /!*<div className='moreButton'>*!/*/}
-                              {/*    /!*    <Link to="/jurnal" className="btn scroll-to">*!/*/}
-                              {/*    /!*        {t("Welcom.Explore more")}*!/*/}
-                              {/*    /!*    </Link>*!/*/}
-                              {/*    /!*</div>*!/*/}
-                              {/*</div>*/}
-                              <div className="MainSlider__bg2">
-                                  {/*<h1 className="MainSlider__subtitle typing-demo">*/}
-                                  {/*    {t("Offical Site.democration")} {" "}*/}
-                                  {/*    <br/> {t("Offical Site.scientific and educational journal")}*/}
-                                  {/*</h1>*/}
-                                  {/*<p className="MainSlider__lorem mb-4">*/}
-                                  {/*    {t("Welcom.The magazine has been 1999")}*/}
-                                  {/*</p>*/}
-                                  {/*<div className='moreButton'>*/}
-                                  {/*    <Link to="/jurnal" className="btn scroll-to">*/}
-                                  {/*        {t("Welcom.Explore more")}*/}
-                                  {/*    </Link>*/}
-                                  {/*</div>*/}
-                              </div>
-                              <div className="MainSlider__bg3">
-                                  {/*<h1 className="MainSlider__subtitle typing-demo">*/}
-                                  {/*    {t("Offical Site.democration")} {" "}*/}
-                                  {/*    <br/> {t("Offical Site.scientific and educational journal")}*/}
-                                  {/*</h1>*/}
-                                  {/*<p className="MainSlider__lorem">*/}
-                                  {/*    {t("Welcom.The magazine has been 1999")}*/}
-                                  {/*</p>*/}
-                                  {/*<div className='moreButton'>*/}
-                                  {/*    <Link to="/jurnal" className="btn scroll-to">*/}
-                                  {/*        {t("Welcom.Explore more")}*/}
-                                  {/*    </Link>*/}
-                                  {/*</div>*/}
-                              </div>
-                          </SlickSlider>
-                          <h1 className="Title m-b-0">
-                              {t("Offical Site.democration")} {" "}
-                          </h1>
-                          <h4 className="Title2">
-                              {t("Offical Site.scientific and educational journal")}
-                          </h4>
-                      </div>
+                                        {/*<p className="MainSlider__lorem mb-4">*/}
+                                        {/*    {t("Welcom.The magazine has been 1999")}*/}
+                                        {/*</p>*/}
+                                        {/*<div className='moreButton'>*/}
+                                        {/*    <Link to="/jurnal" className="btn scroll-to">*/}
+                                        {/*        {t("Welcom.Explore more")}*/}
+                                        {/*    </Link>*/}
+                                        {/*</div>*/}
+                                    </div>
+                                </div>
+                                {/*<div className="MainSlider__bg1">*/}
+                                {/*    /!*<h1 className="MainSlider__subtitle typing-demo">*!/*/}
+                                {/*    /!*    {t("Offical Site.democration")} {" "}*!/*/}
+                                {/*    /!*    <br/> {t("Offical Site.scientific and educational journal")}*!/*/}
+                                {/*    /!*</h1>*!/*/}
+                                {/*    /!*<p className="MainSlider__lorem mb-4">*!/*/}
+                                {/*    /!*    {t("Welcom.The magazine has been 1999")}*!/*/}
+                                {/*    /!*</p>*!/*/}
+                                {/*    /!*<div className='moreButton'>*!/*/}
+                                {/*    /!*    <Link to="/jurnal" className="btn scroll-to">*!/*/}
+                                {/*    /!*        {t("Welcom.Explore more")}*!/*/}
+                                {/*    /!*    </Link>*!/*/}
+                                {/*    /!*</div>*!/*/}
+                                {/*</div>*/}
+                                <div className="MainSlider__bg2">
+                                    {/*<h1 className="MainSlider__subtitle typing-demo">*/}
+                                    {/*    {t("Offical Site.democration")} {" "}*/}
+                                    {/*    <br/> {t("Offical Site.scientific and educational journal")}*/}
+                                    {/*</h1>*/}
+                                    {/*<p className="MainSlider__lorem mb-4">*/}
+                                    {/*    {t("Welcom.The magazine has been 1999")}*/}
+                                    {/*</p>*/}
+                                    {/*<div className='moreButton'>*/}
+                                    {/*    <Link to="/jurnal" className="btn scroll-to">*/}
+                                    {/*        {t("Welcom.Explore more")}*/}
+                                    {/*    </Link>*/}
+                                    {/*</div>*/}
+                                </div>
+                                <div className="MainSlider__bg3">
+                                    {/*<h1 className="MainSlider__subtitle typing-demo">*/}
+                                    {/*    {t("Offical Site.democration")} {" "}*/}
+                                    {/*    <br/> {t("Offical Site.scientific and educational journal")}*/}
+                                    {/*</h1>*/}
+                                    {/*<p className="MainSlider__lorem">*/}
+                                    {/*    {t("Welcom.The magazine has been 1999")}*/}
+                                    {/*</p>*/}
+                                    {/*<div className='moreButton'>*/}
+                                    {/*    <Link to="/jurnal" className="btn scroll-to">*/}
+                                    {/*        {t("Welcom.Explore more")}*/}
+                                    {/*    </Link>*/}
+                                    {/*</div>*/}
+                                </div>
+                            </SlickSlider>
+                            <h1 className="Title m-b-0">
+                                {t("Offical Site.democration")} {" "}
+                            </h1>
+                            <h4 className="Title2">
+                                {t("Offical Site.scientific and educational journal")}
+                            </h4>
+                        </div>
 
-                      <div className="MainBg__right">
-                          <div className="link">
-                              {jurnal12.map((item, index) => {
-                                  return (
-                                      <div className="">
-                                          <a target="_blank">
-                                              <img
-                                                  alt="error"
-                                                  className="MainBg__right-img"
-                                                  src={API_PATH + "storage/" + item.image}
-                                              />
-                                          </a>
-                                          <h4 className="newNumber">{t("send.new")}</h4>
-                                          <div className="rightSliderLink">
-                                              <div className="link-button-main">
-                                                  <a href={API_PATH + "storage/" + item.file} className="btnRight2">Mundarija</a>
-                                                  <button type="button" className="btnRight"
-                                                          onClick={() => (localStorage.getItem(LOGIN) !== "") ? auto(item):navigateToLogin()}
-                                                  >
-                                                      {t("send.send")}
-                                                  </button>
+                        <div className="MainBg__right">
+                            <div className="link">
+                                {jurnal12.map((item, index) => {
+                                    return (
+                                        <div className="">
+                                            <a target="_blank">
+                                                <img
+                                                    alt="error"
+                                                    className="MainBg__right-img"
+                                                    src={API_PATH + "storage/" + item.image}
+                                                />
+                                            </a>
+                                            <h4 className="newNumber">{t("send.new")}</h4>
+                                            <div className="rightSliderLink">
+                                                <div className="link-button-main">
 
-                                              </div>
-                                          </div>
-                                      </div>
-                                  )
-                              })}
-                          </div>
+                                                    <a href={API_PATH + "storage/" + item.file} className="btnRight2"
+                                                       target="_blank">{t("send message.mundarija")}</a>
+                                                    <button type="button" className="btnRight"
+                                                            onClick={() => (localStorage.getItem(LOGIN) !== "") ? auto(item) : navigateToLogin()}>
+                                                        {t("send.send")}
+                                                    </button>
 
-                      </div>
-                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
 
-                  <Modal isOpen={open} toggle={() => setOpen(!open)}>
-                      <AvForm onSubmit={hello}>
-                          <ModalHeader>
-                              {t("subscribe.buy")} <br/>
-                              {t("subscribe.money")} : {sent} {" "} {t("subscribe.sum")} <br/>
-                              {t("subscribe.nomi")}: {name}
+                        </div>
+                    </div>
 
-                              {/*<ModalBody>*/}
-                              <div className="d-none">
-                                  <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
-                                  <AvField name="product_id" value={id} type="text" label="product_id"/>
-                                  <AvField name="type" value="magazine" type="text" label="Magazine"/>
-                              </div>
-                              {/*</ModalBody>*/}
-                          </ModalHeader>
-                          <ModalFooter className="d-flex justify-content-between">
-                              <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
-                              <button type="button" className="btn btn-danger" onClick={() => setOpen(false)}>{t("registr.cansel")}</button>
-                          </ModalFooter>
-                      </AvForm>
-                  </Modal>
+                    <Modal isOpen={open} toggle={() => setOpen(!open)}>
+                        <AvForm onSubmit={hello}>
+                            <ModalHeader>
+                                {t("subscribe.buy")} <br/>
+                                {t("subscribe.money")} : {sent} {" "} {t("subscribe.sum")} <br/>
+                                {t("subscribe.nomi")}: {name}
 
-              </>
-          </div>
-      </div>
+                                {/*<ModalBody>*/}
+                                <div className="d-none">
+                                    <AvField name="user_id" value={obj.sub} type="text" label="user_id"/>
+                                    <AvField name="product_id" value={id} type="text" label="product_id"/>
+                                    <AvField name="type" value="magazine" type="text" label="Magazine"/>
+                                </div>
+                                {/*</ModalBody>*/}
+                            </ModalHeader>
+                            <ModalFooter className="d-flex justify-content-between">
+                                <button type="submit" className="btn btn-primary">{t("leadershep.send")}</button>
+                                <button type="button" className="btn btn-danger"
+                                        onClick={() => setOpen(false)}>{t("registr.cansel")}</button>
+                            </ModalFooter>
+                        </AvForm>
+                    </Modal>
+
+                </>
+            </div>
+        </div>
     );
 }
 

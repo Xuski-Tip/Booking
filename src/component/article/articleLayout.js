@@ -12,8 +12,8 @@ const ArticleLayout = () => {
             <HeaderUpper/>
             <div className="container my-4">
                 <div className="row">
-                    <div className="col-12 col-lg-8 font2">
-                        <h3 className=" mb-3">{t("tartib.tartib")}</h3>
+                    <div className="col-12 col-lg-8 font2 pl-0 maqolaChiqarish">
+                        <h3 className="mb-3">{t("tartib.tartib")}</h3>
                         <p className="mb-0 text-success">{t("tartib.tartib1")}</p>
                         <div className="d-flex align-items-center mt-3">
                             <h1 className="text-grey mr-4">01</h1>

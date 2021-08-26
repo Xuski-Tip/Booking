@@ -145,7 +145,10 @@
     "messageErrorMessage": "Izoh kiriting!",
     "button": "Xabar yuborish",
     "tulov": "Xarid qilish",
-    "manzil": "Manzil"
+    "manzil": "Manzil",
+    "mundarija" : "Mundarija",
+    "worktime": "Ish vaqti Dushanba-Juma: 9:00 - 18:00",
+    "adress" : "Islom Karimov ko’chasi 15 uy"
   },
   "connect": {
     "connect": "Biz bilan bog'laning",
@@ -239,6 +242,11 @@
     "tartib9": "Chop etiladigan maqolalar muharrirlar tomonidan tahrir qilinadi, tahrirda biror savol tug’ilganda mualliflarga murojaat qilinadi.",
     "tartib10": "Maqolasi e’lon qilingan mualliflarga jurnal nashr etilgandan so’ng qo’ng’iroq qilinib, xabar beriladi.",
     "tartib11": "Sayt orqali maqola yuborishingiz mumkin"
+  },
+  "aboutjournal": {
+    "text0": "Umumiy ma'lumot",
+    "text1": " Demokratlashtirish va inson huquqlari jurnali ilmiy-maʼrifiy jurnal. Jurnal 2020-yil\n                            16-martda\n                            Oʻzbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy\n                            kommunikatsiyalar agentligida 0202 raqami bilan roʻyxatdan oʻtgan.",
+    "text2": " Demokratlashtirish va inson huquqlari jurnali Oʻzbekiston Respublikasi Vazirlar Mahkamasi\n                            huzuridagi Oliy attestatsiya komissiyasining huquqshunoslik, falsafa, tarix, siyosiy,\n                            islomshunoslik va sotsiologiya fanlari boʻyicha dissertatsiya asosiy ilmiy natijalarini chop\n                            etish tavsiya etilgan ilmiy nashrlar roʻyxatiga kiritilgan."
   }
 
 }

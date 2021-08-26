@@ -17,17 +17,8 @@ const Registration = (props) => {
     <>
       {/*<HeaderUpper />*/}
       <section className="pt-0 pb-0">
-        {/*className="fullscreen"*/}
-        {/*style={{ backgroundimage: `url("/images/pages/1.jpg")` }}*/}
-
-        {/*<div className="container container-fullscreen">*/}
-        {/*  <div className="text-middle">*/}
-        {/*    <div className="row">*/}
-        {/*   */}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
         <div className="d-flex">
+
           <div className="registrationLeft">
             <img src="/imagesNew/royxat.png"/>
           </div>

@@ -145,7 +145,10 @@
     "messageErrorMessage" : "Изоҳ киритинг!",
     "button" : "Хабар юбориш",
     "tulov": "Харид қилиш",
-    "manzil": "Манзил"
+    "manzil": "Манзил",
+    "mundarija": "Мундарижа",
+    "worktime": "Иш вақти Душанба-Жума: 9:00 - 18:00",
+    "adress" : "Ислом Каримов кўчаси 15 уй"
   },
   "connect" : {
     "connect" : "Биз билан боғланинг",
@@ -212,16 +215,16 @@
     "nomi": "Номи"
   },
   "talab": {
-    "talab": "Maqolalarga qo’yilgan asosiy talablar",
-    "talab1": "O’zbek, ingliz yoki rus tillarida taqdim etilishi zarur.",
-    "talab2": "Maqola mavzusi demokratlashtirish jarayonlari va inson huquqlari masalalari, shuningdek, siyosiy fanlar, huquqshunoslik, falsafa, tarix, islomshunoslik va sotsiologiya fanlaridan biriga oid bo’lishi kerak.",
-    "talab3": "Maqolada ilmiy yangilik, takliflar va tadqiqot xulosalari berilishi lozim",
-    "talab4": "Faktlar, iqtiboslar, dalillar va statistik ma’lumotlardan foydalanilgan bo’lishi  zarur. Infografika va jadvallardan foydalanish tavsiya etiladi.",
-    "talab5": "Muallifning fikrlari va xulosalari ilmiy asoslangan bo’lishi kerak",
-    "talab6": "Maqola annotatsiyasi hamda kalit so’zlar 3 tilda: o’zbek, ingliz va rus tillarida taqdim etilishi lozim.",
-    "talab7": "Matn imloviy, uslubiy va punktuatsion xatolarsiz bo’lishi tavsiya etiladi.",
-    "talab8": "Matnga qo’yiladigan texnik talablar: A4 format, 14 kegel va 1,5 interval.",
-    "talab9": "Hajmi 6 - 12 bet bo’lishi tavsiya etiladi."
+    "talab": "Мақолаларга қўйилган асосий талаблар",
+    "talab1": "Ўзбек, инглиз ёки рус тилларида тақдим этилиши зарур.",
+    "talab2": "Мақола мавзуси демократлаштириш жараёнлари ва инсон ҳуқуқлари масалалари, шунингдек, сиёсий фанлар, ҳуқуқшунослик, фалсафа, тарих, исломшунослик ва социология фанларидан бирига оид бўлиши керак.",
+    "talab3": "Мақолада илмий янгилик, таклифлар ва тадқиқот хулосалари берилиши лозим",
+    "talab4": "Фактлар, иқтибослар, далиллар ва статистик маълумотлардан фойдаланилган бўлиши  зарур. Инфографика ва жадваллардан фойдаланиш тавсия этилади.",
+    "talab5": "Муаллифнинг фикрлари ва хулосалари илмий асосланган бўлиши керак",
+    "talab6": "Мақола аннотацияси ҳамда калит сўзлар 3 тилда: ўзбек, инглиз ва рус тилларида тақдим этилиши лозим.",
+    "talab7": "Матн имловий, услубий ва пунктуацион хатоларсиз бўлиши тавсия этилади.",
+    "talab8": "Матнга қўйиладиган техник талаблар: А4 формат, 14 кегел ва 1,5 интервал.",
+    "talab9": "Ҳажми 6 - 12 бет бўлиши тавсия этилади."
   },
   "tartib": {
     "tartib": "Мақола чиқариш тартиби",
@@ -236,5 +239,11 @@
     "tartib9": "Чоп этиладиган мақолалар муҳаррирлар томонидан таҳрир қилинади, таҳрирда бирор савол туғилганда муаллифларга мурожаат қилинади.",
     "tartib10": "Мақоласи эълон қилинган муаллифларга журнал нашр этилгандан сўнг қўнғироқ қилиниб, хабар берилади.",
     "tartib11": "Сайт орқали мақола юборишингиз мумкин"
+  },
+  "aboutjournal": {
+    "text0": "Умумий маълумот",
+    "text1": "Демократлаштириш ва инсон ҳуқуқлари журнали илмий-маърифий журнал. Журнал 2020 йил 16 мартда Ўзбекистон Республикаси Президенти Администрацияси ҳузуридаги Ахборот ва оммавий коммуникациялар агентлигида 0202 рақами билан рўйхатдан ўтган.",
+    "text2": "Демократлаштириш ва инсон ҳуқуқлари журнали Ўзбекистон Республикаси Вазирлар Маҳкамаси ҳузуридаги Олий аттестация комиссиясининг ҳуқуқшунослик, фалсафа, тарих, сиёсий, исломшунослик ва социология фанлари бўйича диссертация асосий илмий натижаларини чоп этиш тавсия этилган илмий нашрлар рўйхатига киритилган."
+
   }
 }
